@@ -6,6 +6,7 @@ project:
     - slides.qmd
     - html/*.qmd
   resources:
+    - CNAME
     - pdf/*.pdf
     - index.html
     - under-construction.html
