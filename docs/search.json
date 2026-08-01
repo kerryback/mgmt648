@@ -1,217 +1,518 @@
 [
   {
-    "objectID": "slides/01_overview-of-valuation.html#todays-session",
-    "href": "slides/01_overview-of-valuation.html#todays-session",
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#todays-session",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#todays-session",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Today’s Session",
+    "text": "Today’s Session\n\n\nDefining Investment Cash Flows\n\nOnly incremental cash flows count\nSunk costs and cannibalization\nConservative vs. optimistic forecasts\nProject FCF vs. equity FCF\n\n\n\nCalculating Free Cash Flow\n\nThe FCF formula\nNOPAT, depreciation, CAPEX\nNet working capital\nComprehensive example: Lecion Electronics\n\n\n\nValuing Cash Flows\n\nDiscounting FCF to present value\nNet present value (NPV)\nInternal rate of return (IRR)\nMutually exclusive projects"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#the-dcf-framework",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#the-dcf-framework",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "The DCF Framework",
+    "text": "The DCF Framework"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#the-three-step-process",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#the-three-step-process",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "The Three-Step Process",
+    "text": "The Three-Step Process\n\n\n\n\n\n\n\n\n\nStep\nQuestion\nTool\n\n\n\n\n1\nHow much cash is the project expected to generate and when?\nForecast free cash flow (FCF)\n\n\n2\nHow risky are the future cash flows? What return do investors require?\nWeighted average cost of capital (WACC)\n\n\n3\nWhat is the present value of the investment’s expected future cash flows?\nDiscount FCF using WACC\n\n\n\n\n\nThis chapter focuses entirely on Step 1 — the “heavy lifting” of DCF analysis. Step 2 (discount rates) is covered in Chapters 4 and 5."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#step-1-is-the-hard-part",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#step-1-is-the-hard-part",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Step 1 Is the Hard Part",
+    "text": "Step 1 Is the Hard Part\n\n\nWhy Forecasting Is Difficult\n\nThe future can never be known with certainty\nForecasts often must be made with little or no historical data\nThe further out you forecast, the more uncertainty compounds\nEven experts get it badly wrong — Thomas Watson (IBM, 1943): “I think there is a world market for maybe five computers”\n\n\n\nThe Good News\n\nGood forecasting is part science, part art, part experience\nA rigorous framework forces you to make your assumptions explicit\nExplicit assumptions can be tested, challenged, and updated\nSensitivity analysis reveals which assumptions actually drive the value\n\n\n\n\nThe point is not to achieve perfect forecasts — it is to build forecasts that are grounded in sound economic analysis and honest about their uncertainty."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#defining-investment-cash-flows",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#defining-investment-cash-flows",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Defining Investment Cash Flows",
+    "text": "Defining Investment Cash Flows"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#three-key-questions",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#three-key-questions",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Three Key Questions",
+    "text": "Three Key Questions\nBefore building any financial model, get these three questions right:\n\n\n1. What cash flows are relevant?\nNot all cash flows associated with an investment actually belong in its valuation.\nOnly incremental cash flows — those that would not occur if the project is rejected — are relevant.\n\n\n2. Are the forecasts expected or hoped-for?\nTheory calls for expected cash flows: probability-weighted averages across all scenarios.\nIn practice, forecasts are often optimistic projections of what happens “if all goes as planned.”\n\n\n3. Project FCF or equity FCF?\nProject FCF is the cash available to all investors — debt and equity combined.\nEquity FCF deducts interest payments and debt repayments. The choice determines which discount rate to use."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#only-incremental-cash-flows-count",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#only-incremental-cash-flows-count",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Only Incremental Cash Flows Count",
+    "text": "Only Incremental Cash Flows Count\n\nAn incremental cash flow is one that occurs only if the project is accepted. If it happens regardless of the decision, it is not incremental.\n\n\n\n\nDirect Effects\nThe revenues and costs generated by the project itself — the obvious ones.\nExample: a new product line’s sales, cost of goods sold, and operating expenses.\n\n\nIndirect Effects\nEffects the project has on the firm’s other lines of business.\nExample: when Frito-Lay launches a new Doritos flavor, the new flavor’s sales may cannibalize existing Doritos varieties. The lost sales are a real cost of the new product.\n\n\n\nIncluding only direct effects and ignoring cannibalization systematically overstates project value — a common and costly error."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#the-cannibalization-problem",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#the-cannibalization-problem",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "The Cannibalization Problem",
+    "text": "The Cannibalization Problem\n\nFrito-Lay’s Approach to Incremental Revenue\nFrito-Lay (a PepsiCo division) classifies new product offerings into three types based on cannibalization risk:\n\nHigh cannibalization risk (e.g., a new Doritos flavor): only a small fraction of revenue is truly incremental — the rest comes from lost sales of existing products\nModerate cannibalization risk (e.g., baked chips): these open new shelf space and provide some real benefit, so a higher fraction is counted as incremental\nLow cannibalization risk (e.g., Frito-Lay’s Natural line): these enter new channels with minimal overlap — the highest percentage of revenue is treated as incremental\n\n\n\nThe key discipline: estimate total revenue, then estimate what percentage is truly new to the firm. The rest is just revenue shifting — not value creation."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#sunk-costs-are-not-relevant",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#sunk-costs-are-not-relevant",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Sunk Costs Are Not Relevant",
+    "text": "Sunk Costs Are Not Relevant\n\n\nWhat Is a Sunk Cost?\nA cost that has already been incurred — or must be incurred regardless of the investment decision.\nSunk costs cannot be recovered. The go/no-go decision cannot change them. Therefore they have no bearing on whether to proceed.\nCommon examples: past R&D spending, market research, feasibility studies, consultant fees paid to evaluate the opportunity.\n\n\nThe Merck Example\nMerck spent $10M developing a stem cell methodology. Clinical trials were disappointing. A new application for cattle emerged.\nTo develop the cattle application, Merck must forgo a $8M licensing offer from Pfizer.\nThe relevant cost of proceeding: $8M (the opportunity cost) — not $10M. The $10M is gone either way. Only the $8M is affected by the current decision.\n\n\n\nThe sunk cost fallacy — “we’ve already spent $10M, we have to recoup it” — is one of the most common and expensive errors in capital budgeting."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#conservative-vs.-optimistic-forecasts",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#conservative-vs.-optimistic-forecasts",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Conservative vs. Optimistic Forecasts",
+    "text": "Conservative vs. Optimistic Forecasts\n\n\nWhat Theory Assumes\nDCF theory calls for expected cash flows — probability-weighted averages across all scenarios.\nIf a project generates $50K or $100K with equal probability, the expected cash flow is $75K. Discount $75K at the risk-adjusted rate.\n\n\nWhat Practice Delivers\nManagers often use hoped-for cash flows — “if all goes as planned.”\nThese optimistic forecasts ignore unanticipated glitches and assume best-case outcomes.\nWhen hope-based forecasts are unavoidable (e.g., emerging market ventures, startup investments), use a higher discount rate to adjust for the gap between dreams and reality.\n\n\n\nIncentive bias and overconfidence both push forecasts upward. The Phase II review process exists partly to calibrate this — applying a skeptical eye to whether the cash flow assumptions reflect genuine expectations."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#project-fcf-vs.-equity-fcf",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#project-fcf-vs.-equity-fcf",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Project FCF vs. Equity FCF",
+    "text": "Project FCF vs. Equity FCF\n\n\nProject (Firm) FCF\nCash available to all investors — both creditors and equity holders.\n\nTaxes computed on EBIT (before interest)\nInterest expense is NOT deducted\nDiscount using WACC (blended cost of all capital)\n\nUse this for standard project and enterprise valuation.\n\n\nEquity FCF\nCash available to equity holders only.\n\nProject FCF minus after-tax interest payments\nPlus net new debt issued\nDiscount using the cost of equity\n\nUse this when you want to value just the equity stake (e.g., calculating stock price directly).\n\n\n\nThis course focuses primarily on project FCF. We will use equity FCF later when valuing businesses from the equity holder’s perspective."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#calculating-free-cash-flow",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#calculating-free-cash-flow",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Calculating Free Cash Flow",
+    "text": "Calculating Free Cash Flow"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#the-fcf-formula",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#the-fcf-formula",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "The FCF Formula",
+    "text": "The FCF Formula\n\n\\[\\text{FCF} = \\underbrace{\\text{EBIT} \\times (1 - T)}_{\\text{NOPAT}} + \\text{Depreciation} - \\text{CAPEX} - \\Delta\\text{Net Working Capital}\\]\n\n\n\n\n\n\n\n\n\n\n\nLine Item\nDirection\nWhy\n\n\n\n\nEBIT × (1 − T) = NOPAT\nStarting point\nOperating profit after taxes, before financing\n\n\n+ Depreciation\nAdd back\nNon-cash charge — reduces taxes but not cash\n\n\n− Capital Expenditures\nSubtract\nReal cash outflow for plant and equipment\n\n\n− Change in Net Working Capital\nSubtract\nCash tied up in receivables and inventory\n\n\n= Free Cash Flow\nResult\nCash available to all investors"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#nopat-net-operating-profit-after-taxes",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#nopat-net-operating-profit-after-taxes",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "NOPAT: Net Operating Profit After Taxes",
+    "text": "NOPAT: Net Operating Profit After Taxes\n\n\nWhy Start with EBIT?\nProject FCF is the cash available to all capital providers — debt and equity combined.\nTo get there, we compute taxes on EBIT (before interest), rather than on EBT (after interest). This keeps financing costs out of the operating cash flow calculation.\nThe discount rate (WACC) separately accounts for the tax benefit of debt.\n\n\nNOPAT in Practice\nNOPAT = EBIT × (1 − Tax Rate)\nExample: EBIT = $100K, tax rate = 30%\nNOPAT = $100K × (1 − 0.30) = $70K\nThen add back depreciation: if depreciation is $40K, operating cash flow before investment = $110K."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#depreciation-why-we-add-it-back",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#depreciation-why-we-add-it-back",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Depreciation: Why We Add It Back",
+    "text": "Depreciation: Why We Add It Back\nDepreciation is a non-cash expense. It was deducted to compute EBIT (and therefore reduces taxes), but no cash actually left the firm.\n\n\nThe Tax Shield\nDepreciation is valuable because it reduces taxes.\nIf depreciation expense = $40K and tax rate = 30%, the firm pays $12K less in taxes than it would without depreciation.\nWe capture this by including depreciation in the EBIT calculation, then adding it back to get cash flow.\n\n\nStraight-Line vs. Accelerated\n\nStraight-line: equal amount each year over useful life\nMACRS (IRS accelerated): larger deductions early, smaller later\n\nAccelerated depreciation is generally preferable — larger tax savings sooner.\nFor simplicity (and for this course), we typically use straight-line."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#capital-expenditures-capex",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#capital-expenditures-capex",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Capital Expenditures (CAPEX)",
+    "text": "Capital Expenditures (CAPEX)\n\n\nWhat CAPEX Represents\nCash spent on new property, plant, and equipment.\nUnlike depreciation (which matches historical spending to revenues), CAPEX is a current-period cash outflow.\nCAPEX = Δ Net PPE + Depreciation Expense\nIf net PPE grows from $360K to $440K and depreciation is $40K: CAPEX = $80K.\n\n\nCAPEX vs. Depreciation\nThese are not the same and should not be confused.\n\nDepreciation reflects the gradual expense of past spending\nCAPEX is new spending required to sustain or grow the business\n\nA growing firm typically has CAPEX &gt; Depreciation because it spends on new assets faster than old ones are written off."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#changes-in-net-working-capital",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#changes-in-net-working-capital",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Changes in Net Working Capital",
+    "text": "Changes in Net Working Capital\nGrowing revenues require growing investment in receivables and inventory — cash that the firm must fund.\n\n\nOperating Net Working Capital\n\\[\\text{NWC} = (\\text{Current Assets} - \\text{Cash}) - (\\text{Current Liabilities} - \\text{Short-term Debt})\\]\nAccounts receivable + inventories, net of accounts payable and accrued expenses.\nThe change in NWC from one period to the next is the cash the project must invest in working capital.\n\n\nDirection of the Effect\n\nGrowing revenues → NWC increases → cash outflow (subtract from FCF)\nDeclining revenues (project wind-down) → NWC decreases → cash inflow (add to FCF)\nProject termination → remaining NWC is recovered → cash inflow in final year\n\nIgnoring working capital investment overstates project value — a common error for high-growth projects."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#putting-it-together-jc-crawford-enterprises",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#putting-it-together-jc-crawford-enterprises",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Putting It Together: JC Crawford Enterprises",
+    "text": "Putting It Together: JC Crawford Enterprises\nScenario: Regional distribution center for Mr. Fix-It-Up franchises in Miami. Initial investment: $500K ($400K equipment + $100K working capital). Revenues: $1M in Year 1, growing 10%/year. 3-year analysis.\n\n\n\n\n\n\n\n\n\n\n\n\nYear 0\nYear 1\nYear 2\nYear 3\n\n\n\n\nEBIT\n—\n$60,000\n$60,000\n$60,000\n\n\nTaxes (30%)\n—\n(18,000)\n(18,000)\n(18,000)\n\n\nNOPAT\n—\n42,000\n42,000\n42,000\n\n\n+ Depreciation\n—\n40,000\n50,000\n61,000\n\n\n− CAPEX\n(400,000)\n(80,000)\n(94,000)\n423,000\n\n\n− Δ NWC\n(100,000)\n(10,000)\n(11,000)\n121,000\n\n\nFree Cash Flow\n(500,000)\n(8,000)\n(13,000)\n647,000\n\n\n\n\n\nNote: CAPEX in Year 3 is negative (a cash inflow) because net PPE falls to zero at project end — assets are sold. NWC reverses for the same reason. The terminal year captures the liquidation value."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#building-this-model-with-claude",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#building-this-model-with-claude",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Building This Model with Claude",
+    "text": "Building This Model with Claude\n\n\nWhat you tell Claude\n\nBuild an Excel workbook for a 3-year distribution center project. Inputs: $400K equipment investment (straight-line depreciation, 10-year life), $100K initial working capital, Year 1 revenues of $1M growing 10%/year, gross profit margin 30%, operating expenses 20% of sales (before depreciation), tax rate 30%, net PPE maintained at 40% of next year’s sales, net working capital at 10% of current year’s sales. Create: (1) an Inputs sheet with yellow input cells, (2) a Pro Forma Income Statement sheet, (3) a Balance Sheet sheet, (4) a Free Cash Flow sheet showing NOPAT, depreciation add-back, CAPEX, change in NWC, and FCF for Years 0–3, and (5) a Results sheet with NPV at a 10% discount rate and IRR. Use professional formatting.\n\n\nClaude generates the full workbook — linked formulas across all sheets, proper formatting, and working NPV/IRR calculations. Change any yellow input cell and all outputs update automatically."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#breakout",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#breakout",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Breakout",
+    "text": "Breakout\nSunk Costs and Opportunity Costs"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#meridian-pharma-whats-relevant",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#meridian-pharma-whats-relevant",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Meridian Pharma: What’s Relevant?",
+    "text": "Meridian Pharma: What’s Relevant?\n\nMeridian Pharmaceuticals spent $15 million developing a topical pain relief cream. The compound works but performed only modestly better than OTC competitors in clinical trials. The marketing team proposes a national launch, projecting $8M annual revenue and $6M annual operating costs. Launch requires $4M in manufacturing equipment (5-year straight-line depreciation, zero salvage) and $1.2M in initial working capital. Tax rate: 30%, WACC: 12%.\nBefore the launch decision is final, a specialty pharmacy chain offers to license the compound for $5M.\n\n\nIn your group (15 minutes)\n\nMeridian’s CFO insists the $15M R&D must be “recovered” before the project can be approved. Is this correct?\nCalculate the Year 1 free cash flow for the launch project.\nThe $15M is gone either way — but does it play any role at all in the launch-vs.-license decision?\nWhat is the true initial outlay for the launch decision once you account for the license offer? Should Meridian launch or take the license fee?"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#from-assumptions-to-cash-flows",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#from-assumptions-to-cash-flows",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "From Assumptions to Cash Flows",
+    "text": "From Assumptions to Cash Flows\nLecion Electronics: A Comprehensive Example"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#the-investment-opportunity",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#the-investment-opportunity",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "The Investment Opportunity",
+    "text": "The Investment Opportunity\n\n\nContext\nLecion Electronics has manufactured flat-panel LCDs for computer monitors for 10 years. By 2003, large-screen LCDs (42 inches+) were emerging as the future of home TV.\nThe proposal: invest $200 million in a new fabrication plant in South Korea capable of producing 42-inch LCD panels — making Lecion a major supplier for the home entertainment market over five years (2004–2008).\n\n\nStrategic Assessment\nBefore building the financial model, Lecion addressed the key strategic questions:\n\nCompetitors: four rivals with equal capability, but Lecion has a 1–2 year technological lead from the dot-com downturn\nCustomer demand: early adopters are price-insensitive; pricing power will erode over time\nComplementary products: Lecion’s partnerships with audio manufacturers ensure compatibility\nLabor: South Korea location largely insulates from U.S. wage inflation\n\n\n\n\nThe financial model must be consistent with the strategic story. If the story assumes a 1–2 year lead, the revenue forecasts should reflect a narrowing price premium over time."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#forecasting-revenues-price-decay",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#forecasting-revenues-price-decay",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Forecasting Revenues: Price Decay",
+    "text": "Forecasting Revenues: Price Decay\nRevenue = Total Market Units × Lecion’s Market Share × Price per Unit\n\n\nMarket Share\nLecion estimates a 20% market share of 42-inch LCDs throughout the project’s five-year life.\nThis is subject to significant uncertainty — sensitivity analysis on market share is appropriate.\n\n\nPrice Decay Function\nHigh-tech product prices fall as cumulative volume doubles — the experience curve.\nLecion assumes a 20% price decay per doubling of cumulative market volume:\n\n2004: $8,000 per unit (2M units sold by Lecion)\n2005: $5,959 (market doubles to 15M total)\n2006: $4,932\n2007: $4,381\n2008: $4,098\n\nRevenues peak around $19.7B in 2006, then decline as both price and market shrink."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#forecasting-costs-the-learning-curve",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#forecasting-costs-the-learning-curve",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Forecasting Costs: The Learning Curve",
+    "text": "Forecasting Costs: The Learning Curve\n\n\nVariable Cost per Unit\nLecion uses a 70% learning curve model: each time cumulative production volume doubles, variable cost per unit drops to 70% of its previous level.\n\n2004: $9,000/unit (costs exceed price — expected in early ramp)\n2005: $6,238/unit\n2006: $4,610/unit\n2007: $3,815/unit\n2008: $3,428/unit\n\nThe contribution margin turns positive in 2006 as the learning curve brings costs below price.\n\n\nFixed Costs and Depreciation\n\nFixed cash operating costs: $50M/year\nPlant depreciated straight-line over 5 years: $40M/year\nNo additional CAPEX or working capital investment assumed after the initial $200M\n\nSimplifying assumptions to keep the model tractable — real analyses would include more detail."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#the-fcf-estimate-lecion-electronics",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#the-fcf-estimate-lecion-electronics",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "The FCF Estimate: Lecion Electronics",
+    "text": "The FCF Estimate: Lecion Electronics\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nRevenues\nTotal Expenses\nNOPAT\nDepreciation\nFCF\nContribution Margin\n\n\n\n\n2003\n—\n—\n—\n—\n$(200,000M)\n—\n\n\n2004\n$16,000M\n$(18,090M)\n$(1,463M)\n$40M\n$(1,423M)\n−12.5%\n\n\n2005\n17,878M\n(18,804M)\n(648M)\n40M\n(608M)\n−4.7%\n\n\n2006\n19,728M\n(18,529M)\n839M\n40M\n879M\n+6.5%\n\n\n2007\n17,525M\n(15,350M)\n1,523M\n40M\n1,563M\n+12.9%\n\n\n2008\n12,294M\n(10,375M)\n1,343M\n40M\n1,383M\n+16.3%\n\n\n\n\n\nFCF is negative in 2004–2005 as the learning curve catches up to the experience-curve price decline. The project turns cash-flow positive in 2006 and remains positive through 2008. Tax rate = 30%."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#valuing-investment-cash-flows",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#valuing-investment-cash-flows",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Valuing Investment Cash Flows",
+    "text": "Valuing Investment Cash Flows"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#step-3-discounting",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#step-3-discounting",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Step 3: Discounting",
+    "text": "Step 3: Discounting\nOnce FCF is forecast, discounting is mechanical:\n\n\\[\\text{Present Value of Year } t \\text{ FCF} = \\frac{\\text{FCF}_t}{(1 + r)^t}\\]\n\\[\\text{Project Intrinsic Value} = \\sum_{t=1}^{N} \\frac{\\text{FCF}_t}{(1+r)^t}\\]\n\\[\\text{Net Present Value} = \\text{Project Intrinsic Value} - \\text{Initial Outlay}\\]\n\n\nThe discount rate \\(r\\) reflects the riskiness of the cash flows. For now we treat it as given — Chapters 4 and 5 explain how to estimate WACC for projects of different risk profiles."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#npv-lecion-electronics",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#npv-lecion-electronics",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "NPV: Lecion Electronics",
+    "text": "NPV: Lecion Electronics\nDiscount rate: 18% (Lecion’s opportunity cost of capital for this project)\n\n\n\n\nYear\nFCF\nDiscount Factor\nPresent Value\n\n\n\n\n2003\n$(200,000M)\n1.0000\n$(200,000M)\n\n\n2004\n(1,423M)\n0.8475\n(1,206M)\n\n\n2005\n(608M)\n0.7182\n(437M)\n\n\n2006\n879M\n0.6086\n535M\n\n\n2007\n1,563M\n0.5158\n806M\n\n\n2008\n1,383M\n0.4371\n605M\n\n\n\n\nProject intrinsic value\n$303M\n\n\n\n\nInitial outlay\n$(200M)\n\n\n\n\nNet present value\n$103M\n\n\n\n\n\nThe project creates approximately $103 million of value above its cost — assuming the forecasts are correct. The critical qualifier in every DCF analysis."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#irr-an-alternative-metric",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#irr-an-alternative-metric",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "IRR: An Alternative Metric",
+    "text": "IRR: An Alternative Metric\n\n\nWhat Is IRR?\nThe internal rate of return is the discount rate that makes NPV = 0.\n\\[\\text{Outlay}_0 = \\sum_{t=1}^{N} \\frac{\\text{FCF}_t}{(1+\\text{IRR})^t}\\]\nFor Lecion: IRR = 20.24%\nDecision rule: accept if IRR &gt; cost of capital (18%). Lecion’s IRR exceeds 18%, consistent with positive NPV.\n\n\nIRR vs. NPV\nWhen IRR and NPV agree, use either. When they conflict, NPV wins.\nIRR can mislead when: - Cash flows change sign more than once (multiple IRRs possible) - Comparing mutually exclusive projects of different sizes or timing - Projects have very different lives\nIRR is widely used in practice (75% of CFOs report using it), but NPV is theoretically superior."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#multiple-irrs-a-technical-hazard",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#multiple-irrs-a-technical-hazard",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Multiple IRRs: A Technical Hazard",
+    "text": "Multiple IRRs: A Technical Hazard\n\nIf a project’s cash flows change sign more than once (positive → negative → positive, for example), there can be multiple IRRs — all of which make NPV = 0.\nExcel and financial calculators will find one IRR without warning you that others exist.\n\n\n\n\nExample\n\n\n\nYear 0\nYear 1\nYear 2\nYear 3\n\n\n\n\n$(200)\n$1,200\n$(2,200)\n$1,200\n\n\n\nThis stream has three IRRs: 0%, 100%, and 200%. The NPV profile oscillates — there is no single “the” IRR.\n\n\nSolution\nWhen cash flows change sign multiple times, rely on NPV rather than IRR.\nBuild the NPV profile (NPV at various discount rates) to understand the investment’s value across a range of assumptions."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#mutually-exclusive-projects",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#mutually-exclusive-projects",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Mutually Exclusive Projects",
+    "text": "Mutually Exclusive Projects\n\n\nThe Problem\nOften a firm must choose one option from a set — different technologies for the same plant, building now vs. building later, acquiring Target A vs. Target B.\nIn these cases, picking the highest IRR can be wrong. IRR does not account for differences in:\n\nProject scale (a small high-IRR project may create less total value than a large lower-IRR one)\nProject timing (IRR ignores the reinvestment rate assumption)\n\n\n\nThe Solution\nFor mutually exclusive projects, choose the highest NPV.\nNPV directly measures the dollar value created. It answers the right question: which option makes shareholders wealthiest?\nIRR answers a different question: which option offers the highest percentage return? That is not the same thing when projects differ in size.\n\n\n\nException: when capital is constrained (the firm cannot fund all positive-NPV projects), the IRR helps prioritize which projects to fund first with limited capital."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#breakout-1",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#breakout-1",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Breakout",
+    "text": "Breakout\nFCF Mechanics"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#ridgeway-furniture-build-the-cash-flows",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#ridgeway-furniture-build-the-cash-flows",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Ridgeway Furniture: Build the Cash Flows",
+    "text": "Ridgeway Furniture: Build the Cash Flows\n\nRidgeway Furniture is evaluating a $2 million distribution center (straight-line depreciation over 10 years, zero salvage). Annual cost savings (treated as revenues) and operating expenses are:\n\n\n\n\nYear 1\nYear 2\nYear 3\n\n\n\n\nCost savings\n$900,000\n$990,000\n$1,089,000\n\n\nOperating expenses\n$360,000\n$396,000\n$436,000\n\n\n\nOperating net working capital = 15% of that year’s cost savings, starting Year 1. Tax rate: 30%. Working capital is fully recovered at Year 3.\n\n\nIn your group (15 minutes)\n\nBuild the pro forma income statement (EBIT) for each year. Depreciation = $200K/year.\nCompute FCF for each year: NOPAT + Depreciation − ΔNWC. (No additional CAPEX after the initial investment.)\nRidgeway’s CFO says “net income is positive but free cash flow is lower — something is wrong with the model.” Explain what’s happening and identify which line items cause the gap.\nAt a 10% discount rate, what is the project NPV? (Include Year 3 working capital recovery.) Should Ridgeway proceed?"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#breakout-2",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#breakout-2",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Breakout",
+    "text": "Breakout\nCannibalization and Salvage Value"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#novabrew-what-are-the-true-cash-flows",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#novabrew-what-are-the-true-cash-flows",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "NovaBrew: What Are the True Cash Flows?",
+    "text": "NovaBrew: What Are the True Cash Flows?\n\nNovaBrew sells 2 million cases of craft beer/year at a $4.00 contribution margin per case. They are evaluating a new craft soda line requiring a $3M equipment investment (5-year straight-line depreciation, $300K salvage value) plus working capital of 10% of annual soda revenues.\nSoda projections: Year 1 revenues $5M, growing 8%/year through Year 5. Variable costs: 55% of revenues. Fixed cash operating costs: $400K/year. Tax rate: 30%, WACC: 11%.\nWarning from the sales team: the soda launch will reduce beer volume by 4% starting Year 1.\n\n\nIn your group (15 minutes)\n\nCompute Year 1 FCF ignoring cannibalization. (Depreciation = ($3M − $300K)/5 = $540K/year)\nCompute the after-tax cost of cannibalization in Year 1. What is the true incremental FCF?\nHow should the $300K salvage value be treated at the end of Year 5? (Book value = $300K, so no taxable gain.)\nNovaBrew’s CEO says “we’re still selling our product either way — the revenue just shifts.” Evaluate this argument. When would it actually be correct?"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#summary",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#summary",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Summary",
+    "text": "Summary"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#key-takeaways-cash-flow-definition",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#key-takeaways-cash-flow-definition",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Key Takeaways: Cash Flow Definition",
+    "text": "Key Takeaways: Cash Flow Definition\n\n\nIncremental Only\n\nOnly cash flows that change because of the investment belong in the analysis\nCannibalization of existing products is a real cost\nSunk costs never belong — they are gone regardless of the decision\nOpportunity costs do belong — they represent real value foregone\n\n\n\nExpected, Not Hoped-For\n\nTheory calls for probability-weighted expected cash flows\nIn practice, optimism bias systematically inflates forecasts\nWhen forecasts are optimistic, discount rates must be raised to compensate\nThe Phase II review process exists to calibrate this\n\n\n\nProject FCF Formula\nFCF = NOPAT + Depreciation − CAPEX − ΔNWC\n\nAdd back depreciation (non-cash, but tax shield is real)\nSubtract CAPEX (real cash out)\nSubtract increases in working capital (cash tied up in operations)"
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#key-takeaways-valuation",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#key-takeaways-valuation",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Key Takeaways: Valuation",
+    "text": "Key Takeaways: Valuation\n\n\nNPV Is the Primary Rule\n\nDiscount FCF at the risk-appropriate rate (WACC)\nNPV &gt; 0: accept — project creates value\nNPV &lt; 0: reject — project destroys value\nFor mutually exclusive choices: pick the highest NPV, not the highest IRR\n\nNPV directly measures dollar value creation. IRR does not — it measures percentage return, which is a different (and sometimes misleading) question.\n\n\nThe Story Must Fit the Numbers\nA financially attractive NPV built on implausible assumptions is worthless.\n\nRevenue forecasts must be consistent with the strategic story\nCost forecasts must reflect realistic learning curves and cost structures\nThe sensitivity table reveals which assumptions actually drive the value\n\nThe best analysts spend more time on the assumptions than on the model mechanics."
+  },
+  {
+    "objectID": "html/02_forecasting-and-valuing-cash-flows.html#coming-up-chapter-3",
+    "href": "html/02_forecasting-and-valuing-cash-flows.html#coming-up-chapter-3",
+    "title": "2. Forecasting and Valuing Cash Flows",
+    "section": "Coming Up: Chapter 3",
+    "text": "Coming Up: Chapter 3\n\n\nProject Risk Analysis\n\nSensitivity analysis: which inputs drive the value?\nScenario analysis: what happens under different states of the world?\nBreak-even analysis: at what level of output does NPV = 0?\nMonte Carlo simulation: modeling the full distribution of outcomes\n\n\n\nWhy Risk Analysis Matters\nA single NPV estimate is almost certainly wrong. The question is not “what is the NPV?” but “what is the range of plausible NPVs, and under what conditions does the project fail?”\nRisk analysis transforms a point estimate into a decision-relevant picture of uncertainty."
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "Slide Decks",
+    "section": "",
+    "text": "#\nModule\n\n\n\n\n\n1\nTBD"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Kerry Back (kerryback@gmail.com) J. Howard Creekmore Professor of Finance and Professor of Economics\n\n\n\nSeptember\n\nSat, Sep 12 — 2:00 PM – 6:30 PM\nThu, Sep 17 — 8:30 PM – 10:00 PM\n\nOctober\n\nThu, Oct 1 — 8:30 PM – 10:00 PM\nSat, Oct 10 — 2:00 PM – 6:30 PM\nThu, Oct 15 — 8:30 PM – 10:00 PM\n\n\n\n\nTBD\n\n\n\n\nTBD\n\n\n\n\nTBD\n\n\n\nThe Rice University honor code applies to all work in this course.\n\n\n\nAny student with a documented disability requiring accommodations in this course is encouraged to contact me outside of class. All discussions will remain confidential. Any adjustments or accommodations regarding assignments or the final exam must be made in advance. Students with disabilities should also contact Disability Support Services in the Allen Center."
+  },
+  {
+    "objectID": "index.html#mgmt-648-3-applied-finance-hmba-fall-2026",
+    "href": "index.html#mgmt-648-3-applied-finance-hmba-fall-2026",
+    "title": "",
+    "section": "",
+    "text": "Kerry Back (kerryback@gmail.com) J. Howard Creekmore Professor of Finance and Professor of Economics\n\n\n\nSeptember\n\nSat, Sep 12 — 2:00 PM – 6:30 PM\nThu, Sep 17 — 8:30 PM – 10:00 PM\n\nOctober\n\nThu, Oct 1 — 8:30 PM – 10:00 PM\nSat, Oct 10 — 2:00 PM – 6:30 PM\nThu, Oct 15 — 8:30 PM – 10:00 PM\n\n\n\n\nTBD\n\n\n\n\nTBD\n\n\n\n\nTBD\n\n\n\nThe Rice University honor code applies to all work in this course.\n\n\n\nAny student with a documented disability requiring accommodations in this course is encouraged to contact me outside of class. All discussions will remain confidential. Any adjustments or accommodations regarding assignments or the final exam must be made in advance. Students with disabilities should also contact Disability Support Services in the Allen Center."
+  },
+  {
+    "objectID": "html/01_overview-of-valuation.html#todays-session",
+    "href": "html/01_overview-of-valuation.html#todays-session",
     "title": "1. Overview of Valuation",
     "section": "Today’s Session",
     "text": "Today’s Session\n\n\nWhy Valuation Matters\n\nProject vs. enterprise valuation\nValue creation and NPV\nWhy big investments fail\n\n\n\nFive Key Issues\n\nDoes the story make sense?\nRisks, financing, earnings\nFlexibility and follow-on options\n\n\n\nProcess, Bias, and AI Tools\n\nThree-phase evaluation process\nDecision bias and checks\nBuilding valuation models with Claude"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#why-valuation-matters",
-    "href": "slides/01_overview-of-valuation.html#why-valuation-matters",
+    "objectID": "html/01_overview-of-valuation.html#why-valuation-matters",
+    "href": "html/01_overview-of-valuation.html#why-valuation-matters",
     "title": "1. Overview of Valuation",
     "section": "Why Valuation Matters",
     "text": "Why Valuation Matters"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#the-fundamental-question",
-    "href": "slides/01_overview-of-valuation.html#the-fundamental-question",
+    "objectID": "html/01_overview-of-valuation.html#the-fundamental-question",
+    "href": "html/01_overview-of-valuation.html#the-fundamental-question",
     "title": "1. Overview of Valuation",
     "section": "The Fundamental Question",
     "text": "The Fundamental Question\n\n\nProject Valuation\nA firm assembles assets to create productive capacity.\n\nNew plant, equipment, product line\nTechnology investment\nEntering a new market\n\nThe question: is the value of the future cash flows worth more than the cost of building?\n\n\nEnterprise Valuation\nA firm acquires an existing business.\n\nMergers and acquisitions\nBuyouts, divestitures\nStrategic partnerships\n\nThe question: is the target worth more than what we pay — including any synergies?\n\n\n\nThe tools and principles are the same in both cases. This course covers both."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#value-creation",
-    "href": "slides/01_overview-of-valuation.html#value-creation",
+    "objectID": "html/01_overview-of-valuation.html#value-creation",
+    "href": "html/01_overview-of-valuation.html#value-creation",
     "title": "1. Overview of Valuation",
     "section": "Value Creation",
     "text": "Value Creation\n\nA firm has the opportunity to invest $100 million in a project that generates cash flows valued at $150 million.\n\nValue created = $150M − $100M = $50 million\nIn finance jargon: the project has a net present value (NPV) of $50 million\nThe investment makes the firm’s shareholders $50 million wealthier\n\n\n\n\nThe entire valuation enterprise is aimed at answering one question accurately: Is the present value of expected future cash flows greater than the cost of the investment?"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#why-do-big-investments-fail",
-    "href": "slides/01_overview-of-valuation.html#why-do-big-investments-fail",
+    "objectID": "html/01_overview-of-valuation.html#why-do-big-investments-fail",
+    "href": "html/01_overview-of-valuation.html#why-do-big-investments-fail",
     "title": "1. Overview of Valuation",
     "section": "Why Do Big Investments Fail?",
     "text": "Why Do Big Investments Fail?\n\n\nThe Record\n\nOver half of all large investment projects fail to achieve hoped-for results\nDaimler-Benz acquired Chrysler for $35B in 1998 — sold for $7.4B in 2007, then bankruptcy\nM&A value destruction is the rule, not the exception\n\n\n\nThe Causes\n\nRisky projects sometimes just fail — that is expected\nBut many failures stem from flawed analysis, not just bad luck\nComplexity and uncertainty push managers toward gut instinct\nAnalytical tools + disciplined process improve the odds\n\n\n\n\nGood intuition matters. But intuition plus rigorous analysis beats intuition alone, especially on large irreversible commitments."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#five-key-issues",
-    "href": "slides/01_overview-of-valuation.html#five-key-issues",
+    "objectID": "html/01_overview-of-valuation.html#five-key-issues",
+    "href": "html/01_overview-of-valuation.html#five-key-issues",
     "title": "1. Overview of Valuation",
     "section": "Five Key Issues",
     "text": "Five Key Issues\nEvery major investment decision involves these five questions"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#the-five-issues",
-    "href": "slides/01_overview-of-valuation.html#the-five-issues",
+    "objectID": "html/01_overview-of-valuation.html#the-five-issues",
+    "href": "html/01_overview-of-valuation.html#the-five-issues",
     "title": "1. Overview of Valuation",
     "section": "The Five Issues",
     "text": "The Five Issues\n\n\n\n\n\n\n\n\n\n#\nIssue\nThe Core Question\n\n\n\n\n1\nDoes the story make sense?\nDoes the firm have a real competitive advantage here?\n\n\n2\nWhat are the risks?\nWhat could go wrong, and how bad could it get?\n\n\n3\nHow can it be financed?\nWhat financing is available, and does it add or destroy value?\n\n\n4\nEffect on near-term earnings?\nWill this dilute EPS in the short run, and does that matter?\n\n\n5\nInherent flexibilities?\nCan it be staged? Are there valuable follow-on options?\n\n\n\n\n\nThese issues frame the qualitative assessment that must accompany — and often drive — the financial model."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#issue-1-does-the-story-make-sense",
-    "href": "slides/01_overview-of-valuation.html#issue-1-does-the-story-make-sense",
+    "objectID": "html/01_overview-of-valuation.html#issue-1-does-the-story-make-sense",
+    "href": "html/01_overview-of-valuation.html#issue-1-does-the-story-make-sense",
     "title": "1. Overview of Valuation",
     "section": "Issue 1: Does the Story Make Sense?",
     "text": "Issue 1: Does the Story Make Sense?\n\n\nCompetitive Advantage\nDoes the firm have an edge — specialized knowledge, technology, relationships, or scale — that others cannot easily replicate?\n\nIf the answer is no, competition will erode returns\nA positive NPV that any competitor can also earn is not a durable positive NPV\n\n\n\nComparative Advantage\nIs this firm better positioned to capture the opportunity than rivals?\n\nWhat capabilities does the firm bring that others lack?\nAre those advantages sufficient to deter competitors from making similar investments?\n\n\n\n\nThe story must be specific and honest. Vague claims like “we are well-positioned in a growing market” do not constitute a competitive advantage."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#issue-2-what-are-the-risks",
-    "href": "slides/01_overview-of-valuation.html#issue-2-what-are-the-risks",
+    "objectID": "html/01_overview-of-valuation.html#issue-2-what-are-the-risks",
+    "href": "html/01_overview-of-valuation.html#issue-2-what-are-the-risks",
     "title": "1. Overview of Valuation",
     "section": "Issue 2: What Are the Risks?",
     "text": "Issue 2: What Are the Risks?\n\nA careful assessment of what might go wrong is often more valuable than a projection of what might go right.\n\n\n\n\nRisk Identification\n\nMarket and demand risk\nTechnology and execution risk\nRegulatory and political risk\nCounterparty and financing risk\nCompetitive response\n\n\n\nRisk Management\n\nHow should risks be incorporated into the analysis?\nWhich risks affect the discount rate vs. the cash flow forecasts?\nAre there insurance, hedging, or contractual tools that can transfer risk?"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#issue-3-how-can-it-be-financed",
-    "href": "slides/01_overview-of-valuation.html#issue-3-how-can-it-be-financed",
+    "objectID": "html/01_overview-of-valuation.html#issue-3-how-can-it-be-financed",
+    "href": "html/01_overview-of-valuation.html#issue-3-how-can-it-be-financed",
     "title": "1. Overview of Valuation",
     "section": "Issue 3: How Can It Be Financed?",
     "text": "Issue 3: How Can It Be Financed?\nFinancing is not just a funding question — it can be a source of value in its own right.\n\n\nInternal vs. External\n\nCan the project be funded from operating cash flows?\nOr does it require external debt or equity?\nFinancing constraints affect which projects get pursued\n\n\n\nDebt Structure\n\nOn-balance-sheet debt vs. project finance (nonrecourse)\nGovernment guarantees or credit enhancements\nSpecial-purpose entities for off-balance-sheet treatment\n\n\n\nValue Impact\n\nFavorable financing terms can materially raise NPV\nThe ability to transfer project risk through financing is itself a source of value\nFinancing constraints can kill otherwise good projects"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#issue-4-effect-on-near-term-earnings",
-    "href": "slides/01_overview-of-valuation.html#issue-4-effect-on-near-term-earnings",
+    "objectID": "html/01_overview-of-valuation.html#issue-4-effect-on-near-term-earnings",
+    "href": "html/01_overview-of-valuation.html#issue-4-effect-on-near-term-earnings",
     "title": "1. Overview of Valuation",
     "section": "Issue 4: Effect on Near-Term Earnings?",
     "text": "Issue 4: Effect on Near-Term Earnings?\n\n\nDilutive Investments\nLarge upfront expenses + deferred cash flows = depressed EPS in early years\n\nCommon in oil, pharma, infrastructure\nCan make managers reluctant to invest even when NPV is positive\nEspecially acute when bonuses are tied to EPS\n\n\n\nAccretive Investments\nInvestment adds to EPS immediately or quickly\n\nAcquisitions that add profitable revenue\nCost-saving projects that reduce expenses in Year 1\nManagers may over-favor accretive deals even at high prices\n\n\n\n\nNeither dilutive nor accretive is inherently good or bad. What matters is NPV — but earnings effects shape managerial incentives and can distort investment decisions."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#issue-5-inherent-flexibilities",
-    "href": "slides/01_overview-of-valuation.html#issue-5-inherent-flexibilities",
+    "objectID": "html/01_overview-of-valuation.html#issue-5-inherent-flexibilities",
+    "href": "html/01_overview-of-valuation.html#issue-5-inherent-flexibilities",
     "title": "1. Overview of Valuation",
     "section": "Issue 5: Inherent Flexibilities?",
     "text": "Issue 5: Inherent Flexibilities?\n\n\nStaged Investment\nCan the investment be broken into phases, with each stage contingent on the results of the prior one?\nStaging acquires the option to proceed — or walk away — as information arrives.\n\n\nFollow-On Opportunities\nDoes this investment open doors to future opportunities?\nEarly-stage investments in new markets or technologies often derive most of their value from the follow-on options they create — not the immediate cash flows.\n\n\nProduction & Marketing Synergies\nDoes the new investment share production or marketing assets with existing operations?\nShared infrastructure or distribution channels can give an acquirer or investor a real cost or revenue advantage."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#applying-the-framework-cisco-acquires-linksys-2003",
-    "href": "slides/01_overview-of-valuation.html#applying-the-framework-cisco-acquires-linksys-2003",
+    "objectID": "html/01_overview-of-valuation.html#applying-the-framework-cisco-acquires-linksys-2003",
+    "href": "html/01_overview-of-valuation.html#applying-the-framework-cisco-acquires-linksys-2003",
     "title": "1. Overview of Valuation",
     "section": "Applying the Framework: Cisco Acquires Linksys (2003)",
     "text": "Applying the Framework: Cisco Acquires Linksys (2003)\nPurchase price: ~$500 million\n\n\n\n\n\n\n\n\nIssue\nCisco’s Assessment\n\n\n\n\nDoes the story make sense?\nConsumer broadband adoption making home networking a mass market; Linksys is the recognized leader. Extends Cisco’s end-to-end portfolio into high-growth segments.\n\n\nWhat are the risks?\nWireless technology risk — could a new standard render Linksys products obsolete? Mitigated by acquiring the industry leader.\n\n\nHow can it be financed?\nCisco issues common stock — avoids cash drain, aligns seller incentives with combined firm.\n\n\nEffect on near-term earnings?\nAccretive to GAAP and pro forma EPS by $0.01 in FY2004.\n\n\nInherent flexibilities?\nPlatform acquisition — entry into SOHO networking opens substantial follow-on investment opportunities. Marketing synergies with existing small-business channels."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#breakout",
-    "href": "slides/01_overview-of-valuation.html#breakout",
+    "objectID": "html/01_overview-of-valuation.html#breakout",
+    "href": "html/01_overview-of-valuation.html#breakout",
     "title": "1. Overview of Valuation",
     "section": "Breakout",
     "text": "Breakout\nApply the Framework"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#apex-robotics-five-issues-analysis",
-    "href": "slides/01_overview-of-valuation.html#apex-robotics-five-issues-analysis",
+    "objectID": "html/01_overview-of-valuation.html#apex-robotics-five-issues-analysis",
+    "href": "html/01_overview-of-valuation.html#apex-robotics-five-issues-analysis",
     "title": "1. Overview of Valuation",
     "section": "Apex Robotics: Five Issues Analysis",
     "text": "Apex Robotics: Five Issues Analysis\n\nApex Robotics is considering a $45 million investment to deploy autonomous robotic picking-and-packing systems across three warehouses. The VP of Operations projects a 22% IRR based on $8–10M in annual labor savings plus $2M in error-reduction savings.\nComplications: Apex’s products require high-SKU-variety, small-batch picking — conditions where autonomous systems have historically underperformed. The robot vendor is a startup with only two prior installations at this scale. The VP’s bonus is tied to cost-reduction targets.\n\n\nIn your group, work through all five issues (15 minutes)\n\nDoes the story make sense? What competitive advantage is Apex claiming?\nWhat are the key risks? Which could invalidate the investment thesis entirely?\nWhat financing considerations are relevant given the $45M would use 60% of Apex’s credit facility?\nIs the investment likely to be dilutive or accretive in the near term?\nCan this be staged? What follow-on options exist if it succeeds — or fails?\nThe VP built the model and has a financial stake in approval. Which phase of the evaluation process matters most here?"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#the-investment-evaluation-process",
-    "href": "slides/01_overview-of-valuation.html#the-investment-evaluation-process",
+    "objectID": "html/01_overview-of-valuation.html#the-investment-evaluation-process",
+    "href": "html/01_overview-of-valuation.html#the-investment-evaluation-process",
     "title": "1. Overview of Valuation",
     "section": "The Investment Evaluation Process",
     "text": "The Investment Evaluation Process\nTurning complexity into disciplined decision-making"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#three-phases-eight-steps",
-    "href": "slides/01_overview-of-valuation.html#three-phases-eight-steps",
+    "objectID": "html/01_overview-of-valuation.html#three-phases-eight-steps",
+    "href": "html/01_overview-of-valuation.html#three-phases-eight-steps",
     "title": "1. Overview of Valuation",
     "section": "Three Phases, Eight Steps",
     "text": "Three Phases, Eight Steps\n\n\n\n\n\n\n\n\n\nPhase\nSteps\nPurpose\n\n\n\n\nPhase I: Origination & Analysis\n1. Strategic assessment\nDoes the story hold up?\n\n\n\n2. Estimate investment value (crunch the numbers)\nBuild the financial case\n\n\n\n3. Prepare report and recommendation\nDocument assumptions\n\n\nPhase II: Managerial Review\n4. Evaluate strategic assumptions\nIndependent check on the story\n\n\n\n5. Review NPV methods and assumptions\nScrutinize the numbers\n\n\n\n6. Adjust for bias; formulate recommendation\nCalibrate for overconfidence\n\n\nPhase III: Decision & Approval\n7. Make a decision\nAccept, reject, or defer\n\n\n\n8. Seek final managerial / board approval\nCommit resources"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#phase-i-origination-and-analysis",
-    "href": "slides/01_overview-of-valuation.html#phase-i-origination-and-analysis",
+    "objectID": "html/01_overview-of-valuation.html#phase-i-origination-and-analysis",
+    "href": "html/01_overview-of-valuation.html#phase-i-origination-and-analysis",
     "title": "1. Overview of Valuation",
     "section": "Phase I: Origination and Analysis",
     "text": "Phase I: Origination and Analysis\n\n\nStep 1: Strategic Assessment\nEvery investment has an underlying “value proposition.”\n\nInitiated by the business development group\nScreens for competitive advantage\nStops bad ideas early — before expensive analysis\n\n\n\nStep 2: Crunch the Numbers\nEstimate the investment’s value using:\n\nDiscounted cash flow (DCF) analysis\nMarket-based multiples\nReal options where relevant\nThe financial model must be consistent with the strategic story\n\n\n\nStep 3: Prepare the Report\nThe investment analysis report contains:\n\nStrategic rationale and competitive advantage assessment\nNPV estimate and key assumptions\nSupporting cash flow and cost projections\nRisk factors and sensitivities"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#phase-ii-managerial-review",
-    "href": "slides/01_overview-of-valuation.html#phase-ii-managerial-review",
+    "objectID": "html/01_overview-of-valuation.html#phase-ii-managerial-review",
+    "href": "html/01_overview-of-valuation.html#phase-ii-managerial-review",
     "title": "1. Overview of Valuation",
     "section": "Phase II: Managerial Review",
     "text": "Phase II: Managerial Review\nThe review committee acts as a skeptical boss — its job is to ferret out bias.\n\n\nWhat the Committee Does\n\nStep 4: Independently evaluates the strategic story — does it hold up to scrutiny?\nStep 5: Reviews financial methodology and assumptions — are the projections realistic?\nStep 6: Adjusts for optimism bias — projects are routinely 50% over budget and rarely completed more than 10% under budget\n\n\n\nWhy It Exists\nProject champions have incentives to get deals approved. Even well-intentioned analysts are subject to overconfidence bias.\nThe committee is staffed by people who did not originate the project — independence is the point.\nIt must be funded and empowered independently. A committee that lacks authority to say no adds no value."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#decision-bias-where-it-comes-from",
-    "href": "slides/01_overview-of-valuation.html#decision-bias-where-it-comes-from",
+    "objectID": "html/01_overview-of-valuation.html#decision-bias-where-it-comes-from",
+    "href": "html/01_overview-of-valuation.html#decision-bias-where-it-comes-from",
     "title": "1. Overview of Valuation",
     "section": "Decision Bias: Where It Comes From",
     "text": "Decision Bias: Where It Comes From\n\n\nIncentive Bias\n\nBonuses tied to “deals done” or cost targets\nCareer advancement linked to project approval\nChampions who built the model personally invested in its conclusions\nEven honest people shade estimates when their job depends on the outcome\n\n\n\nPsychological Bias\n\nOverconfidence: most people believe they are above-average drivers\nSelf-attribution bias: success is skill, failure is bad luck\nThe most optimistic, hardest-working managers get promoted — and become the most overconfident executives\nGood intentions do not overcome systematic optimism\n\n\n\n\nThe three-phase process is a system of checks and balances designed specifically to expose and correct these biases before capital is committed."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#building-valuation-models-with-ai",
-    "href": "slides/01_overview-of-valuation.html#building-valuation-models-with-ai",
+    "objectID": "html/01_overview-of-valuation.html#building-valuation-models-with-ai",
+    "href": "html/01_overview-of-valuation.html#building-valuation-models-with-ai",
     "title": "1. Overview of Valuation",
     "section": "Building Valuation Models with AI",
     "text": "Building Valuation Models with AI\nClaude as your financial modeling assistant"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#why-this-matters-for-valuation",
-    "href": "slides/01_overview-of-valuation.html#why-this-matters-for-valuation",
+    "objectID": "html/01_overview-of-valuation.html#why-this-matters-for-valuation",
+    "href": "html/01_overview-of-valuation.html#why-this-matters-for-valuation",
     "title": "1. Overview of Valuation",
     "section": "Why This Matters for Valuation",
     "text": "Why This Matters for Valuation\nStep 2 of Phase I is “crunch the numbers.” In practice, that means building financial models in Excel — pro forma income statements, FCF schedules, NPV calculations, sensitivity tables.\n\n\nThe Traditional Approach\n\nAnalyst spends hours building the model from scratch\nFormatting, formulas, and layout are all manual\nSensitivity analysis requires building additional tables by hand\nErrors are common and hard to detect\n\n\n\nWith Claude\n\nDescribe the model in plain English — Claude builds it\nProfessional formatting, labeled inputs, linked formulas\nSensitivity tables generated automatically\nYou focus on the assumptions and the story, not the spreadsheet mechanics\n\n\n\n\nThis does not change what a good analyst does — it changes how fast and cleanly the analytical work gets done."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#claude-excel-two-approaches",
-    "href": "slides/01_overview-of-valuation.html#claude-excel-two-approaches",
+    "objectID": "html/01_overview-of-valuation.html#claude-excel-two-approaches",
+    "href": "html/01_overview-of-valuation.html#claude-excel-two-approaches",
     "title": "1. Overview of Valuation",
     "section": "Claude + Excel: Two Approaches",
     "text": "Claude + Excel: Two Approaches\n\n\nClaude Generates the File\nAsk Claude (Chat, Code, or Cowork mode) to create an .xlsx file from scratch.\nClaude uses Python to build the workbook — fonts, colors, formulas, charts, and multiple sheets — and delivers a file you open directly in Excel.\nBest for: building a new model from a description or template.\n\n\nClaude Add-In for Excel\nInstall the Claude add-in from the Microsoft Office Add-ins store. A chat panel appears directly inside Excel.\nDescribe what you want — formulas, tables, charts, what-if analysis — and Claude builds it in the active sheet.\nBest for: iterating on an existing model, adding sensitivity tables, fixing formula errors.\n\n\n\nBoth approaches produce the same result. The add-in is more interactive; the file-generation approach is better for a complete new workbook."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#example-building-a-dcf-model",
-    "href": "slides/01_overview-of-valuation.html#example-building-a-dcf-model",
+    "objectID": "html/01_overview-of-valuation.html#example-building-a-dcf-model",
+    "href": "html/01_overview-of-valuation.html#example-building-a-dcf-model",
     "title": "1. Overview of Valuation",
     "section": "Example: Building a DCF Model",
     "text": "Example: Building a DCF Model\n\n\nWhat you tell Claude\n\nI need an Excel workbook to evaluate a capital expenditure proposal. The investment is $547,000 in a materials-handling system with a 5-year life, straight-line depreciation to zero salvage value, and a 40% tax rate. Annual pre-tax benefits are $343,800. Create: (1) an Inputs sheet with clearly labeled yellow input cells, (2) a Cash Flows sheet showing NOPAT, depreciation add-back, and free cash flow for each year, (3) a Results sheet with NPV, IRR, and payback period using a 12% discount rate, and (4) a Sensitivity table showing NPV for discount rates from 8% to 20% in 2% steps and annual benefits from $240,000 to $450,000 in $30,000 steps. Use professional formatting with a dark navy header row.\n\n\nOne paragraph. No formulas, no column letters, no cell references — Claude figures out the structure. The output is a complete, working .xlsx file."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#the-claude-excel-add-in",
-    "href": "slides/01_overview-of-valuation.html#the-claude-excel-add-in",
+    "objectID": "html/01_overview-of-valuation.html#the-claude-excel-add-in",
+    "href": "html/01_overview-of-valuation.html#the-claude-excel-add-in",
     "title": "1. Overview of Valuation",
     "section": "The Claude Excel Add-In",
     "text": "The Claude Excel Add-In\n\nThe Claude add-in puts a chat panel directly inside Excel. You describe what you want and Claude builds it in the active sheet — no Python, no terminal, no file downloads.\n\n\n\n\nInstallation\n\nOpen Excel\nGo to Insert → Add-ins → Get Add-ins\nSearch for “Claude”\nInstall the Anthropic Claude add-in\nSign in with your Anthropic account\n\n\n\nGood Uses in Valuation Work\n\n“Add a sensitivity table to this sheet for discount rates 8–16%”\n“Fix the IRR formula in cell B12 — it’s returning an error”\n“Add a chart showing NPV vs. discount rate”\n“Format this table with alternating row colors”"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#what-claude-cannot-do",
-    "href": "slides/01_overview-of-valuation.html#what-claude-cannot-do",
+    "objectID": "html/01_overview-of-valuation.html#what-claude-cannot-do",
+    "href": "html/01_overview-of-valuation.html#what-claude-cannot-do",
     "title": "1. Overview of Valuation",
     "section": "What Claude Cannot Do",
     "text": "What Claude Cannot Do\n\n\nStill Your Job\n\nAssess whether the strategic story makes sense\nJudge whether the assumptions are realistic\nIdentify the risks that matter most\nDecide whether to recommend the investment\n\nClaude builds the model. You make the judgment calls.\n\n\nWatch Out For\n\nPlausible-looking formulas that are wrong\nSensitivity ranges that don’t match your actual uncertainty\nModels that are technically correct but built on assumptions Claude invented\n\nAlways verify the outputs — check that NPV matches what you’d calculate by hand for a simple case before trusting the full model.\n\n\n\nThe Phase II review process applies to AI-generated models just as it does to analyst-built models. Garbage in, garbage out — regardless of who built the spreadsheet."
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#breakout-1",
-    "href": "slides/01_overview-of-valuation.html#breakout-1",
+    "objectID": "html/01_overview-of-valuation.html#breakout-1",
+    "href": "html/01_overview-of-valuation.html#breakout-1",
     "title": "1. Overview of Valuation",
     "section": "Breakout",
     "text": "Breakout\nBuild a Valuation Model with Claude"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#cp3-pharmaceuticals-build-the-model",
-    "href": "slides/01_overview-of-valuation.html#cp3-pharmaceuticals-build-the-model",
+    "objectID": "html/01_overview-of-valuation.html#cp3-pharmaceuticals-build-the-model",
+    "href": "html/01_overview-of-valuation.html#cp3-pharmaceuticals-build-the-model",
     "title": "1. Overview of Valuation",
     "section": "CP3 Pharmaceuticals: Build the Model",
     "text": "CP3 Pharmaceuticals: Build the Model\n\nCP3 Pharmaceuticals is evaluating a $547,000 materials-handling system. Annual pre-tax benefits: $300,000 in scrap revenue + $35,000 labor savings + $8,800 recycling savings = $343,800. Depreciation: straight-line over 5 years, zero salvage. Tax rate: 40%.\nThe strategic planning committee wants to see a sensitivity analysis before approving.\n\n\nIn your group (15 minutes)\n\nUse Claude (chat or add-in) to build an Excel model with: an Inputs sheet, a Cash Flows sheet, a Results sheet (NPV, IRR, payback), and a sensitivity table (discount rate 8–20% × annual benefits ±30%)\nAt what discount rate does the project turn NPV-negative?\nIf benefits come in 20% below projection, is the project still attractive at a 12% discount rate?\nThe committee suspects optimism bias. What adjustment to the discount rate or cash flows would you make as a skeptical reviewer, and does the recommendation change?"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#summary",
-    "href": "slides/01_overview-of-valuation.html#summary",
+    "objectID": "html/01_overview-of-valuation.html#summary",
+    "href": "html/01_overview-of-valuation.html#summary",
     "title": "1. Overview of Valuation",
     "section": "Summary",
     "text": "Summary"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#key-takeaways",
-    "href": "slides/01_overview-of-valuation.html#key-takeaways",
+    "objectID": "html/01_overview-of-valuation.html#key-takeaways",
+    "href": "html/01_overview-of-valuation.html#key-takeaways",
     "title": "1. Overview of Valuation",
     "section": "Key Takeaways",
     "text": "Key Takeaways\n\n\nValuation is the Foundation\n\nBoth project and enterprise decisions require the same core framework\nValue = present value of expected cash flows minus cost\nOver half of large investments fail — disciplined process improves the odds\n\n\n\nFive Issues Every Time\n\nStory, risks, financing, earnings, flexibility\nThe qualitative assessment must be consistent with the financial model\nA compelling story with a negative NPV is still a bad investment\n\n\n\nProcess Combats Bias\n\nThree phases, eight steps\nPhase II independence is critical — the committee must be empowered to say no\nAI tools speed up Step 2 (crunch the numbers) but do not replace judgment"
   },
   {
-    "objectID": "slides/01_overview-of-valuation.html#coming-up-chapter-2",
-    "href": "slides/01_overview-of-valuation.html#coming-up-chapter-2",
+    "objectID": "html/01_overview-of-valuation.html#coming-up-chapter-2",
+    "href": "html/01_overview-of-valuation.html#coming-up-chapter-2",
     "title": "1. Overview of Valuation",
     "section": "Coming Up: Chapter 2",
     "text": "Coming Up: Chapter 2\n\n\nForecasting and Valuing Cash Flows\n\nDefining free cash flow (FCF)\nIncremental cash flows — what counts and what doesn’t\nSunk costs, cannibalization, working capital\nBuilding pro forma cash flow statements\n\n\n\nNPV and IRR\n\nDiscounting FCF to estimate project value\nNet present value and internal rate of return\nMutually exclusive projects\nMini-cases: Meridian Pharma, Ridgeway Furniture, NovaBrew"
