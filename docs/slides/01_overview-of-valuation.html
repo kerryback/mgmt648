@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-9de9f6925d305bcf5b7eb9351f368d06.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Kerry Back Rice Business">
+  <title>1. Overview of Valuation</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-efad1da073ddad331616e6406350033c.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">1. Overview of Valuation</h1>
+  <p class="subtitle">MGMT 648: Valuation</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Kerry Back<br>Rice Business 
+</div>
+</div>
+</div>
+
+</section>
+<section id="todays-session" class="slide level2 center">
+<h2>Today’s Session</h2>
+<div class="three-cards">
+<div class="card-blue">
+<p><span class="card-title">Why Valuation Matters</span></p>
+<ul>
+<li>Project vs.&nbsp;enterprise valuation</li>
+<li>Value creation and NPV</li>
+<li>Why big investments fail</li>
+</ul>
+</div>
+<div class="card-amber">
+<p><span class="card-title">Five Key Issues</span></p>
+<ul>
+<li>Does the story make sense?</li>
+<li>Risks, financing, earnings</li>
+<li>Flexibility and follow-on options</li>
+</ul>
+</div>
+<div class="card-teal">
+<p><span class="card-title">Process, Bias, and AI Tools</span></p>
+<ul>
+<li>Three-phase evaluation process</li>
+<li>Decision bias and checks</li>
+<li>Building valuation models with Claude</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="why-valuation-matters" class="slide level2 section-divider center">
+<h2>Why Valuation Matters</h2>
+</section>
+<section id="the-fundamental-question" class="slide level2 center">
+<h2>The Fundamental Question</h2>
+<div class="two-cards">
+<div class="card-blue">
+<p><span class="card-title">Project Valuation</span></p>
+<p>A firm assembles assets to create productive capacity.</p>
+<ul>
+<li>New plant, equipment, product line</li>
+<li>Technology investment</li>
+<li>Entering a new market</li>
+</ul>
+<p>The question: is the value of the future cash flows worth more than the cost of building?</p>
+</div>
+<div class="card-amber">
+<p><span class="card-title">Enterprise Valuation</span></p>
+<p>A firm acquires an existing business.</p>
+<ul>
+<li>Mergers and acquisitions</li>
+<li>Buyouts, divestitures</li>
+<li>Strategic partnerships</li>
+</ul>
+<p>The question: is the target worth more than what we pay — including any synergies?</p>
+</div>
+</div>
+<div class="explainer">
+<p>The tools and principles are the same in both cases. This course covers both.</p>
+</div>
+</section>
+<section id="value-creation" class="slide level2 center">
+<h2>Value Creation</h2>
+<div class="card-blue">
+<p>A firm has the opportunity to invest $100 million in a project that generates cash flows valued at $150 million.</p>
+<ul>
+<li>Value created = $150M − $100M = <strong>$50 million</strong></li>
+<li>In finance jargon: the project has a <strong>net present value (NPV) of $50 million</strong></li>
+<li>The investment makes the firm’s shareholders $50 million wealthier</li>
+</ul>
+</div>
+<p><br></p>
+<div class="highlight-box">
+<p>The entire valuation enterprise is aimed at answering one question accurately: <span class="accent">Is the present value of expected future cash flows greater than the cost of the investment?</span></p>
+</div>
+</section>
+<section id="why-do-big-investments-fail" class="slide level2 center">
+<h2>Why Do Big Investments Fail?</h2>
+<div class="two-cards">
+<div class="card-blue">
+<p><span class="card-title">The Record</span></p>
+<ul>
+<li>Over half of all large investment projects fail to achieve hoped-for results</li>
+<li>Daimler-Benz acquired Chrysler for $35B in 1998 — sold for $7.4B in 2007, then bankruptcy</li>
+<li>M&amp;A value destruction is the rule, not the exception</li>
+</ul>
+</div>
+<div class="card-amber">
+<p><span class="card-title">The Causes</span></p>
+<ul>
+<li>Risky projects sometimes just fail — that is expected</li>
+<li>But many failures stem from <span class="accent">flawed analysis</span>, not just bad luck</li>
+<li>Complexity and uncertainty push managers toward gut instinct</li>
+<li>Analytical tools + disciplined process improve the odds</li>
+</ul>
+</div>
+</div>
+<div class="explainer">
+<p>Good intuition matters. But intuition plus rigorous analysis beats intuition alone, especially on large irreversible commitments.</p>
+</div>
+</section>
+<section id="five-key-issues" class="slide level2 section-divider center">
+<h2>Five Key Issues</h2>
+<h3 id="every-major-investment-decision-involves-these-five-questions">Every major investment decision involves these five questions</h3>
+</section>
+<section id="the-five-issues" class="slide level2 center">
+<h2>The Five Issues</h2>
+<div class="comparison-table">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Issue</th>
+<th>The Core Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Does the story make sense?</td>
+<td>Does the firm have a real competitive advantage here?</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>What are the risks?</td>
+<td>What could go wrong, and how bad could it get?</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>How can it be financed?</td>
+<td>What financing is available, and does it add or destroy value?</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Effect on near-term earnings?</td>
+<td>Will this dilute EPS in the short run, and does that matter?</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Inherent flexibilities?</td>
+<td>Can it be staged? Are there valuable follow-on options?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="explainer">
+<p>These issues frame the <span class="accent">qualitative</span> assessment that must accompany — and often drive — the financial model.</p>
+</div>
+</section>
+<section id="issue-1-does-the-story-make-sense" class="slide level2 center">
+<h2>Issue 1: Does the Story Make Sense?</h2>
+<div class="two-cards">
+<div class="card-blue">
+<p><span class="card-title">Competitive Advantage</span></p>
+<p>Does the firm have an edge — specialized knowledge, technology, relationships, or scale — that others cannot easily replicate?</p>
+<ul>
+<li>If the answer is no, competition will erode returns</li>
+<li>A positive NPV that any competitor can also earn is not a durable positive NPV</li>
+</ul>
+</div>
+<div class="card-amber">
+<p><span class="card-title">Comparative Advantage</span></p>
+<p>Is <em>this firm</em> better positioned to capture the opportunity than rivals?</p>
+<ul>
+<li>What capabilities does the firm bring that others lack?</li>
+<li>Are those advantages sufficient to deter competitors from making similar investments?</li>
+</ul>
+</div>
+</div>
+<div class="explainer">
+<p>The story must be specific and honest. Vague claims like “we are well-positioned in a growing market” do not constitute a competitive advantage.</p>
+</div>
+</section>
+<section id="issue-2-what-are-the-risks" class="slide level2 center">
+<h2>Issue 2: What Are the Risks?</h2>
+<div class="card-blue">
+<p>A careful assessment of <span class="amber">what might go wrong</span> is often more valuable than a projection of what might go right.</p>
+</div>
+<p><br></p>
+<div class="two-cards">
+<div class="card-amber">
+<p><span class="card-title">Risk Identification</span></p>
+<ul>
+<li>Market and demand risk</li>
+<li>Technology and execution risk</li>
+<li>Regulatory and political risk</li>
+<li>Counterparty and financing risk</li>
+<li>Competitive response</li>
+</ul>
+</div>
+<div class="card-teal">
+<p><span class="card-title">Risk Management</span></p>
+<ul>
+<li>How should risks be incorporated into the analysis?</li>
+<li>Which risks affect the discount rate vs.&nbsp;the cash flow forecasts?</li>
+<li>Are there insurance, hedging, or contractual tools that can transfer risk?</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="issue-3-how-can-it-be-financed" class="slide level2 center">
+<h2>Issue 3: How Can It Be Financed?</h2>
+<p>Financing is not just a funding question — it can be a <span class="accent">source of value</span> in its own right.</p>
+<div class="three-cards">
+<div class="card-blue">
+<p><span class="card-title">Internal vs.&nbsp;External</span></p>
+<ul>
+<li>Can the project be funded from operating cash flows?</li>
+<li>Or does it require external debt or equity?</li>
+<li>Financing constraints affect which projects get pursued</li>
+</ul>
+</div>
+<div class="card-amber">
+<p><span class="card-title">Debt Structure</span></p>
+<ul>
+<li>On-balance-sheet debt vs.&nbsp;project finance (nonrecourse)</li>
+<li>Government guarantees or credit enhancements</li>
+<li>Special-purpose entities for off-balance-sheet treatment</li>
+</ul>
+</div>
+<div class="card-teal">
+<p><span class="card-title">Value Impact</span></p>
+<ul>
+<li>Favorable financing terms can materially raise NPV</li>
+<li>The ability to transfer project risk through financing is itself a source of value</li>
+<li>Financing constraints can kill otherwise good projects</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="issue-4-effect-on-near-term-earnings" class="slide level2 center">
+<h2>Issue 4: Effect on Near-Term Earnings?</h2>
+<div class="two-cards">
+<div class="card-blue">
+<p><span class="card-title">Dilutive Investments</span></p>
+<p>Large upfront expenses + deferred cash flows = depressed EPS in early years</p>
+<ul>
+<li>Common in oil, pharma, infrastructure</li>
+<li>Can make managers reluctant to invest even when NPV is positive</li>
+<li>Especially acute when bonuses are tied to EPS</li>
+</ul>
+</div>
+<div class="card-amber">
+<p><span class="card-title">Accretive Investments</span></p>
+<p>Investment adds to EPS immediately or quickly</p>
+<ul>
+<li>Acquisitions that add profitable revenue</li>
+<li>Cost-saving projects that reduce expenses in Year 1</li>
+<li>Managers may over-favor accretive deals even at high prices</li>
+</ul>
+</div>
+</div>
+<div class="explainer">
+<p>Neither dilutive nor accretive is inherently good or bad. What matters is NPV — but earnings effects shape managerial incentives and can distort investment decisions.</p>
+</div>
+</section>
+<section id="issue-5-inherent-flexibilities" class="slide level2 center">
+<h2>Issue 5: Inherent Flexibilities?</h2>
+<div class="three-cards">
+<div class="card-blue">
+<p><span class="card-title">Staged Investment</span></p>
+<p>Can the investment be broken into phases, with each stage contingent on the results of the prior one?</p>
+<p>Staging acquires the <span class="accent">option to proceed</span> — or walk away — as information arrives.</p>
+</div>
+<div class="card-amber">
+<p><span class="card-title">Follow-On Opportunities</span></p>
+<p>Does this investment open doors to future opportunities?</p>
+<p>Early-stage investments in new markets or technologies often derive most of their value from the follow-on options they create — not the immediate cash flows.</p>
+</div>
+<div class="card-teal">
+<p><span class="card-title">Production &amp; Marketing Synergies</span></p>
+<p>Does the new investment share production or marketing assets with existing operations?</p>
+<p>Shared infrastructure or distribution channels can give an acquirer or investor a real cost or revenue advantage.</p>
+</div>
+</div>
+</section>
+<section id="applying-the-framework-cisco-acquires-linksys-2003" class="slide level2 shrink center">
+<h2>Applying the Framework: Cisco Acquires Linksys (2003)</h2>
+<p>Purchase price: ~$500 million</p>
+<div class="comparison-table">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Issue</th>
+<th>Cisco’s Assessment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Does the story make sense?</td>
+<td>Consumer broadband adoption making home networking a mass market; Linksys is the recognized leader. Extends Cisco’s end-to-end portfolio into high-growth segments.</td>
+</tr>
+<tr class="even">
+<td>What are the risks?</td>
+<td>Wireless technology risk — could a new standard render Linksys products obsolete? Mitigated by acquiring the industry leader.</td>
+</tr>
+<tr class="odd">
+<td>How can it be financed?</td>
+<td>Cisco issues common stock — avoids cash drain, aligns seller incentives with combined firm.</td>
+</tr>
+<tr class="even">
+<td>Effect on near-term earnings?</td>
+<td>Accretive to GAAP and pro forma EPS by $0.01 in FY2004.</td>
+</tr>
+<tr class="odd">
+<td>Inherent flexibilities?</td>
+<td>Platform acquisition — entry into SOHO networking opens substantial follow-on investment opportunities. Marketing synergies with existing small-business channels.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="breakout" class="slide level2 section-divider center">
+<h2>Breakout</h2>
+<h3 id="apply-the-framework">Apply the Framework</h3>
+</section>
+<section id="apex-robotics-five-issues-analysis" class="slide level2 center">
+<h2>Apex Robotics: Five Issues Analysis</h2>
+<div class="card-blue">
+<p>Apex Robotics is considering a <strong>$45 million</strong> investment to deploy autonomous robotic picking-and-packing systems across three warehouses. The VP of Operations projects a 22% IRR based on $8–10M in annual labor savings plus $2M in error-reduction savings.</p>
+<p><strong>Complications:</strong> Apex’s products require high-SKU-variety, small-batch picking — conditions where autonomous systems have historically underperformed. The robot vendor is a startup with only two prior installations at this scale. The VP’s bonus is tied to cost-reduction targets.</p>
+</div>
+<div class="info-box">
+<p><span class="box-title">In your group, work through all five issues (15 minutes)</span></p>
+<ol type="1">
+<li>Does the story make sense? What competitive advantage is Apex claiming?</li>
+<li>What are the key risks? Which could invalidate the investment thesis entirely?</li>
+<li>What financing considerations are relevant given the $45M would use 60% of Apex’s credit facility?</li>
+<li>Is the investment likely to be dilutive or accretive in the near term?</li>
+<li>Can this be staged? What follow-on options exist if it succeeds — or fails?</li>
+<li>The VP built the model and has a financial stake in approval. Which phase of the evaluation process matters most here?</li>
+</ol>
+</div>
+</section>
+<section id="the-investment-evaluation-process" class="slide level2 section-divider center">
+<h2>The Investment Evaluation Process</h2>
+<h3 id="turning-complexity-into-disciplined-decision-making">Turning complexity into disciplined decision-making</h3>
+</section>
+<section id="three-phases-eight-steps" class="slide level2 center">
+<h2>Three Phases, Eight Steps</h2>
+<div class="comparison-table">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Steps</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Phase I: Origination &amp; Analysis</td>
+<td>1. Strategic assessment</td>
+<td>Does the story hold up?</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>2. Estimate investment value (crunch the numbers)</td>
+<td>Build the financial case</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>3. Prepare report and recommendation</td>
+<td>Document assumptions</td>
+</tr>
+<tr class="even">
+<td>Phase II: Managerial Review</td>
+<td>4. Evaluate strategic assumptions</td>
+<td>Independent check on the story</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>5. Review NPV methods and assumptions</td>
+<td>Scrutinize the numbers</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>6. Adjust for bias; formulate recommendation</td>
+<td>Calibrate for overconfidence</td>
+</tr>
+<tr class="odd">
+<td>Phase III: Decision &amp; Approval</td>
+<td>7. Make a decision</td>
+<td>Accept, reject, or defer</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>8. Seek final managerial / board approval</td>
+<td>Commit resources</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="phase-i-origination-and-analysis" class="slide level2 center">
+<h2>Phase I: Origination and Analysis</h2>
+<div class="three-cards">
+<div class="card-blue">
+<p><span class="card-title">Step 1: Strategic Assessment</span></p>
+<p>Every investment has an underlying “value proposition.”</p>
+<ul>
+<li>Initiated by the business development group</li>
+<li>Screens for competitive advantage</li>
+<li>Stops bad ideas early — before expensive analysis</li>
+</ul>
+</div>
+<div class="card-amber">
+<p><span class="card-title">Step 2: Crunch the Numbers</span></p>
+<p>Estimate the investment’s value using:</p>
+<ul>
+<li>Discounted cash flow (DCF) analysis</li>
+<li>Market-based multiples</li>
+<li>Real options where relevant</li>
+<li>The financial model must be consistent with the strategic story</li>
+</ul>
+</div>
+<div class="card-teal">
+<p><span class="card-title">Step 3: Prepare the Report</span></p>
+<p>The investment analysis report contains:</p>
+<ul>
+<li>Strategic rationale and competitive advantage assessment</li>
+<li>NPV estimate and key assumptions</li>
+<li>Supporting cash flow and cost projections</li>
+<li>Risk factors and sensitivities</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="phase-ii-managerial-review" class="slide level2 center">
+<h2>Phase II: Managerial Review</h2>
+<p>The review committee acts as a <span class="amber">skeptical boss</span> — its job is to ferret out bias.</p>
+<div class="two-cards">
+<div class="card-blue">
+<p><span class="card-title">What the Committee Does</span></p>
+<ul>
+<li>Step 4: Independently evaluates the strategic story — does it hold up to scrutiny?</li>
+<li>Step 5: Reviews financial methodology and assumptions — are the projections realistic?</li>
+<li>Step 6: Adjusts for optimism bias — projects are routinely 50% over budget and rarely completed more than 10% under budget</li>
+</ul>
+</div>
+<div class="card-amber">
+<p><span class="card-title">Why It Exists</span></p>
+<p>Project champions have incentives to get deals approved. Even well-intentioned analysts are subject to overconfidence bias.</p>
+<p>The committee is staffed by people who <span class="accent">did not</span> originate the project — independence is the point.</p>
+<p>It must be funded and empowered independently. A committee that lacks authority to say no adds no value.</p>
+</div>
+</div>
+</section>
+<section id="decision-bias-where-it-comes-from" class="slide level2 center">
+<h2>Decision Bias: Where It Comes From</h2>
+<div class="two-cards">
+<div class="card-blue">
+<p><span class="card-title">Incentive Bias</span></p>
+<ul>
+<li>Bonuses tied to “deals done” or cost targets</li>
+<li>Career advancement linked to project approval</li>
+<li>Champions who built the model personally invested in its conclusions</li>
+<li>Even honest people shade estimates when their job depends on the outcome</li>
+</ul>
+</div>
+<div class="card-amber">
+<p><span class="card-title">Psychological Bias</span></p>
+<ul>
+<li>Overconfidence: most people believe they are above-average drivers</li>
+<li>Self-attribution bias: success is skill, failure is bad luck</li>
+<li>The most optimistic, hardest-working managers get promoted — and become the most overconfident executives</li>
+<li>Good intentions do not overcome systematic optimism</li>
+</ul>
+</div>
+</div>
+<div class="explainer">
+<p>The three-phase process is a system of checks and balances designed specifically to <span class="accent">expose and correct</span> these biases before capital is committed.</p>
+</div>
+</section>
+<section id="building-valuation-models-with-ai" class="slide level2 section-divider center">
+<h2>Building Valuation Models with AI</h2>
+<h3 id="claude-as-your-financial-modeling-assistant">Claude as your financial modeling assistant</h3>
+</section>
+<section id="why-this-matters-for-valuation" class="slide level2 center">
+<h2>Why This Matters for Valuation</h2>
+<p>Step 2 of Phase I is “crunch the numbers.” In practice, that means building financial models in Excel — pro forma income statements, FCF schedules, NPV calculations, sensitivity tables.</p>
+<div class="two-cards">
+<div class="card-blue">
+<p><span class="card-title">The Traditional Approach</span></p>
+<ul>
+<li>Analyst spends hours building the model from scratch</li>
+<li>Formatting, formulas, and layout are all manual</li>
+<li>Sensitivity analysis requires building additional tables by hand</li>
+<li>Errors are common and hard to detect</li>
+</ul>
+</div>
+<div class="card-amber">
+<p><span class="card-title">With Claude</span></p>
+<ul>
+<li>Describe the model in plain English — Claude builds it</li>
+<li>Professional formatting, labeled inputs, linked formulas</li>
+<li>Sensitivity tables generated automatically</li>
+<li>You focus on the <span class="accent">assumptions and the story</span>, not the spreadsheet mechanics</li>
+</ul>
+</div>
+</div>
+<div class="explainer">
+<p>This does not change what a good analyst does — it changes how fast and cleanly the analytical work gets done.</p>
+</div>
+</section>
+<section id="claude-excel-two-approaches" class="slide level2 center">
+<h2>Claude + Excel: Two Approaches</h2>
+<div class="two-cards">
+<div class="card-blue">
+<p><span class="card-title">Claude Generates the File</span></p>
+<p>Ask Claude (Chat, Code, or Cowork mode) to create an <code>.xlsx</code> file from scratch.</p>
+<p>Claude uses Python to build the workbook — fonts, colors, formulas, charts, and multiple sheets — and delivers a file you open directly in Excel.</p>
+<p>Best for: building a new model from a description or template.</p>
+</div>
+<div class="card-amber">
+<p><span class="card-title">Claude Add-In for Excel</span></p>
+<p>Install the Claude add-in from the Microsoft Office Add-ins store. A chat panel appears directly inside Excel.</p>
+<p>Describe what you want — formulas, tables, charts, what-if analysis — and Claude builds it in the active sheet.</p>
+<p>Best for: iterating on an existing model, adding sensitivity tables, fixing formula errors.</p>
+</div>
+</div>
+<div class="explainer">
+<p>Both approaches produce the same result. The add-in is more interactive; the file-generation approach is better for a complete new workbook.</p>
+</div>
+</section>
+<section id="example-building-a-dcf-model" class="slide level2 center">
+<h2>Example: Building a DCF Model</h2>
+<div class="code-box">
+<div class="box-title">
+<p>What you tell Claude</p>
+</div>
+<p>I need an Excel workbook to evaluate a capital expenditure proposal. The investment is $547,000 in a materials-handling system with a 5-year life, straight-line depreciation to zero salvage value, and a 40% tax rate. Annual pre-tax benefits are $343,800. Create: (1) an Inputs sheet with clearly labeled yellow input cells, (2) a Cash Flows sheet showing NOPAT, depreciation add-back, and free cash flow for each year, (3) a Results sheet with NPV, IRR, and payback period using a 12% discount rate, and (4) a Sensitivity table showing NPV for discount rates from 8% to 20% in 2% steps and annual benefits from $240,000 to $450,000 in $30,000 steps. Use professional formatting with a dark navy header row.</p>
+</div>
+<div class="explainer">
+<p>One paragraph. No formulas, no column letters, no cell references — Claude figures out the structure. The output is a complete, working <code>.xlsx</code> file.</p>
+</div>
+</section>
+<section id="the-claude-excel-add-in" class="slide level2 center">
+<h2>The Claude Excel Add-In</h2>
+<div class="card-blue">
+<p>The Claude add-in puts a chat panel directly inside Excel. You describe what you want and Claude builds it in the active sheet — no Python, no terminal, no file downloads.</p>
+</div>
+<p><br></p>
+<div class="two-cards">
+<div class="card-amber">
+<p><span class="card-title">Installation</span></p>
+<ol type="1">
+<li>Open Excel</li>
+<li>Go to Insert → Add-ins → Get Add-ins</li>
+<li>Search for “Claude”</li>
+<li>Install the Anthropic Claude add-in</li>
+<li>Sign in with your Anthropic account</li>
+</ol>
+</div>
+<div class="card-teal">
+<p><span class="card-title">Good Uses in Valuation Work</span></p>
+<ul>
+<li>“Add a sensitivity table to this sheet for discount rates 8–16%”</li>
+<li>“Fix the IRR formula in cell B12 — it’s returning an error”</li>
+<li>“Add a chart showing NPV vs.&nbsp;discount rate”</li>
+<li>“Format this table with alternating row colors”</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="what-claude-cannot-do" class="slide level2 center">
+<h2>What Claude Cannot Do</h2>
+<div class="two-cards">
+<div class="card-blue">
+<p><span class="card-title">Still Your Job</span></p>
+<ul>
+<li>Assess whether the strategic story makes sense</li>
+<li>Judge whether the assumptions are realistic</li>
+<li>Identify the risks that matter most</li>
+<li>Decide whether to recommend the investment</li>
+</ul>
+<p>Claude builds the model. <span class="accent">You make the judgment calls.</span></p>
+</div>
+<div class="card-amber">
+<p><span class="card-title">Watch Out For</span></p>
+<ul>
+<li>Plausible-looking formulas that are wrong</li>
+<li>Sensitivity ranges that don’t match your actual uncertainty</li>
+<li>Models that are technically correct but built on assumptions Claude invented</li>
+</ul>
+<p>Always <span class="amber">verify the outputs</span> — check that NPV matches what you’d calculate by hand for a simple case before trusting the full model.</p>
+</div>
+</div>
+<div class="explainer">
+<p>The Phase II review process applies to AI-generated models just as it does to analyst-built models. Garbage in, garbage out — regardless of who built the spreadsheet.</p>
+</div>
+</section>
+<section id="breakout-1" class="slide level2 section-divider center">
+<h2>Breakout</h2>
+<h3 id="build-a-valuation-model-with-claude">Build a Valuation Model with Claude</h3>
+</section>
+<section id="cp3-pharmaceuticals-build-the-model" class="slide level2 center">
+<h2>CP3 Pharmaceuticals: Build the Model</h2>
+<div class="card-blue">
+<p>CP3 Pharmaceuticals is evaluating a <strong>$547,000</strong> materials-handling system. Annual pre-tax benefits: $300,000 in scrap revenue + $35,000 labor savings + $8,800 recycling savings = <strong>$343,800</strong>. Depreciation: straight-line over 5 years, zero salvage. Tax rate: 40%.</p>
+<p>The strategic planning committee wants to see a sensitivity analysis before approving.</p>
+</div>
+<div class="info-box">
+<p><span class="box-title">In your group (15 minutes)</span></p>
+<ol type="1">
+<li><p>Use Claude (chat or add-in) to build an Excel model with: an Inputs sheet, a Cash Flows sheet, a Results sheet (NPV, IRR, payback), and a sensitivity table (discount rate 8–20% × annual benefits ±30%)</p></li>
+<li><p>At what discount rate does the project turn NPV-negative?</p></li>
+<li><p>If benefits come in 20% below projection, is the project still attractive at a 12% discount rate?</p></li>
+<li><p>The committee suspects optimism bias. What adjustment to the discount rate or cash flows would you make as a skeptical reviewer, and does the recommendation change?</p></li>
+</ol>
+</div>
+</section>
+<section id="summary" class="slide level2 section-divider center">
+<h2>Summary</h2>
+</section>
+<section id="key-takeaways" class="slide level2 center">
+<h2>Key Takeaways</h2>
+<div class="three-cards">
+<div class="card-blue">
+<p><span class="card-title">Valuation is the Foundation</span></p>
+<ul>
+<li>Both project and enterprise decisions require the same core framework</li>
+<li>Value = present value of expected cash flows minus cost</li>
+<li>Over half of large investments fail — disciplined process improves the odds</li>
+</ul>
+</div>
+<div class="card-amber">
+<p><span class="card-title">Five Issues Every Time</span></p>
+<ul>
+<li>Story, risks, financing, earnings, flexibility</li>
+<li>The qualitative assessment must be consistent with the financial model</li>
+<li>A compelling story with a negative NPV is still a bad investment</li>
+</ul>
+</div>
+<div class="card-teal">
+<p><span class="card-title">Process Combats Bias</span></p>
+<ul>
+<li>Three phases, eight steps</li>
+<li>Phase II independence is critical — the committee must be empowered to say no</li>
+<li>AI tools speed up Step 2 (crunch the numbers) but do not replace judgment</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="coming-up-chapter-2" class="slide level2 center">
+<h2>Coming Up: Chapter 2</h2>
+<div class="two-cards">
+<div class="card-blue">
+<p><span class="card-title">Forecasting and Valuing Cash Flows</span></p>
+<ul>
+<li>Defining free cash flow (FCF)</li>
+<li>Incremental cash flows — what counts and what doesn’t</li>
+<li>Sunk costs, cannibalization, working capital</li>
+<li>Building pro forma cash flow statements</li>
+</ul>
+</div>
+<div class="card-amber">
+<p><span class="card-title">NPV and IRR</span></p>
+<ul>
+<li>Discounting FCF to estimate project value</li>
+<li>Net present value and internal rate of return</li>
+<li>Mutually exclusive projects</li>
+<li>Mini-cases: Meridian Pharma, Ridgeway Furniture, NovaBrew</li>
+</ul>
+</div>
+</div>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1920,
+
+        height: 1080,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 5.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

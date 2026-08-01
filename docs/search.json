@@ -1,0 +1,219 @@
+[
+  {
+    "objectID": "slides/01_overview-of-valuation.html#todays-session",
+    "href": "slides/01_overview-of-valuation.html#todays-session",
+    "title": "1. Overview of Valuation",
+    "section": "Today’s Session",
+    "text": "Today’s Session\n\n\nWhy Valuation Matters\n\nProject vs. enterprise valuation\nValue creation and NPV\nWhy big investments fail\n\n\n\nFive Key Issues\n\nDoes the story make sense?\nRisks, financing, earnings\nFlexibility and follow-on options\n\n\n\nProcess, Bias, and AI Tools\n\nThree-phase evaluation process\nDecision bias and checks\nBuilding valuation models with Claude"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#why-valuation-matters",
+    "href": "slides/01_overview-of-valuation.html#why-valuation-matters",
+    "title": "1. Overview of Valuation",
+    "section": "Why Valuation Matters",
+    "text": "Why Valuation Matters"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#the-fundamental-question",
+    "href": "slides/01_overview-of-valuation.html#the-fundamental-question",
+    "title": "1. Overview of Valuation",
+    "section": "The Fundamental Question",
+    "text": "The Fundamental Question\n\n\nProject Valuation\nA firm assembles assets to create productive capacity.\n\nNew plant, equipment, product line\nTechnology investment\nEntering a new market\n\nThe question: is the value of the future cash flows worth more than the cost of building?\n\n\nEnterprise Valuation\nA firm acquires an existing business.\n\nMergers and acquisitions\nBuyouts, divestitures\nStrategic partnerships\n\nThe question: is the target worth more than what we pay — including any synergies?\n\n\n\nThe tools and principles are the same in both cases. This course covers both."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#value-creation",
+    "href": "slides/01_overview-of-valuation.html#value-creation",
+    "title": "1. Overview of Valuation",
+    "section": "Value Creation",
+    "text": "Value Creation\n\nA firm has the opportunity to invest $100 million in a project that generates cash flows valued at $150 million.\n\nValue created = $150M − $100M = $50 million\nIn finance jargon: the project has a net present value (NPV) of $50 million\nThe investment makes the firm’s shareholders $50 million wealthier\n\n\n\n\nThe entire valuation enterprise is aimed at answering one question accurately: Is the present value of expected future cash flows greater than the cost of the investment?"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#why-do-big-investments-fail",
+    "href": "slides/01_overview-of-valuation.html#why-do-big-investments-fail",
+    "title": "1. Overview of Valuation",
+    "section": "Why Do Big Investments Fail?",
+    "text": "Why Do Big Investments Fail?\n\n\nThe Record\n\nOver half of all large investment projects fail to achieve hoped-for results\nDaimler-Benz acquired Chrysler for $35B in 1998 — sold for $7.4B in 2007, then bankruptcy\nM&A value destruction is the rule, not the exception\n\n\n\nThe Causes\n\nRisky projects sometimes just fail — that is expected\nBut many failures stem from flawed analysis, not just bad luck\nComplexity and uncertainty push managers toward gut instinct\nAnalytical tools + disciplined process improve the odds\n\n\n\n\nGood intuition matters. But intuition plus rigorous analysis beats intuition alone, especially on large irreversible commitments."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#five-key-issues",
+    "href": "slides/01_overview-of-valuation.html#five-key-issues",
+    "title": "1. Overview of Valuation",
+    "section": "Five Key Issues",
+    "text": "Five Key Issues\nEvery major investment decision involves these five questions"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#the-five-issues",
+    "href": "slides/01_overview-of-valuation.html#the-five-issues",
+    "title": "1. Overview of Valuation",
+    "section": "The Five Issues",
+    "text": "The Five Issues\n\n\n\n\n\n\n\n\n\n#\nIssue\nThe Core Question\n\n\n\n\n1\nDoes the story make sense?\nDoes the firm have a real competitive advantage here?\n\n\n2\nWhat are the risks?\nWhat could go wrong, and how bad could it get?\n\n\n3\nHow can it be financed?\nWhat financing is available, and does it add or destroy value?\n\n\n4\nEffect on near-term earnings?\nWill this dilute EPS in the short run, and does that matter?\n\n\n5\nInherent flexibilities?\nCan it be staged? Are there valuable follow-on options?\n\n\n\n\n\nThese issues frame the qualitative assessment that must accompany — and often drive — the financial model."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#issue-1-does-the-story-make-sense",
+    "href": "slides/01_overview-of-valuation.html#issue-1-does-the-story-make-sense",
+    "title": "1. Overview of Valuation",
+    "section": "Issue 1: Does the Story Make Sense?",
+    "text": "Issue 1: Does the Story Make Sense?\n\n\nCompetitive Advantage\nDoes the firm have an edge — specialized knowledge, technology, relationships, or scale — that others cannot easily replicate?\n\nIf the answer is no, competition will erode returns\nA positive NPV that any competitor can also earn is not a durable positive NPV\n\n\n\nComparative Advantage\nIs this firm better positioned to capture the opportunity than rivals?\n\nWhat capabilities does the firm bring that others lack?\nAre those advantages sufficient to deter competitors from making similar investments?\n\n\n\n\nThe story must be specific and honest. Vague claims like “we are well-positioned in a growing market” do not constitute a competitive advantage."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#issue-2-what-are-the-risks",
+    "href": "slides/01_overview-of-valuation.html#issue-2-what-are-the-risks",
+    "title": "1. Overview of Valuation",
+    "section": "Issue 2: What Are the Risks?",
+    "text": "Issue 2: What Are the Risks?\n\nA careful assessment of what might go wrong is often more valuable than a projection of what might go right.\n\n\n\n\nRisk Identification\n\nMarket and demand risk\nTechnology and execution risk\nRegulatory and political risk\nCounterparty and financing risk\nCompetitive response\n\n\n\nRisk Management\n\nHow should risks be incorporated into the analysis?\nWhich risks affect the discount rate vs. the cash flow forecasts?\nAre there insurance, hedging, or contractual tools that can transfer risk?"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#issue-3-how-can-it-be-financed",
+    "href": "slides/01_overview-of-valuation.html#issue-3-how-can-it-be-financed",
+    "title": "1. Overview of Valuation",
+    "section": "Issue 3: How Can It Be Financed?",
+    "text": "Issue 3: How Can It Be Financed?\nFinancing is not just a funding question — it can be a source of value in its own right.\n\n\nInternal vs. External\n\nCan the project be funded from operating cash flows?\nOr does it require external debt or equity?\nFinancing constraints affect which projects get pursued\n\n\n\nDebt Structure\n\nOn-balance-sheet debt vs. project finance (nonrecourse)\nGovernment guarantees or credit enhancements\nSpecial-purpose entities for off-balance-sheet treatment\n\n\n\nValue Impact\n\nFavorable financing terms can materially raise NPV\nThe ability to transfer project risk through financing is itself a source of value\nFinancing constraints can kill otherwise good projects"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#issue-4-effect-on-near-term-earnings",
+    "href": "slides/01_overview-of-valuation.html#issue-4-effect-on-near-term-earnings",
+    "title": "1. Overview of Valuation",
+    "section": "Issue 4: Effect on Near-Term Earnings?",
+    "text": "Issue 4: Effect on Near-Term Earnings?\n\n\nDilutive Investments\nLarge upfront expenses + deferred cash flows = depressed EPS in early years\n\nCommon in oil, pharma, infrastructure\nCan make managers reluctant to invest even when NPV is positive\nEspecially acute when bonuses are tied to EPS\n\n\n\nAccretive Investments\nInvestment adds to EPS immediately or quickly\n\nAcquisitions that add profitable revenue\nCost-saving projects that reduce expenses in Year 1\nManagers may over-favor accretive deals even at high prices\n\n\n\n\nNeither dilutive nor accretive is inherently good or bad. What matters is NPV — but earnings effects shape managerial incentives and can distort investment decisions."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#issue-5-inherent-flexibilities",
+    "href": "slides/01_overview-of-valuation.html#issue-5-inherent-flexibilities",
+    "title": "1. Overview of Valuation",
+    "section": "Issue 5: Inherent Flexibilities?",
+    "text": "Issue 5: Inherent Flexibilities?\n\n\nStaged Investment\nCan the investment be broken into phases, with each stage contingent on the results of the prior one?\nStaging acquires the option to proceed — or walk away — as information arrives.\n\n\nFollow-On Opportunities\nDoes this investment open doors to future opportunities?\nEarly-stage investments in new markets or technologies often derive most of their value from the follow-on options they create — not the immediate cash flows.\n\n\nProduction & Marketing Synergies\nDoes the new investment share production or marketing assets with existing operations?\nShared infrastructure or distribution channels can give an acquirer or investor a real cost or revenue advantage."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#applying-the-framework-cisco-acquires-linksys-2003",
+    "href": "slides/01_overview-of-valuation.html#applying-the-framework-cisco-acquires-linksys-2003",
+    "title": "1. Overview of Valuation",
+    "section": "Applying the Framework: Cisco Acquires Linksys (2003)",
+    "text": "Applying the Framework: Cisco Acquires Linksys (2003)\nPurchase price: ~$500 million\n\n\n\n\n\n\n\n\nIssue\nCisco’s Assessment\n\n\n\n\nDoes the story make sense?\nConsumer broadband adoption making home networking a mass market; Linksys is the recognized leader. Extends Cisco’s end-to-end portfolio into high-growth segments.\n\n\nWhat are the risks?\nWireless technology risk — could a new standard render Linksys products obsolete? Mitigated by acquiring the industry leader.\n\n\nHow can it be financed?\nCisco issues common stock — avoids cash drain, aligns seller incentives with combined firm.\n\n\nEffect on near-term earnings?\nAccretive to GAAP and pro forma EPS by $0.01 in FY2004.\n\n\nInherent flexibilities?\nPlatform acquisition — entry into SOHO networking opens substantial follow-on investment opportunities. Marketing synergies with existing small-business channels."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#breakout",
+    "href": "slides/01_overview-of-valuation.html#breakout",
+    "title": "1. Overview of Valuation",
+    "section": "Breakout",
+    "text": "Breakout\nApply the Framework"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#apex-robotics-five-issues-analysis",
+    "href": "slides/01_overview-of-valuation.html#apex-robotics-five-issues-analysis",
+    "title": "1. Overview of Valuation",
+    "section": "Apex Robotics: Five Issues Analysis",
+    "text": "Apex Robotics: Five Issues Analysis\n\nApex Robotics is considering a $45 million investment to deploy autonomous robotic picking-and-packing systems across three warehouses. The VP of Operations projects a 22% IRR based on $8–10M in annual labor savings plus $2M in error-reduction savings.\nComplications: Apex’s products require high-SKU-variety, small-batch picking — conditions where autonomous systems have historically underperformed. The robot vendor is a startup with only two prior installations at this scale. The VP’s bonus is tied to cost-reduction targets.\n\n\nIn your group, work through all five issues (15 minutes)\n\nDoes the story make sense? What competitive advantage is Apex claiming?\nWhat are the key risks? Which could invalidate the investment thesis entirely?\nWhat financing considerations are relevant given the $45M would use 60% of Apex’s credit facility?\nIs the investment likely to be dilutive or accretive in the near term?\nCan this be staged? What follow-on options exist if it succeeds — or fails?\nThe VP built the model and has a financial stake in approval. Which phase of the evaluation process matters most here?"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#the-investment-evaluation-process",
+    "href": "slides/01_overview-of-valuation.html#the-investment-evaluation-process",
+    "title": "1. Overview of Valuation",
+    "section": "The Investment Evaluation Process",
+    "text": "The Investment Evaluation Process\nTurning complexity into disciplined decision-making"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#three-phases-eight-steps",
+    "href": "slides/01_overview-of-valuation.html#three-phases-eight-steps",
+    "title": "1. Overview of Valuation",
+    "section": "Three Phases, Eight Steps",
+    "text": "Three Phases, Eight Steps\n\n\n\n\n\n\n\n\n\nPhase\nSteps\nPurpose\n\n\n\n\nPhase I: Origination & Analysis\n1. Strategic assessment\nDoes the story hold up?\n\n\n\n2. Estimate investment value (crunch the numbers)\nBuild the financial case\n\n\n\n3. Prepare report and recommendation\nDocument assumptions\n\n\nPhase II: Managerial Review\n4. Evaluate strategic assumptions\nIndependent check on the story\n\n\n\n5. Review NPV methods and assumptions\nScrutinize the numbers\n\n\n\n6. Adjust for bias; formulate recommendation\nCalibrate for overconfidence\n\n\nPhase III: Decision & Approval\n7. Make a decision\nAccept, reject, or defer\n\n\n\n8. Seek final managerial / board approval\nCommit resources"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#phase-i-origination-and-analysis",
+    "href": "slides/01_overview-of-valuation.html#phase-i-origination-and-analysis",
+    "title": "1. Overview of Valuation",
+    "section": "Phase I: Origination and Analysis",
+    "text": "Phase I: Origination and Analysis\n\n\nStep 1: Strategic Assessment\nEvery investment has an underlying “value proposition.”\n\nInitiated by the business development group\nScreens for competitive advantage\nStops bad ideas early — before expensive analysis\n\n\n\nStep 2: Crunch the Numbers\nEstimate the investment’s value using:\n\nDiscounted cash flow (DCF) analysis\nMarket-based multiples\nReal options where relevant\nThe financial model must be consistent with the strategic story\n\n\n\nStep 3: Prepare the Report\nThe investment analysis report contains:\n\nStrategic rationale and competitive advantage assessment\nNPV estimate and key assumptions\nSupporting cash flow and cost projections\nRisk factors and sensitivities"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#phase-ii-managerial-review",
+    "href": "slides/01_overview-of-valuation.html#phase-ii-managerial-review",
+    "title": "1. Overview of Valuation",
+    "section": "Phase II: Managerial Review",
+    "text": "Phase II: Managerial Review\nThe review committee acts as a skeptical boss — its job is to ferret out bias.\n\n\nWhat the Committee Does\n\nStep 4: Independently evaluates the strategic story — does it hold up to scrutiny?\nStep 5: Reviews financial methodology and assumptions — are the projections realistic?\nStep 6: Adjusts for optimism bias — projects are routinely 50% over budget and rarely completed more than 10% under budget\n\n\n\nWhy It Exists\nProject champions have incentives to get deals approved. Even well-intentioned analysts are subject to overconfidence bias.\nThe committee is staffed by people who did not originate the project — independence is the point.\nIt must be funded and empowered independently. A committee that lacks authority to say no adds no value."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#decision-bias-where-it-comes-from",
+    "href": "slides/01_overview-of-valuation.html#decision-bias-where-it-comes-from",
+    "title": "1. Overview of Valuation",
+    "section": "Decision Bias: Where It Comes From",
+    "text": "Decision Bias: Where It Comes From\n\n\nIncentive Bias\n\nBonuses tied to “deals done” or cost targets\nCareer advancement linked to project approval\nChampions who built the model personally invested in its conclusions\nEven honest people shade estimates when their job depends on the outcome\n\n\n\nPsychological Bias\n\nOverconfidence: most people believe they are above-average drivers\nSelf-attribution bias: success is skill, failure is bad luck\nThe most optimistic, hardest-working managers get promoted — and become the most overconfident executives\nGood intentions do not overcome systematic optimism\n\n\n\n\nThe three-phase process is a system of checks and balances designed specifically to expose and correct these biases before capital is committed."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#building-valuation-models-with-ai",
+    "href": "slides/01_overview-of-valuation.html#building-valuation-models-with-ai",
+    "title": "1. Overview of Valuation",
+    "section": "Building Valuation Models with AI",
+    "text": "Building Valuation Models with AI\nClaude as your financial modeling assistant"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#why-this-matters-for-valuation",
+    "href": "slides/01_overview-of-valuation.html#why-this-matters-for-valuation",
+    "title": "1. Overview of Valuation",
+    "section": "Why This Matters for Valuation",
+    "text": "Why This Matters for Valuation\nStep 2 of Phase I is “crunch the numbers.” In practice, that means building financial models in Excel — pro forma income statements, FCF schedules, NPV calculations, sensitivity tables.\n\n\nThe Traditional Approach\n\nAnalyst spends hours building the model from scratch\nFormatting, formulas, and layout are all manual\nSensitivity analysis requires building additional tables by hand\nErrors are common and hard to detect\n\n\n\nWith Claude\n\nDescribe the model in plain English — Claude builds it\nProfessional formatting, labeled inputs, linked formulas\nSensitivity tables generated automatically\nYou focus on the assumptions and the story, not the spreadsheet mechanics\n\n\n\n\nThis does not change what a good analyst does — it changes how fast and cleanly the analytical work gets done."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#claude-excel-two-approaches",
+    "href": "slides/01_overview-of-valuation.html#claude-excel-two-approaches",
+    "title": "1. Overview of Valuation",
+    "section": "Claude + Excel: Two Approaches",
+    "text": "Claude + Excel: Two Approaches\n\n\nClaude Generates the File\nAsk Claude (Chat, Code, or Cowork mode) to create an .xlsx file from scratch.\nClaude uses Python to build the workbook — fonts, colors, formulas, charts, and multiple sheets — and delivers a file you open directly in Excel.\nBest for: building a new model from a description or template.\n\n\nClaude Add-In for Excel\nInstall the Claude add-in from the Microsoft Office Add-ins store. A chat panel appears directly inside Excel.\nDescribe what you want — formulas, tables, charts, what-if analysis — and Claude builds it in the active sheet.\nBest for: iterating on an existing model, adding sensitivity tables, fixing formula errors.\n\n\n\nBoth approaches produce the same result. The add-in is more interactive; the file-generation approach is better for a complete new workbook."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#example-building-a-dcf-model",
+    "href": "slides/01_overview-of-valuation.html#example-building-a-dcf-model",
+    "title": "1. Overview of Valuation",
+    "section": "Example: Building a DCF Model",
+    "text": "Example: Building a DCF Model\n\n\nWhat you tell Claude\n\nI need an Excel workbook to evaluate a capital expenditure proposal. The investment is $547,000 in a materials-handling system with a 5-year life, straight-line depreciation to zero salvage value, and a 40% tax rate. Annual pre-tax benefits are $343,800. Create: (1) an Inputs sheet with clearly labeled yellow input cells, (2) a Cash Flows sheet showing NOPAT, depreciation add-back, and free cash flow for each year, (3) a Results sheet with NPV, IRR, and payback period using a 12% discount rate, and (4) a Sensitivity table showing NPV for discount rates from 8% to 20% in 2% steps and annual benefits from $240,000 to $450,000 in $30,000 steps. Use professional formatting with a dark navy header row.\n\n\nOne paragraph. No formulas, no column letters, no cell references — Claude figures out the structure. The output is a complete, working .xlsx file."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#the-claude-excel-add-in",
+    "href": "slides/01_overview-of-valuation.html#the-claude-excel-add-in",
+    "title": "1. Overview of Valuation",
+    "section": "The Claude Excel Add-In",
+    "text": "The Claude Excel Add-In\n\nThe Claude add-in puts a chat panel directly inside Excel. You describe what you want and Claude builds it in the active sheet — no Python, no terminal, no file downloads.\n\n\n\n\nInstallation\n\nOpen Excel\nGo to Insert → Add-ins → Get Add-ins\nSearch for “Claude”\nInstall the Anthropic Claude add-in\nSign in with your Anthropic account\n\n\n\nGood Uses in Valuation Work\n\n“Add a sensitivity table to this sheet for discount rates 8–16%”\n“Fix the IRR formula in cell B12 — it’s returning an error”\n“Add a chart showing NPV vs. discount rate”\n“Format this table with alternating row colors”"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#what-claude-cannot-do",
+    "href": "slides/01_overview-of-valuation.html#what-claude-cannot-do",
+    "title": "1. Overview of Valuation",
+    "section": "What Claude Cannot Do",
+    "text": "What Claude Cannot Do\n\n\nStill Your Job\n\nAssess whether the strategic story makes sense\nJudge whether the assumptions are realistic\nIdentify the risks that matter most\nDecide whether to recommend the investment\n\nClaude builds the model. You make the judgment calls.\n\n\nWatch Out For\n\nPlausible-looking formulas that are wrong\nSensitivity ranges that don’t match your actual uncertainty\nModels that are technically correct but built on assumptions Claude invented\n\nAlways verify the outputs — check that NPV matches what you’d calculate by hand for a simple case before trusting the full model.\n\n\n\nThe Phase II review process applies to AI-generated models just as it does to analyst-built models. Garbage in, garbage out — regardless of who built the spreadsheet."
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#breakout-1",
+    "href": "slides/01_overview-of-valuation.html#breakout-1",
+    "title": "1. Overview of Valuation",
+    "section": "Breakout",
+    "text": "Breakout\nBuild a Valuation Model with Claude"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#cp3-pharmaceuticals-build-the-model",
+    "href": "slides/01_overview-of-valuation.html#cp3-pharmaceuticals-build-the-model",
+    "title": "1. Overview of Valuation",
+    "section": "CP3 Pharmaceuticals: Build the Model",
+    "text": "CP3 Pharmaceuticals: Build the Model\n\nCP3 Pharmaceuticals is evaluating a $547,000 materials-handling system. Annual pre-tax benefits: $300,000 in scrap revenue + $35,000 labor savings + $8,800 recycling savings = $343,800. Depreciation: straight-line over 5 years, zero salvage. Tax rate: 40%.\nThe strategic planning committee wants to see a sensitivity analysis before approving.\n\n\nIn your group (15 minutes)\n\nUse Claude (chat or add-in) to build an Excel model with: an Inputs sheet, a Cash Flows sheet, a Results sheet (NPV, IRR, payback), and a sensitivity table (discount rate 8–20% × annual benefits ±30%)\nAt what discount rate does the project turn NPV-negative?\nIf benefits come in 20% below projection, is the project still attractive at a 12% discount rate?\nThe committee suspects optimism bias. What adjustment to the discount rate or cash flows would you make as a skeptical reviewer, and does the recommendation change?"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#summary",
+    "href": "slides/01_overview-of-valuation.html#summary",
+    "title": "1. Overview of Valuation",
+    "section": "Summary",
+    "text": "Summary"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#key-takeaways",
+    "href": "slides/01_overview-of-valuation.html#key-takeaways",
+    "title": "1. Overview of Valuation",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n\nValuation is the Foundation\n\nBoth project and enterprise decisions require the same core framework\nValue = present value of expected cash flows minus cost\nOver half of large investments fail — disciplined process improves the odds\n\n\n\nFive Issues Every Time\n\nStory, risks, financing, earnings, flexibility\nThe qualitative assessment must be consistent with the financial model\nA compelling story with a negative NPV is still a bad investment\n\n\n\nProcess Combats Bias\n\nThree phases, eight steps\nPhase II independence is critical — the committee must be empowered to say no\nAI tools speed up Step 2 (crunch the numbers) but do not replace judgment"
+  },
+  {
+    "objectID": "slides/01_overview-of-valuation.html#coming-up-chapter-2",
+    "href": "slides/01_overview-of-valuation.html#coming-up-chapter-2",
+    "title": "1. Overview of Valuation",
+    "section": "Coming Up: Chapter 2",
+    "text": "Coming Up: Chapter 2\n\n\nForecasting and Valuing Cash Flows\n\nDefining free cash flow (FCF)\nIncremental cash flows — what counts and what doesn’t\nSunk costs, cannibalization, working capital\nBuilding pro forma cash flow statements\n\n\n\nNPV and IRR\n\nDiscounting FCF to estimate project value\nNet present value and internal rate of return\nMutually exclusive projects\nMini-cases: Meridian Pharma, Ridgeway Furniture, NovaBrew"
+  }
+]
