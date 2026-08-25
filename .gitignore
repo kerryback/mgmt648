@@ -1,2 +1,18 @@
 /.quarto/
 **/*.quarto_ipynb
+.playwright-mcp/
+
+# Student data and administrative files -- this repo is public.
+MGMT648.csv
+roster.png
+meeting_times.png
+
+# Another instructor's document, kept locally for reference only.
+Davids 2025 Syllabus.pdf
+
+# Instructor-only planning and scripts. scripts/companies.md names students.
+plan.md
+scripts/
+
+# Stray screenshots from deck checking.
+unit1-cards.png

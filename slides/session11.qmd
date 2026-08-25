@@ -1,0 +1,171 @@
+---
+title: "Immunization and Spot Rates"
+subtitle: "MGMT 648 &middot; Unit 11"
+author: "Kerry Back"
+date: "2026-10-10"
+---
+
+# Review
+
+## Duration
+
+$$D = \sum_{t} t \cdot \frac{CF_t / (1+y)^t}{P}$$
+
+The present-value-weighted average time to receipt, in years.
+
+For a zero-coupon bond, $D$ equals maturity. For a coupon bond, $D$ is less than
+maturity.
+
+## Modified duration and the price approximation
+
+$$D^* = \frac{D}{1+y}, \qquad \frac{\Delta P}{P} \approx -D^* \times \Delta y$$
+
+A bond with $D = 7$ and $y = 4\%$ has $D^* = 6.73$. A 100 basis point rise in
+yields gives
+
+$$\frac{\Delta P}{P} \approx -6.73 \times 0.01 = -6.73\%$$
+
+# Immunization
+
+## Definition
+
+A portfolio of bonds is immunized against a liability when two conditions hold
+at the same time:
+
+::: {.cards .cards-2}
+::: {.card}
+[Present value]{.card-title}
+
+$$PV_{\text{assets}} = PV_{\text{liability}}$$
+:::
+
+::: {.card .card-blue}
+[Duration]{.card-title}
+
+$$D_{\text{assets}} = D_{\text{liability}}$$
+:::
+:::
+
+Portfolio duration is the value-weighted average of the durations of the
+holdings.
+
+## The liability {.plain-title}
+
+| | |
+|---|---|
+| Amount due | $1,000,000 |
+| Due in | 7 years |
+| Yield curve | flat at 4% |
+| Present value | $759,918 |
+| Duration | 7.00 years |
+
+$$PV = \frac{1{,}000{,}000}{1.04^{7}} = 759{,}918$$
+
+## Two bonds are available
+
+| Bond | Maturity | Coupon | Duration |
+|---|---|---|---|
+| A | 3 years | zero | 3.00 |
+| B | 12 years | zero | 12.00 |
+
+## Solving for the weights
+
+Let $w$ be the fraction in bond A:
+
+$$3w + 12(1-w) = 7$$
+
+$$w = \frac{12 - 7}{12 - 3} = \frac{5}{9} = 0.5556$$
+
+## The immunized portfolio {.plain-title}
+
+| Bond | Weight | Amount invested | Face value at maturity |
+|---|---|---|---|
+| A | 55.56% | $422,177 | $474,891 |
+| B | 44.44% | $337,741 | $540,735 |
+| Total | 100% | $759,918 | |
+
+Present value matches the liability. Duration is
+$0.5556 \times 3 + 0.4444 \times 12 = 7.00$.
+
+# Shocks
+
+## Parallel shift: yields rise 100 bp {.plain-title}
+
+| | Value at 4% | Value at 5% |
+|---|---|---|
+| Bond A | $422,177 | $410,229 |
+| Bond B | $337,741 | $301,101 |
+| Assets | $759,918 | $711,330 |
+| Liability | $759,918 | $710,681 |
+| Surplus | $0 | $649 |
+
+## Parallel shift: yields rise 400 bp {.plain-title}
+
+| | Value at 4% | Value at 8% |
+|---|---|---|
+| Bond A | $422,177 | $376,984 |
+| Bond B | $337,741 | $214,733 |
+| Assets | $759,918 | $591,717 |
+| Liability | $759,918 | $583,490 |
+| Surplus | $0 | $8,227 |
+
+## Non-parallel shift {.plain-title}
+
+| | Rate | Value |
+|---|---|---|
+| Bond A (3 yr) | 4.50% | $416,146 |
+| Bond B (12 yr) | 5.50% | $284,416 |
+| Assets | | $700,562 |
+| Liability (7 yr) | 5.00% | $710,681 |
+| Surplus | | −$10,119 |
+
+## What the two conditions do and do not deliver
+
+::: {.cards .cards-3}
+::: {.card}
+[Holds]{.card-title}
+
+Small parallel shifts, immediately after the match is struck.
+:::
+
+::: {.card .card-blue}
+[Surplus]{.card-title}
+
+Large parallel shifts, when asset convexity exceeds the liability's.
+:::
+
+::: {.card}
+[Deficit]{.card-title}
+
+Non-parallel shifts, and the passage of time, since durations drift apart.
+:::
+:::
+
+Rebalancing is required as time passes and as rates move.
+
+## Lab — build and break one {.band-bottom}
+
+A liability of $2,500,000 due in 9 years. Flat curve at 3.8%. Available: a
+4-year zero and a 15-year zero.
+
+::: {.steps}
+1. Build the immunized portfolio in the Unit 2 workbook
+2. Revalue assets and liability at +100 bp and at +300 bp, parallel
+3. Revalue again with short rates +25 bp and long rates +200 bp
+:::
+
+::: {.note}
+Post the surplus or deficit under each of the three scenarios.
+:::
+
+## Before Unit 3
+
+Bring your company's most recent two fiscal years of financial statements, and
+the four figures below for the most recent year.
+
+::: {.steps}
+1. EBIT
+2. Effective tax rate
+3. Depreciation and amortization
+4. Capital expenditure
+:::

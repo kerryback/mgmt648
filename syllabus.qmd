@@ -1,42 +1,191 @@
+---
+toc: true
+toc-depth: 4
+toc-title: Contents
+---
 
-## MGMT 648-3: Applied Finance (HMBA)<br>Fall 2026<br><br>![](RiceBusiness-transparent-logo-sm.png){width=40%}
+:::: {style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1rem;"}
+
+## Applied Finance<br>MGMT 648-3, Fall 2026 {.unlisted}
+
+![](images/RiceBusiness-transparent-logo-sm.png){width=40%}
+
+::::
 
 
-### Instructor
 
-[Kerry Back](https://kerryback.com)<br> (<a href="mailto:kerryback@gmail.com">kerryback@gmail.com)</a><br>
+#### Instructor
+
+[Kerry Back](https://kerryback.com)<br>
+[kerryback@gmail.com](mailto:kerryback@gmail.com)<br>
 J. Howard Creekmore Professor of Finance and Professor of Economics
 
-### Meeting Schedule
 
-September
+#### Course Description
 
-- Sat, Sep 12 — 2:00 PM – 6:30 PM
-- Thu, Sep 17 — 8:30 PM – 10:00 PM
+This course develops skills for applying the core concepts of finance in real
+world settings. Building on core Finance, it provides extensive opportunity to
+implement finance theory at a practical level, using spreadsheets and AI as the
+analysis tools.
 
-October
+Two questions run through the term: whether a company should make a particular
+investment, and what a whole business is worth. Both use the same machinery, and
+the course builds it in that order — financial statements and cash flows, then
+the decision rules and simulation, then valuation of a company by discounted
+cash flow and by comparison with its peers. The last full day covers portfolio
+choice, the cost of capital, bond pricing, and interest rate risk.
 
-- Thu, Oct 1 — 8:30 PM – 10:00 PM
-- Sat, Oct 10 — 2:00 PM – 6:30 PM
-- Thu, Oct 15 — 8:30 PM – 10:00 PM
+Discount rates are supplied until Unit 9, when they are estimated.
 
-### Course Description
+Upon completion you should have a deeper understanding of capital budgeting,
+financial statement forecasting, firm valuation, and pricing, and be able to
+build both simple and complex financial models.
 
-TBD
 
-### Learning Objectives
+#### Learning Objectives
 
-1. TBD
+1. Read a set of financial statements, and explain why income is not cash.
+2. Build free cash flow for a company from its filings, two different ways, and
+   account for the difference.
+3. Analyze a capital investment in incremental terms: sales taken from an
+   existing product, savings from equipment that replaces labor, and the cost of
+   using an asset the company already owns.
+4. Apply NPV, IRR, and payback, and choose among mutually exclusive
+   alternatives — continuing, abandoning, or expanding.
+5. Simulate an investment and report a distribution of outcomes rather than a
+   single number.
+6. Value a company by discounted cash flow, and cross-check that value against
+   multiples of comparable firms.
+7. Construct a mean-variance frontier and find the global minimum variance and
+   tangency portfolios, with and without short-sale constraints.
+8. Estimate a cost of capital using the CAPM and a weighted average.
+9. Price a bond off the term structure, measure its interest rate risk with
+   duration, and immunize a liability against a change in rates.
+10. Direct an AI to build a working model, and check what it gives back.
 
-### Grading
 
-TBD
+#### Meeting Schedule
 
-### Honor Code
+Six dates. The two Saturdays run 2:00 – 6:30 PM and meet in person, as four
+one-hour units with ten minutes between them. The four Thursday evenings meet on
+Zoom.
 
-The Rice University honor code applies to all work in this course.
+| Unit | Date | Time | Where | Topic |
+|:--|:--|:--|:--|:-----|
+| 1 | Thu, Aug 27 | 8:30–10:00 PM | Zoom | AI and Spreadsheets |
+| 2 | Sat, Sep 12 | 2:00–3:00 PM | In person | From Statements to Free Cash Flow |
+| 3 | Sat, Sep 12 | 3:10–4:10 PM | In person | Project Cash Flows |
+| 4 | Sat, Sep 12 | 4:20–5:20 PM | In person | Decision Rules and Alternatives |
+| 5 | Sat, Sep 12 | 5:30–6:30 PM | In person | Simulation |
+| 6 | Thu, Sep 17 | 8:30–10:00 PM | Zoom | From Project to Company |
+| 7 | Thu, Oct 1 | 8:30–10:00 PM | Zoom | Relative Valuation |
+| 8 | Sat, Oct 10 | 2:00–3:00 PM | In person | Mean-Variance Optimization |
+| 9 | Sat, Oct 10 | 3:10–4:10 PM | In person | Cost of Capital |
+| 10 | Sat, Oct 10 | 4:20–5:20 PM | In person | Bond Pricing and Duration |
+| 11 | Sat, Oct 10 | 5:30–6:30 PM | In person | Immunization and Spot Rates |
+| 12 | Thu, Oct 15 | 8:30–10:00 PM | Zoom | Final Presentations |
 
-### Disability Accommodations
+The Saturdays are working sessions. Bring a laptop.
+
+
+#### Your Company
+
+Each of you is assigned one company at the start of the term and keeps it
+throughout. Free cash flow, beta, valuation, and multiples are all computed for
+that company.
+
+
+
+#### Materials
+
+Nothing to buy.
+
+Ivo Welch's [Corporate Finance](https://corpfin.ivo-welch.org/read/) is the
+reading, free by the chapter from the author's site.
+
+[learn-investments.rice-business.org](https://learn-investments.rice-business.org)
+is an interactive site I maintain. We will use it in class for portfolios, the
+term structure, and duration.
+
+Company filings come from [SEC EDGAR](https://www.sec.gov/edgar). Industry data
+and spreadsheets come from [Aswath Damodaran's site](https://pages.stern.nyu.edu/~adamodar/)
+at NYU, which he updates every January.
+
+
+#### AI
+
+An AI environment is provided, running GLM 4.7 in Claude Code with access to financial data,
+spreadsheets, and code. It is used from the first session, and assumed in
+everything you prepare.
+
+Unit 1 covers working with it: prompting it to produce a spreadsheet whose cells
+contain formulas rather than pasted values, and checking its output against an
+independent calculation.
+
+
+#### Grading
+
+Nothing you do outside of class is collected or graded. All graded work happens
+in the room, live.
+
+| Component | Weight |
+|:---|---:|
+| Class participation | 40% |
+| Valuation presentation (pairs) | 30% |
+| Company flash talk | 15% |
+| Investment case decision | 10% |
+| Serving as challenger | 5% |
+
+Participation is scored every session, and on the Saturdays that includes the
+work you do at the keyboard.
+
+There are three graded presentations:
+
+- September 12, in pairs, two minutes: a recommendation on the investment case.
+- October 1, individually, two and a half minutes: whether your company is cheap
+  or expensive relative to its peers.
+- October 15, in pairs, eight minutes: a valuation of both companies.
+
+For the September 12 and October 15 presentations, another pair is assigned to
+challenge the analysis in the session. The challenge is graded separately.
+
+Grades are assigned following the JGSB elective grading policy: the class mean
+falls between 3.5 and 3.8.
+
+
+#### Preparation
+
+Every session has preparation, and none of it is graded. The pattern is the same
+each time: watch the unit video, about twelve minutes, or read its transcript;
+compute one number for your company or the case; and arrive ready to defend the number and what it means. Each session opens by
+collecting those numbers and putting the range on screen.
+
+
+#### Schedule, Slides, and other Materials
+
+The schedule above is repeated on the [course home page](index.html), where each
+unit's slides and files are posted beside it.
+
+
+#### Laptops and Phones
+
+Bring a laptop to every session. Much of the class time is spent building models
+in Excel and in the AI environment. Phones should be off.
+
+
+#### Honor Code
+
+The Rice University Honor Code applies to all work in this course. The intent of
+the Honor Code in this course is to ensure that each student claims and receives
+credit for their own efforts. The intent is not to limit the exchange of ideas
+through discussion among fellow students. If you have any doubt whether an
+activity or resource violates the Honor Code, please contact me. Suspected
+violations are submitted to the Rice University Graduate Honor Council.
+
+Use of generative AI is expected in this course.
+
+
+#### Disability Accommodations
 
 Any student with a documented disability requiring accommodations in this course is encouraged to
 contact me outside of class. All discussions will remain confidential. Any adjustments or accommodations

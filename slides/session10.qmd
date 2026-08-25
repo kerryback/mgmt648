@@ -1,0 +1,104 @@
+---
+title: "Bond Pricing and Duration"
+subtitle: "MGMT 648 &middot; Unit 10"
+author: "Kerry Back"
+date: "2026-10-10"
+---
+# The price of money
+
+## A bond is a promise with a date on it
+
+::: {.cards .cards-3}
+::: {.card}
+[Coupon]{.card-title}
+
+Fixed cash on fixed dates. Contractual, not discretionary.
+:::
+
+::: {.card .card-blue}
+[Principal]{.card-title}
+
+Face value, repaid at maturity.
+:::
+
+::: {.card}
+[Yield]{.card-title}
+
+Not a promise. The rate that makes today's price equal the discounted promises.
+:::
+:::
+
+## One rate is not enough
+
+$$P = \sum_{t=1}^{T} \frac{C}{(1+r_t)^t} + \frac{F}{(1+r_T)^T}$$
+
+Each cash flow is discounted at the rate for its own maturity. The set of rates
+$r_1, \ldots, r_T$ is the term structure.
+
+## Lab 1 — price one off the curve {.band-bottom}
+
+Spot rates for maturities 1 through 10 are on the handout.
+
+::: {.steps}
+1. Lay out the ten cash flows of a 10-year 4% annual coupon bond
+2. Discount each at the spot rate for its own maturity, and sum
+3. Find the single yield that produces the same price
+:::
+
+::: {.note}
+Report the price and that yield.
+:::
+
+# When rates move
+
+## Interest rate risk
+
+A bond's price falls when yields rise. The size of the fall depends on the
+timing of the cash flows, not on maturity alone.
+
+A 10-year 8% coupon bond returns cash earlier than a 10-year zero, and its price
+moves less for the same change in yield.
+
+## Duration {.plain-title}
+
+$$D = \frac{\sum_t t \cdot w_t}{\sum_t w_t}, \qquad w_t = \frac{CF_t}{(1+y)^t}$$
+
+The average date on which you get your money, weighted by present value.
+
+$$\frac{\Delta P}{P} \approx -\frac{D}{1+y} \times \Delta y$$
+
+## Lab 2 — predict, then check {.band-bottom}
+
+::: {.steps}
+1. Compute the bond's duration from the same spreadsheet
+2. Predict the price change for a 100 bp rise, using $-D^* \times \Delta y$
+3. Reprice at the higher yields and compare
+:::
+
+::: {.note}
+Post two numbers: the predicted price change and the actual one.
+:::
+
+## Accuracy of the approximation
+
+The formula is a first-order approximation: it uses the slope of the price-yield
+relation at the current yield.
+
+The price-yield relation is convex, so the actual price exceeds the linear
+estimate for both increases and decreases in yield. The error grows with the
+size of the yield change.
+
+# Before September 12
+
+## What to bring
+
+::: {.steps}
+1. The video on immunization, about twelve minutes
+2. Your bond's duration, and the duration of the liability in the handout
+3. A laptop with Excel, and the Unit 2 workbook downloaded
+:::
+
+::: {.note}
+Unit 2, Saturday at 2:00, is immunization: matching a bond portfolio to a
+liability.
+:::

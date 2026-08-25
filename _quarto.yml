@@ -2,14 +2,63 @@ project:
   type: website
   output-dir: docs
   render:
+    - index.qmd
     - syllabus.qmd
-    - slides.qmd
-    - html/*.qmd
+    # Decks are added here one at a time, as each is ready -- deliberately not
+    # globbed as slides/*.qmd, which would publish every unwritten starter deck
+    # in the folder. Uncomment a line when that session's deck is finished; it
+    # renders into docs/slides/ as reveal.js (see slides/_metadata.yml).
+    #
+    # Numbering is by topic unit, not by class meeting. The two in-person
+    # Saturdays each hold four units, so twelve decks cover eight meetings.
+    # - slides/session01.qmd
+    - slides/session02.qmd
+    # - slides/session03.qmd
+    # - slides/session04.qmd
+    # - slides/session05.qmd
+    # - slides/session06.qmd
+    # - slides/session07.qmd
+    # - slides/session08.qmd
+    # - slides/session09.qmd
+    - slides/session10.qmd
+    - slides/session11.qmd
+    # - slides/session12.qmd
+    # The previous version of this course lives under archive/ and is not part
+    # of the site. Excluded explicitly as well as omitted above, so a stray
+    # glob added later cannot pull it back in.
+    - "!archive/"
+
   resources:
     - CNAME
-    - pdf/*.pdf
-    - index.html
+    - .nojekyll
     - under-construction.html
+    - images/RiceBusiness-transparent-logo-sm.png
+    - images/headshot-keeper-cropped2.png
+    # Session material, linked from the schedule rows in index.qmd.
+    #
+    # The decks themselves are rendered, not copied, so they are not listed
+    # here -- slides/*.qmd is in the render list above.
+    #
+    # These PDFs are produced by decktape (see .claude/commands/deck.md), which
+    # writes pdf/<stem>.pdf and mirrors it into docs/pdf/. Listing them here is
+    # what stops a later full render from dropping that mirrored copy. A file
+    # that does not exist yet is skipped with a warning, so the whole term can
+    # be listed up front.
+    - pdf/session01.pdf
+    - pdf/session02.pdf
+    - pdf/session03.pdf
+    - pdf/session04.pdf
+    - pdf/session05.pdf
+    - pdf/session06.pdf
+    - pdf/session07.pdf
+    - pdf/session08.pdf
+    - pdf/session09.pdf
+    - pdf/session10.pdf
+    - pdf/session11.pdf
+    - pdf/session12.pdf
+    # Staging folders files/session01..12 are deliberately not published; only
+    # the zip handed to the class is.
+    - files/*.zip
 
 website:
   title: ""
@@ -17,13 +66,7 @@ website:
   navbar:
     search: false
     title: MGMT 648
-    left:
-      - href: index.html
-        text: Home
-      - href: syllabus.qmd
-        text: Syllabus
-      - href: slides.qmd
-        text: Slides
+    href: index.html
 
 format:
   html:
