@@ -108,9 +108,10 @@ reference — "Company 10-K, FY2025, page 45, revenue note."
 | [Blue text]{style="color:#0000FF"} | Hardcoded inputs — the cells a reader is meant to change |
 | [Black text]{style="color:#000000"} | Every formula and calculation |
 | [Green text]{style="color:#008000"} | Links to another sheet in the same workbook |
-| Currency | `$#,##0`, with units in the header: Revenue ($mm) |
-| Percentages | One decimal. Valuation multiples as `0.0x` |
-| Negatives | Parentheses, (123), not −123 |
+| Currency | Dollar sign, commas, no decimals: \$1,234,567 |
+| Units | Stated in the header, not in every cell: Revenue (\$mm) |
+| Percentages | One decimal: 12.4%. Valuation multiples as 8.5x |
+| Negatives | In parentheses: (123), not −123 |
 
 Zero formula errors on delivery: no `#REF!`, `#DIV/0!`, `#VALUE!`, or `#NAME?`.
 

@@ -193,7 +193,7 @@
     "href": "slides/session01.html#best-practices-presentation",
     "title": "Course Overview",
     "section": "Best practices — presentation",
-    "text": "Best practices — presentation\n\n\n\n\n\n\n\nConvention\nRule\n\n\n\n\nBlue text\nHardcoded inputs — the cells a reader is meant to change\n\n\nBlack text\nEvery formula and calculation\n\n\nGreen text\nLinks to another sheet in the same workbook\n\n\nCurrency\n$#,##0, with units in the header: Revenue ($mm)\n\n\nPercentages\nOne decimal. Valuation multiples as 0.0x\n\n\nNegatives\nParentheses, (123), not −123\n\n\n\nZero formula errors on delivery: no #REF!, #DIV/0!, #VALUE!, or #NAME?."
+    "text": "Best practices — presentation\n\n\n\n\n\n\n\nConvention\nRule\n\n\n\n\nBlue text\nHardcoded inputs — the cells a reader is meant to change\n\n\nBlack text\nEvery formula and calculation\n\n\nGreen text\nLinks to another sheet in the same workbook\n\n\nCurrency\nDollar sign, commas, no decimals: $1,234,567\n\n\nUnits\nStated in the header, not in every cell: Revenue ($mm)\n\n\nPercentages\nOne decimal: 12.4%. Valuation multiples as 8.5x\n\n\nNegatives\nIn parentheses: (123), not −123\n\n\n\nZero formula errors on delivery: no #REF!, #DIV/0!, #VALUE!, or #NAME?."
   },
   {
     "objectID": "slides/session01.html#why-the-colors-matter",
