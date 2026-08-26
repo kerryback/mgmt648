@@ -3,6 +3,9 @@ title: "Cost of Capital"
 subtitle: "MGMT 648 &middot; Unit 9"
 author: "Kerry Back"
 date: "2026-10-10"
+format:
+  revealjs:
+    theme: shoji.scss
 ---
 
 ## Agenda

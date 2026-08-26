@@ -3,22 +3,24 @@
 # index.qmd and syllabus.qmd stay at the project root: a file in this folder
 # cannot opt out of the revealjs format below.
 #
-# Every deck here uses the shoji theme, so it is set once in this file and no
-# deck declares a theme of its own. Do not add `theme:` to a deck's front
-# matter -- Quarto appends a document's theme list to this one rather than
-# replacing it, so the deck would get shoji twice.
+# `theme` is deliberately NOT set here. Quarto appends a document's theme list
+# to the one it inherits rather than replacing it, so a deck on a different
+# theme would get both stylesheets. Each deck therefore declares its own theme
+# in its front matter: session01 uses shoji2.scss, the rest use shoji.scss.
 #
-# width, height and margin are load bearing for shoji: its grid is specified in
-# px against a 1050x700 canvas, and reveal's default 10% margin would scale that
-# canvas by 0.9, landing every edge on a fractional device pixel and leaving 1px
-# slivers of the wrong colour along the seams.
+# width, height and margin are load bearing: each theme's grid is specified in
+# px against a fixed canvas -- 1050x700 for shoji, 1280x720 for shoji2 -- and
+# reveal's default 10% margin would scale that canvas by 0.9, landing every edge
+# on a fractional device pixel and leaving 1px slivers of the wrong colour along
+# the seams. The values below are shoji's; a shoji2 deck overrides width and
+# height in its own front matter (scalars replace rather than append).
+#
 # Each deck's date: is the ISO class date; this renders it readably. Quarto
 # silently falls back to 1 January when it cannot parse a date, so keep them ISO.
 date-format: "ddd MMM D, YYYY"
 
 format:
   revealjs:
-    theme: shoji.scss
     width: 1050
     height: 700
     margin: 0

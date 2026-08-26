@@ -3,6 +3,9 @@ title: "Final Presentations"
 subtitle: "MGMT 648 &middot; Unit 12"
 author: "Kerry Back"
 date: "2026-10-15"
+format:
+  revealjs:
+    theme: shoji.scss
 ---
 
 ## Agenda

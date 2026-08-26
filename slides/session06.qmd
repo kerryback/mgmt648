@@ -3,6 +3,9 @@ title: "From Project to Company"
 subtitle: "MGMT 648 &middot; Unit 6"
 author: "Kerry Back"
 date: "2026-09-17"
+format:
+  revealjs:
+    theme: shoji.scss
 ---
 
 ## Agenda

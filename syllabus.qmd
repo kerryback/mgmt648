@@ -72,7 +72,7 @@ Zoom.
 
 | Unit | Date | Time | Where | Topic |
 |:--|:--|:--|:--|:-----|
-| 1 | Thu, Aug 27 | 8:30–10:00 PM | Zoom | AI and Spreadsheets |
+| 1 | Thu, Aug 27 | 8:30–10:00 PM | Zoom | Course Overview |
 | 2 | Sat, Sep 12 | 2:00–3:00 PM | In person | From Statements to Free Cash Flow |
 | 3 | Sat, Sep 12 | 3:10–4:10 PM | In person | Project Cash Flows |
 | 4 | Sat, Sep 12 | 4:20–5:20 PM | In person | Decision Rules and Alternatives |
@@ -118,9 +118,10 @@ An AI environment is provided, running GLM 4.7 in Claude Code with access to fin
 spreadsheets, and code. It is used from the first session, and assumed in
 everything you prepare.
 
-Unit 1 covers working with it: prompting it to produce a spreadsheet whose cells
-contain formulas rather than pasted values, and checking its output against an
-independent calculation.
+Sign in at [lab648.kerryback.com](https://lab648.kerryback.com) with your netid
+and student number. Unit 1 covers working with it: prompting it to produce a
+spreadsheet whose cells contain formulas rather than pasted values, and checking
+its output against an independent calculation.
 
 
 #### Grading

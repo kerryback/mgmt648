@@ -11,7 +11,7 @@ project:
     #
     # Numbering is by topic unit, not by class meeting. The two in-person
     # Saturdays each hold four units, so twelve decks cover eight meetings.
-    # - slides/session01.qmd
+    - slides/session01.qmd
     - slides/session02.qmd
     # - slides/session03.qmd
     # - slides/session04.qmd

@@ -1,23 +1,599 @@
 ---
-title: "AI and Spreadsheets"
+title: "Course Overview"
 subtitle: "MGMT 648 &middot; Unit 1"
 author: "Kerry Back"
 date: "2026-08-27"
+format:
+  revealjs:
+    theme: shoji2.scss
+    width: 1280
+    height: 720
+    max-scale: 5
 ---
 
-## Agenda
+## Course topics
 
-- First thing
-- Second thing
-- Third thing
 
-# Section
+::: {.cards .cards-4}
+::: {.card}
+[Capital budgeting]{.card-title}
 
-## A slide {.plain-title}
-
-::: {.lead}
-One sentence setting up the slide.
+Free cash flow, NPV, IRR, incremental cash flows, multiple alternatives, real options, and
+simulation. Sept 12
 :::
 
-- A short bullet
-- Another one
+::: {.card}
+[Company valuation]{.card-title}
+
+Two-stage DCF model (Sept 17) and multiples of comparables (Oct 1)
+:::
+
+::: {.card}
+[Rates and portfolios]{.card-title}
+
+Mean-variance optimization, the cost of capital, bond pricing and duration,
+immunization. Oct 10
+:::
+::: {.card .card-blue}
+[Wrap-Up]{.card-title}
+
+Live in-class Q&A exam.  Oct 15
+:::
+:::
+
+## Tools {.band-bottom}
+
+::: {.cards .cards-2}
+::: {.card}
+[Excel]{.card-title}
+
+Still the right tool for a tabular model that adds and subtracts, and the one
+your colleagues can open, change, and argue with.
+
+:::
+
+::: {.card .card-blue}
+[AI]{.card-title}
+
+Everything else: fetching filings, estimating a beta, optimizing a portfolio,
+running ten thousand simulations.
+It also builds the workbook.
+:::
+:::
+
+## Course materials {.plain-title}
+
+Everything is posted at [mgmt648.kerryback.com](https://mgmt648.kerryback.com).
+
+::: {.cards .cards-3}
+::: {.card}
+[Schedule]{.card-title}
+
+The home page. Slides and files distributed here.
+:::
+
+::: {.card .card-blue}
+[Syllabus]{.card-title}
+
+Grading, meeting times, and what to prepare. Nothing outside class is collected.
+:::
+
+::: {.card}
+[Free readings]{.card-title}
+
+Welch's *Corporate Finance*, Damodaran's spreadsheets, SEC EDGAR, and the
+learn-investments site. Nothing to buy.
+:::
+:::
+
+# Excel
+
+## What makes a workbook worth handing over
+
+::: {.cards .cards-2}
+::: {.card}
+[A table]{.card-title}
+
+Numbers computed somewhere else and pasted in. Change an assumption and it is
+quietly wrong — and nobody can challenge it, because there is nothing to change.
+:::
+
+::: {.card .card-blue}
+[A model]{.card-title}
+
+Inputs in labeled cells, formulas that are real formulas. Change the rate and
+the sheet recalculates.
+:::
+:::
+
+::: {.note .note-plum}
+Every graded number this term comes out of a model. A table cannot be defended,
+because a challenger has nothing to push on.
+:::
+
+## Best practices — structure {.band-bottom}
+
+::: {.steps}
+1. Every assumption gets its own labeled cell, in one block at the top
+2. Formulas reference those cells, never a number typed inside the formula
+3. The same formula runs across every period of a projection
+4. Every hardcoded number carries its source beside it
+:::
+
+::: {.note}
+Write `=B5*(1+$B$6)`, not `=B5*1.05`. Source format: document, date, specific
+reference — "Company 10-K, FY2025, page 45, revenue note."
+:::
+
+## Best practices — presentation {.plain-title}
+
+| Convention | Rule |
+|---|---|
+| [Blue text]{style="color:#0000FF"} | Hardcoded inputs — the cells a reader is meant to change |
+| [Black text]{style="color:#000000"} | Every formula and calculation |
+| [Green text]{style="color:#008000"} | Links to another sheet in the same workbook |
+| Currency | `$#,##0`, with units in the header: Revenue ($mm) |
+| Percentages | One decimal. Valuation multiples as `0.0x` |
+| Negatives | Parentheses, (123), not −123 |
+
+Zero formula errors on delivery: no `#REF!`, `#DIV/0!`, `#VALUE!`, or `#NAME?`.
+
+## Why the colors matter
+
+::: {.lead}
+The color convention is not decoration. It is how a reader knows, at a glance,
+what they are allowed to change.
+:::
+
+::: {.cards .cards-2}
+::: {.card}
+[For your reader]{.card-title}
+
+Blue says "this is an assumption, argue with it." Black says "this follows from
+the assumptions, do not touch it."
+:::
+
+::: {.card .card-blue}
+[For you]{.card-title}
+
+A black cell that should have been blue is a number buried inside a formula, and
+that is the most common way a model goes quietly wrong.
+:::
+:::
+
+# AI
+
+## The lab {.band-bottom}
+
+::: {.steps}
+1. Go to [lab648.kerryback.com](https://lab648.kerryback.com)
+2. Username is your netid
+3. Password is your student number, `S0...`
+:::
+
+::: {.note}
+A Linux container on a cloud server, billed to the school. Security on it is
+minimal — keep nothing personal there.
+:::
+
+## What is running there {.plain-title}
+
+::: {.cards .cards-3}
+::: {.card}
+[The harness]{.card-title}
+
+Claude Code, connected to GLM 4.7 — a capable and relatively inexpensive model
+from Z.ai.
+:::
+
+::: {.card .card-blue}
+[The software]{.card-title}
+
+Python and its scientific libraries, plus skills for financial data,
+spreadsheets, and slides.
+:::
+
+::: {.card}
+[The screen]{.card-title}
+
+File browser and terminal on the left; the prompt window at the foot of the
+right-hand panel.
+:::
+:::
+
+## Three things that will trip you up
+
+::: {.cards .cards-3}
+::: {.card}
+[Refresh]{.card-title}
+
+The file browser does not notice a new file on its own. Use the refresh button
+above it.
+:::
+
+::: {.card .card-blue}
+[No Excel in the lab]{.card-title}
+
+Office is not installed. Double-clicking a workbook there does nothing.
+:::
+
+::: {.card}
+[Download to open]{.card-title}
+
+Workbooks come down to your laptop through the three-dots menu, and open in your
+own Excel.
+:::
+:::
+
+# AI and coding
+
+## The model only writes text {.plain-title}
+
+::: {.lead}
+The model cannot open a file, run a calculation, or fetch a filing. It reads
+text and writes text. That is the entire capability.
+:::
+
+What makes it useful is the harness around it. The model emits a request to use
+a tool; the harness runs the tool and reports the result back.
+
+::: {.note .note-plum}
+The model never runs any of it.
+:::
+
+## The loop {.band-bottom}
+
+::: {.steps}
+1. The harness sends the prompt, the conversation, and the list of tools
+2. The model answers: use tool X, with these arguments
+3. The harness runs X and reports the result back
+4. The model decides what comes next — another tool, or an answer for you
+:::
+
+::: {.note}
+On the lab, GLM writes a Python file, runs it at the terminal, reads the output,
+and revises. Four tool calls before you see anything.
+:::
+
+## What that produces
+
+::: {.cards .cards-3}
+::: {.card}
+[Excel workbooks]{.card-title}
+
+Written cell by cell with `openpyxl`: inputs as numbers, formulas as formulas.
+:::
+
+::: {.card .card-blue}
+[Charts and figures]{.card-title}
+
+Any chart, any annotation, any label — specified in a sentence.
+:::
+
+::: {.card}
+[Word and PowerPoint]{.card-title}
+
+Real files with editable text, not pictures of them.
+:::
+
+::: {.card .card-blue}
+[Data analysis]{.card-title}
+
+Filings from EDGAR, prices, the yield curve, factor returns — fetched, merged,
+analyzed.
+:::
+
+::: {.card}
+[Simulation and optimization]{.card-title}
+
+Ten thousand draws of an NPV, or a frontier over twenty assets.
+:::
+
+::: {.card .card-blue}
+[Web apps]{.card-title}
+
+A page someone else can use, from a description of what it should do.
+:::
+:::
+
+## Ask for a workbook {.band-bottom}
+
+> Build an Excel workbook containing a mortgage amortization table. Put the loan
+> amount, rate, and term in labeled input cells at the top. Include a chart of
+> the amount going to interest and the amount going to principal each month.
+
+::: {.note}
+No mention of Python, and none needed. It writes the file cell by cell and hands
+you the workbook.
+:::
+
+## What comes back {.image-right .no-title}
+
+::: {.image-panel}
+![](images/amortization-inputs.png)
+:::
+
+::: {.content-panel}
+[The workbook]{.eyebrow}
+
+Inputs in labeled cells, an outputs block below them, 360 rows of schedule.
+
+The selected payment cell holds `=$B$12`, not 2,528.27.
+
+Change the rate and the whole sheet recalculates.
+:::
+
+## And the chart it asked for {.plain-title}
+
+![](images/amortization-chart.png){width=62% fig-align="center"}
+
+::: {.note}
+A chart object bound to the cells, not a picture pasted in. Change the rate and
+the crossover moves with it.
+:::
+
+## Claude inside Excel {.plain-title}
+
+::: {.lead}
+There is also a chat panel in Excel itself, from `Home → Add-ins`. It sees the
+workbook already open, so you can ask about the sheet in front of you.
+:::
+
+![](images/claude-excel-addin.png){width=56% fig-align="center"}
+
+::: {.note}
+It needs a paid Anthropic account and your own copy of Excel, so it is not the
+route this course runs on. Worth knowing it exists.
+:::
+
+# Best practices for using AI
+
+## Plan before you act
+
+Suppose it told you last month that method A beats method B. Today you ask it to
+do the task — and it reaches for B, because "A beats B" is not in *this*
+conversation and B appeared more often in training.
+
+::: {.cards .cards-2}
+::: {.card}
+[Planning pulls the knowledge in]{.card-title}
+
+*Plan how you will do this before you start.* The plan puts the relevant
+considerations into the conversation, and it answers in light of those rather
+than from base rates.
+:::
+
+::: {.card .card-blue}
+[Planning breaks the work up]{.card-title}
+
+Steps you can check one at a time. Failures stay small and local instead of
+surfacing at the end, when everything downstream is already wrong.
+:::
+:::
+
+## Confirm it understood {.band-bottom}
+
+::: {.cards .cards-2}
+::: {.card}
+[The problem]{.card-title}
+
+Ambiguity does not produce a question. It produces a confident answer to a
+question you did not ask, and you will not notice until the work is done.
+:::
+
+::: {.card .card-blue}
+[The fix]{.card-title}
+
+*Tell me what you are about to do and what you are assuming.*
+
+Correct it in one sentence. Then let it go.
+:::
+:::
+
+## Numbers need code
+
+To a next-token predictor, 47.3% is exactly as plausible as 52.1%.
+
+::: {.cards .cards-2}
+::: {.card}
+[Where it goes wrong]{.card-title}
+
+Mental arithmetic, rankings, comparisons, aggregations. The wrong number arrives
+with complete confidence.
+:::
+
+::: {.card .card-blue}
+[The fix]{.card-title}
+
+Have it write Python and actually run it. Arithmetic stops being prediction and
+becomes computation, and you can read the code afterward.
+:::
+:::
+
+## Ask it without code {.band-bottom}
+
+The workbook says the payment on $400,000 at 6.5% for 30 years is $2,528.27,
+because `PMT` ran in a cell.
+
+Ask the same question in prose and you get a number shaped like that one — close
+enough to look right, wrong enough to matter.
+
+::: {.note}
+Worth doing live: the same question twice, once in prose and once with "compute
+it with Python." Post both numbers.
+:::
+
+## What not to do {.plain-title}
+
+The 2022 prompting folklore is now useless or actively harmful.
+
+| Skip | Why |
+|---|---|
+| "Think step by step" | Reasoning models already do, in hidden tokens |
+| "Take a deep breath" | Measurably useless now |
+| "CRITICAL! NEVER EVER…" | Overtriggers, and gets worse results |
+| Stacked personas | One helps the tone; three does nothing |
+
+Say what you want, say what done looks like, say what to avoid.
+
+# Critique and validate
+
+## Never ask whether your idea is good
+
+Training on human feedback teaches that agreement earns high ratings. Ask "is
+this valuation sound?" and it will find reasons that it is.
+
+::: {.note .note-plum}
+Invert it. *What is the strongest argument that this project should be
+rejected?* Better still, name the skeptic — a board member, a lender, the
+division head whose budget this comes out of.
+:::
+
+## Set a critic on it {.band-bottom}
+
+::: {.cards .cards-2}
+::: {.card}
+[Why a second instance]{.card-title}
+
+A model defends its own output. A fresh conversation, told to attack the work
+rather than summarize it, has nothing to defend.
+:::
+
+::: {.card .card-blue}
+[What to tell it]{.card-title}
+
+*Find every factual error, logical gap, and unsupported assumption in this
+model. Do not summarize it — find flaws.*
+:::
+:::
+
+::: {.note}
+Scale the checking to what the number is worth. A cost of capital you will
+defend for six minutes deserves a second opinion.
+:::
+
+## Three ways it goes wrong
+
+Think about a human assistant, and ask where they could have gone wrong.
+
+::: {.cards .cards-3}
+::: {.card}
+[Understanding]{.card-title}
+
+They may not have understood what you wanted.
+:::
+
+::: {.card .card-blue}
+[Decisions]{.card-title}
+
+They made choices you never discussed, and made them differently than you would
+have.
+:::
+
+::: {.card}
+[Bugs]{.card-title}
+
+Their spreadsheet had a subtle error, so it did not do what they thought it did.
+:::
+:::
+
+## Three questions, every time {.plain-title}
+
+::: {.steps}
+1. *Explain to me what you did and how you did it.*
+2. *Report every way my instructions were ambiguous and you made a decision we have not discussed.*
+3. *Work one case through by hand so I can verify your number.*
+:::
+
+::: {.note}
+It is an infinitely patient colleague with no memory. You can probe far harder
+than you would with a person, and it will not be offended.
+:::
+
+## Then check the number itself {.band-bottom}
+
+::: {.steps}
+1. Does it foot? Do the parts sum to the total, and is the row count what you expected?
+2. Is one number right? Trace a single cell back to the filing by hand.
+3. Is it the right size? Say what you expect *before* you look.
+:::
+
+::: {.note}
+Afterwards, every number looks reasonable. That is why the prediction has to
+come first.
+:::
+
+## Facts are not code
+
+Citations, filing dates, regulations, and tax rates are stated exactly the same
+way whether they are real or invented. Confidence is not correlated with
+accuracy.
+
+The risk runs the wrong direction: the more obscure the item, the thinner the
+training data, and the likelier it is fabricated.
+
+::: {.note .note-plum}
+Make it search before answering, and ask for the source. Then open the source.
+:::
+
+## Keep the code that worked {.band-bottom}
+
+::: {.cards .cards-2}
+::: {.card}
+[Regenerating looks free]{.card-title}
+
+It is not. You get different choices each time — a different definition of the
+same variable — so two scripts that ought to agree quietly do not.
+:::
+
+::: {.card .card-blue}
+[And bugs come back]{.card-title}
+
+A bug you found and fixed reappears in the new version, because nothing about
+the fix was ever written down.
+:::
+:::
+
+# The course ahead
+
+## How a session works {.plain-title}
+
+::: {.cards .cards-3}
+::: {.card}
+[Before]{.card-title}
+
+Watch the unit video, about twelve minutes, and compute one number for your
+company or the case. Forty-five minutes, none of it graded.
+:::
+
+::: {.card .card-blue}
+[During]{.card-title}
+
+We collect the numbers, put the range on screen, and argue about the outliers.
+Then you build. The Saturdays are almost entirely keyboard time.
+:::
+
+::: {.card}
+[Graded]{.card-title}
+
+Participation, three live presentations, and serving as challenger. Nothing you
+do outside the room is collected.
+:::
+:::
+
+## Before September 12 {.band-bottom}
+
+::: {.steps}
+1. Sign in to the lab tonight and build the amortization workbook
+2. Watch the Unit 2 video, or read its transcript
+3. Bring your company's most recent EBIT and effective tax rate, from the filing
+:::
+
+::: {.note}
+September 12 runs 2:00 to 6:30, in person. Bring a laptop with Excel on it.
+:::
+
+## The habit {.divider}
+
+If a number matters, it came from code that ran, and you checked it against
+something computed a different way.

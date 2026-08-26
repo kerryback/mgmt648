@@ -3,6 +3,9 @@ title: "Decision Rules and Alternatives"
 subtitle: "MGMT 648 &middot; Unit 4"
 author: "Kerry Back"
 date: "2026-09-12"
+format:
+  revealjs:
+    theme: shoji.scss
 ---
 
 ## Agenda

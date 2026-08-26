@@ -3,6 +3,9 @@ title: "Immunization and Spot Rates"
 subtitle: "MGMT 648 &middot; Unit 11"
 author: "Kerry Back"
 date: "2026-10-10"
+format:
+  revealjs:
+    theme: shoji.scss
 ---
 
 # Review
