@@ -160,7 +160,7 @@ Kerry Back
 </div>
 <div class="card card-blue">
 <p><span class="card-title">Wrap-Up</span></p>
-<p>Live in-class Q&amp;A exam. Oct 15</p>
+<p>Live in-class Q&amp;A. Oct 15</p>
 </div>
 </div>
 </section>
@@ -199,22 +199,6 @@ Kerry Back
 <section id="excel" class="title-slide slide level1 center">
 <h1>Excel</h1>
 
-</section>
-<section id="what-makes-a-workbook-worth-handing-over" class="slide level2">
-<h2>What makes a workbook worth handing over</h2>
-<div class="cards cards-2">
-<div class="card">
-<p><span class="card-title">A table</span></p>
-<p>Numbers computed somewhere else and pasted in. Change an assumption and it is quietly wrong — and nobody can challenge it, because there is nothing to change.</p>
-</div>
-<div class="card card-blue">
-<p><span class="card-title">A model</span></p>
-<p>Inputs in labeled cells, formulas that are real formulas. Change the rate and the sheet recalculates.</p>
-</div>
-</div>
-<div class="note note-plum">
-<p>Every graded number this term comes out of a model. A table cannot be defended, because a challenger has nothing to push on.</p>
-</div>
 </section>
 <section id="best-practices-structure" class="slide level2 band-bottom">
 <h2>Best practices — structure</h2>
@@ -274,17 +258,13 @@ Kerry Back
 </section>
 <section id="why-the-colors-matter" class="slide level2">
 <h2>Why the colors matter</h2>
-<div class="lead">
+<div class="cards cards-2">
+<div class="card">
 <p>The color convention is not decoration. It is how a reader knows, at a glance, what they are allowed to change.</p>
 </div>
-<div class="cards cards-2">
 <div class="card">
 <p><span class="card-title">For your reader</span></p>
 <p>Blue says “this is an assumption, argue with it.” Black says “this follows from the assumptions, do not touch it.”</p>
-</div>
-<div class="card card-blue">
-<p><span class="card-title">For you</span></p>
-<p>A black cell that should have been blue is a number buried inside a formula, and that is the most common way a model goes quietly wrong.</p>
 </div>
 </div>
 </section></section>
@@ -298,7 +278,7 @@ Kerry Back
 <div class="steps">
 <ol type="1">
 <li>Go to <a href="https://lab648.kerryback.com">lab648.kerryback.com</a></li>
-<li>Username is your netid</li>
+<li>Username is your netid-648 (example: abc01-648)</li>
 <li>Password is your student number, <code>S0...</code></li>
 </ol>
 </div>
@@ -345,15 +325,12 @@ Kerry Back
 <h1>AI and coding</h1>
 
 </section>
-<section id="the-model-only-writes-text" class="slide level2 plain-title">
-<h2>The model only writes text</h2>
+<section id="the-large-language-model-llm-only-writes-text" class="slide level2 plain-title">
+<h2>The large language model (LLM) only writes text</h2>
 <div class="lead">
 <p>The model cannot open a file, run a calculation, or fetch a filing. It reads text and writes text. That is the entire capability.</p>
 </div>
 <p>What makes it useful is the harness around it. The model emits a request to use a tool; the harness runs the tool and reports the result back.</p>
-<div class="note note-plum">
-<p>The model never runs any of it.</p>
-</div>
 </section>
 <section id="the-loop" class="slide level2 band-bottom">
 <h2>The loop</h2>
@@ -374,11 +351,11 @@ Kerry Back
 <div class="cards cards-3">
 <div class="card">
 <p><span class="card-title">Excel workbooks</span></p>
-<p>Written cell by cell with <code>openpyxl</code>: inputs as numbers, formulas as formulas.</p>
+<p>Written cell by cell with Python: inputs as numbers, formulas as formulas.</p>
 </div>
 <div class="card card-blue">
 <p><span class="card-title">Charts and figures</span></p>
-<p>Any chart, any annotation, any label — specified in a sentence.</p>
+<p>Any chart style, custom annotations, labels, fonts</p>
 </div>
 <div class="card">
 <p><span class="card-title">Word and PowerPoint</span></p>
@@ -386,11 +363,11 @@ Kerry Back
 </div>
 <div class="card card-blue">
 <p><span class="card-title">Data analysis</span></p>
-<p>Filings from EDGAR, prices, the yield curve, factor returns — fetched, merged, analyzed.</p>
+<p>Data fetched, merged, filtered, aggregated — statistics and regressions</p>
 </div>
 <div class="card">
-<p><span class="card-title">Simulation and optimization</span></p>
-<p>Ten thousand draws of an NPV, or a frontier over twenty assets.</p>
+<p><span class="card-title">Advanced data analysis</span></p>
+<p>Simulations, optimizations, machine learning</p>
 </div>
 <div class="card card-blue">
 <p><span class="card-title">Web apps</span></p>
@@ -398,14 +375,12 @@ Kerry Back
 </div>
 </div>
 </section>
-<section id="ask-for-a-workbook" class="slide level2 band-bottom">
-<h2>Ask for a workbook</h2>
+<section id="example" class="slide level2 band-bottom">
+<h2>Example</h2>
+<p>Try this prompt:</p>
 <blockquote>
-<p>Build an Excel workbook containing a mortgage amortization table. Put the loan amount, rate, and term in labeled input cells at the top. Include a chart of the amount going to interest and the amount going to principal each month.</p>
+<p>Build an Excel workbook containing a mortgage amortization table. Put the loan amount, rate, and term in labeled input cells at the top. &gt; &gt; Include a chart of the amount going to interest and the amount going to principal each month.</p>
 </blockquote>
-<div class="note">
-<p>No mention of Python, and none needed. It writes the file cell by cell and hands you the workbook.</p>
-</div>
 </section>
 <section id="what-comes-back" class="slide level2 image-right no-title">
 <h2>What comes back</h2>
@@ -429,11 +404,11 @@ Kerry Back
 <section id="claude-inside-excel" class="slide level2 plain-title">
 <h2>Claude inside Excel</h2>
 <div class="lead">
-<p>There is also a chat panel in Excel itself, from <code>Home → Add-ins</code>. It sees the workbook already open, so you can ask about the sheet in front of you.</p>
+<p>There are also Claude, ChatGPT, and CoPilot plugins for Excel , from <code>Home → Add-ins</code>. The chat window sits inside the workbook.</p>
 </div>
 
 <img data-src="images/claude-excel-addin.png" class="quarto-figure quarto-figure-center r-stretch" style="width:56.0%"><div class="note">
-<p>It needs a paid Anthropic account and your own copy of Excel, so it is not the route this course runs on. Worth knowing it exists.</p>
+<p>They need paid accounts or particular types of license agreements. We will not use them.</p>
 </div>
 </section></section>
 <section>
@@ -443,7 +418,7 @@ Kerry Back
 </section>
 <section id="plan-before-you-act" class="slide level2">
 <h2>Plan before you act</h2>
-<p>Suppose it told you last month that method A beats method B. Today you ask it to do the task — and it reaches for B, because “A beats B” is not in <em>this</em> conversation and B appeared more often in training.</p>
+<p>For any complex operation, ask AI to plan first, or ask it what the best way is to do something, before it begins to work.</p>
 <div class="cards cards-2">
 <div class="card">
 <p><span class="card-title">Planning pulls the knowledge in</span></p>
@@ -455,204 +430,76 @@ Kerry Back
 </div>
 </div>
 </section>
-<section id="confirm-it-understood" class="slide level2 band-bottom">
-<h2>Confirm it understood</h2>
+<section id="misunderstandings-and-bad-assumptions" class="slide level2 band-bottom">
+<h2>Misunderstandings and bad assumptions</h2>
 <div class="cards cards-2">
 <div class="card">
 <p><span class="card-title">The problem</span></p>
-<p>Ambiguity does not produce a question. It produces a confident answer to a question you did not ask, and you will not notice until the work is done.</p>
+<p>Errors usually come from</p>
+<ul>
+<li>AI misunderstood what you wanted, or</li>
+<li>The task could be done in multiple ways, you did not specify, and AI chose the wrong path</li>
+</ul>
 </div>
 <div class="card card-blue">
-<p><span class="card-title">The fix</span></p>
-<p><em>Tell me what you are about to do and what you are assuming.</em></p>
-<p>Correct it in one sentence. Then let it go.</p>
+<p><span class="card-title">What to say:</span></p>
+<ul>
+<li>Tell me what you are about to do</li>
+<li>Tell me what you did</li>
+<li>Was there any ambiguity in my instructions? Did you make any choices we did not discuss?</li>
+</ul>
 </div>
 </div>
 </section>
 <section id="numbers-need-code" class="slide level2">
 <h2>Numbers need code</h2>
-<p>To a next-token predictor, 47.3% is exactly as plausible as 52.1%.</p>
-<div class="cards cards-2">
-<div class="card">
-<p><span class="card-title">Where it goes wrong</span></p>
-<p>Mental arithmetic, rankings, comparisons, aggregations. The wrong number arrives with complete confidence.</p>
-</div>
-<div class="card card-blue">
-<p><span class="card-title">The fix</span></p>
-<p>Have it write Python and actually run it. Arithmetic stops being prediction and becomes computation, and you can read the code afterward.</p>
-</div>
-</div>
+<ul>
+<li>AI has gotten better at arithmetic, but it is still not to be trusted at math — it is trained to predict language</li>
+<li>Always ask it to run code if you need a number</li>
+<li>It may not be good at predicting what should follow “what is 32 times 17?” but it is very good at generating code “x = 32 * 17; print(x)”</li>
+</ul>
 </section>
-<section id="ask-it-without-code" class="slide level2 band-bottom">
-<h2>Ask it without code</h2>
-<p>The workbook says the payment on $400,000 at 6.5% for 30 years is $2,528.27, because <code>PMT</code> ran in a cell.</p>
-<p>Ask the same question in prose and you get a number shaped like that one — close enough to look right, wrong enough to matter.</p>
-<div class="note">
-<p>Worth doing live: the same question twice, once in prose and once with “compute it with Python.” Post both numbers.</p>
-</div>
-</section>
-<section id="what-not-to-do" class="slide level2 plain-title">
-<h2>What not to do</h2>
-<p>The 2022 prompting folklore is now useless or actively harmful.</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Skip</th>
-<th>Why</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>“Think step by step”</td>
-<td>Reasoning models already do, in hidden tokens</td>
-</tr>
-<tr class="even">
-<td>“Take a deep breath”</td>
-<td>Measurably useless now</td>
-</tr>
-<tr class="odd">
-<td>“CRITICAL! NEVER EVER…”</td>
-<td>Overtriggers, and gets worse results</td>
-</tr>
-<tr class="even">
-<td>Stacked personas</td>
-<td>One helps the tone; three does nothing</td>
-</tr>
-</tbody>
-</table>
-<p>Say what you want, say what done looks like, say what to avoid.</p>
-</section></section>
-<section>
-<section id="critique-and-validate" class="title-slide slide level1 center">
-<h1>Critique and validate</h1>
-
-</section>
-<section id="never-ask-whether-your-idea-is-good" class="slide level2">
-<h2>Never ask whether your idea is good</h2>
+<section id="ask-why-your-idea-is-bad-not-why-it-is-good" class="slide level2">
+<h2>Ask why your idea is bad, not why it is good</h2>
 <p>Training on human feedback teaches that agreement earns high ratings. Ask “is this valuation sound?” and it will find reasons that it is.</p>
 <div class="note note-plum">
-<p>Invert it. <em>What is the strongest argument that this project should be rejected?</em> Better still, name the skeptic — a board member, a lender, the division head whose budget this comes out of.</p>
+<p>Invert it. <em>What is the strongest argument that this project should be rejected?</em></p>
 </div>
 </section>
-<section id="set-a-critic-on-it" class="slide level2 band-bottom">
-<h2>Set a critic on it</h2>
+<section id="use-independent-agents-as-critics" class="slide level2 band-bottom">
+<h2>Use independent agents as critics</h2>
 <div class="cards cards-2">
 <div class="card">
-<p><span class="card-title">Why a second instance</span></p>
-<p>A model defends its own output. A fresh conversation, told to attack the work rather than summarize it, has nothing to defend.</p>
+<p><span class="card-title">AI is not a good self-critic</span></p>
+<p>Ask AI in the same conversation to evaluate its work. It will review its own reasoning and conclude it is sound.</p>
 </div>
 <div class="card card-blue">
-<p><span class="card-title">What to tell it</span></p>
-<p><em>Find every factual error, logical gap, and unsupported assumption in this model. Do not summarize it — find flaws.</em></p>
-</div>
-</div>
-<div class="note">
-<p>Scale the checking to what the number is worth. A cost of capital you will defend for six minutes deserves a second opinion.</p>
-</div>
-</section>
-<section id="three-ways-it-goes-wrong" class="slide level2">
-<h2>Three ways it goes wrong</h2>
-<p>Think about a human assistant, and ask where they could have gone wrong.</p>
-<div class="cards cards-3">
-<div class="card">
-<p><span class="card-title">Understanding</span></p>
-<p>They may not have understood what you wanted.</p>
-</div>
-<div class="card card-blue">
-<p><span class="card-title">Decisions</span></p>
-<p>They made choices you never discussed, and made them differently than you would have.</p>
-</div>
-<div class="card">
-<p><span class="card-title">Bugs</span></p>
-<p>Their spreadsheet had a subtle error, so it did not do what they thought it did.</p>
+<p><span class="card-title">Start a new conversation or ask for a subagent</span></p>
+<p>A new conversation or a subagent will not see the prior reasoning. It will look at it “with a fresh set of eyes.”</p>
 </div>
 </div>
 </section>
-<section id="three-questions-every-time" class="slide level2 plain-title">
-<h2>Three questions, every time</h2>
-<div class="steps">
-<ol type="1">
-<li><em>Explain to me what you did and how you did it.</em></li>
-<li><em>Report every way my instructions were ambiguous and you made a decision we have not discussed.</em></li>
-<li><em>Work one case through by hand so I can verify your number.</em></li>
-</ol>
-</div>
-<div class="note">
-<p>It is an infinitely patient colleague with no memory. You can probe far harder than you would with a person, and it will not be offended.</p>
-</div>
+<section id="hallucinations" class="slide level2">
+<h2>Hallucinations</h2>
+<ul>
+<li>Hallucinations are much less frequent now than a few years ago</li>
+<li>Hallucinating code is really not an issue</li>
+<li>Ask for web search and a source for any fact</li>
+<li>The greatest risk is asking for an obscure fact that it cannot find via a web search</li>
+</ul>
 </section>
-<section id="then-check-the-number-itself" class="slide level2 band-bottom">
-<h2>Then check the number itself</h2>
-<div class="steps">
-<ol type="1">
-<li>Does it foot? Do the parts sum to the total, and is the row count what you expected?</li>
-<li>Is one number right? Trace a single cell back to the filing by hand.</li>
-<li>Is it the right size? Say what you expect <em>before</em> you look.</li>
-</ol>
-</div>
-<div class="note">
-<p>Afterwards, every number looks reasonable. That is why the prediction has to come first.</p>
-</div>
-</section>
-<section id="facts-are-not-code" class="slide level2">
-<h2>Facts are not code</h2>
-<p>Citations, filing dates, regulations, and tax rates are stated exactly the same way whether they are real or invented. Confidence is not correlated with accuracy.</p>
-<p>The risk runs the wrong direction: the more obscure the item, the thinner the training data, and the likelier it is fabricated.</p>
-<div class="note note-plum">
-<p>Make it search before answering, and ask for the source. Then open the source.</p>
-</div>
-</section>
-<section id="keep-the-code-that-worked" class="slide level2 band-bottom">
-<h2>Keep the code that worked</h2>
+<section id="verify-and-retain-code" class="slide level2 band-bottom">
+<h2>Verify and retain code</h2>
 <div class="cards cards-2">
 <div class="card">
-<p><span class="card-title">Regenerating looks free</span></p>
-<p>It is not. You get different choices each time — a different definition of the same variable — so two scripts that ought to agree quietly do not.</p>
+<p><span class="card-title">Check the outputs</span></p>
+<p>We don’t usually check AI code by reading it. We check small cases where we can verify “by hand” (using AI to help with that too).</p>
 </div>
 <div class="card card-blue">
-<p><span class="card-title">And bugs come back</span></p>
-<p>A bug you found and fixed reappears in the new version, because nothing about the fix was ever written down.</p>
+<p><span class="card-title">And keep what works</span></p>
+<p>Keep code that has been vetted. Tell AI to use it again the next time.</p>
 </div>
 </div>
-</section></section>
-<section>
-<section id="the-course-ahead" class="title-slide slide level1 center">
-<h1>The course ahead</h1>
-
-</section>
-<section id="how-a-session-works" class="slide level2 plain-title">
-<h2>How a session works</h2>
-<div class="cards cards-3">
-<div class="card">
-<p><span class="card-title">Before</span></p>
-<p>Watch the unit video, about twelve minutes, and compute one number for your company or the case. Forty-five minutes, none of it graded.</p>
-</div>
-<div class="card card-blue">
-<p><span class="card-title">During</span></p>
-<p>We collect the numbers, put the range on screen, and argue about the outliers. Then you build. The Saturdays are almost entirely keyboard time.</p>
-</div>
-<div class="card">
-<p><span class="card-title">Graded</span></p>
-<p>Participation, three live presentations, and serving as challenger. Nothing you do outside the room is collected.</p>
-</div>
-</div>
-</section>
-<section id="before-september-12" class="slide level2 band-bottom">
-<h2>Before September 12</h2>
-<div class="steps">
-<ol type="1">
-<li>Sign in to the lab tonight and build the amortization workbook</li>
-<li>Watch the Unit 2 video, or read its transcript</li>
-<li>Bring your company’s most recent EBIT and effective tax rate, from the filing</li>
-</ol>
-</div>
-<div class="note">
-<p>September 12 runs 2:00 to 6:30, in person. Bring a laptop with Excel on it.</p>
-</div>
-</section>
-<section id="the-habit" class="slide level2 divider">
-<h2>The habit</h2>
-<p>If a number matters, it came from code that ran, and you checked it against something computed a different way.</p>
 
 
 </section></section>

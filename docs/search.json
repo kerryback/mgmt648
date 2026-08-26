@@ -165,7 +165,7 @@
     "href": "slides/session01.html#course-topics",
     "title": "Course Overview",
     "section": "Course topics",
-    "text": "Course topics\n\n\nCapital budgeting\nFree cash flow, NPV, IRR, incremental cash flows, multiple alternatives, real options, and simulation. Sept 12\n\n\nCompany valuation\nTwo-stage DCF model (Sept 17) and multiples of comparables (Oct 1)\n\n\nRates and portfolios\nMean-variance optimization, the cost of capital, bond pricing and duration, immunization. Oct 10\n\n\nWrap-Up\nLive in-class Q&A exam. Oct 15"
+    "text": "Course topics\n\n\nCapital budgeting\nFree cash flow, NPV, IRR, incremental cash flows, multiple alternatives, real options, and simulation. Sept 12\n\n\nCompany valuation\nTwo-stage DCF model (Sept 17) and multiples of comparables (Oct 1)\n\n\nRates and portfolios\nMean-variance optimization, the cost of capital, bond pricing and duration, immunization. Oct 10\n\n\nWrap-Up\nLive in-class Q&A. Oct 15"
   },
   {
     "objectID": "slides/session01.html#tools",
@@ -180,13 +180,6 @@
     "title": "Course Overview",
     "section": "Course materials",
     "text": "Course materials\nEverything is posted at mgmt648.kerryback.com.\n\n\nSchedule\nThe home page. Slides and files distributed here.\n\n\nSyllabus\nGrading, meeting times, and what to prepare. Nothing outside class is collected.\n\n\nFree readings\nWelch’s Corporate Finance, Damodaran’s spreadsheets, SEC EDGAR, and the learn-investments site. Nothing to buy."
-  },
-  {
-    "objectID": "slides/session01.html#what-makes-a-workbook-worth-handing-over",
-    "href": "slides/session01.html#what-makes-a-workbook-worth-handing-over",
-    "title": "Course Overview",
-    "section": "What makes a workbook worth handing over",
-    "text": "What makes a workbook worth handing over\n\n\nA table\nNumbers computed somewhere else and pasted in. Change an assumption and it is quietly wrong — and nobody can challenge it, because there is nothing to change.\n\n\nA model\nInputs in labeled cells, formulas that are real formulas. Change the rate and the sheet recalculates.\n\n\n\nEvery graded number this term comes out of a model. A table cannot be defended, because a challenger has nothing to push on."
   },
   {
     "objectID": "slides/session01.html#best-practices-structure",
@@ -207,14 +200,14 @@
     "href": "slides/session01.html#why-the-colors-matter",
     "title": "Course Overview",
     "section": "Why the colors matter",
-    "text": "Why the colors matter\n\nThe color convention is not decoration. It is how a reader knows, at a glance, what they are allowed to change.\n\n\n\nFor your reader\nBlue says “this is an assumption, argue with it.” Black says “this follows from the assumptions, do not touch it.”\n\n\nFor you\nA black cell that should have been blue is a number buried inside a formula, and that is the most common way a model goes quietly wrong."
+    "text": "Why the colors matter\n\n\nThe color convention is not decoration. It is how a reader knows, at a glance, what they are allowed to change.\n\n\nFor your reader\nBlue says “this is an assumption, argue with it.” Black says “this follows from the assumptions, do not touch it.”"
   },
   {
     "objectID": "slides/session01.html#the-lab",
     "href": "slides/session01.html#the-lab",
     "title": "Course Overview",
     "section": "The lab",
-    "text": "The lab\n\n\nGo to lab648.kerryback.com\nUsername is your netid\nPassword is your student number, S0...\n\n\n\nA Linux container on a cloud server, billed to the school. Security on it is minimal — keep nothing personal there."
+    "text": "The lab\n\n\nGo to lab648.kerryback.com\nUsername is your netid-648 (example: abc01-648)\nPassword is your student number, S0...\n\n\n\nA Linux container on a cloud server, billed to the school. Security on it is minimal — keep nothing personal there."
   },
   {
     "objectID": "slides/session01.html#what-is-running-there",
@@ -231,11 +224,11 @@
     "text": "Three things that will trip you up\n\n\nRefresh\nThe file browser does not notice a new file on its own. Use the refresh button above it.\n\n\nNo Excel in the lab\nOffice is not installed. Double-clicking a workbook there does nothing.\n\n\nDownload to open\nWorkbooks come down to your laptop through the three-dots menu, and open in your own Excel."
   },
   {
-    "objectID": "slides/session01.html#the-model-only-writes-text",
-    "href": "slides/session01.html#the-model-only-writes-text",
+    "objectID": "slides/session01.html#the-large-language-model-llm-only-writes-text",
+    "href": "slides/session01.html#the-large-language-model-llm-only-writes-text",
     "title": "Course Overview",
-    "section": "The model only writes text",
-    "text": "The model only writes text\n\nThe model cannot open a file, run a calculation, or fetch a filing. It reads text and writes text. That is the entire capability.\n\nWhat makes it useful is the harness around it. The model emits a request to use a tool; the harness runs the tool and reports the result back.\n\nThe model never runs any of it."
+    "section": "The large language model (LLM) only writes text",
+    "text": "The large language model (LLM) only writes text\n\nThe model cannot open a file, run a calculation, or fetch a filing. It reads text and writes text. That is the entire capability.\n\nWhat makes it useful is the harness around it. The model emits a request to use a tool; the harness runs the tool and reports the result back."
   },
   {
     "objectID": "slides/session01.html#the-loop",
@@ -249,14 +242,14 @@
     "href": "slides/session01.html#what-that-produces",
     "title": "Course Overview",
     "section": "What that produces",
-    "text": "What that produces\n\n\nExcel workbooks\nWritten cell by cell with openpyxl: inputs as numbers, formulas as formulas.\n\n\nCharts and figures\nAny chart, any annotation, any label — specified in a sentence.\n\n\nWord and PowerPoint\nReal files with editable text, not pictures of them.\n\n\nData analysis\nFilings from EDGAR, prices, the yield curve, factor returns — fetched, merged, analyzed.\n\n\nSimulation and optimization\nTen thousand draws of an NPV, or a frontier over twenty assets.\n\n\nWeb apps\nA page someone else can use, from a description of what it should do."
+    "text": "What that produces\n\n\nExcel workbooks\nWritten cell by cell with Python: inputs as numbers, formulas as formulas.\n\n\nCharts and figures\nAny chart style, custom annotations, labels, fonts\n\n\nWord and PowerPoint\nReal files with editable text, not pictures of them.\n\n\nData analysis\nData fetched, merged, filtered, aggregated — statistics and regressions\n\n\nAdvanced data analysis\nSimulations, optimizations, machine learning\n\n\nWeb apps\nA page someone else can use, from a description of what it should do."
   },
   {
-    "objectID": "slides/session01.html#ask-for-a-workbook",
-    "href": "slides/session01.html#ask-for-a-workbook",
+    "objectID": "slides/session01.html#example",
+    "href": "slides/session01.html#example",
     "title": "Course Overview",
-    "section": "Ask for a workbook",
-    "text": "Ask for a workbook\n\nBuild an Excel workbook containing a mortgage amortization table. Put the loan amount, rate, and term in labeled input cells at the top. Include a chart of the amount going to interest and the amount going to principal each month.\n\n\nNo mention of Python, and none needed. It writes the file cell by cell and hands you the workbook."
+    "section": "Example",
+    "text": "Example\nTry this prompt:\n\nBuild an Excel workbook containing a mortgage amortization table. Put the loan amount, rate, and term in labeled input cells at the top. &gt; &gt; Include a chart of the amount going to interest and the amount going to principal each month."
   },
   {
     "objectID": "slides/session01.html#what-comes-back",
@@ -277,112 +270,56 @@
     "href": "slides/session01.html#claude-inside-excel",
     "title": "Course Overview",
     "section": "Claude inside Excel",
-    "text": "Claude inside Excel\n\nThere is also a chat panel in Excel itself, from Home → Add-ins. It sees the workbook already open, so you can ask about the sheet in front of you.\n\n\n\nIt needs a paid Anthropic account and your own copy of Excel, so it is not the route this course runs on. Worth knowing it exists."
+    "text": "Claude inside Excel\n\nThere are also Claude, ChatGPT, and CoPilot plugins for Excel , from Home → Add-ins. The chat window sits inside the workbook.\n\n\n\nThey need paid accounts or particular types of license agreements. We will not use them."
   },
   {
     "objectID": "slides/session01.html#plan-before-you-act",
     "href": "slides/session01.html#plan-before-you-act",
     "title": "Course Overview",
     "section": "Plan before you act",
-    "text": "Plan before you act\nSuppose it told you last month that method A beats method B. Today you ask it to do the task — and it reaches for B, because “A beats B” is not in this conversation and B appeared more often in training.\n\n\nPlanning pulls the knowledge in\nPlan how you will do this before you start. The plan puts the relevant considerations into the conversation, and it answers in light of those rather than from base rates.\n\n\nPlanning breaks the work up\nSteps you can check one at a time. Failures stay small and local instead of surfacing at the end, when everything downstream is already wrong."
+    "text": "Plan before you act\nFor any complex operation, ask AI to plan first, or ask it what the best way is to do something, before it begins to work.\n\n\nPlanning pulls the knowledge in\nPlan how you will do this before you start. The plan puts the relevant considerations into the conversation, and it answers in light of those rather than from base rates.\n\n\nPlanning breaks the work up\nSteps you can check one at a time. Failures stay small and local instead of surfacing at the end, when everything downstream is already wrong."
   },
   {
-    "objectID": "slides/session01.html#confirm-it-understood",
-    "href": "slides/session01.html#confirm-it-understood",
+    "objectID": "slides/session01.html#misunderstandings-and-bad-assumptions",
+    "href": "slides/session01.html#misunderstandings-and-bad-assumptions",
     "title": "Course Overview",
-    "section": "Confirm it understood",
-    "text": "Confirm it understood\n\n\nThe problem\nAmbiguity does not produce a question. It produces a confident answer to a question you did not ask, and you will not notice until the work is done.\n\n\nThe fix\nTell me what you are about to do and what you are assuming.\nCorrect it in one sentence. Then let it go."
+    "section": "Misunderstandings and bad assumptions",
+    "text": "Misunderstandings and bad assumptions\n\n\nThe problem\nErrors usually come from\n\nAI misunderstood what you wanted, or\nThe task could be done in multiple ways, you did not specify, and AI chose the wrong path\n\n\n\nWhat to say:\n\nTell me what you are about to do\nTell me what you did\nWas there any ambiguity in my instructions? Did you make any choices we did not discuss?"
   },
   {
     "objectID": "slides/session01.html#numbers-need-code",
     "href": "slides/session01.html#numbers-need-code",
     "title": "Course Overview",
     "section": "Numbers need code",
-    "text": "Numbers need code\nTo a next-token predictor, 47.3% is exactly as plausible as 52.1%.\n\n\nWhere it goes wrong\nMental arithmetic, rankings, comparisons, aggregations. The wrong number arrives with complete confidence.\n\n\nThe fix\nHave it write Python and actually run it. Arithmetic stops being prediction and becomes computation, and you can read the code afterward."
+    "text": "Numbers need code\n\nAI has gotten better at arithmetic, but it is still not to be trusted at math — it is trained to predict language\nAlways ask it to run code if you need a number\nIt may not be good at predicting what should follow “what is 32 times 17?” but it is very good at generating code “x = 32 * 17; print(x)”"
   },
   {
-    "objectID": "slides/session01.html#ask-it-without-code",
-    "href": "slides/session01.html#ask-it-without-code",
+    "objectID": "slides/session01.html#ask-why-your-idea-is-bad-not-why-it-is-good",
+    "href": "slides/session01.html#ask-why-your-idea-is-bad-not-why-it-is-good",
     "title": "Course Overview",
-    "section": "Ask it without code",
-    "text": "Ask it without code\nThe workbook says the payment on $400,000 at 6.5% for 30 years is $2,528.27, because PMT ran in a cell.\nAsk the same question in prose and you get a number shaped like that one — close enough to look right, wrong enough to matter.\n\nWorth doing live: the same question twice, once in prose and once with “compute it with Python.” Post both numbers."
+    "section": "Ask why your idea is bad, not why it is good",
+    "text": "Ask why your idea is bad, not why it is good\nTraining on human feedback teaches that agreement earns high ratings. Ask “is this valuation sound?” and it will find reasons that it is.\n\nInvert it. What is the strongest argument that this project should be rejected?"
   },
   {
-    "objectID": "slides/session01.html#what-not-to-do",
-    "href": "slides/session01.html#what-not-to-do",
+    "objectID": "slides/session01.html#use-independent-agents-as-critics",
+    "href": "slides/session01.html#use-independent-agents-as-critics",
     "title": "Course Overview",
-    "section": "What not to do",
-    "text": "What not to do\nThe 2022 prompting folklore is now useless or actively harmful.\n\n\n\nSkip\nWhy\n\n\n\n\n“Think step by step”\nReasoning models already do, in hidden tokens\n\n\n“Take a deep breath”\nMeasurably useless now\n\n\n“CRITICAL! NEVER EVER…”\nOvertriggers, and gets worse results\n\n\nStacked personas\nOne helps the tone; three does nothing\n\n\n\nSay what you want, say what done looks like, say what to avoid."
+    "section": "Use independent agents as critics",
+    "text": "Use independent agents as critics\n\n\nAI is not a good self-critic\nAsk AI in the same conversation to evaluate its work. It will review its own reasoning and conclude it is sound.\n\n\nStart a new conversation or ask for a subagent\nA new conversation or a subagent will not see the prior reasoning. It will look at it “with a fresh set of eyes.”"
   },
   {
-    "objectID": "slides/session01.html#never-ask-whether-your-idea-is-good",
-    "href": "slides/session01.html#never-ask-whether-your-idea-is-good",
+    "objectID": "slides/session01.html#hallucinations",
+    "href": "slides/session01.html#hallucinations",
     "title": "Course Overview",
-    "section": "Never ask whether your idea is good",
-    "text": "Never ask whether your idea is good\nTraining on human feedback teaches that agreement earns high ratings. Ask “is this valuation sound?” and it will find reasons that it is.\n\nInvert it. What is the strongest argument that this project should be rejected? Better still, name the skeptic — a board member, a lender, the division head whose budget this comes out of."
+    "section": "Hallucinations",
+    "text": "Hallucinations\n\nHallucinations are much less frequent now than a few years ago\nHallucinating code is really not an issue\nAsk for web search and a source for any fact\nThe greatest risk is asking for an obscure fact that it cannot find via a web search"
   },
   {
-    "objectID": "slides/session01.html#set-a-critic-on-it",
-    "href": "slides/session01.html#set-a-critic-on-it",
+    "objectID": "slides/session01.html#verify-and-retain-code",
+    "href": "slides/session01.html#verify-and-retain-code",
     "title": "Course Overview",
-    "section": "Set a critic on it",
-    "text": "Set a critic on it\n\n\nWhy a second instance\nA model defends its own output. A fresh conversation, told to attack the work rather than summarize it, has nothing to defend.\n\n\nWhat to tell it\nFind every factual error, logical gap, and unsupported assumption in this model. Do not summarize it — find flaws.\n\n\n\nScale the checking to what the number is worth. A cost of capital you will defend for six minutes deserves a second opinion."
-  },
-  {
-    "objectID": "slides/session01.html#three-ways-it-goes-wrong",
-    "href": "slides/session01.html#three-ways-it-goes-wrong",
-    "title": "Course Overview",
-    "section": "Three ways it goes wrong",
-    "text": "Three ways it goes wrong\nThink about a human assistant, and ask where they could have gone wrong.\n\n\nUnderstanding\nThey may not have understood what you wanted.\n\n\nDecisions\nThey made choices you never discussed, and made them differently than you would have.\n\n\nBugs\nTheir spreadsheet had a subtle error, so it did not do what they thought it did."
-  },
-  {
-    "objectID": "slides/session01.html#three-questions-every-time",
-    "href": "slides/session01.html#three-questions-every-time",
-    "title": "Course Overview",
-    "section": "Three questions, every time",
-    "text": "Three questions, every time\n\n\nExplain to me what you did and how you did it.\nReport every way my instructions were ambiguous and you made a decision we have not discussed.\nWork one case through by hand so I can verify your number.\n\n\n\nIt is an infinitely patient colleague with no memory. You can probe far harder than you would with a person, and it will not be offended."
-  },
-  {
-    "objectID": "slides/session01.html#then-check-the-number-itself",
-    "href": "slides/session01.html#then-check-the-number-itself",
-    "title": "Course Overview",
-    "section": "Then check the number itself",
-    "text": "Then check the number itself\n\n\nDoes it foot? Do the parts sum to the total, and is the row count what you expected?\nIs one number right? Trace a single cell back to the filing by hand.\nIs it the right size? Say what you expect before you look.\n\n\n\nAfterwards, every number looks reasonable. That is why the prediction has to come first."
-  },
-  {
-    "objectID": "slides/session01.html#facts-are-not-code",
-    "href": "slides/session01.html#facts-are-not-code",
-    "title": "Course Overview",
-    "section": "Facts are not code",
-    "text": "Facts are not code\nCitations, filing dates, regulations, and tax rates are stated exactly the same way whether they are real or invented. Confidence is not correlated with accuracy.\nThe risk runs the wrong direction: the more obscure the item, the thinner the training data, and the likelier it is fabricated.\n\nMake it search before answering, and ask for the source. Then open the source."
-  },
-  {
-    "objectID": "slides/session01.html#keep-the-code-that-worked",
-    "href": "slides/session01.html#keep-the-code-that-worked",
-    "title": "Course Overview",
-    "section": "Keep the code that worked",
-    "text": "Keep the code that worked\n\n\nRegenerating looks free\nIt is not. You get different choices each time — a different definition of the same variable — so two scripts that ought to agree quietly do not.\n\n\nAnd bugs come back\nA bug you found and fixed reappears in the new version, because nothing about the fix was ever written down."
-  },
-  {
-    "objectID": "slides/session01.html#how-a-session-works",
-    "href": "slides/session01.html#how-a-session-works",
-    "title": "Course Overview",
-    "section": "How a session works",
-    "text": "How a session works\n\n\nBefore\nWatch the unit video, about twelve minutes, and compute one number for your company or the case. Forty-five minutes, none of it graded.\n\n\nDuring\nWe collect the numbers, put the range on screen, and argue about the outliers. Then you build. The Saturdays are almost entirely keyboard time.\n\n\nGraded\nParticipation, three live presentations, and serving as challenger. Nothing you do outside the room is collected."
-  },
-  {
-    "objectID": "slides/session01.html#before-september-12",
-    "href": "slides/session01.html#before-september-12",
-    "title": "Course Overview",
-    "section": "Before September 12",
-    "text": "Before September 12\n\n\nSign in to the lab tonight and build the amortization workbook\nWatch the Unit 2 video, or read its transcript\nBring your company’s most recent EBIT and effective tax rate, from the filing\n\n\n\nSeptember 12 runs 2:00 to 6:30, in person. Bring a laptop with Excel on it."
-  },
-  {
-    "objectID": "slides/session01.html#the-habit",
-    "href": "slides/session01.html#the-habit",
-    "title": "Course Overview",
-    "section": "The habit",
-    "text": "The habit\nIf a number matters, it came from code that ran, and you checked it against something computed a different way."
+    "section": "Verify and retain code",
+    "text": "Verify and retain code\n\n\nCheck the outputs\nWe don’t usually check AI code by reading it. We check small cases where we can verify “by hand” (using AI to help with that too).\n\n\nAnd keep what works\nKeep code that has been vetted. Tell AI to use it again the next time."
   },
   {
     "objectID": "slides/session10.html#a-bond-is-a-promise-with-a-date-on-it",

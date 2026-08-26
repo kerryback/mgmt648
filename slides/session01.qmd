@@ -37,7 +37,7 @@ immunization. Oct 10
 ::: {.card .card-blue}
 [Wrap-Up]{.card-title}
 
-Live in-class Q&A exam.  Oct 15
+Live in-class Q&A.  Oct 15
 :::
 :::
 
@@ -88,29 +88,6 @@ learn-investments site. Nothing to buy.
 
 # Excel
 
-## What makes a workbook worth handing over
-
-::: {.cards .cards-2}
-::: {.card}
-[A table]{.card-title}
-
-Numbers computed somewhere else and pasted in. Change an assumption and it is
-quietly wrong — and nobody can challenge it, because there is nothing to change.
-:::
-
-::: {.card .card-blue}
-[A model]{.card-title}
-
-Inputs in labeled cells, formulas that are real formulas. Change the rate and
-the sheet recalculates.
-:::
-:::
-
-::: {.note .note-plum}
-Every graded number this term comes out of a model. A table cannot be defended,
-because a challenger has nothing to push on.
-:::
-
 ## Best practices — structure {.band-bottom}
 
 ::: {.steps}
@@ -140,24 +117,17 @@ Zero formula errors on delivery: no `#REF!`, `#DIV/0!`, `#VALUE!`, or `#NAME?`.
 
 ## Why the colors matter
 
-::: {.lead}
+
+::: {.cards .cards-2}
+::: {.card}
 The color convention is not decoration. It is how a reader knows, at a glance,
 what they are allowed to change.
 :::
-
-::: {.cards .cards-2}
 ::: {.card}
 [For your reader]{.card-title}
 
 Blue says "this is an assumption, argue with it." Black says "this follows from
 the assumptions, do not touch it."
-:::
-
-::: {.card .card-blue}
-[For you]{.card-title}
-
-A black cell that should have been blue is a number buried inside a formula, and
-that is the most common way a model goes quietly wrong.
 :::
 :::
 
@@ -167,7 +137,7 @@ that is the most common way a model goes quietly wrong.
 
 ::: {.steps}
 1. Go to [lab648.kerryback.com](https://lab648.kerryback.com)
-2. Username is your netid
+2. Username is your netid-648 (example: abc01-648)
 3. Password is your student number, `S0...`
 :::
 
@@ -227,7 +197,7 @@ own Excel.
 
 # AI and coding
 
-## The model only writes text {.plain-title}
+## The large language model (LLM) only writes text {.plain-title}
 
 ::: {.lead}
 The model cannot open a file, run a calculation, or fetch a filing. It reads
@@ -236,10 +206,6 @@ text and writes text. That is the entire capability.
 
 What makes it useful is the harness around it. The model emits a request to use
 a tool; the harness runs the tool and reports the result back.
-
-::: {.note .note-plum}
-The model never runs any of it.
-:::
 
 ## The loop {.band-bottom}
 
@@ -261,13 +227,13 @@ and revises. Four tool calls before you see anything.
 ::: {.card}
 [Excel workbooks]{.card-title}
 
-Written cell by cell with `openpyxl`: inputs as numbers, formulas as formulas.
+Written cell by cell with Python: inputs as numbers, formulas as formulas.
 :::
 
 ::: {.card .card-blue}
 [Charts and figures]{.card-title}
 
-Any chart, any annotation, any label — specified in a sentence.
+Any chart style, custom annotations, labels, fonts
 :::
 
 ::: {.card}
@@ -279,14 +245,13 @@ Real files with editable text, not pictures of them.
 ::: {.card .card-blue}
 [Data analysis]{.card-title}
 
-Filings from EDGAR, prices, the yield curve, factor returns — fetched, merged,
-analyzed.
+Data fetched, merged, filtered, aggregated --- statistics and regressions
 :::
 
 ::: {.card}
-[Simulation and optimization]{.card-title}
+[Advanced data analysis]{.card-title}
 
-Ten thousand draws of an NPV, or a frontier over twenty assets.
+Simulations, optimizations, machine learning
 :::
 
 ::: {.card .card-blue}
@@ -296,16 +261,13 @@ A page someone else can use, from a description of what it should do.
 :::
 :::
 
-## Ask for a workbook {.band-bottom}
+## Example {.band-bottom}
 
-> Build an Excel workbook containing a mortgage amortization table. Put the loan
-> amount, rate, and term in labeled input cells at the top. Include a chart of
-> the amount going to interest and the amount going to principal each month.
+Try this prompt:
 
-::: {.note}
-No mention of Python, and none needed. It writes the file cell by cell and hands
-you the workbook.
-:::
+> Build an Excel workbook containing a mortgage amortization table. 
+> Put the loan amount, rate, and term in labeled input cells at the top. > > Include a chart of the amount going to interest and the amount going to principal each month.
+
 
 ## What comes back {.image-right .no-title}
 
@@ -335,24 +297,20 @@ the crossover moves with it.
 ## Claude inside Excel {.plain-title}
 
 ::: {.lead}
-There is also a chat panel in Excel itself, from `Home → Add-ins`. It sees the
-workbook already open, so you can ask about the sheet in front of you.
+There are also Claude, ChatGPT, and CoPilot plugins for Excel , from `Home → Add-ins`. The chat window sits inside the workbook.  
 :::
 
 ![](images/claude-excel-addin.png){width=56% fig-align="center"}
 
 ::: {.note}
-It needs a paid Anthropic account and your own copy of Excel, so it is not the
-route this course runs on. Worth knowing it exists.
+They need paid accounts or particular types of license agreements.  We will not use them.
 :::
 
 # Best practices for using AI
 
 ## Plan before you act
 
-Suppose it told you last month that method A beats method B. Today you ask it to
-do the task — and it reaches for B, because "A beats B" is not in *this*
-conversation and B appeared more often in training.
+For any complex operation, ask AI to plan first, or ask it what the best way is to do something, before it begins to work.
 
 ::: {.cards .cards-2}
 ::: {.card}
@@ -371,229 +329,84 @@ surfacing at the end, when everything downstream is already wrong.
 :::
 :::
 
-## Confirm it understood {.band-bottom}
+## Misunderstandings and bad assumptions {.band-bottom}
+
 
 ::: {.cards .cards-2}
 ::: {.card}
 [The problem]{.card-title}
 
-Ambiguity does not produce a question. It produces a confident answer to a
-question you did not ask, and you will not notice until the work is done.
+Errors usually come from 
+
+- AI misunderstood what you wanted, or
+- The task could be done in multiple ways, you did not specify, and AI chose the wrong path
+
 :::
 
 ::: {.card .card-blue}
-[The fix]{.card-title}
+[What to say:]{.card-title}
 
-*Tell me what you are about to do and what you are assuming.*
-
-Correct it in one sentence. Then let it go.
+ - Tell me what you are about to do 
+ - Tell me what you did
+ - Was there any ambiguity in my instructions?  Did you make any choices we did not discuss?
 :::
 :::
 
 ## Numbers need code
 
-To a next-token predictor, 47.3% is exactly as plausible as 52.1%.
+- AI has gotten better at arithmetic, but it is still not to be trusted at math --- it is trained to predict language 
+- Always ask it to run code if you need a number
+- It may not be good at predicting what should follow "what is 32 times 17?" but it is very good at generating code "x = 32 * 17; print(x)"
 
-::: {.cards .cards-2}
-::: {.card}
-[Where it goes wrong]{.card-title}
 
-Mental arithmetic, rankings, comparisons, aggregations. The wrong number arrives
-with complete confidence.
-:::
-
-::: {.card .card-blue}
-[The fix]{.card-title}
-
-Have it write Python and actually run it. Arithmetic stops being prediction and
-becomes computation, and you can read the code afterward.
-:::
-:::
-
-## Ask it without code {.band-bottom}
-
-The workbook says the payment on $400,000 at 6.5% for 30 years is $2,528.27,
-because `PMT` ran in a cell.
-
-Ask the same question in prose and you get a number shaped like that one — close
-enough to look right, wrong enough to matter.
-
-::: {.note}
-Worth doing live: the same question twice, once in prose and once with "compute
-it with Python." Post both numbers.
-:::
-
-## What not to do {.plain-title}
-
-The 2022 prompting folklore is now useless or actively harmful.
-
-| Skip | Why |
-|---|---|
-| "Think step by step" | Reasoning models already do, in hidden tokens |
-| "Take a deep breath" | Measurably useless now |
-| "CRITICAL! NEVER EVER…" | Overtriggers, and gets worse results |
-| Stacked personas | One helps the tone; three does nothing |
-
-Say what you want, say what done looks like, say what to avoid.
-
-# Critique and validate
-
-## Never ask whether your idea is good
+## Ask why your idea is bad, not why it is good
 
 Training on human feedback teaches that agreement earns high ratings. Ask "is
 this valuation sound?" and it will find reasons that it is.
 
 ::: {.note .note-plum}
 Invert it. *What is the strongest argument that this project should be
-rejected?* Better still, name the skeptic — a board member, a lender, the
-division head whose budget this comes out of.
+rejected?* 
 :::
 
-## Set a critic on it {.band-bottom}
+## Use independent agents as critics {.band-bottom}
 
 ::: {.cards .cards-2}
 ::: {.card}
-[Why a second instance]{.card-title}
+[AI is not a good self-critic]{.card-title}
 
-A model defends its own output. A fresh conversation, told to attack the work
-rather than summarize it, has nothing to defend.
+Ask AI in the same conversation to evaluate its work.  It will review its own reasoning and conclude it is sound.
 :::
 
 ::: {.card .card-blue}
-[What to tell it]{.card-title}
+[Start a new conversation or ask for a subagent]{.card-title}
 
-*Find every factual error, logical gap, and unsupported assumption in this
-model. Do not summarize it — find flaws.*
+A new conversation or a subagent will not see the prior reasoning.  It will look at it "with a fresh set of eyes."
 :::
 :::
 
-::: {.note}
-Scale the checking to what the number is worth. A cost of capital you will
-defend for six minutes deserves a second opinion.
-:::
 
-## Three ways it goes wrong
+## Hallucinations
 
-Think about a human assistant, and ask where they could have gone wrong.
+- Hallucinations are much less frequent now than a few years ago
+- Hallucinating code is really not an issue
+- Ask for web search and a source for any fact
+- The greatest risk is asking for an obscure fact that it cannot find via a web search
 
-::: {.cards .cards-3}
-::: {.card}
-[Understanding]{.card-title}
 
-They may not have understood what you wanted.
-:::
-
-::: {.card .card-blue}
-[Decisions]{.card-title}
-
-They made choices you never discussed, and made them differently than you would
-have.
-:::
-
-::: {.card}
-[Bugs]{.card-title}
-
-Their spreadsheet had a subtle error, so it did not do what they thought it did.
-:::
-:::
-
-## Three questions, every time {.plain-title}
-
-::: {.steps}
-1. *Explain to me what you did and how you did it.*
-2. *Report every way my instructions were ambiguous and you made a decision we have not discussed.*
-3. *Work one case through by hand so I can verify your number.*
-:::
-
-::: {.note}
-It is an infinitely patient colleague with no memory. You can probe far harder
-than you would with a person, and it will not be offended.
-:::
-
-## Then check the number itself {.band-bottom}
-
-::: {.steps}
-1. Does it foot? Do the parts sum to the total, and is the row count what you expected?
-2. Is one number right? Trace a single cell back to the filing by hand.
-3. Is it the right size? Say what you expect *before* you look.
-:::
-
-::: {.note}
-Afterwards, every number looks reasonable. That is why the prediction has to
-come first.
-:::
-
-## Facts are not code
-
-Citations, filing dates, regulations, and tax rates are stated exactly the same
-way whether they are real or invented. Confidence is not correlated with
-accuracy.
-
-The risk runs the wrong direction: the more obscure the item, the thinner the
-training data, and the likelier it is fabricated.
-
-::: {.note .note-plum}
-Make it search before answering, and ask for the source. Then open the source.
-:::
-
-## Keep the code that worked {.band-bottom}
+## Verify and retain code {.band-bottom}
 
 ::: {.cards .cards-2}
 ::: {.card}
-[Regenerating looks free]{.card-title}
+[Check the outputs]{.card-title}
 
-It is not. You get different choices each time — a different definition of the
-same variable — so two scripts that ought to agree quietly do not.
+We don't usually check AI code by reading it.  We check small cases where we can verify "by hand" (using AI to help with that too).
 :::
 
 ::: {.card .card-blue}
-[And bugs come back]{.card-title}
+[And keep what works]{.card-title}
 
-A bug you found and fixed reappears in the new version, because nothing about
-the fix was ever written down.
+Keep code that has been vetted.  Tell AI to use it again the next time.
 :::
 :::
 
-# The course ahead
-
-## How a session works {.plain-title}
-
-::: {.cards .cards-3}
-::: {.card}
-[Before]{.card-title}
-
-Watch the unit video, about twelve minutes, and compute one number for your
-company or the case. Forty-five minutes, none of it graded.
-:::
-
-::: {.card .card-blue}
-[During]{.card-title}
-
-We collect the numbers, put the range on screen, and argue about the outliers.
-Then you build. The Saturdays are almost entirely keyboard time.
-:::
-
-::: {.card}
-[Graded]{.card-title}
-
-Participation, three live presentations, and serving as challenger. Nothing you
-do outside the room is collected.
-:::
-:::
-
-## Before September 12 {.band-bottom}
-
-::: {.steps}
-1. Sign in to the lab tonight and build the amortization workbook
-2. Watch the Unit 2 video, or read its transcript
-3. Bring your company's most recent EBIT and effective tax rate, from the filing
-:::
-
-::: {.note}
-September 12 runs 2:00 to 6:30, in person. Bring a laptop with Excel on it.
-:::
-
-## The habit {.divider}
-
-If a number matters, it came from code that ran, and you checked it against
-something computed a different way.
