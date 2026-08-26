@@ -300,6 +300,54 @@ body > header#quarto-header { display: none; }
    same all term and only the hrefs change. */
 .flyer .item-links a.pending { color: var(--mut); font-weight: 600; }
 
+/* ---- Readings ---------------------------------------------------------- */
+/* Both books are free from their authors' own sites, which is the point worth
+   making on the page -- so each row names the book and says where it comes
+   from, rather than being a bare link. */
+
+.flyer .books { margin-top: 6px; }
+.flyer .book {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  padding: 8px 0;
+}
+.flyer .book .book-body { flex: 1 1 0; min-width: 0; }
+.flyer .book .book-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--navy);
+}
+.flyer .book .book-title a { color: inherit; text-decoration: none; }
+.flyer .book .book-title a:hover,
+.flyer .book .book-title a:focus { text-decoration: underline; }
+.flyer .book .book-title a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+.flyer .book .book-desc {
+  font-size: 15.5px;
+  color: var(--gray);
+  line-height: 1.4;
+  margin-top: 2px;
+}
+/* Inline links in the description would otherwise take the Quarto theme's
+   green, which is the one colour on this page that belongs to nothing. */
+.flyer .book .book-desc a { color: var(--navy); font-weight: 600; }
+/* Matches .item-links so "Free" sits on the same right-hand line as the
+   Slides/Files links in the schedule above. */
+.flyer .book .book-tag {
+  flex: 0 0 auto;
+  margin-left: auto;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
 /* ---- Footer ------------------------------------------------------------ */
 
 .flyer .sheet-foot {
@@ -530,6 +578,29 @@ body > header#quarto-header { display: none; }
         <div class="item-desc"></div>
       </div>
       <div class="item-links"><span class="has-menu"><a class="pending" href="under-construction.html" target="_blank" rel="noopener">Slides</a><span class="submenu"><a href="under-construction.html" target="_blank" rel="noopener">HTML</a><a href="under-construction.html" target="_blank" rel="noopener">PDF</a></span></span><span class="sep">&middot;</span><a class="pending" href="under-construction.html" target="_blank" rel="noopener">Files</a></div>
+    </div>
+
+    <div class="section-head">
+      <span class="label">Readings</span>
+      <span class="dates">Nothing to buy</span>
+    </div>
+
+    <div class="books">
+      <div class="book">
+        <div class="book-body">
+          <div class="book-title"><a href="https://corpfin.ivo-welch.org/read/" target="_blank" rel="noopener">Welch, <em>Corporate Finance</em></a></div>
+          <div class="book-desc">Capital budgeting, cash flows, valuation, and the term structure. Free by the chapter from the author's site.</div>
+        </div>
+        <div class="book-tag">Free PDF</div>
+      </div>
+
+      <div class="book">
+        <div class="book-body">
+          <div class="book-title"><a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/Inv3ed.htm" target="_blank" rel="noopener">Damodaran, <em>Investment Valuation</em></a></div>
+          <div class="book-desc">Third edition, with the chapter on scenario analysis, decision trees, and simulation. Spreadsheets and industry data are on the <a href="https://pages.stern.nyu.edu/~adamodar/" target="_blank" rel="noopener">same site</a>.</div>
+        </div>
+        <div class="book-tag">Free PDF</div>
+      </div>
     </div>
 
     <div class="sheet-foot">
