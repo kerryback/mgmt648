@@ -179,7 +179,7 @@
     "href": "slides/session01.html#course-materials",
     "title": "Course Overview",
     "section": "Course materials",
-    "text": "Course materials\nEverything is posted at mgmt648.kerryback.com.\n\n\nSchedule\nThe home page. Each unit’s slides and files sit beside its row, in HTML and PDF.\n\n\nSyllabus\nGrading, meeting times, and what to prepare. Nothing outside class is collected.\n\n\nFree readings\nWelch’s Corporate Finance, Damodaran’s spreadsheets, SEC EDGAR, and the learn-investments site. Nothing to buy."
+    "text": "Course materials\nEverything is posted at mgmt648.kerryback.com.\n\n\nSchedule\nThe home page. Slides and files distributed here.\n\n\nSyllabus\nGrading, meeting times, and what to prepare. Nothing outside class is collected.\n\n\nFree readings\nWelch’s Corporate Finance, Damodaran’s spreadsheets, SEC EDGAR, and the learn-investments site. Nothing to buy."
   },
   {
     "objectID": "slides/session01.html#what-makes-a-workbook-worth-handing-over",
@@ -439,12 +439,5 @@
     "title": "Bond Pricing and Duration",
     "section": "What to bring",
     "text": "What to bring\n\n\nThe video on immunization, about twelve minutes\nYour bond’s duration, and the duration of the liability in the handout\nA laptop with Excel, and the Unit 2 workbook downloaded\n\n\n\nUnit 2, Saturday at 2:00, is immunization: matching a bond portfolio to a liability."
-  },
-  {
-    "objectID": "slides/session01.html",
-    "href": "slides/session01.html",
-    "title": "Course Overview",
-    "section": "",
-    "text": "Capital budgeting\nFree cash flow, NPV, IRR, incremental cash flows, multiple alternatives, real options, and simulation. September 12\n\n\nCompany valuation\nTwo-stage DCF model (date?) and multiples of comparable firms (date?)\n\n\nRates and portfolios\nMean-variance optimization, the cost of capital, bond pricing and duration, immunization. October 10."
   }
 ]
