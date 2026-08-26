@@ -63,7 +63,7 @@ It also builds the workbook.
 
 ## Course materials {.plain-title}
 
-Everything is posted at [mgmt648.kerryback.com](https://mgmt648.kerryback.com).
+Everything is posted at [mgmt648.kerryback.com](http://mgmt648.kerryback.com).
 
 ::: {.cards .cards-3}
 ::: {.card}
@@ -81,8 +81,7 @@ Grading, meeting times, and what to prepare. Nothing outside class is collected.
 ::: {.card}
 [Free readings]{.card-title}
 
-Welch's *Corporate Finance*, Damodaran's spreadsheets, SEC EDGAR, and the
-learn-investments site. Nothing to buy.
+Welch's *Corporate Finance*, Damodaran's materials
 :::
 :::
 
