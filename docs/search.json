@@ -249,7 +249,7 @@
     "href": "slides/session01.html#example",
     "title": "Course Overview",
     "section": "Example",
-    "text": "Example\nTry this prompt:\n\nBuild an Excel workbook containing a mortgage amortization table. Put the loan amount, rate, and term in labeled input cells at the top. &gt; &gt; Include a chart of the amount going to interest and the amount going to principal each month."
+    "text": "Example\nTry this prompt:\n\nBuild an Excel workbook containing a mortgage amortization table. Put the loan amount, rate, and term in labeled input cells at the top. Include a chart of the amount going to interest and the amount going to principal each month."
   },
   {
     "objectID": "slides/session01.html#what-comes-back",
