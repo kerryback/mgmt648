@@ -1,6 +1,6 @@
 ---
 title: "Course Overview"
-subtitle: "MGMT 648 &middot; Unit 1"
+subtitle: "MGMT 648 &middot; Session 1"
 author: "Kerry Back"
 date: "2026-08-27"
 format:
@@ -266,8 +266,8 @@ A page someone else can use, from a description of what it should do.
 Try this prompt:
 
 > Build an Excel workbook containing a mortgage amortization table. 
-> Put the loan amount, rate, and term in labeled input cells at the top. 
-> Include a chart of the amount going to interest and the amount going to principal each month.
+Put the loan amount, rate, and term in labeled input cells at the top. 
+Include a chart of the amount going to interest and the amount going to principal each month.
 
 
 ## What comes back {.image-right .no-title}
