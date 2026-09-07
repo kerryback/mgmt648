@@ -32,6 +32,11 @@ project:
     - CNAME
     - .nojekyll
     - under-construction.html
+    # Wheel-of-fortune spinner that draws the next student to present. Hand-
+    # written HTML with no dependencies, so it is copied through verbatim to
+    # docs/. Anchored with a leading slash so the glob cannot also match a
+    # copy of the name somewhere deeper in the tree.
+    - /wheel.html
     - images/RiceBusiness-transparent-logo-sm.png
     - images/headshot-keeper-cropped2.png
     # Session material, linked from the schedule rows in index.qmd.
