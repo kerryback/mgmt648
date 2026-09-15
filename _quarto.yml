@@ -12,16 +12,15 @@ project:
     # One deck per class date, named for the date. The two in-person Saturdays
     # each carry a single deck for the whole 2:00-6:30 afternoon.
     #
-    # The sessionNN decks below are the previous unit-numbered scheme. session01
-    # is still the August 27 deck and stays listed; session02, 10 and 11 hold
-    # written content that needs folding into the date decks before they go.
-    - slides/session01.qmd
-    - slides/september12.qmd
-    # - slides/september17.qmd
+    # session10 and 11 are left over from the previous unit-numbered scheme.
+    # They hold written content that needs folding into the date decks above
+    # before they go.
+    - slides/08-27.qmd
+    - slides/09-12.qmd
+    - slides/09-17.qmd
     # - slides/october01.qmd
     # - slides/october10.qmd
     # - slides/october15.qmd
-    - slides/session02.qmd
     - slides/session10.qmd
     - slides/session11.qmd
     # The previous version of this course lives under archive/ and is not part
@@ -50,9 +49,9 @@ project:
     # what stops a later full render from dropping that mirrored copy. A file
     # that does not exist yet is skipped with a warning, so the whole term can
     # be listed up front.
-    - pdf/session01.pdf
-    - pdf/september12.pdf
-    - pdf/session02.pdf
+    - pdf/08-27.pdf
+    - pdf/09-12.pdf
+    - pdf/09-17.pdf
     - pdf/session03.pdf
     - pdf/session04.pdf
     - pdf/session05.pdf

@@ -6,7 +6,8 @@
 # `theme` is deliberately NOT set here. Quarto appends a document's theme list
 # to the one it inherits rather than replacing it, so a deck on a different
 # theme would get both stylesheets. Each deck therefore declares its own theme
-# in its front matter: session01 uses shoji2.scss, the rest use shoji.scss.
+# in its front matter: the date-named decks use shoji2.scss, the leftover
+# sessionNN decks use shoji.scss.
 #
 # width, height and margin are load bearing: each theme's grid is specified in
 # px against a fixed canvas -- 1050x700 for shoji, 1280x720 for shoji2 -- and
