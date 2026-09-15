@@ -30,12 +30,13 @@ analysis tools.
 
 Two questions run through the term: whether a company should make a particular
 investment, and what a whole business is worth. Both use the same machinery, and
-the course builds it in that order — financial statements and cash flows, then
-the decision rules and simulation, then valuation of a company by discounted
-cash flow and by comparison with its peers. The last full day covers portfolio
-choice, the cost of capital, bond pricing, and interest rate risk.
+the course builds it in that order — project cash flows, the decision rules,
+and simulation, then free cash flow from the financial statements and the
+valuation of a company by discounted cash flow and by comparison with its
+peers. The last full day turns to portfolio management: mean-variance
+optimization, and the cost of capital that everything earlier took as given.
 
-Discount rates are supplied until Unit 9, when they are estimated.
+Discount rates are supplied until October 10, when they are estimated.
 
 Upon completion you should have a deeper understanding of capital budgeting,
 financial statement forecasting, firm valuation, and pricing, and be able to
@@ -59,33 +60,38 @@ build both simple and complex financial models.
 7. Construct a mean-variance frontier and find the global minimum variance and
    tangency portfolios, with and without short-sale constraints.
 8. Estimate a cost of capital using the CAPM and a weighted average.
-9. Price a bond off the term structure, measure its interest rate risk with
-   duration, and immunize a liability against a change in rates.
-10. Direct an AI to build a working model, and check what it gives back.
+9. Direct an AI to build a working model, and check what it gives back.
 
 
 #### Meeting Schedule
 
-Six dates. The two Saturdays run 2:00 – 6:30 PM and meet in person, as four
-one-hour units with ten minutes between them. The four Thursday evenings meet on
-Zoom.
+Six dates. The two Saturdays meet in person and run 2:00 – 6:30 PM, with
+breaks. The four Thursday evenings run 8:30 – 10:00 PM on Zoom.
 
-| Unit | Date | Time | Where | Topic |
-|:--|:--|:--|:--|:-----|
-| 1 | Thu, Aug 27 | 8:30–10:00 PM | Zoom | Course Overview |
-| 2 | Sat, Sep 12 | 2:00–3:00 PM | In person | From Statements to Free Cash Flow |
-| 3 | Sat, Sep 12 | 3:10–4:10 PM | In person | Project Cash Flows |
-| 4 | Sat, Sep 12 | 4:20–5:20 PM | In person | Decision Rules and Alternatives |
-| 5 | Sat, Sep 12 | 5:30–6:30 PM | In person | Simulation |
-| 6 | Thu, Sep 17 | 8:30–10:00 PM | Zoom | From Project to Company |
-| 7 | Thu, Oct 1 | 8:30–10:00 PM | Zoom | Relative Valuation |
-| 8 | Sat, Oct 10 | 2:00–3:00 PM | In person | Mean-Variance Optimization |
-| 9 | Sat, Oct 10 | 3:10–4:10 PM | In person | Cost of Capital |
-| 10 | Sat, Oct 10 | 4:20–5:20 PM | In person | Bond Pricing and Duration |
-| 11 | Sat, Oct 10 | 5:30–6:30 PM | In person | Immunization and Spot Rates |
-| 12 | Thu, Oct 15 | 8:30–10:00 PM | Zoom | Final Presentations |
+| Date | Time | Where | Topic |
+|:--|:--|:--|:-----|
+| Thu, Aug 27 | 8:30–10:00 PM | Zoom | Course overview. Excel and AI |
+| Sat, Sep 12 | 2:00–6:30 PM | In person | Capital budgeting |
+| Thu, Sep 17 | 8:30–10:00 PM | Zoom | Free cash flow, and forecasting it out |
+| Thu, Oct 1 | 8:30–10:00 PM | Zoom | Terminal values and multiples |
+| Sat, Oct 10 | 2:00–6:30 PM | In person | Portfolio management |
+| Thu, Oct 15 | 8:30–10:00 PM | Zoom | Final presentations |
 
-The Saturdays are working sessions. Bring a laptop.
+The two Saturdays are working sessions built around cases. Bring a laptop.
+
+September 12 is capital budgeting end to end: what counts as incremental, how
+inflation is handled, how competing projects are ranked, what to do when the
+decision arrives later than the money, and how to report a distribution rather
+than a single number. It is worked through cases at the keyboard.
+
+October 10 is portfolio management: the mean-variance frontier, the global
+minimum variance and tangency portfolios with and without short-sale
+constraints, and then the CAPM and the weighted average cost of capital.
+
+September 17 forecasts free cash flow the long way, running it out thirty years
+with no terminal value at all. October 1 replaces those thirty years with a
+perpetuity formula, then with a multiple, and then asks what is left if you use
+the multiple on its own.
 
 
 #### Your Company
@@ -104,8 +110,7 @@ Ivo Welch's [Corporate Finance](https://corpfin.ivo-welch.org/read/) is the
 reading, free by the chapter from the author's site.
 
 [learn-investments.rice-business.org](https://learn-investments.rice-business.org)
-is an interactive site I maintain. We will use it in class for portfolios, the
-term structure, and duration.
+is an interactive site I maintain. We will use it in class for portfolios.
 
 Company filings come from [SEC EDGAR](https://www.sec.gov/edgar). Industry data
 and spreadsheets come from [Aswath Damodaran's site](https://pages.stern.nyu.edu/~adamodar/)
@@ -119,7 +124,7 @@ spreadsheets, and code. It is used from the first session, and assumed in
 everything you prepare.
 
 Sign in at [lab648.kerryback.com](https://lab648.kerryback.com) with your netid
-and student number. Unit 1 covers working with it: prompting it to produce a
+and student number. The first session covers working with it: prompting it to produce a
 spreadsheet whose cells contain formulas rather than pasted values, and checking
 its output against an independent calculation.
 
@@ -129,26 +134,16 @@ its output against an independent calculation.
 Nothing you do outside of class is collected or graded. All graded work happens
 in the room, live.
 
-| Component | Weight |
-|:---|---:|
-| Class participation | 40% |
-| Valuation presentation (pairs) | 30% |
-| Company flash talk | 15% |
-| Investment case decision | 10% |
-| Serving as challenger | 5% |
+Class participation is scored every session, and on the Saturdays that includes
+the work you do at the keyboard.
 
-Participation is scored every session, and on the Saturdays that includes the
-work you do at the keyboard.
-
-There are three graded presentations:
+There are two graded presentations:
 
 - September 12, in pairs, two minutes: a recommendation on the investment case.
-- October 1, individually, two and a half minutes: whether your company is cheap
-  or expensive relative to its peers.
 - October 15, in pairs, eight minutes: a valuation of both companies.
 
-For the September 12 and October 15 presentations, another pair is assigned to
-challenge the analysis in the session. The challenge is graded separately.
+For both, another pair is assigned to challenge the analysis in the session. The
+challenge is graded separately.
 
 Grades are assigned following the JGSB elective grading policy: the class mean
 falls between 3.5 and 3.8.
@@ -157,7 +152,7 @@ falls between 3.5 and 3.8.
 #### Preparation
 
 Every session has preparation, and none of it is graded. The pattern is the same
-each time: watch the unit video, about twelve minutes, or read its transcript;
+each time: watch the session video, about twelve minutes, or read its transcript;
 compute one number for your company or the case; and arrive ready to defend the number and what it means. Each session opens by
 collecting those numbers and putting the range on screen.
 
@@ -165,7 +160,7 @@ collecting those numbers and putting the range on screen.
 #### Schedule, Slides, and other Materials
 
 The schedule above is repeated on the [course home page](index.html), where each
-unit's slides and files are posted beside it.
+date's slides and files are posted beside it.
 
 
 #### Laptops and Phones

@@ -1,0 +1,523 @@
+---
+title: "Capital Budgeting"
+subtitle: "MGMT 648 &middot; September 12"
+author: "Kerry Back"
+date: "2026-09-12"
+format:
+  revealjs:
+    theme: shoji2.scss
+    width: 1280
+    height: 720
+    max-scale: 5
+---
+
+
+
+# Tannehill Precision
+
+
+
+## The project: when, and how much? {.plain-title}
+
+::: {.incremental}
+- The automated cell
+- The three old machines
+- Tax on the sale of the old machines
+- Depreciation tax shields
+- Salvage, year 8
+:::
+
+## The savings: when, and how much? {.plain-title}
+
+::: {.incremental}
+- Operators
+- Scrap
+- Maintenance
+- Floor space
+- Plant overhead
+- The rebuild of the manual cells
+:::
+
+
+## Takeaways {.plain-title}
+
+::: {.cards .cards-3}
+::: {.card}
+[A project is a comparison]{.card-title}
+
+Name the counterfactual before you name a number: what happens if we don't do it?
+:::
+
+::: {.card .card-blue}
+[Opportunity cost]{.card-title}
+
+Not zero because you own it, and not the accounting charge. It is the cash the
+resource would earn in its next best use.
+:::
+
+
+::: {.card .card-sand}
+[Allocations are averages]{.card-title}
+
+Charge the project what changes. Sometimes that is less than the allocation.
+Sometimes it is more.
+:::
+
+:::
+
+# Kestrel Pet Nutrition
+
+## Read {.plain-title}
+
+::: {.lead}
+Ten minutes. Upload to lab648, tell AI to read it, and chat with AI if you want.
+:::
+
+::: {.cards .cards-3}
+::: {.card}
+[The proposal]{.card-title}
+
+Refrigerated capacity, five years of forecast revenue.
+:::
+
+
+::: {.card}
+[The details]{.card-title}
+
+Spending, overhead, and timing.
+:::
+:::
+
+## The investment: when, and how much? {.plain-title}
+
+::: {.incremental}
+- Refrigerated capacity and cold-chain equipment
+- Depreciation tax shields
+- Working capital
+- The equipment sale, year 5
+- Tax on the equipment sale
+:::
+
+## The operations: when, and how much? {.plain-title}
+
+::: {.incremental}
+- Fresh line contribution
+- Lost kibble contribution
+- Incremental fixed cash costs
+- Corporate overhead allocation
+- Consumer research and formulation
+:::
+
+
+## Build it {.plain-title}
+
+::: {.lead}
+Fifteen minutes. Upload to lab648, tell AI to read it, and ask AI to help build the analysis if you want.
+:::
+
+::: {.steps}
+1. Year 3 under both cannibalization assumptions
+2. All five years, with working capital and the after-tax equipment sale
+3. NPV under each assumption
+:::
+
+
+## Takeaways {.plain-title}
+
+::: {.cards .cards-3}
+::: {.card}
+[Sunk costs]{.card-title}
+
+Money already spent does not enter the analysis.
+:::
+
+::: {.card .card-blue}
+[Cannibalization]{.card-title}
+
+When a project takes revenue from an existing product, the loss is that
+product's cash flow.
+:::
+
+::: {.card}
+[Allocations are averages]{.card-title}
+
+Charge the project what changes — which is sometimes less than the
+allocation and sometimes more.
+:::
+
+::: {.card .card-sand}
+[Working capital is a change]{.card-title}
+
+You fund the increase, not the level, and you get it back at the end.
+:::
+
+::: {.card}
+[Tax schedules outlive projects]{.card-title}
+
+A depreciation schedule set by statute does not stop when your forecast does.
+The gap is what makes a disposal taxable.
+:::
+
+::: {.card .card-sage}
+[Find the threshold]{.card-title}
+
+A breakeven turns an argument about beliefs into a question about evidence.
+:::
+:::
+
+## A Quick Case {.plain-title}
+
+
+Dunmore Brewing launches a hard seltzer at $40 million of revenue. Research says 60
+percent of the volume comes out of a competitor's seltzer, 15 percent out of
+Dunmore's own light lager, and 25 percent is new to the category. The light
+lager carries a 44 percent contribution margin.
+
+::: {.incremental}
+- How much should Dunmore charge the seltzer project for cannibalization?
+- Should Dunmore be pleased or worried that most of the volume comes from a
+  rival?
+:::
+
+## Another Quick Case {.plain-title}
+
+
+Ivara distributes packaged food to convenience stores from one leased warehouse.
+Warehouse cost is collected in a pool and charged to product lines at $14.00 per
+pallet shipped — $5.60 of occupancy, $8.40 of handling labor and equipment.
+
+A proposed dry goods line would ship 40,000 pallets a year, so the model carries
+a $560,000 warehouse charge. The warehouse has been full for two years and the
+lease is fixed. The line's inventory would go to a third-party facility, 3,000
+pallet positions at $210 a position, worked by Ivara's own crews.
+
+::: {.incremental}
+- Occupancy of the existing building: when, and how much?
+- Third-party space: when, and how much?
+- Handling labor: when, and how much?
+- What should the line be charged for warehousing?
+- Would your answer change if the warehouse had room to spare?
+:::
+
+
+# Kinnaird Mills
+
+## Read {.plain-title}
+
+::: {.lead}
+Ten minutes. A combined heat and power retrofit at a paper mill.  Use AI if you want.
+:::
+
+
+## When, how much, and in whose dollars? {.plain-title}
+
+::: {.incremental}
+- The turbine and heat recovery generator
+- Depreciation deductions
+- Displaced energy
+- The service contract
+:::
+
+
+## What did you assume? {.plain-title}
+
+::: {.incremental}
+- Rasch's arithmetic checks out. Do you agree with his conclusion?
+- Suppose inflation ran well above expectations for fifteen years. What happens
+  to a project like this one?
+- Rasch wrote "revisit if gas moves." What would you send back to him?
+:::
+
+## Build it {.plain-title}
+
+::: {.steps}
+1. The project in nominal terms, escalating what escalates
+2. The same project in real terms, agreeing to the dollar
+3. Rasch's version alongside, for the difference
+4. The gas price at which the project fails
+:::
+
+## Walk us through it {.plain-title}
+
+::: {.lead}
+Screens up.
+:::
+
+::: {.incremental}
+- Put your two versions side by side.
+- Take us through the service contract row in each.
+- Then the depreciation row.
+:::
+
+## Takeaways {.plain-title}
+
+::: {.cards .cards-3}
+::: {.card}
+[Market rates are nominal]{.card-title}
+
+A discount rate built from observed yields and premiums already contains
+expected inflation. It cannot be paired with cash flows that do not.
+:::
+
+::: {.card .card-blue}
+[A flat price is a forecast]{.card-title}
+
+Holding a number at today's level is a claim that the real price falls every
+year.
+:::
+
+::: {.card}
+[Consistency, not preference]{.card-title}
+
+Real and nominal both work and must agree to the dollar. Only the mixture is
+wrong.
+:::
+
+::: {.card .card-sand}
+[Divide, do not subtract]{.card-title}
+
+The real rate is the nominal over inflation, minus one. The shortcut is close
+at 2 percent and far off at 40.
+:::
+
+::: {.card}
+[Some amounts are fixed in nominal terms]{.card-title}
+
+Signed contracts, statutory deductions, fixed-rate debt, dollar covenants. In a
+real model, each of them has to be deflated.
+:::
+
+::: {.card .card-sage}
+[Inflation and the depreciation shield]{.card-title}
+
+Depreciation is set in the dollars of the purchase date and deducted in later,
+cheaper ones. Higher inflation lowers the real value of the shield, which
+matters most for capital-intensive projects.
+:::
+:::
+
+# Halloran Dairy
+
+## Read {.plain-title}
+
+::: {.lead}
+Eight minutes. Both papers recommend the same plant. They disagree only about
+how much of it to build.
+:::
+
+::: {.cards .cards-2}
+::: {.card}
+[Build it now]{.card-title}
+
+Three lines, $36 million, ready for the season.
+:::
+
+::: {.card .card-blue}
+[Stage it]{.card-title}
+
+One line, $18 million, and a decision in two years that costs $4 million more
+to keep open.
+:::
+:::
+
+## Build it now: when, and how much? {.plain-title}
+
+::: {.incremental}
+- Three lines, year 0
+- Depreciation tax shields
+- EBITDA, years 1 and 2
+- EBITDA from year 3, in each state
+- Salvage, year 8, in each state
+:::
+
+## Stage it: when, and how much? {.plain-title}
+
+::: {.incremental}
+- One line, year 0
+- EBITDA, years 1 and 2
+- The decision itself
+- The second and third lines
+- Depreciation tax shields on each tranche
+- Salvage, year 8, and the book value still left on the expansion
+:::
+
+## What did you assume? {.plain-title}
+
+::: {.incremental}
+- When does Halloran have to commit to the second and third lines, and does your
+  model let it use what it knows by then?
+- Staging buys the right to expand. How much of the staged path is the line, and
+  how much is the right?
+- How sure about the bid would you have to be before building everything now?
+:::
+
+## Build it {.plain-title}
+
+::: {.steps}
+1. Build It Now, valued in each state and then combined
+2. Stage It, working backward from the two choices at year 2
+3. The difference, and what it says about the $4 million
+4. The probability at which the two paths are equal
+:::
+
+## Walk us through it {.plain-title}
+
+::: {.lead}
+Screens up.
+:::
+
+::: {.incremental}
+- Take us through your decision node and what sits on each branch.
+- Then the branch you rejected, and what it was worth.
+- Give us your recommendation and what would change it.
+:::
+
+## Takeaways {.plain-title}
+
+::: {.cards .cards-3}
+::: {.card}
+[A future choice is not a forecast]{.card-title}
+
+You do not forecast what you will do. You value the right to decide later, with
+information you do not have now.
+:::
+
+::: {.card .card-blue}
+[Value at the node, then discount]{.card-title}
+
+Work backward. Take the maximum at each decision date, and carry that back.
+:::
+
+::: {.card}
+[Order matters]{.card-title}
+
+Take expectations before the decision and you have assumed the decision is made
+without knowing which state occurred.
+:::
+
+::: {.card .card-sand}
+[Most of it is the option]{.card-title}
+
+The line itself barely clears. Four fifths of the staged path is the right to
+decide in 2028.
+:::
+
+::: {.card}
+[An option is not a fixed amount]{.card-title}
+
+The expansion right grows as success becomes likelier and shrinks toward nothing
+as it recedes. Quote it with the probability it was computed at.
+:::
+
+::: {.card .card-sage}
+[When staging is worth paying for]{.card-title}
+
+If you are confident, build everything rather than pay to keep the decision
+open.
+:::
+:::
+
+# Brannock Chemicals
+
+## Read {.plain-title}
+
+::: {.lead}
+Eight minutes. A $310 million specialty resin plant on the Gulf Coast.
+:::
+
+::: {.note}
+Approved by the capital committee in September. Rebuilt by an analyst preparing
+the board paper.
+:::
+
+## When, and how much? {.plain-title}
+
+::: {.incremental}
+- The plant
+- Depreciation tax shields
+- Contribution: price, volume, variable cost
+- Fixed cash costs
+:::
+
+## And how uncertain? {.plain-title}
+
+::: {.incremental}
+- Which of those items is known, and which is not?
+- For the ones that are not: how much do they vary?
+- Do they vary together?
+- Who at Brannock is in a position to answer that?
+:::
+
+## What did you assume? {.plain-title}
+
+::: {.incremental}
+- Run it at three correlations. What did you find?
+- Which of your statistics moved most? Which moved least?
+- Which of them belongs in the board paper?
+- What else did the AI decide for you when it built this?
+:::
+
+## Build it {.plain-title}
+
+::: {.steps}
+1. The deterministic base case, year by year
+2. The simulation at zero correlation, five statistics
+3. The same at +0.65 and −0.65
+4. The one number you would put in the board paper, and why
+:::
+
+## Walk us through it {.plain-title}
+
+::: {.lead}
+Screens up.
+:::
+
+::: {.incremental}
+- Take us through how you drew the inputs.
+- Then your three columns of statistics.
+- Tell us which one you are reporting, and what it would mean for Brannock.
+:::
+
+## Takeaways {.plain-title}
+
+::: {.cards .cards-3}
+::: {.card}
+[A point estimate is a distribution]{.card-title}
+
+A single column states that every input is known.
+:::
+
+::: {.card .card-blue}
+[The base case is not the mean]{.card-title}
+
+The value at the average input is not the average value. Wherever the model
+multiplies uncertain things together, the two differ.
+:::
+
+::: {.card}
+[One at a time is not uncertainty]{.card-title}
+
+Moving each input alone holds every other input at its base value. Things that
+go wrong tend to go wrong together.
+:::
+
+::: {.card .card-sand}
+[Correlation is a claim]{.card-title}
+
+It is an assertion about what drives the business, and it comes from people who
+know the industry, not from the model.
+:::
+
+::: {.card}
+[Pick the statistic deliberately]{.card-title}
+
+The mean, the median and the fifth percentile answer different questions. Report
+the one that matches the consequence you face.
+:::
+
+::: {.card .card-sage}
+[Something chose the defaults]{.card-title}
+
+Every model contains assumptions nobody made on purpose.
+:::
+:::

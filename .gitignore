@@ -16,3 +16,17 @@ scripts/
 
 # Stray screenshots from deck checking.
 unit1-cards.png
+
+# More student data -- Banner exports the roster under the CRN-stamped name,
+# and the photo roster arrives as a screenshot.
+MGMT648_*.csv
+Screenshot *.png
+
+# Instructor-only case material. Students work these cases; the solutions,
+# teaching notes and run sheets stay off a public repo.
+solutions/
+case-solutions/
+cases-notes/
+cases-supplemental/
+
+.DS_Store
