@@ -39,6 +39,8 @@ project:
     - /wheel.html
     - images/RiceBusiness-transparent-logo-sm.png
     - images/headshot-keeper-cropped2.png
+    # Session file bundles linked from the schedule's Files links.
+    - files/0917.zip
     # Session material, linked from the schedule rows in index.qmd.
     #
     # The decks themselves are rendered, not copied, so they are not listed

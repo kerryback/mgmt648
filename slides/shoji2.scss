@@ -755,6 +755,17 @@ $col-gap: 20px;
   }
 }
 
+// Opt-in for wide numeric tables. `width: 100%` with auto layout splits the
+// surplus across every column, which squeezes the row-label column to a stub
+// and wraps "Net operating profit after tax" onto four lines. Holding the first
+// column on one line makes the browser give it the width it actually needs.
+.reveal section.nowrap-labels table {
+  th:first-child,
+  td:first-child {
+    white-space: nowrap;
+  }
+}
+
 // ── Code ────────────────────────────────────────────────────────────────
 
 .reveal div.sourceCode,

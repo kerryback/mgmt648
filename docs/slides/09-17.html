@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.38">
 
   <meta name="author" content="Kerry Back">
-  <title>From Statements to Free Cash Flow</title>
+  <title>Two-Stage Growth Model</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -32,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-36982d2e213e99f9655dc37b0ed2c21a.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-871c136adc2c8fe389b11f585b0d358f.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -130,7 +130,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">From Statements to Free Cash Flow</h1>
+  <h1 class="title">Two-Stage Growth Model</h1>
   <p class="subtitle">MGMT 648 · September 17</p>
 
 <div class="quarto-title-authors">
@@ -144,159 +144,1589 @@ Kerry Back
   <p class="date">Thu Sep 17, 2026</p>
 </section>
 <section>
-<section id="the-three-statements" class="title-slide slide level1 center">
-<h1>The three statements</h1>
+<section id="net-ppe-depreciation-capital-expenditure" class="title-slide slide level1 center">
+<h1>Net PP&amp;E, depreciation, capital expenditure</h1>
 
 </section>
-<section id="what-each-one-reports" class="slide level2">
-<h2>What each one reports</h2>
-<div class="cards cards-3">
+<section id="three-lines" class="slide level2 plain-title">
+<h2>Three lines</h2>
+<p><span class="math display">\[\text{Net PP\&amp;E}_t = k \times \text{Sales}_{t+1}\]</span></p>
+<p><span class="math display">\[\text{Depreciation}_t = d \times \text{Net PP\&amp;E}_{t-1}\]</span></p>
+<p><span class="math display">\[\text{CapEx}_t = \text{Net PP\&amp;E}_t - \text{Net PP\&amp;E}_{t-1} + \text{Depreciation}_t\]</span></p>
+<p>Net PP&amp;E and the depreciation rate are assumptions. Capital expenditure is computed from them.</p>
+</section>
+<section id="capital-expenditure-as-the-residual" class="slide level2 plain-title">
+<h2>Capital expenditure as the residual</h2>
+<div class="cards cards-2">
 <div class="card">
-<p><span class="card-title">Income statement</span></p>
-<p>Revenues and expenses over a period, on an accrual basis.</p>
+<p><span class="card-title">The asset base is the assumption</span></p>
+<p>Capacity is in place before the sales it serves, so the balance at the end of year <span class="math inline">\(t\)</span> carries year <span class="math inline">\(t+1\)</span>’s sales.</p>
 </div>
 <div class="card card-blue">
-<p><span class="card-title">Balance sheet</span></p>
-<p>Assets, liabilities, and equity at a point in time. Two consecutive balance sheets give the change in working capital.</p>
+<p><span class="card-title">Depreciation follows the balance</span></p>
+<p>A percentage of the opening net balance, not a percentage of sales.</p>
 </div>
+<div class="card card-blue">
+<p><span class="card-title">Capital expenditure is the residual</span></p>
+<p>It funds the increase in the balance and replaces what was depreciated during the year.</p>
+</div>
+<div class="card card-sand">
+<p><span class="card-title">The zero-growth check</span></p>
+<p>If the balance never changes, capital expenditure equals depreciation.</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="the-company" class="title-slide slide level1 center">
+<h1>The company</h1>
+
+</section>
+<section id="four-years-then-a-steady-state" class="slide level2 plain-title">
+<h2>Four years, then a steady state</h2>
+<p>A company with 32.00 of sales next year, holding 16.00 of net PP&amp;E and 3.20 of working capital, 6.00 of cash and 18.00 of debt, and 4.0 million shares.</p>
+<div class="cards cards-2">
 <div class="card">
-<p><span class="card-title">Cash flow statement</span></p>
-<p>Cash received and paid over a period, split into operating, investing, and financing.</p>
+<p><span class="card-title">Years 1 to 3</span></p>
+<p>Sales grow 25% and then 15%. The EBITDA margin climbs from 18% to 21% to 23%.</p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title">Year 4 onward</span></p>
+<p>Sales grow 8% a year and the margin holds at 25%. The three ratios are fixed throughout.</p>
 </div>
 </div>
 </section>
-<section id="five-numbers" class="slide level2 plain-title">
-<h2>Five numbers</h2>
+<section id="assumptions" class="slide level2 plain-title">
+<h2>Assumptions</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Assumption</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales, year 1</td>
+<td>32.00</td>
+</tr>
+<tr class="even">
+<td>Sales growth</td>
+<td>25%, 15%, then 8% from year 4</td>
+</tr>
+<tr class="odd">
+<td>EBITDA margin</td>
+<td>18%, 21%, 23%, then 25% from year 4</td>
+</tr>
+<tr class="even">
+<td>Net PP&amp;E</td>
+<td>50% of next year’s sales</td>
+</tr>
+<tr class="odd">
+<td>Depreciation</td>
+<td>10% of opening net PP&amp;E</td>
+</tr>
+<tr class="even">
+<td>Net working capital</td>
+<td>10% of next year’s sales</td>
+</tr>
+<tr class="odd">
+<td>Tax rate</td>
+<td>21%</td>
+</tr>
+<tr class="even">
+<td>WACC</td>
+<td>12%</td>
+</tr>
+<tr class="odd">
+<td>Cash, debt, shares</td>
+<td>6.00, 18.00, 4.0 million</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="the-capital-schedule" class="slide level2 plain-title">
+<h2>The capital schedule</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;">0</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">32.00</td>
+<td style="text-align: right;">40.00</td>
+<td style="text-align: right;">46.00</td>
+<td style="text-align: right;">49.68</td>
+</tr>
+<tr class="even">
+<td>Next year’s sales</td>
+<td style="text-align: right;">32.00</td>
+<td style="text-align: right;">40.00</td>
+<td style="text-align: right;">46.00</td>
+<td style="text-align: right;">49.68</td>
+<td style="text-align: right;">53.65</td>
+</tr>
+<tr class="odd">
+<td>Net PP&amp;E</td>
+<td style="text-align: right;">16.00</td>
+<td style="text-align: right;">20.00</td>
+<td style="text-align: right;">23.00</td>
+<td style="text-align: right;">24.84</td>
+<td style="text-align: right;">26.83</td>
+</tr>
+<tr class="even">
+<td>Depreciation</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">1.60</td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">2.30</td>
+<td style="text-align: right;">2.48</td>
+</tr>
+<tr class="odd">
+<td>Capital expenditure</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">5.60</td>
+<td style="text-align: right;">5.00</td>
+<td style="text-align: right;">4.14</td>
+<td style="text-align: right;">4.47</td>
+</tr>
+<tr class="even">
+<td>Net working capital</td>
+<td style="text-align: right;">3.20</td>
+<td style="text-align: right;">4.00</td>
+<td style="text-align: right;">4.60</td>
+<td style="text-align: right;">4.97</td>
+<td style="text-align: right;">5.37</td>
+</tr>
+</tbody>
+</table>
+<p>The date-0 balances are what the company already owns.</p>
+</section>
+<section id="the-income-statement" class="slide level2 plain-title">
+<h2>The income statement</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales</td>
+<td style="text-align: right;">32.00</td>
+<td style="text-align: right;">40.00</td>
+<td style="text-align: right;">46.00</td>
+<td style="text-align: right;">49.68</td>
+</tr>
+<tr class="even">
+<td>EBITDA</td>
+<td style="text-align: right;">5.76</td>
+<td style="text-align: right;">8.40</td>
+<td style="text-align: right;">10.58</td>
+<td style="text-align: right;">12.42</td>
+</tr>
+<tr class="odd">
+<td>Depreciation</td>
+<td style="text-align: right;">1.60</td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">2.30</td>
+<td style="text-align: right;">2.48</td>
+</tr>
+<tr class="even">
+<td>EBIT</td>
+<td style="text-align: right;">4.16</td>
+<td style="text-align: right;">6.40</td>
+<td style="text-align: right;">8.28</td>
+<td style="text-align: right;">9.94</td>
+</tr>
+<tr class="odd">
+<td>Taxes at 21%</td>
+<td style="text-align: right;">0.87</td>
+<td style="text-align: right;">1.34</td>
+<td style="text-align: right;">1.74</td>
+<td style="text-align: right;">2.09</td>
+</tr>
+<tr class="even">
+<td>Net operating profit after tax</td>
+<td style="text-align: right;">3.29</td>
+<td style="text-align: right;">5.06</td>
+<td style="text-align: right;">6.54</td>
+<td style="text-align: right;">7.85</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="add-depreciation-back" class="slide level2 plain-title">
+<h2>Add depreciation back</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Net operating profit after tax</td>
+<td style="text-align: right;">3.29</td>
+<td style="text-align: right;">5.06</td>
+<td style="text-align: right;">6.54</td>
+<td style="text-align: right;">7.85</td>
+</tr>
+<tr class="even">
+<td>Depreciation</td>
+<td style="text-align: right;">1.60</td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">2.30</td>
+<td style="text-align: right;">2.48</td>
+</tr>
+<tr class="odd">
+<td>Operating cash flow</td>
+<td style="text-align: right;">4.89</td>
+<td style="text-align: right;">7.06</td>
+<td style="text-align: right;">8.84</td>
+<td style="text-align: right;">10.33</td>
+</tr>
+</tbody>
+</table>
+<p>Depreciation lowered the tax bill without taking any cash, so it goes back in.</p>
+</section>
+<section id="free-cash-flow" class="slide level2 plain-title">
+<h2>Free cash flow</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Operating cash flow</td>
+<td style="text-align: right;">4.89</td>
+<td style="text-align: right;">7.06</td>
+<td style="text-align: right;">8.84</td>
+<td style="text-align: right;">10.33</td>
+</tr>
+<tr class="even">
+<td>Capital expenditure</td>
+<td style="text-align: right;">(5.60)</td>
+<td style="text-align: right;">(5.00)</td>
+<td style="text-align: right;">(4.14)</td>
+<td style="text-align: right;">(4.47)</td>
+</tr>
+<tr class="odd">
+<td>Increase in working capital</td>
+<td style="text-align: right;">(0.80)</td>
+<td style="text-align: right;">(0.60)</td>
+<td style="text-align: right;">(0.37)</td>
+<td style="text-align: right;">(0.40)</td>
+</tr>
+<tr class="even">
+<td>Free cash flow</td>
+<td style="text-align: right;">(1.51)</td>
+<td style="text-align: right;">1.46</td>
+<td style="text-align: right;">4.33</td>
+<td style="text-align: right;">5.46</td>
+</tr>
+<tr class="odd">
+<td>Share of sales</td>
+<td style="text-align: right;">(4.7%)</td>
+<td style="text-align: right;">3.6%</td>
+<td style="text-align: right;">9.4%</td>
+<td style="text-align: right;">11.0%</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="terminal-value" class="title-slide slide level1 center">
+<h1>Terminal value</h1>
+
+</section>
+<section id="free-cash-flow-in-year-5" class="slide level2 plain-title">
+<h2>Free cash flow in year 5</h2>
+<p>Free cash flow reaches 11.0% of sales in year 4 and stays there: the margin and all three ratios are fixed from year 4 on. Sales grow 8% in year 5 and every year after, so free cash flow does too.</p>
+<p><span class="math display">\[\text{FCF}_5 = 1.08 \times 5.46 = 5.90\]</span></p>
+<div class="note">
+<p>Year 4 is the first year at the steady ratio. Year 5 is the first year that grows at 8%, which is why the terminal value sits at the end of year 4.</p>
+</div>
+</section>
+<section id="the-terminal-value" class="slide level2 plain-title">
+<h2>The terminal value</h2>
+<p><span class="math display">\[\text{TV}_4 = \frac{\text{FCF}_5}{r-g} = \frac{5.90}{0.12-0.08} = 147.55\]</span></p>
+<div class="note">
+<p>Twenty-five times year-5 free cash flow, at a four-point spread between <span class="math inline">\(r\)</span> and <span class="math inline">\(g\)</span>.</p>
+</div>
+</section>
+<section id="discount-it-all-back" class="slide level2 plain-title">
+<h2>Discount it all back</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+<th style="text-align: right;">TV at 4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cash flow</td>
+<td style="text-align: right;">(1.51)</td>
+<td style="text-align: right;">1.46</td>
+<td style="text-align: right;">4.33</td>
+<td style="text-align: right;">5.46</td>
+<td style="text-align: right;">147.55</td>
+</tr>
+<tr class="even">
+<td>Discount factor at 12%</td>
+<td style="text-align: right;">0.893</td>
+<td style="text-align: right;">0.797</td>
+<td style="text-align: right;">0.712</td>
+<td style="text-align: right;">0.636</td>
+<td style="text-align: right;">0.636</td>
+</tr>
+<tr class="odd">
+<td>Present value</td>
+<td style="text-align: right;">(1.35)</td>
+<td style="text-align: right;">1.16</td>
+<td style="text-align: right;">3.08</td>
+<td style="text-align: right;">3.47</td>
+<td style="text-align: right;">93.77</td>
+</tr>
+</tbody>
+</table>
+<div class="stats">
+<div class="stat">
+<p><span class="stat-value">$100.14m</span> <span class="stat-label">Enterprise value</span></p>
+</div>
+<div class="stat">
+<p><span class="stat-value">94%</span> <span class="stat-label">In the terminal value</span></p>
+</div>
+</div>
+</section>
+<section id="where-the-8-comes-from" class="slide level2 plain-title">
+<h2>Where the 8% comes from</h2>
+<p><span class="math display">\[g = \text{ROIC} \times \text{reinvestment rate}\]</span></p>
+<div class="cards cards-3">
+<div class="card">
+<p><span class="card-title">ROIC</span></p>
+<p><span class="math inline">\(8.48 / 32.20 = 26.3\%\)</span></p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title">Reinvestment rate</span></p>
+<p><span class="math inline">\((4.83 + 0.43 - 2.68) / 8.48 = 30.4\%\)</span></p>
+</div>
+<div class="card card-sand">
+<p><span class="card-title">Product</span></p>
+<p><span class="math inline">\(26.3\% \times 30.4\% = 8.0\%\)</span></p>
+</div>
+</div>
+<p>Year-5 figures, against net PP&amp;E plus working capital of 32.20 at the end of year 4.</p>
+</section></section>
+<section>
+<section id="cash-and-debt" class="title-slide slide level1 center">
+<h1>Cash and debt</h1>
+
+</section>
+<section id="from-enterprise-value-to-equity" class="slide level2 plain-title">
+<h2>From enterprise value to equity</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Enterprise value</td>
+<td style="text-align: right;">100.14</td>
+</tr>
+<tr class="even">
+<td>Plus cash</td>
+<td style="text-align: right;">6.00</td>
+</tr>
+<tr class="odd">
+<td>Less debt</td>
+<td style="text-align: right;">(18.00)</td>
+</tr>
+<tr class="even">
+<td>Equity value</td>
+<td style="text-align: right;">88.14</td>
+</tr>
+<tr class="odd">
+<td>Shares outstanding</td>
+<td style="text-align: right;">4.0 million</td>
+</tr>
+<tr class="even">
+<td>Value per share</td>
+<td style="text-align: right;">$22.03</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="two-points-about-the-equity-value-calculation" class="slide level2 plain-title">
+<h2>Two points about the equity value calculation</h2>
+<div class="cards cards-2">
+<div class="card">
+<p><span class="card-title">Cash is not working capital</span></p>
+<p>The 10% ratio covers receivables, inventory and payables. Cash is added separately, at face value.</p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title">Interest is not in free cash flow</span></p>
+<p>The cash flows are unlevered. Debt enters through the WACC and again in the equity value calculation, never in the forecast.</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="exercise" class="title-slide slide level1 center">
+<h1>Exercise</h1>
+
+</section>
+<section id="value-this-company" class="slide level2 plain-title">
+<h2>Value this company</h2>
+<div class="cards cards-2">
+<div class="card">
+<p><span class="card-title">The forecast</span></p>
+<p>Sales of 20.00 in year 1, growing 30%, then 18%, then 6% from year 4 on. EBITDA margin 15%, 18%, 20%, then 22% from year 4 on.</p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title">The ratios</span></p>
+<p>Net PP&amp;E 65% of next year’s sales. Depreciation 12% of opening net PP&amp;E. Working capital 12% of next year’s sales. Tax 21%, WACC 12%.</p>
+</div>
+</div>
+<div class="steps">
+<ol type="1">
+<li>Free cash flow for years 1 to 4</li>
+<li>Terminal value at the end of year 4, and the enterprise value</li>
+<li>Equity value per share, with cash of 4.00, debt of 15.00, and 2.5 million shares</li>
+</ol>
+</div>
+</section></section>
+<section>
+<section id="john-b.-sanfilippo-son" class="title-slide slide level1 center">
+<h1>John B. Sanfilippo &amp; Son</h1>
+
+</section>
+<section id="the-company-1" class="slide level2 plain-title">
+<h2>The company</h2>
+<p>Shells, roasts and packages nuts. Fisher, Orchard Valley Harvest, Squirrel Brand, and private label for the grocery chains. Fiscal years end in late June.</p>
+<div class="cards cards-3">
+<div class="card">
+<p><span class="card-title">Ticker</span></p>
+<p><code>JBSS</code>, $805 million of market value: 11.78 million diluted shares at $68.31.</p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title">What it owns</span></p>
+<p>Shelling and roasting plants, $268 million of net PP&amp;E against $1.18 billion of sales.</p>
+</div>
+<div class="card card-sand">
+<p><span class="card-title">The balance sheet</span></p>
+<p>Simple. The company owns no other businesses, and goodwill is $11.8 million against $659 million of assets.</p>
+</div>
+</div>
+</section>
+<section id="four-years-of-history" class="slide level2 plain-title nowrap-labels">
+<h2>Four years of history</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;">FY2023</th>
+<th style="text-align: right;">FY2024</th>
+<th style="text-align: right;">FY2025</th>
+<th style="text-align: right;">FY2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales</td>
+<td style="text-align: right;">999.7</td>
+<td style="text-align: right;">1,066.8</td>
+<td style="text-align: right;">1,107.2</td>
+<td style="text-align: right;">1,175.7</td>
+</tr>
+<tr class="even">
+<td>Sales growth</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">6.7%</td>
+<td style="text-align: right;">3.8%</td>
+<td style="text-align: right;">6.2%</td>
+</tr>
+<tr class="odd">
+<td>Operating income</td>
+<td style="text-align: right;">88.9</td>
+<td style="text-align: right;">81.7</td>
+<td style="text-align: right;">82.9</td>
+<td style="text-align: right;">87.0</td>
+</tr>
+<tr class="even">
+<td>Operating margin</td>
+<td style="text-align: right;">8.9%</td>
+<td style="text-align: right;">7.7%</td>
+<td style="text-align: right;">7.5%</td>
+<td style="text-align: right;">7.4%</td>
+</tr>
+<tr class="odd">
+<td>Net PP&amp;E</td>
+<td style="text-align: right;">127.2</td>
+<td style="text-align: right;">178.6</td>
+<td style="text-align: right;">193.0</td>
+<td style="text-align: right;">268.3</td>
+</tr>
+<tr class="even">
+<td>Depreciation</td>
+<td style="text-align: right;">22.1</td>
+<td style="text-align: right;">26.6</td>
+<td style="text-align: right;">31.5</td>
+<td style="text-align: right;">33.3</td>
+</tr>
+<tr class="odd">
+<td>Capital expenditure</td>
+<td style="text-align: right;">20.7</td>
+<td style="text-align: right;">28.3</td>
+<td style="text-align: right;">50.7</td>
+<td style="text-align: right;">88.1</td>
+</tr>
+</tbody>
+</table>
+<div class="note">
+<p>Yahoo returns four years for JBSS, not five, and each ratio needs three.</p>
+</div>
+</section>
+<section id="the-three-ratios-measured" class="slide level2 plain-title nowrap-labels">
+<h2>The three ratios, measured</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Number</th>
-<th>Where it lives</th>
-<th>Common error</th>
+<th></th>
+<th style="text-align: right;">FY2023</th>
+<th style="text-align: right;">FY2024</th>
+<th style="text-align: right;">FY2025</th>
+<th style="text-align: right;">FY2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Net PP&amp;E / next year’s sales (<span class="math inline">\(k\)</span>)</td>
+<td style="text-align: right;">11.9%</td>
+<td style="text-align: right;">16.1%</td>
+<td style="text-align: right;">16.4%</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="even">
+<td>Depreciation / opening net PP&amp;E (<span class="math inline">\(d\)</span>)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">20.9%</td>
+<td style="text-align: right;">17.6%</td>
+<td style="text-align: right;">17.3%</td>
+</tr>
+<tr class="odd">
+<td>Working capital / next year’s sales (<span class="math inline">\(w\)</span>)</td>
+<td style="text-align: right;">15.7%</td>
+<td style="text-align: right;">17.1%</td>
+<td style="text-align: right;">21.1%</td>
+<td style="text-align: right;">—</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(k\)</span> and <span class="math inline">\(w\)</span> are measured against next year’s sales, so they stop at FY2025, the last year with a following year in the data.</p>
+</section>
+<section id="capital-expenditure-and-net-ppe" class="slide level2 plain-title">
+<h2>Capital expenditure and net PP&amp;E</h2>
+<div class="cards cards-3">
+<div class="card">
+<p><span class="card-title">Three years above depreciation</span></p>
+<p>Capital expenditure of 28.3, 50.7, 88.1 against depreciation of 26.6, 31.5, 33.3. FY2023 was the last year capital expenditure ran below depreciation.</p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title">So net PP&amp;E doubles</span></p>
+<p>Net PP&amp;E goes from 127.2 to 268.3 while sales rise 18%. The FY2024 step is a $59.0m acquisition, almost all of it plant. The FY2026 step is the build.</p>
+</div>
+<div class="card card-sand">
+<p><span class="card-title">So <span class="math inline">\(k\)</span> doubles</span></p>
+<p><span class="math inline">\(k\)</span> goes from 11.9% to 16.4%, and is 21.6% measured against the FY2027 sales forecast.</p>
+</div>
+</div>
+<p>The forecast has to say whether net PP&amp;E stays this high relative to sales.</p>
+</section>
+<section id="the-other-two-ratios" class="slide level2 plain-title">
+<h2>The other two ratios</h2>
+<div class="cards cards-2">
+<div class="card">
+<p><span class="card-title"><span class="math inline">\(d\)</span> falls for a mechanical reason</span></p>
+<p><span class="math inline">\(d\)</span> goes from 20.9% to 17.3%. New assets enter net PP&amp;E faster than the existing assets are depreciated, so <span class="math inline">\(d\)</span> falls even though the depreciable lives have not changed. Of the 268.3 balance, 86.9 is construction in progress, which does not depreciate until it is in service. Call <span class="math inline">\(d\)</span> 15%.</p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title"><span class="math inline">\(w\)</span> moves with inventory</span></p>
+<p><span class="math inline">\(w\)</span> goes from 15.7% to 21.1%. Inventory alone is 245.8 against net working capital of 220.1, and a nut processor buys a crop once a year. Call <span class="math inline">\(w\)</span> 18%.</p>
+</div>
+</div>
+</section>
+<section id="the-forecast" class="slide level2 plain-title">
+<h2>The forecast</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Assumption</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales growth</td>
+<td>5.5%, 5.0%, 4.5%, 3.5%, then 3.0%</td>
+</tr>
+<tr class="even">
+<td>Operating margin</td>
+<td>7.5%, held</td>
+</tr>
+<tr class="odd">
+<td>Net PP&amp;E (<span class="math inline">\(k\)</span>)</td>
+<td>21.0% of next year’s sales</td>
+</tr>
+<tr class="even">
+<td>Depreciation (<span class="math inline">\(d\)</span>)</td>
+<td>15.0% of opening net PP&amp;E</td>
+</tr>
+<tr class="odd">
+<td>Working capital (<span class="math inline">\(w\)</span>)</td>
+<td>18.0% of next year’s sales</td>
+</tr>
+<tr class="even">
+<td>Tax rate</td>
+<td>25%</td>
+</tr>
+<tr class="odd">
+<td>WACC</td>
+<td>9.0%</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(k\)</span> holds near today’s 21.6% rather than the FY2025 level of 16.4%. The other rows are read off the history.</p>
+</section>
+<section id="the-capital-schedule-1" class="slide level2 plain-title nowrap-labels">
+<h2>The capital schedule</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;">FY26</th>
+<th style="text-align: right;">FY27</th>
+<th style="text-align: right;">FY28</th>
+<th style="text-align: right;">FY29</th>
+<th style="text-align: right;">FY30</th>
+<th style="text-align: right;">FY31</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales</td>
+<td style="text-align: right;">1,175.7</td>
+<td style="text-align: right;">1,240.4</td>
+<td style="text-align: right;">1,302.4</td>
+<td style="text-align: right;">1,361.0</td>
+<td style="text-align: right;">1,408.6</td>
+<td style="text-align: right;">1,450.9</td>
+</tr>
+<tr class="even">
+<td>Next year’s sales</td>
+<td style="text-align: right;">1,240.4</td>
+<td style="text-align: right;">1,302.4</td>
+<td style="text-align: right;">1,361.0</td>
+<td style="text-align: right;">1,408.6</td>
+<td style="text-align: right;">1,450.9</td>
+<td style="text-align: right;">1,494.4</td>
+</tr>
+<tr class="odd">
+<td>Net PP&amp;E</td>
+<td style="text-align: right;">268.3</td>
+<td style="text-align: right;">273.5</td>
+<td style="text-align: right;">285.8</td>
+<td style="text-align: right;">295.8</td>
+<td style="text-align: right;">304.7</td>
+<td style="text-align: right;">313.8</td>
+</tr>
+<tr class="even">
+<td>Depreciation</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">40.2</td>
+<td style="text-align: right;">41.0</td>
+<td style="text-align: right;">42.9</td>
+<td style="text-align: right;">44.4</td>
+<td style="text-align: right;">45.7</td>
+</tr>
+<tr class="odd">
+<td>Capital expenditure</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">45.4</td>
+<td style="text-align: right;">53.3</td>
+<td style="text-align: right;">52.9</td>
+<td style="text-align: right;">53.2</td>
+<td style="text-align: right;">54.8</td>
+</tr>
+<tr class="even">
+<td>Working capital</td>
+<td style="text-align: right;">220.1</td>
+<td style="text-align: right;">234.4</td>
+<td style="text-align: right;">245.0</td>
+<td style="text-align: right;">253.6</td>
+<td style="text-align: right;">261.2</td>
+<td style="text-align: right;">269.0</td>
+</tr>
+</tbody>
+</table>
+<p>The FY2026 column is the net PP&amp;E and working capital the company already has.</p>
+</section>
+<section id="free-cash-flow-1" class="slide level2 plain-title nowrap-labels">
+<h2>Free cash flow</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;">FY27</th>
+<th style="text-align: right;">FY28</th>
+<th style="text-align: right;">FY29</th>
+<th style="text-align: right;">FY30</th>
+<th style="text-align: right;">FY31</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>EBIT</td>
-<td>Income statement</td>
-<td>Undisclosed adjustments</td>
+<td style="text-align: right;">93.0</td>
+<td style="text-align: right;">97.7</td>
+<td style="text-align: right;">102.1</td>
+<td style="text-align: right;">105.6</td>
+<td style="text-align: right;">108.8</td>
 </tr>
 <tr class="even">
-<td>Tax rate</td>
-<td>Income statement</td>
-<td>Effective vs marginal</td>
+<td>Net operating profit after tax</td>
+<td style="text-align: right;">69.8</td>
+<td style="text-align: right;">73.3</td>
+<td style="text-align: right;">76.6</td>
+<td style="text-align: right;">79.2</td>
+<td style="text-align: right;">81.6</td>
 </tr>
 <tr class="odd">
-<td>D&amp;A</td>
-<td>Cash flow statement</td>
-<td>Taken from the income statement</td>
+<td>Depreciation</td>
+<td style="text-align: right;">40.2</td>
+<td style="text-align: right;">41.0</td>
+<td style="text-align: right;">42.9</td>
+<td style="text-align: right;">44.4</td>
+<td style="text-align: right;">45.7</td>
 </tr>
 <tr class="even">
 <td>Capital expenditure</td>
-<td>Cash flow statement</td>
-<td>Acquisitions omitted</td>
+<td style="text-align: right;">(45.4)</td>
+<td style="text-align: right;">(53.3)</td>
+<td style="text-align: right;">(52.9)</td>
+<td style="text-align: right;">(53.2)</td>
+<td style="text-align: right;">(54.8)</td>
 </tr>
 <tr class="odd">
-<td>Change in NWC</td>
-<td>Two balance sheets</td>
-<td>Cash or short-term debt included</td>
+<td>Increase in working capital</td>
+<td style="text-align: right;">(14.3)</td>
+<td style="text-align: right;">(10.5)</td>
+<td style="text-align: right;">(8.6)</td>
+<td style="text-align: right;">(7.6)</td>
+<td style="text-align: right;">(7.8)</td>
+</tr>
+<tr class="even">
+<td>Free cash flow</td>
+<td style="text-align: right;">50.2</td>
+<td style="text-align: right;">50.4</td>
+<td style="text-align: right;">58.0</td>
+<td style="text-align: right;">62.8</td>
+<td style="text-align: right;">64.6</td>
+</tr>
+</tbody>
+</table>
+<p>Working capital is positive, so sales growth consumes cash rather than releasing it.</p>
+</section>
+<section id="terminal-value-1" class="slide level2 plain-title">
+<h2>Terminal value</h2>
+<p>FY2031 grows at 3.0% and all three ratios are fixed, so it is the steady-state year.</p>
+<p><span class="math display">\[\text{TV}_{2031} = \frac{64.6 \times 1.03}{0.09-0.03} = 1{,}109.6\]</span></p>
+<div class="note">
+<p>Seventeen times FY2031 free cash flow, at a six-point spread between <span class="math inline">\(r\)</span> and <span class="math inline">\(g\)</span>. The example earlier was twenty-five times, at a four-point spread.</p>
+</div>
+</section>
+<section id="discount-it-all-back-1" class="slide level2 plain-title nowrap-labels">
+<h2>Discount it all back</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;">FY27</th>
+<th style="text-align: right;">FY28</th>
+<th style="text-align: right;">FY29</th>
+<th style="text-align: right;">FY30</th>
+<th style="text-align: right;">FY31</th>
+<th style="text-align: right;">TV</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Free cash flow</td>
+<td style="text-align: right;">50.2</td>
+<td style="text-align: right;">50.4</td>
+<td style="text-align: right;">58.0</td>
+<td style="text-align: right;">62.8</td>
+<td style="text-align: right;">64.6</td>
+<td style="text-align: right;">1,109.6</td>
+</tr>
+<tr class="even">
+<td>Discount factor at 9%</td>
+<td style="text-align: right;">0.917</td>
+<td style="text-align: right;">0.842</td>
+<td style="text-align: right;">0.772</td>
+<td style="text-align: right;">0.708</td>
+<td style="text-align: right;">0.650</td>
+<td style="text-align: right;">0.650</td>
+</tr>
+<tr class="odd">
+<td>Present value</td>
+<td style="text-align: right;">46.1</td>
+<td style="text-align: right;">42.4</td>
+<td style="text-align: right;">44.8</td>
+<td style="text-align: right;">44.5</td>
+<td style="text-align: right;">42.0</td>
+<td style="text-align: right;">721.2</td>
+</tr>
+</tbody>
+</table>
+<div class="stats">
+<div class="stat">
+<p><span class="stat-value">$940.9m</span> <span class="stat-label">Enterprise value</span></p>
+</div>
+<div class="stat">
+<p><span class="stat-value">77%</span> <span class="stat-label">In the terminal value</span></p>
+</div>
+</div>
+</section>
+<section id="from-enterprise-value-to-equity-1" class="slide level2 plain-title">
+<h2>From enterprise value to equity</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Enterprise value</td>
+<td style="text-align: right;">940.9</td>
+</tr>
+<tr class="even">
+<td>Less borrowings</td>
+<td style="text-align: right;">(83.5)</td>
+</tr>
+<tr class="odd">
+<td>Plus cash</td>
+<td style="text-align: right;">1.1</td>
+</tr>
+<tr class="even">
+<td>Plus goodwill and intangibles</td>
+<td style="text-align: right;">15.2</td>
+</tr>
+<tr class="odd">
+<td>Less other long-term liabilities</td>
+<td style="text-align: right;">(6.6)</td>
+</tr>
+<tr class="even">
+<td>Equity value</td>
+<td style="text-align: right;">867.1</td>
+</tr>
+<tr class="odd">
+<td>Diluted shares</td>
+<td style="text-align: right;">11.78 million</td>
+</tr>
+<tr class="even">
+<td>Value per share</td>
+<td style="text-align: right;">$73.61</td>
+</tr>
+</tbody>
+</table>
+<p>JBSS trades at $68.31.</p>
+</section>
+<section id="what-the-market-is-assuming" class="slide level2 plain-title">
+<h2>What the market is assuming</h2>
+<p>Hold the five-year forecast fixed and solve for the terminal growth rate that justifies $68.31.</p>
+<div class="cards cards-3">
+<div class="card">
+<p><span class="card-title">Implied growth</span></p>
+<p>2.5% forever, against a 3.0% assumption.</p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title">Implied exit multiple</span></p>
+<p>6.6 times FY2031 EBITDA.</p>
+</div>
+<div class="card card-sand">
+<p><span class="card-title">Today’s multiple</span></p>
+<p>7.3 times FY2026 EBITDA.</p>
+</div>
+</div>
+<p>The price requires the EBITDA multiple to fall from 7.3 times FY2026 to 6.6 times FY2031.</p>
+</section></section>
+<section>
+<section id="accounting" class="title-slide slide level1 center">
+<h1>Accounting</h1>
+
+</section>
+<section id="leases-finance-or-operating" class="slide level2 plain-title">
+<h2>Leases: finance or operating</h2>
+<p>Does the lease hand over substantially all the risks and rewards of owning the asset? If so it is a purchase the lessor financed. Any one of five tests settles it.</p>
+<div class="steps">
+<ol type="1">
+<li>Ownership transfers at the end of the term</li>
+<li>There is a purchase option the lessee is reasonably certain to take</li>
+<li>The term covers a major part of the asset’s remaining economic life</li>
+<li>The payments are worth substantially all of the asset’s fair value</li>
+<li>The asset is so specialised it has no other use to the lessor</li>
+</ol>
+</div>
+<p>Meet none of the five and it is an operating lease.</p>
+</section>
+<section id="leases-what-the-choice-is" class="slide level2 plain-title">
+<h2>Leases: what the choice is</h2>
+<p>Both sit on the balance sheet as a right-of-use asset and a lease liability. A finance lease splits into depreciation and interest; an operating lease is rent in EBIT.</p>
+<div class="cards cards-2">
+<div class="card">
+<p><span class="card-title">Leave the rent in EBIT</span></p>
+<p>The right-of-use asset stays out of invested capital and the lease liability out of the equity value calculation. The rent is already subtracted in EBIT.</p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title">Or capitalise the lease</span></p>
+<p>Take the rent out of EBIT and depreciate the right-of-use asset in its place. The asset joins invested capital and the lease liability joins the equity value calculation.</p>
+</div>
+</div>
+<div class="note">
+<p>Either is defensible. Half of the second — the lease liability subtracted in the equity value calculation, the rent still in EBIT — charges twice.</p>
+</div>
+</section>
+<section id="leases-read-the-debt-line-twice" class="slide level2 plain-title">
+<h2>Leases: read the debt line twice</h2>
+<p>Yahoo reports total debt of 104.1. That is not what the company borrowed.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Long-term debt</td>
+<td style="text-align: right;">43.6</td>
+</tr>
+<tr class="even">
+<td>Current debt</td>
+<td style="text-align: right;">39.9</td>
+</tr>
+<tr class="odd">
+<td>Borrowings</td>
+<td style="text-align: right;">83.5</td>
+</tr>
+<tr class="even">
+<td>Operating lease liability, non-current</td>
+<td style="text-align: right;">20.6</td>
+</tr>
+<tr class="odd">
+<td>Yahoo’s “total debt”</td>
+<td style="text-align: right;">104.1</td>
+</tr>
+</tbody>
+</table>
+<div class="note">
+<p>No finance leases. The rent is still inside the 87.0 of operating income, so the 20.6 is not subtracted when computing equity value. Subtracting it anyway lowers the value by $1.75 a share.</p>
+</div>
+</section>
+<section id="deferred-taxes-check-then-ignore" class="slide level2 plain-title nowrap-labels">
+<h2>Deferred taxes: check, then ignore</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">FY2024</th>
+<th style="text-align: right;">FY2025</th>
+<th style="text-align: right;">FY2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Book effective rate</td>
+<td style="text-align: right;">24.6%</td>
+<td style="text-align: right;">24.3%</td>
+<td style="text-align: right;">25.4%</td>
+</tr>
+<tr class="even">
+<td>Cash taxes paid / pretax income</td>
+<td style="text-align: right;">27.7%</td>
+<td style="text-align: right;">27.2%</td>
+<td style="text-align: right;">16.7%</td>
+</tr>
+</tbody>
+</table>
+<p>Cash taxes ran 23.8% over the three years against a book rate of 24.8%. Taxing EBIT at the cash rate instead would add about $1.64 a share.</p>
+<div class="note">
+<p>A one-point gap is small enough to leave the forecast taxing EBIT at the book rate.</p>
+</div>
+</section>
+<section id="goodwill-intangibles-and-other-liabilities" class="slide level2 plain-title">
+<h2>Goodwill, intangibles, and other liabilities</h2>
+<div class="cards cards-3">
+<div class="card">
+<p><span class="card-title">Goodwill, $11.8m</span></p>
+<p>1.8% of assets. No acquisitions are forecast, so goodwill is held flat and added in the equity value calculation, where it adds a dollar a share.</p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title">Other intangibles, $3.4m</span></p>
+<p>Held flat and added in the equity value calculation too, where they add 29 cents a share.</p>
+</div>
+<div class="card card-sand">
+<p><span class="card-title">Other long-term liabilities, $6.6m</span></p>
+<p>The whole “other” category on the balance sheet, and the only one of these three items subtracted in the equity value calculation rather than added.</p>
+</div>
+</div>
+<p>The three items together move the value per share by 73 cents, against a $5.30 gap to the market price.</p>
+</section>
+<section id="one-rule" class="slide level2 plain-title">
+<h2>One rule</h2>
+<p>Every balance sheet item goes in exactly one of two places.</p>
+<div class="cards cards-2">
+<div class="card">
+<p><span class="card-title">Invested capital</span></p>
+<p>An item goes here if it produces the operating cash flows being discounted. The change in the item is a cash flow in the forecast.</p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title">The equity value calculation</span></p>
+<p>Every other item goes here, carried at book value between enterprise value and equity value.</p>
+</div>
+</div>
+<div class="note">
+<p>Putting an item in both double counts it; leaving it out of both drops it from the valuation.</p>
+</div>
+</section>
+<section id="sensitivity-to-k" class="slide level2 plain-title nowrap-labels">
+<h2>Sensitivity to <span class="math inline">\(k\)</span></h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">Value per share</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(k\)</span> back to 16.4%, the recent plant spending was a one-off</td>
+<td style="text-align: right;">$80.73</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(k\)</span> at 21.0%, the base case</td>
+<td style="text-align: right;">$73.61</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(k\)</span> at 21.6%, today’s level holds</td>
+<td style="text-align: right;">$72.68</td>
+</tr>
+</tbody>
+</table>
+<div class="note">
+<p><span class="math inline">\(d\)</span> does not appear in this table, and cannot. Capital expenditure less depreciation is the change in the net PP&amp;E balance, and EBIT here is a margin on sales rather than EBITDA less depreciation. So <span class="math inline">\(d\)</span> cancels out of the valuation.</p>
+</div>
+</section></section>
+<section>
+<section id="if-there-is-time" class="title-slide slide level1 center">
+<h1>If there is time</h1>
+
+</section>
+<section id="smith-midland" class="slide level2 plain-title nowrap-labels">
+<h2>Smith-Midland</h2>
+<p>Precast concrete: highway barriers, sound walls, building panels. <code>SMID</code>, $130 million of market value at $24.54 a share.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;">FY2022</th>
+<th style="text-align: right;">FY2023</th>
+<th style="text-align: right;">FY2024</th>
+<th style="text-align: right;">FY2025</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales</td>
+<td style="text-align: right;">50.1</td>
+<td style="text-align: right;">59.6</td>
+<td style="text-align: right;">78.5</td>
+<td style="text-align: right;">93.4</td>
+</tr>
+<tr class="even">
+<td>Sales growth</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">18.8%</td>
+<td style="text-align: right;">31.8%</td>
+<td style="text-align: right;">19.0%</td>
+</tr>
+<tr class="odd">
+<td>Operating margin</td>
+<td style="text-align: right;">1.7%</td>
+<td style="text-align: right;">1.9%</td>
+<td style="text-align: right;">12.6%</td>
+<td style="text-align: right;">18.2%</td>
+</tr>
+<tr class="even">
+<td>Net PP&amp;E</td>
+<td style="text-align: right;">25.1</td>
+<td style="text-align: right;">27.7</td>
+<td style="text-align: right;">31.7</td>
+<td style="text-align: right;">38.5</td>
+</tr>
+<tr class="odd">
+<td>Depreciation</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: right;">2.7</td>
+<td style="text-align: right;">2.9</td>
+</tr>
+<tr class="even">
+<td>Capital expenditure</td>
+<td style="text-align: right;">2.7</td>
+<td style="text-align: right;">5.0</td>
+<td style="text-align: right;">6.2</td>
+<td style="text-align: right;">9.3</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="lab-1-find-them" class="slide level2 band-bottom">
-<h2>Lab 1 — find them</h2>
-<p>Your company’s last two annual filings are in the Unit 3 folder.</p>
-<div class="steps">
-<ol type="1">
-<li>Locate EBIT and the effective tax rate on the income statement</li>
-<li>Locate D&amp;A and capital expenditure on the cash flow statement</li>
-<li>Compute non-cash working capital from the two balance sheets</li>
-</ol>
-</div>
+<section id="the-three-ratios-measured-1" class="slide level2 plain-title nowrap-labels">
+<h2>The three ratios, measured</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">FY2022</th>
+<th style="text-align: right;">FY2023</th>
+<th style="text-align: right;">FY2024</th>
+<th style="text-align: right;">FY2025</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(k\)</span></td>
+<td style="text-align: right;">42.2%</td>
+<td style="text-align: right;">35.3%</td>
+<td style="text-align: right;">33.9%</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(d\)</span></td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">9.5%</td>
+<td style="text-align: right;">9.6%</td>
+<td style="text-align: right;">9.1%</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(w\)</span></td>
+<td style="text-align: right;">19.6%</td>
+<td style="text-align: right;">11.2%</td>
+<td style="text-align: right;">14.9%</td>
+<td style="text-align: right;">—</td>
+</tr>
+</tbody>
+</table>
 <div class="note">
-<p>Twenty minutes, working from the filings themselves.</p>
+<p><span class="math inline">\(k\)</span> in the mid-thirties is nearly twice JBSS’s <span class="math inline">\(k\)</span>: a concrete plant carries just under three dollars of sales per dollar of net PP&amp;E. <span class="math inline">\(d\)</span> holds between 9.1% and 9.6%. The operating margin is the line that moves, from 1.7% to 18.2%.</p>
 </div>
+</section>
+<section id="the-forecast-1" class="slide level2 plain-title">
+<h2>The forecast</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Assumption</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales growth</td>
+<td>12%, 9%, 6%, then 3%</td>
+</tr>
+<tr class="even">
+<td>Operating margin</td>
+<td>13.0%, down from 18.2%</td>
+</tr>
+<tr class="odd">
+<td>Net PP&amp;E (<span class="math inline">\(k\)</span>)</td>
+<td>36.0% of next year’s sales</td>
+</tr>
+<tr class="even">
+<td>Depreciation (<span class="math inline">\(d\)</span>)</td>
+<td>9.5% of opening net PP&amp;E</td>
+</tr>
+<tr class="odd">
+<td>Working capital (<span class="math inline">\(w\)</span>)</td>
+<td>18.0% of next year’s sales</td>
+</tr>
+<tr class="even">
+<td>Tax rate, WACC</td>
+<td>25%, 11%</td>
+</tr>
+</tbody>
+</table>
+<p>Everything but the operating margin is read off the history.</p>
+</section>
+<section id="the-schedule-and-the-cash-flow" class="slide level2 plain-title nowrap-labels">
+<h2>The schedule and the cash flow</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;">FY25</th>
+<th style="text-align: right;">FY26</th>
+<th style="text-align: right;">FY27</th>
+<th style="text-align: right;">FY28</th>
+<th style="text-align: right;">FY29</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales</td>
+<td style="text-align: right;">93.4</td>
+<td style="text-align: right;">104.6</td>
+<td style="text-align: right;">114.0</td>
+<td style="text-align: right;">120.9</td>
+<td style="text-align: right;">124.5</td>
+</tr>
+<tr class="even">
+<td>Net PP&amp;E</td>
+<td style="text-align: right;">38.5</td>
+<td style="text-align: right;">41.0</td>
+<td style="text-align: right;">43.5</td>
+<td style="text-align: right;">44.8</td>
+<td style="text-align: right;">46.2</td>
+</tr>
+<tr class="odd">
+<td>Depreciation</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">3.7</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: right;">4.3</td>
+</tr>
+<tr class="even">
+<td>Capital expenditure</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">6.2</td>
+<td style="text-align: right;">6.4</td>
+<td style="text-align: right;">5.4</td>
+<td style="text-align: right;">5.6</td>
+</tr>
+<tr class="odd">
+<td>Working capital</td>
+<td style="text-align: right;">23.2</td>
+<td style="text-align: right;">20.5</td>
+<td style="text-align: right;">21.8</td>
+<td style="text-align: right;">22.4</td>
+<td style="text-align: right;">23.1</td>
+</tr>
+<tr class="even">
+<td>Free cash flow</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">10.3</td>
+<td style="text-align: right;">7.4</td>
+<td style="text-align: right;">9.8</td>
+<td style="text-align: right;">10.1</td>
+</tr>
+</tbody>
+</table>
+<div class="note">
+<p>FY2026 working capital falls because the assumed <span class="math inline">\(w\)</span> of 18% is below the 22.2% the company carried at FY2025. A ratio assumption applied to an actual balance always steps in year one.</p>
+</div>
+</section>
+<section id="the-value" class="slide level2 plain-title">
+<h2>The value</h2>
+<p><span class="math display">\[\text{TV}_{2029} = \frac{10.1 \times 1.03}{0.11-0.03} = 130.3\]</span></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>$ millions</th>
+<th style="text-align: right;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Present value of FY26 to FY29</td>
+<td style="text-align: right;">29.2</td>
+</tr>
+<tr class="even">
+<td>Present value of terminal value</td>
+<td style="text-align: right;">85.8</td>
+</tr>
+<tr class="odd">
+<td>Enterprise value</td>
+<td style="text-align: right;">115.0</td>
+</tr>
+<tr class="even">
+<td>Plus cash, less debt</td>
+<td style="text-align: right;">11.9, (4.5)</td>
+</tr>
+<tr class="odd">
+<td>Equity value</td>
+<td style="text-align: right;">122.4</td>
+</tr>
+<tr class="even">
+<td>Value per share, on 5.31m shares</td>
+<td style="text-align: right;">$23.05</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="the-margin-implied-by-the-price" class="slide level2 plain-title">
+<h2>The margin implied by the price</h2>
+<div class="stats">
+<div class="stat">
+<p><span class="stat-value">$23.05</span> <span class="stat-label">At a 13.0% margin</span></p>
+</div>
+<div class="stat">
+<p><span class="stat-value">$24.54</span> <span class="stat-label">The market price</span></p>
+</div>
+<div class="stat">
+<p><span class="stat-value">13.7%</span> <span class="stat-label">The margin that closes the gap</span></p>
+</div>
+</div>
+<p>Three quarters of the value is in the terminal value, which rests on the assumed operating margin. The company earned 1.7% in FY2022 and 18.2% in FY2025.</p>
 </section></section>
 <section>
-<section id="free-cash-flow" class="title-slide slide level1 center">
-<h1>Free cash flow</h1>
+<section id="assignment" class="title-slide slide level1 center">
+<h1>Assignment</h1>
 
 </section>
-<section id="the-definition" class="slide level2">
-<h2>The definition</h2>
-<p><span class="math display">\[\text{FCF} = \text{EBIT}(1-t) + \text{D\&amp;A} - \text{CapEx} - \Delta \text{NWC}\]</span></p>
-<p>Cash generated by operations after reinvestment, before any payment to debt or equity holders.</p>
-</section>
-<section id="two-routes-to-one-number" class="slide level2 compare">
-<h2>Two routes to one number</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><span class="eyebrow">From the income statement</span></p>
-<p><span class="math inline">\(\text{EBIT}(1-t)\)</span></p>
-<p><span class="math inline">\(+\ \text{D\&amp;A}\)</span></p>
-<p><span class="math inline">\(-\ \text{CapEx}\)</span></p>
-<p><span class="math inline">\(-\ \Delta \text{NWC}\)</span></p>
-</div><div class="column" style="width:50%;">
-<p><span class="eyebrow">From the cash flow statement</span></p>
-<p><span class="math inline">\(\text{Cash from operations}\)</span></p>
-<p><span class="math inline">\(+\ \text{Interest}(1-t)\)</span></p>
-<p><span class="math inline">\(-\ \text{CapEx}\)</span></p>
-</div></div>
-<p>Equal only after reconciling non-cash items.</p>
-</section>
-<section id="why-they-disagree" class="slide level2 plain-title">
-<h2>Why they disagree</h2>
+<section id="flexsteel" class="slide level2 plain-title">
+<h2>Flexsteel</h2>
+<p>Value Flexsteel the way we valued JBSS. Yahoo Finance, ticker <code>FLXS</code>, fiscal years ending June 30.</p>
 <div class="cards cards-2">
 <div class="card">
-<p><span class="card-title">Non-cash charges you forgot</span></p>
-<p>Stock compensation, impairments, deferred taxes.</p>
+<p><span class="card-title">What it does</span></p>
+<p>Makes and sells upholstered furniture. Four years of data, FY2023 through FY2026.</p>
 </div>
 <div class="card card-blue">
-<p><span class="card-title">Working capital, redefined</span></p>
-<p>The cash flow statement’s version is not the balance sheet’s.</p>
-</div>
-<div class="card card-blue">
-<p><span class="card-title">Leases</span></p>
-<p>Operating lease treatment changes both EBIT and capital expenditure.</p>
-</div>
-<div class="card">
-<p><span class="card-title">Acquisitions</span></p>
-<p>Reinvestment reported separately from capital expenditure.</p>
+<p><span class="card-title">Why this one</span></p>
+<p>All three ratios move over the four years, so each one has to be defended rather than read off the history.</p>
 </div>
 </div>
 </section>
-<section id="lab-2-compute-it-both-ways" class="slide level2 band-bottom">
-<h2>Lab 2 — compute it both ways</h2>
+<section id="what-to-pull" class="slide level2 plain-title">
+<h2>What to pull</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Statement</th>
+<th>Lines</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Income statement</td>
+<td>Revenue, operating income, pretax income, tax provision, diluted shares</td>
+</tr>
+<tr class="even">
+<td>Balance sheet</td>
+<td>Cash, current assets, current liabilities, current debt, net PP&amp;E, total debt, operating lease liability</td>
+</tr>
+<tr class="odd">
+<td>Cash flow</td>
+<td>Depreciation and amortisation, capital expenditure</td>
+</tr>
+</tbody>
+</table>
+<p>Net working capital is current assets less cash, minus current liabilities less current debt.</p>
+</section>
+<section id="part-1-the-three-ratios" class="slide level2 plain-title">
+<h2>Part 1: the three ratios</h2>
+<p>Compute, for every year the data allows:</p>
 <div class="steps">
 <ol type="1">
-<li>In the workbook, build FCF from EBIT, line by line</li>
-<li>Build it again from cash from operations</li>
-<li>List the line items that account for the difference</li>
+<li><span class="math inline">\(k\)</span>, net PP&amp;E as a share of next year’s sales</li>
+<li><span class="math inline">\(d\)</span>, depreciation as a share of opening net PP&amp;E</li>
+<li><span class="math inline">\(w\)</span>, net working capital as a share of next year’s sales</li>
 </ol>
+</div>
+<p>Report each ratio year by year. Two of the three fall by about a third over the four years and the third rises. Say what single fact about the company explains all three, and whether that change is finished.</p>
+</section>
+<section id="part-2-the-forecast" class="slide level2 plain-title">
+<h2>Part 2: the forecast</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Assumption</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales growth</td>
+<td>5.0%, 4.5%, 4.0%, then 3.0%</td>
+</tr>
+<tr class="even">
+<td>Operating margin</td>
+<td>8.5%, held</td>
+</tr>
+<tr class="odd">
+<td>Net PP&amp;E (<span class="math inline">\(k\)</span>)</td>
+<td>16.0% of next year’s sales</td>
+</tr>
+<tr class="even">
+<td>Depreciation (<span class="math inline">\(d\)</span>)</td>
+<td>5.0% of opening net PP&amp;E</td>
+</tr>
+<tr class="odd">
+<td>Working capital (<span class="math inline">\(w\)</span>)</td>
+<td>16.0% of next year’s sales</td>
+</tr>
+<tr class="even">
+<td>Tax rate</td>
+<td>25%</td>
+</tr>
+<tr class="odd">
+<td>WACC</td>
+<td>10.5%</td>
+</tr>
+</tbody>
+</table>
+<p>Use these, not your own averages, so the answers are comparable.</p>
+</section>
+<section id="part-3-the-value" class="slide level2 plain-title">
+<h2>Part 3: the value</h2>
+<div class="steps">
+<ol type="1">
+<li>The capital schedule and free cash flow for FY2027 to FY2030</li>
+<li>Terminal value at the end of FY2030, and the enterprise value</li>
+<li>Equity value per share, and the comparison to the market price</li>
+</ol>
+</div>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>For the equity value calculation, at FY2026</th>
+<th style="text-align: right;">$ millions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Borrowings</td>
+<td style="text-align: right;">0.0</td>
+</tr>
+<tr class="even">
+<td>Operating lease liability</td>
+<td style="text-align: right;">51.9</td>
+</tr>
+<tr class="odd">
+<td>Cash</td>
+<td style="text-align: right;">16.7</td>
+</tr>
+<tr class="even">
+<td>Share price</td>
+<td style="text-align: right;">$82.11</td>
+</tr>
+</tbody>
+</table>
+<p>The share count is not in the table. Part 4 asks for it.</p>
+</section>
+<section id="part-4-the-accounting" class="slide level2 plain-title">
+<h2>Part 4: the accounting</h2>
+<p>Answer in a sentence each.</p>
+<div class="cards cards-2">
+<div class="card">
+<p><span class="card-title">The depreciable life</span></p>
+<p>Your <span class="math inline">\(d\)</span> will come out near 4%, an implied life above twenty years for a furniture maker’s plant. Explain the long implied life, and name the balance sheet line that is the evidence.</p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title">The debt line</span></p>
+<p>Yahoo reports total debt of 51.9 and the company has no borrowings. Say what the 51.9 is, whether it belongs in your equity value calculation, and what you would have to change in the forecast to put it there.</p>
+</div>
 </div>
 <div class="note">
-<p>Both figures go into the poll, along with the difference as a percentage.</p>
+<p>Diluted average shares for FY2026 are 5.46 million. Shares outstanding on the cover of the 10-K are 4.11 million. Say which one belongs in the equity value calculation, why, and what happened between the two dates.</p>
 </div>
 </section>
-<section id="post-your-number" class="slide level2">
-<h2>Post your number</h2>
-<p>Two figures into the poll: your FCF, and the gap between your two routes as a percentage of it.</p>
-<p>Both figures go into the poll, and the distribution goes on screen.</p>
-</section>
-<section id="before-the-break" class="slide level2 band-bottom">
-<h2>Before the break</h2>
-<div class="steps">
-<ol type="1">
-<li>FCF by both routes, saved</li>
-<li>The line items that reconcile them</li>
-<li>Break; Unit 3 begins at 3:10</li>
-</ol>
+<section id="what-to-hand-in" class="slide level2 plain-title">
+<h2>What to hand in</h2>
+<div class="cards cards-3">
+<div class="card">
+<p><span class="card-title">The spreadsheet</span></p>
+<p>One tab of history, one of the forecast. Assumptions in their own cells, not buried in formulas.</p>
+</div>
+<div class="card card-blue">
+<p><span class="card-title">The ratios</span></p>
+<p>Year by year, with the missing years marked and explained.</p>
+</div>
+<div class="card card-sand">
+<p><span class="card-title">One page</span></p>
+<p>Your value per share, the gap to the market price, and the three accounting answers from Part 4.</p>
+</div>
 </div>
 
 
