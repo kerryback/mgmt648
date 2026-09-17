@@ -235,49 +235,53 @@ throughout.
 | WACC | 12% |
 | Cash, debt, shares | 6.00, 18.00, 4.0 million |
 
-## The capital schedule {.plain-title}
+## The capital schedule {.plain-title .nowrap-labels}
 
-| $ millions | 0 | 1 | 2 | 3 | 4 |
+| $ millions | 0 | 1 | 2 | 3 | 4 | 5 |
+|---|---:|---:|---:|---:|---:|---:|
+| Sales | &mdash; | 32.00 | 40.00 | 46.00 | 49.68 | 53.65 |
+| Next year's sales | 32.00 | 40.00 | 46.00 | 49.68 | 53.65 | 57.95 |
+| Net PP&E | 16.00 | 20.00 | 23.00 | 24.84 | 26.83 | 28.97 |
+| Depreciation | &mdash; | 1.60 | 2.00 | 2.30 | 2.48 | 2.68 |
+| Capital expenditure | &mdash; | 5.60 | 5.00 | 4.14 | 4.47 | 4.83 |
+| Net working capital | 3.20 | 4.00 | 4.60 | 4.97 | 5.37 | 5.79 |
+
+The date-0 balances are what the company already owns. Figures are rounded to
+0.01.
+
+## The income statement {.plain-title .nowrap-labels}
+
+| $ millions | 1 | 2 | 3 | 4 | 5 |
 |---|---:|---:|---:|---:|---:|
-| Sales | &mdash; | 32.00 | 40.00 | 46.00 | 49.68 |
-| Next year's sales | 32.00 | 40.00 | 46.00 | 49.68 | 53.65 |
-| Net PP&E | 16.00 | 20.00 | 23.00 | 24.84 | 26.83 |
-| Depreciation | &mdash; | 1.60 | 2.00 | 2.30 | 2.48 |
-| Capital expenditure | &mdash; | 5.60 | 5.00 | 4.14 | 4.47 |
-| Net working capital | 3.20 | 4.00 | 4.60 | 4.97 | 5.37 |
+| Sales | 32.00 | 40.00 | 46.00 | 49.68 | 53.65 |
+| EBITDA | 5.76 | 8.40 | 10.58 | 12.42 | 13.41 |
+| Depreciation | 1.60 | 2.00 | 2.30 | 2.48 | 2.68 |
+| EBIT | 4.16 | 6.40 | 8.28 | 9.94 | 10.73 |
+| Taxes at 21% | 0.87 | 1.34 | 1.74 | 2.09 | 2.25 |
+| Net operating profit after tax | 3.29 | 5.06 | 6.54 | 7.85 | 8.48 |
 
-The date-0 balances are what the company already owns.
+## Add depreciation back {.plain-title .nowrap-labels}
 
-## The income statement {.plain-title}
-
-| $ millions | 1 | 2 | 3 | 4 |
-|---|---:|---:|---:|---:|
-| Sales | 32.00 | 40.00 | 46.00 | 49.68 |
-| EBITDA | 5.76 | 8.40 | 10.58 | 12.42 |
-| Depreciation | 1.60 | 2.00 | 2.30 | 2.48 |
-| EBIT | 4.16 | 6.40 | 8.28 | 9.94 |
-| Taxes at 21% | 0.87 | 1.34 | 1.74 | 2.09 |
-| Net operating profit after tax | 3.29 | 5.06 | 6.54 | 7.85 |
-
-## Add depreciation back {.plain-title}
-
-| $ millions | 1 | 2 | 3 | 4 |
-|---|---:|---:|---:|---:|
-| Net operating profit after tax | 3.29 | 5.06 | 6.54 | 7.85 |
-| Depreciation | 1.60 | 2.00 | 2.30 | 2.48 |
-| Operating cash flow | 4.89 | 7.06 | 8.84 | 10.33 |
+| $ millions | 1 | 2 | 3 | 4 | 5 |
+|---|---:|---:|---:|---:|---:|
+| Net operating profit after tax | 3.29 | 5.06 | 6.54 | 7.85 | 8.48 |
+| Depreciation | 1.60 | 2.00 | 2.30 | 2.48 | 2.68 |
+| Operating cash flow | 4.89 | 7.06 | 8.84 | 10.33 | 11.16 |
 
 Depreciation lowered the tax bill without taking any cash, so it goes back in.
 
-## Free cash flow {.plain-title}
+## Free cash flow {.plain-title .nowrap-labels}
 
-| $ millions | 1 | 2 | 3 | 4 |
-|---|---:|---:|---:|---:|
-| Operating cash flow | 4.89 | 7.06 | 8.84 | 10.33 |
-| Capital expenditure | (5.60) | (5.00) | (4.14) | (4.47) |
-| Increase in working capital | (0.80) | (0.60) | (0.37) | (0.40) |
-| Free cash flow | (1.51) | 1.46 | 4.33 | 5.46 |
-| Share of sales | (4.7%) | 3.6% | 9.4% | 11.0% |
+| $ millions | 1 | 2 | 3 | 4 | 5 |
+|---|---:|---:|---:|---:|---:|
+| Operating cash flow | 4.89 | 7.06 | 8.84 | 10.33 | 11.16 |
+| Capital expenditure | (5.60) | (5.00) | (4.14) | (4.47) | (4.83) |
+| Increase in working capital | (0.80) | (0.60) | (0.37) | (0.40) | (0.43) |
+| Free cash flow | (1.51) | 1.46 | 4.33 | 5.46 | 5.90 |
+| Change from prior year | &mdash; | n/m | 197.6% | 26.1% | 8.0% |
+| Share of sales | (4.7%) | 3.6% | 9.4% | 11.0% | 11.0% |
+
+Changes are computed before rounding.
 
 # Terminal value
 
@@ -286,8 +290,6 @@ Depreciation lowered the tax bill without taking any cash, so it goes back in.
 Free cash flow reaches 11.0% of sales in year 4 and stays there: the margin and
 all three ratios are fixed from year 4 on. Sales grow 8% in year 5 and every
 year after, so free cash flow does too.
-
-$$\text{FCF}_5 = 1.08 \times 5.46 = 5.90$$
 
 ::: {.note}
 Year 4 is the first year at the steady ratio. Year 5 is the first year that
@@ -305,7 +307,7 @@ $g$.
 
 ## Discount it all back {.plain-title}
 
-| $ millions | 1 | 2 | 3 | 4 | TV at 4 |
+| $ millions | 1 | 2 | 3 | 4 | TV at 4, year 5 on |
 |---|---:|---:|---:|---:|---:|
 | Cash flow | (1.51) | 1.46 | 4.33 | 5.46 | 147.55 |
 | Discount factor at 12% | 0.893 | 0.797 | 0.712 | 0.636 | 0.636 |

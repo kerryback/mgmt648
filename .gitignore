@@ -30,3 +30,11 @@ cases-notes/
 cases-supplemental/
 
 .DS_Store
+
+# Case markdown carries "Teaching note -- not for distribution" sections with
+# worked answers. This repo is public, so the sources stay local; the student
+# handouts in cases-pdf/ are generated from them without the teaching notes.
+cases/
+
+# Excel lock files.
+~$*.xlsx

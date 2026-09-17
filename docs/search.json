@@ -186,35 +186,35 @@
     "href": "slides/09-17.html#the-capital-schedule-1",
     "title": "Two-Stage Growth Model",
     "section": "The capital schedule",
-    "text": "The capital schedule\n\n\n\n$ millions\n0\n1\n2\n3\n4\n\n\n\n\nSales\n—\n32.00\n40.00\n46.00\n49.68\n\n\nNext year’s sales\n32.00\n40.00\n46.00\n49.68\n53.65\n\n\nNet PP&E\n16.00\n20.00\n23.00\n24.84\n26.83\n\n\nDepreciation\n—\n1.60\n2.00\n2.30\n2.48\n\n\nCapital expenditure\n—\n5.60\n5.00\n4.14\n4.47\n\n\nNet working capital\n3.20\n4.00\n4.60\n4.97\n5.37\n\n\n\nThe date-0 balances are what the company already owns."
+    "text": "The capital schedule\n\n\n\n$ millions\n0\n1\n2\n3\n4\n5\n\n\n\n\nSales\n—\n32.00\n40.00\n46.00\n49.68\n53.65\n\n\nNext year’s sales\n32.00\n40.00\n46.00\n49.68\n53.65\n57.95\n\n\nNet PP&E\n16.00\n20.00\n23.00\n24.84\n26.83\n28.97\n\n\nDepreciation\n—\n1.60\n2.00\n2.30\n2.48\n2.68\n\n\nCapital expenditure\n—\n5.60\n5.00\n4.14\n4.47\n4.83\n\n\nNet working capital\n3.20\n4.00\n4.60\n4.97\n5.37\n5.79\n\n\n\nThe date-0 balances are what the company already owns. Figures are rounded to 0.01."
   },
   {
     "objectID": "slides/09-17.html#the-income-statement-1",
     "href": "slides/09-17.html#the-income-statement-1",
     "title": "Two-Stage Growth Model",
     "section": "The income statement",
-    "text": "The income statement\n\n\n\n$ millions\n1\n2\n3\n4\n\n\n\n\nSales\n32.00\n40.00\n46.00\n49.68\n\n\nEBITDA\n5.76\n8.40\n10.58\n12.42\n\n\nDepreciation\n1.60\n2.00\n2.30\n2.48\n\n\nEBIT\n4.16\n6.40\n8.28\n9.94\n\n\nTaxes at 21%\n0.87\n1.34\n1.74\n2.09\n\n\nNet operating profit after tax\n3.29\n5.06\n6.54\n7.85"
+    "text": "The income statement\n\n\n\n$ millions\n1\n2\n3\n4\n5\n\n\n\n\nSales\n32.00\n40.00\n46.00\n49.68\n53.65\n\n\nEBITDA\n5.76\n8.40\n10.58\n12.42\n13.41\n\n\nDepreciation\n1.60\n2.00\n2.30\n2.48\n2.68\n\n\nEBIT\n4.16\n6.40\n8.28\n9.94\n10.73\n\n\nTaxes at 21%\n0.87\n1.34\n1.74\n2.09\n2.25\n\n\nNet operating profit after tax\n3.29\n5.06\n6.54\n7.85\n8.48"
   },
   {
     "objectID": "slides/09-17.html#add-depreciation-back-1",
     "href": "slides/09-17.html#add-depreciation-back-1",
     "title": "Two-Stage Growth Model",
     "section": "Add depreciation back",
-    "text": "Add depreciation back\n\n\n\n$ millions\n1\n2\n3\n4\n\n\n\n\nNet operating profit after tax\n3.29\n5.06\n6.54\n7.85\n\n\nDepreciation\n1.60\n2.00\n2.30\n2.48\n\n\nOperating cash flow\n4.89\n7.06\n8.84\n10.33\n\n\n\nDepreciation lowered the tax bill without taking any cash, so it goes back in."
+    "text": "Add depreciation back\n\n\n\n$ millions\n1\n2\n3\n4\n5\n\n\n\n\nNet operating profit after tax\n3.29\n5.06\n6.54\n7.85\n8.48\n\n\nDepreciation\n1.60\n2.00\n2.30\n2.48\n2.68\n\n\nOperating cash flow\n4.89\n7.06\n8.84\n10.33\n11.16\n\n\n\nDepreciation lowered the tax bill without taking any cash, so it goes back in."
   },
   {
     "objectID": "slides/09-17.html#free-cash-flow-1",
     "href": "slides/09-17.html#free-cash-flow-1",
     "title": "Two-Stage Growth Model",
     "section": "Free cash flow",
-    "text": "Free cash flow\n\n\n\n$ millions\n1\n2\n3\n4\n\n\n\n\nOperating cash flow\n4.89\n7.06\n8.84\n10.33\n\n\nCapital expenditure\n(5.60)\n(5.00)\n(4.14)\n(4.47)\n\n\nIncrease in working capital\n(0.80)\n(0.60)\n(0.37)\n(0.40)\n\n\nFree cash flow\n(1.51)\n1.46\n4.33\n5.46\n\n\nShare of sales\n(4.7%)\n3.6%\n9.4%\n11.0%"
+    "text": "Free cash flow\n\n\n\n\n\n\n\n\n\n\n\n$ millions\n1\n2\n3\n4\n5\n\n\n\n\nOperating cash flow\n4.89\n7.06\n8.84\n10.33\n11.16\n\n\nCapital expenditure\n(5.60)\n(5.00)\n(4.14)\n(4.47)\n(4.83)\n\n\nIncrease in working capital\n(0.80)\n(0.60)\n(0.37)\n(0.40)\n(0.43)\n\n\nFree cash flow\n(1.51)\n1.46\n4.33\n5.46\n5.90\n\n\nChange from prior year\n—\nn/m\n197.6%\n26.1%\n8.0%\n\n\nShare of sales\n(4.7%)\n3.6%\n9.4%\n11.0%\n11.0%\n\n\n\nChanges are computed before rounding."
   },
   {
     "objectID": "slides/09-17.html#free-cash-flow-in-year-5",
     "href": "slides/09-17.html#free-cash-flow-in-year-5",
     "title": "Two-Stage Growth Model",
     "section": "Free cash flow in year 5",
-    "text": "Free cash flow in year 5\nFree cash flow reaches 11.0% of sales in year 4 and stays there: the margin and all three ratios are fixed from year 4 on. Sales grow 8% in year 5 and every year after, so free cash flow does too.\n\\[\\text{FCF}_5 = 1.08 \\times 5.46 = 5.90\\]\n\nYear 4 is the first year at the steady ratio. Year 5 is the first year that grows at 8%, which is why the terminal value sits at the end of year 4."
+    "text": "Free cash flow in year 5\nFree cash flow reaches 11.0% of sales in year 4 and stays there: the margin and all three ratios are fixed from year 4 on. Sales grow 8% in year 5 and every year after, so free cash flow does too.\n\nYear 4 is the first year at the steady ratio. Year 5 is the first year that grows at 8%, which is why the terminal value sits at the end of year 4."
   },
   {
     "objectID": "slides/09-17.html#the-terminal-value",
@@ -228,7 +228,7 @@
     "href": "slides/09-17.html#discount-it-all-back",
     "title": "Two-Stage Growth Model",
     "section": "Discount it all back",
-    "text": "Discount it all back\n\n\n\n$ millions\n1\n2\n3\n4\nTV at 4\n\n\n\n\nCash flow\n(1.51)\n1.46\n4.33\n5.46\n147.55\n\n\nDiscount factor at 12%\n0.893\n0.797\n0.712\n0.636\n0.636\n\n\nPresent value\n(1.35)\n1.16\n3.08\n3.47\n93.77\n\n\n\n\n\n$100.14m Enterprise value\n\n\n94% In the terminal value"
+    "text": "Discount it all back\n\n\n\n$ millions\n1\n2\n3\n4\nTV at 4, year 5 on\n\n\n\n\nCash flow\n(1.51)\n1.46\n4.33\n5.46\n147.55\n\n\nDiscount factor at 12%\n0.893\n0.797\n0.712\n0.636\n0.636\n\n\nPresent value\n(1.35)\n1.16\n3.08\n3.47\n93.77\n\n\n\n\n\n$100.14m Enterprise value\n\n\n94% In the terminal value"
   },
   {
     "objectID": "slides/09-17.html#where-the-8-comes-from",
