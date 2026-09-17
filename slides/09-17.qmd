@@ -54,12 +54,157 @@ If the balance never changes, capital expenditure equals depreciation.
 :::
 :::
 
-# The company
+# A five-year project
 
-## Four years, then a steady state {.plain-title}
+## Assumptions {.plain-title}
 
-A company with 32.00 of sales next year, holding 16.00 of net PP&E and 3.20 of
-working capital, 6.00 of cash and 18.00 of debt, and 4.0 million shares.
+| Item | Assumption |
+|---|---|
+| Sales, year 1 | 32.00 |
+| Sales growth | 8% a year |
+| EBITDA margin | 25% |
+| Net PP&E | 50% of next year's sales |
+| Depreciation | 10% of opening net PP&E |
+| Net working capital | 10% of next year's sales |
+| Tax rate | 21% |
+| Discount rate | 12% |
+| Life | 5 years, assets sold at book value |
+
+## The capital schedule {.plain-title}
+
+| $ millions | 0 | 1 | 2 | 3 | 4 | 5 |
+|---|---:|---:|---:|---:|---:|---:|
+| Sales | &mdash; | 32.00 | 34.56 | 37.32 | 40.31 | 43.54 |
+| Net PP&E | 16.00 | 17.28 | 18.66 | 20.16 | 21.77 | 19.59 |
+| Depreciation | &mdash; | 1.60 | 1.73 | 1.87 | 2.02 | 2.18 |
+| Capital expenditure | 16.00 | 2.88 | 3.11 | 3.36 | 3.63 | &mdash; |
+| Net working capital | 3.20 | 3.46 | 3.73 | 4.03 | 4.35 | &mdash; |
+
+::: {.note}
+Year 5 buys nothing: there is no year 6 to build for. The closing 19.59 is the
+year-4 balance less year-5 depreciation. Figures are rounded to 0.01.
+:::
+
+## The income statement {.plain-title}
+
+| $ millions | 1 | 2 | 3 | 4 | 5 |
+|---|---:|---:|---:|---:|---:|
+| Sales | 32.00 | 34.56 | 37.32 | 40.31 | 43.54 |
+| EBITDA | 8.00 | 8.64 | 9.33 | 10.08 | 10.88 |
+| Depreciation | 1.60 | 1.73 | 1.87 | 2.02 | 2.18 |
+| EBIT | 6.40 | 6.91 | 7.46 | 8.06 | 8.71 |
+| Taxes at 21% | 1.34 | 1.45 | 1.57 | 1.69 | 1.83 |
+| Net operating profit after tax | 5.06 | 5.46 | 5.90 | 6.37 | 6.88 |
+
+## Add depreciation back {.plain-title}
+
+| $ millions | 1 | 2 | 3 | 4 | 5 |
+|---|---:|---:|---:|---:|---:|
+| Net operating profit after tax | 5.06 | 5.46 | 5.90 | 6.37 | 6.88 |
+| Depreciation | 1.60 | 1.73 | 1.87 | 2.02 | 2.18 |
+| Operating cash flow | 6.66 | 7.19 | 7.76 | 8.38 | 9.06 |
+
+Depreciation lowered the tax bill without taking any cash, so it goes back in.
+
+## Free cash flow {.plain-title}
+
+| $ millions | 0 | 1 | 2 | 3 | 4 | 5 |
+|---|---:|---:|---:|---:|---:|---:|
+| Operating cash flow | &mdash; | 6.66 | 7.19 | 7.76 | 8.38 | 9.06 |
+| Capital expenditure | (16.00) | (2.88) | (3.11) | (3.36) | (3.63) | &mdash; |
+| Change in working capital | (3.20) | (0.26) | (0.28) | (0.30) | (0.32) | 4.35 |
+| Sale of assets at book value, untaxed | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | 19.59 |
+| Free cash flow | (19.20) | 3.52 | 3.80 | 4.11 | 4.43 | 33.00 |
+
+## NPV and IRR {.plain-title}
+
+::: {.stats}
+::: {.stat}
+[$11.44m]{.stat-value}
+[NPV at 12%]{.stat-label}
+:::
+
+::: {.stat}
+[26.3%]{.stat-value}
+[IRR]{.stat-label}
+:::
+
+::: {.stat}
+[$19.20m]{.stat-value}
+[Invested at date 0]{.stat-label}
+:::
+:::
+
+With constant ratios and a sale at book, the IRR is 26.33%, and so is year-1
+operating profit after tax over the 19.20 of capital.
+
+# The project that does not end
+
+## Drop the sale, keep the ratios {.plain-title}
+
+::: {.cards .cards-2}
+::: {.card}
+[No sale]{.card-title}
+
+The 19.59 of book value stays in the business.
+:::
+
+::: {.card .card-blue}
+[Year 5 keeps investing]{.card-title}
+
+Capital expenditure of 3.92 and another 0.35 of working capital, building for
+year 6.
+:::
+:::
+
+| $ millions | 1 | 2 | 3 | 4 | 5 |
+|---|---:|---:|---:|---:|---:|
+| Free cash flow | 3.52 | 3.80 | 4.11 | 4.43 | 4.79 |
+| Share of sales | 11.0% | 11.0% | 11.0% | 11.0% | 11.0% |
+
+## Every line is a multiple of sales {.plain-title}
+
+Constant growth and constant ratios mean free cash flow grows at the sales rate
+forever.
+
+$$V_0 = \frac{\text{FCF}_1}{r-g} = \frac{3.52}{0.12-0.08} = 88.00$$
+
+::: {.note}
+Against 19.20 of capital at date 0, an NPV of 68.80 &mdash; against 11.44 when
+the same business was sold at book in year 5.
+:::
+
+# The firm
+
+## Nothing is bought at date 0 {.plain-title}
+
+The 16.00 of net PP&E and 3.20 of working capital are already there. No outflow
+at date 0, so the 88.00 is the value of the firm.
+
+::: {.stats}
+::: {.stat}
+[$88.00m]{.stat-value}
+[Value of the firm]{.stat-label}
+:::
+
+::: {.stat}
+[11.0x]{.stat-value}
+[EBITDA]{.stat-label}
+:::
+
+::: {.stat}
+[4.6x]{.stat-value}
+[Invested capital]{.stat-label}
+:::
+:::
+
+# Two-stage growth
+
+## The first three years, and then 8% {.plain-title}
+
+The same company, with sales that reach 8% only in year 4: 25% growth in year
+2, 15% in year 3, and a margin that climbs to 25% over the same three years. It
+holds 6.00 of cash and 18.00 of debt, against 4.0 million shares.
 
 ::: {.cards .cards-2}
 ::: {.card}

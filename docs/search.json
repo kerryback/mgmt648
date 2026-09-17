@@ -105,43 +105,106 @@
     "text": "Capital expenditure as the residual\n\n\nThe asset base is the assumption\nCapacity is in place before the sales it serves, so the balance at the end of year \\(t\\) carries year \\(t+1\\)’s sales.\n\n\nDepreciation follows the balance\nA percentage of the opening net balance, not a percentage of sales.\n\n\nCapital expenditure is the residual\nIt funds the increase in the balance and replaces what was depreciated during the year.\n\n\nThe zero-growth check\nIf the balance never changes, capital expenditure equals depreciation."
   },
   {
-    "objectID": "slides/09-17.html#four-years-then-a-steady-state",
-    "href": "slides/09-17.html#four-years-then-a-steady-state",
-    "title": "Two-Stage Growth Model",
-    "section": "Four years, then a steady state",
-    "text": "Four years, then a steady state\nA company with 32.00 of sales next year, holding 16.00 of net PP&E and 3.20 of working capital, 6.00 of cash and 18.00 of debt, and 4.0 million shares.\n\n\nYears 1 to 3\nSales grow 25% and then 15%. The EBITDA margin climbs from 18% to 21% to 23%.\n\n\nYear 4 onward\nSales grow 8% a year and the margin holds at 25%. The three ratios are fixed throughout."
-  },
-  {
     "objectID": "slides/09-17.html#assumptions",
     "href": "slides/09-17.html#assumptions",
     "title": "Two-Stage Growth Model",
     "section": "Assumptions",
-    "text": "Assumptions\n\n\n\nItem\nAssumption\n\n\n\n\nSales, year 1\n32.00\n\n\nSales growth\n25%, 15%, then 8% from year 4\n\n\nEBITDA margin\n18%, 21%, 23%, then 25% from year 4\n\n\nNet PP&E\n50% of next year’s sales\n\n\nDepreciation\n10% of opening net PP&E\n\n\nNet working capital\n10% of next year’s sales\n\n\nTax rate\n21%\n\n\nWACC\n12%\n\n\nCash, debt, shares\n6.00, 18.00, 4.0 million"
+    "text": "Assumptions\n\n\n\nItem\nAssumption\n\n\n\n\nSales, year 1\n32.00\n\n\nSales growth\n8% a year\n\n\nEBITDA margin\n25%\n\n\nNet PP&E\n50% of next year’s sales\n\n\nDepreciation\n10% of opening net PP&E\n\n\nNet working capital\n10% of next year’s sales\n\n\nTax rate\n21%\n\n\nDiscount rate\n12%\n\n\nLife\n5 years, assets sold at book value"
   },
   {
     "objectID": "slides/09-17.html#the-capital-schedule",
     "href": "slides/09-17.html#the-capital-schedule",
     "title": "Two-Stage Growth Model",
     "section": "The capital schedule",
-    "text": "The capital schedule\n\n\n\n$ millions\n0\n1\n2\n3\n4\n\n\n\n\nSales\n—\n32.00\n40.00\n46.00\n49.68\n\n\nNext year’s sales\n32.00\n40.00\n46.00\n49.68\n53.65\n\n\nNet PP&E\n16.00\n20.00\n23.00\n24.84\n26.83\n\n\nDepreciation\n—\n1.60\n2.00\n2.30\n2.48\n\n\nCapital expenditure\n—\n5.60\n5.00\n4.14\n4.47\n\n\nNet working capital\n3.20\n4.00\n4.60\n4.97\n5.37\n\n\n\nThe date-0 balances are what the company already owns."
+    "text": "The capital schedule\n\n\n\n$ millions\n0\n1\n2\n3\n4\n5\n\n\n\n\nSales\n—\n32.00\n34.56\n37.32\n40.31\n43.54\n\n\nNet PP&E\n16.00\n17.28\n18.66\n20.16\n21.77\n19.59\n\n\nDepreciation\n—\n1.60\n1.73\n1.87\n2.02\n2.18\n\n\nCapital expenditure\n16.00\n2.88\n3.11\n3.36\n3.63\n—\n\n\nNet working capital\n3.20\n3.46\n3.73\n4.03\n4.35\n—\n\n\n\n\nYear 5 buys nothing: there is no year 6 to build for. The closing 19.59 is the year-4 balance less year-5 depreciation. Figures are rounded to 0.01."
   },
   {
     "objectID": "slides/09-17.html#the-income-statement",
     "href": "slides/09-17.html#the-income-statement",
     "title": "Two-Stage Growth Model",
     "section": "The income statement",
-    "text": "The income statement\n\n\n\n$ millions\n1\n2\n3\n4\n\n\n\n\nSales\n32.00\n40.00\n46.00\n49.68\n\n\nEBITDA\n5.76\n8.40\n10.58\n12.42\n\n\nDepreciation\n1.60\n2.00\n2.30\n2.48\n\n\nEBIT\n4.16\n6.40\n8.28\n9.94\n\n\nTaxes at 21%\n0.87\n1.34\n1.74\n2.09\n\n\nNet operating profit after tax\n3.29\n5.06\n6.54\n7.85"
+    "text": "The income statement\n\n\n\n$ millions\n1\n2\n3\n4\n5\n\n\n\n\nSales\n32.00\n34.56\n37.32\n40.31\n43.54\n\n\nEBITDA\n8.00\n8.64\n9.33\n10.08\n10.88\n\n\nDepreciation\n1.60\n1.73\n1.87\n2.02\n2.18\n\n\nEBIT\n6.40\n6.91\n7.46\n8.06\n8.71\n\n\nTaxes at 21%\n1.34\n1.45\n1.57\n1.69\n1.83\n\n\nNet operating profit after tax\n5.06\n5.46\n5.90\n6.37\n6.88"
   },
   {
     "objectID": "slides/09-17.html#add-depreciation-back",
     "href": "slides/09-17.html#add-depreciation-back",
     "title": "Two-Stage Growth Model",
     "section": "Add depreciation back",
-    "text": "Add depreciation back\n\n\n\n$ millions\n1\n2\n3\n4\n\n\n\n\nNet operating profit after tax\n3.29\n5.06\n6.54\n7.85\n\n\nDepreciation\n1.60\n2.00\n2.30\n2.48\n\n\nOperating cash flow\n4.89\n7.06\n8.84\n10.33\n\n\n\nDepreciation lowered the tax bill without taking any cash, so it goes back in."
+    "text": "Add depreciation back\n\n\n\n$ millions\n1\n2\n3\n4\n5\n\n\n\n\nNet operating profit after tax\n5.06\n5.46\n5.90\n6.37\n6.88\n\n\nDepreciation\n1.60\n1.73\n1.87\n2.02\n2.18\n\n\nOperating cash flow\n6.66\n7.19\n7.76\n8.38\n9.06\n\n\n\nDepreciation lowered the tax bill without taking any cash, so it goes back in."
   },
   {
     "objectID": "slides/09-17.html#free-cash-flow",
     "href": "slides/09-17.html#free-cash-flow",
+    "title": "Two-Stage Growth Model",
+    "section": "Free cash flow",
+    "text": "Free cash flow\n\n\n\n\n\n\n\n\n\n\n\n\n$ millions\n0\n1\n2\n3\n4\n5\n\n\n\n\nOperating cash flow\n—\n6.66\n7.19\n7.76\n8.38\n9.06\n\n\nCapital expenditure\n(16.00)\n(2.88)\n(3.11)\n(3.36)\n(3.63)\n—\n\n\nChange in working capital\n(3.20)\n(0.26)\n(0.28)\n(0.30)\n(0.32)\n4.35\n\n\nSale of assets at book value, untaxed\n—\n—\n—\n—\n—\n19.59\n\n\nFree cash flow\n(19.20)\n3.52\n3.80\n4.11\n4.43\n33.00"
+  },
+  {
+    "objectID": "slides/09-17.html#npv-and-irr",
+    "href": "slides/09-17.html#npv-and-irr",
+    "title": "Two-Stage Growth Model",
+    "section": "NPV and IRR",
+    "text": "NPV and IRR\n\n\n$11.44m NPV at 12%\n\n\n26.3% IRR\n\n\n$19.20m Invested at date 0\n\n\nWith constant ratios and a sale at book, the IRR is 26.33%, and so is year-1 operating profit after tax over the 19.20 of capital."
+  },
+  {
+    "objectID": "slides/09-17.html#drop-the-sale-keep-the-ratios",
+    "href": "slides/09-17.html#drop-the-sale-keep-the-ratios",
+    "title": "Two-Stage Growth Model",
+    "section": "Drop the sale, keep the ratios",
+    "text": "Drop the sale, keep the ratios\n\n\nNo sale\nThe 19.59 of book value stays in the business.\n\n\nYear 5 keeps investing\nCapital expenditure of 3.92 and another 0.35 of working capital, building for year 6.\n\n\n\n\n\n$ millions\n1\n2\n3\n4\n5\n\n\n\n\nFree cash flow\n3.52\n3.80\n4.11\n4.43\n4.79\n\n\nShare of sales\n11.0%\n11.0%\n11.0%\n11.0%\n11.0%"
+  },
+  {
+    "objectID": "slides/09-17.html#every-line-is-a-multiple-of-sales",
+    "href": "slides/09-17.html#every-line-is-a-multiple-of-sales",
+    "title": "Two-Stage Growth Model",
+    "section": "Every line is a multiple of sales",
+    "text": "Every line is a multiple of sales\nConstant growth and constant ratios mean free cash flow grows at the sales rate forever.\n\\[V_0 = \\frac{\\text{FCF}_1}{r-g} = \\frac{3.52}{0.12-0.08} = 88.00\\]\n\nAgainst 19.20 of capital at date 0, an NPV of 68.80 — against 11.44 when the same business was sold at book in year 5."
+  },
+  {
+    "objectID": "slides/09-17.html#nothing-is-bought-at-date-0",
+    "href": "slides/09-17.html#nothing-is-bought-at-date-0",
+    "title": "Two-Stage Growth Model",
+    "section": "Nothing is bought at date 0",
+    "text": "Nothing is bought at date 0\nThe 16.00 of net PP&E and 3.20 of working capital are already there. No outflow at date 0, so the 88.00 is the value of the firm.\n\n\n$88.00m Value of the firm\n\n\n11.0x EBITDA\n\n\n4.6x Invested capital"
+  },
+  {
+    "objectID": "slides/09-17.html#the-first-three-years-and-then-8",
+    "href": "slides/09-17.html#the-first-three-years-and-then-8",
+    "title": "Two-Stage Growth Model",
+    "section": "The first three years, and then 8%",
+    "text": "The first three years, and then 8%\nThe same company, with sales that reach 8% only in year 4: 25% growth in year 2, 15% in year 3, and a margin that climbs to 25% over the same three years. It holds 6.00 of cash and 18.00 of debt, against 4.0 million shares.\n\n\nYears 1 to 3\nSales grow 25% and then 15%. The EBITDA margin climbs from 18% to 21% to 23%.\n\n\nYear 4 onward\nSales grow 8% a year and the margin holds at 25%. The three ratios are fixed throughout."
+  },
+  {
+    "objectID": "slides/09-17.html#assumptions-1",
+    "href": "slides/09-17.html#assumptions-1",
+    "title": "Two-Stage Growth Model",
+    "section": "Assumptions",
+    "text": "Assumptions\n\n\n\nItem\nAssumption\n\n\n\n\nSales, year 1\n32.00\n\n\nSales growth\n25%, 15%, then 8% from year 4\n\n\nEBITDA margin\n18%, 21%, 23%, then 25% from year 4\n\n\nNet PP&E\n50% of next year’s sales\n\n\nDepreciation\n10% of opening net PP&E\n\n\nNet working capital\n10% of next year’s sales\n\n\nTax rate\n21%\n\n\nWACC\n12%\n\n\nCash, debt, shares\n6.00, 18.00, 4.0 million"
+  },
+  {
+    "objectID": "slides/09-17.html#the-capital-schedule-1",
+    "href": "slides/09-17.html#the-capital-schedule-1",
+    "title": "Two-Stage Growth Model",
+    "section": "The capital schedule",
+    "text": "The capital schedule\n\n\n\n$ millions\n0\n1\n2\n3\n4\n\n\n\n\nSales\n—\n32.00\n40.00\n46.00\n49.68\n\n\nNext year’s sales\n32.00\n40.00\n46.00\n49.68\n53.65\n\n\nNet PP&E\n16.00\n20.00\n23.00\n24.84\n26.83\n\n\nDepreciation\n—\n1.60\n2.00\n2.30\n2.48\n\n\nCapital expenditure\n—\n5.60\n5.00\n4.14\n4.47\n\n\nNet working capital\n3.20\n4.00\n4.60\n4.97\n5.37\n\n\n\nThe date-0 balances are what the company already owns."
+  },
+  {
+    "objectID": "slides/09-17.html#the-income-statement-1",
+    "href": "slides/09-17.html#the-income-statement-1",
+    "title": "Two-Stage Growth Model",
+    "section": "The income statement",
+    "text": "The income statement\n\n\n\n$ millions\n1\n2\n3\n4\n\n\n\n\nSales\n32.00\n40.00\n46.00\n49.68\n\n\nEBITDA\n5.76\n8.40\n10.58\n12.42\n\n\nDepreciation\n1.60\n2.00\n2.30\n2.48\n\n\nEBIT\n4.16\n6.40\n8.28\n9.94\n\n\nTaxes at 21%\n0.87\n1.34\n1.74\n2.09\n\n\nNet operating profit after tax\n3.29\n5.06\n6.54\n7.85"
+  },
+  {
+    "objectID": "slides/09-17.html#add-depreciation-back-1",
+    "href": "slides/09-17.html#add-depreciation-back-1",
+    "title": "Two-Stage Growth Model",
+    "section": "Add depreciation back",
+    "text": "Add depreciation back\n\n\n\n$ millions\n1\n2\n3\n4\n\n\n\n\nNet operating profit after tax\n3.29\n5.06\n6.54\n7.85\n\n\nDepreciation\n1.60\n2.00\n2.30\n2.48\n\n\nOperating cash flow\n4.89\n7.06\n8.84\n10.33\n\n\n\nDepreciation lowered the tax bill without taking any cash, so it goes back in."
+  },
+  {
+    "objectID": "slides/09-17.html#free-cash-flow-1",
+    "href": "slides/09-17.html#free-cash-flow-1",
     "title": "Two-Stage Growth Model",
     "section": "Free cash flow",
     "text": "Free cash flow\n\n\n\n$ millions\n1\n2\n3\n4\n\n\n\n\nOperating cash flow\n4.89\n7.06\n8.84\n10.33\n\n\nCapital expenditure\n(5.60)\n(5.00)\n(4.14)\n(4.47)\n\n\nIncrease in working capital\n(0.80)\n(0.60)\n(0.37)\n(0.40)\n\n\nFree cash flow\n(1.51)\n1.46\n4.33\n5.46\n\n\nShare of sales\n(4.7%)\n3.6%\n9.4%\n11.0%"
@@ -196,8 +259,8 @@
     "text": "Value this company\n\n\nThe forecast\nSales of 20.00 in year 1, growing 30%, then 18%, then 6% from year 4 on. EBITDA margin 15%, 18%, 20%, then 22% from year 4 on.\n\n\nThe ratios\nNet PP&E 65% of next year’s sales. Depreciation 12% of opening net PP&E. Working capital 12% of next year’s sales. Tax 21%, WACC 12%.\n\n\n\n\nFree cash flow for years 1 to 4\nTerminal value at the end of year 4, and the enterprise value\nEquity value per share, with cash of 4.00, debt of 15.00, and 2.5 million shares"
   },
   {
-    "objectID": "slides/09-17.html#the-company-1",
-    "href": "slides/09-17.html#the-company-1",
+    "objectID": "slides/09-17.html#the-company",
+    "href": "slides/09-17.html#the-company",
     "title": "Two-Stage Growth Model",
     "section": "The company",
     "text": "The company\nShells, roasts and packages nuts. Fisher, Orchard Valley Harvest, Squirrel Brand, and private label for the grocery chains. Fiscal years end in late June.\n\n\nTicker\nJBSS, $805 million of market value: 11.78 million diluted shares at $68.31.\n\n\nWhat it owns\nShelling and roasting plants, $268 million of net PP&E against $1.18 billion of sales.\n\n\nThe balance sheet\nSimple. The company owns no other businesses, and goodwill is $11.8 million against $659 million of assets."
@@ -238,15 +301,15 @@
     "text": "The forecast\n\n\n\nItem\nAssumption\n\n\n\n\nSales growth\n5.5%, 5.0%, 4.5%, 3.5%, then 3.0%\n\n\nOperating margin\n7.5%, held\n\n\nNet PP&E (\\(k\\))\n21.0% of next year’s sales\n\n\nDepreciation (\\(d\\))\n15.0% of opening net PP&E\n\n\nWorking capital (\\(w\\))\n18.0% of next year’s sales\n\n\nTax rate\n25%\n\n\nWACC\n9.0%\n\n\n\n\\(k\\) holds near today’s 21.6% rather than the FY2025 level of 16.4%. The other rows are read off the history."
   },
   {
-    "objectID": "slides/09-17.html#the-capital-schedule-1",
-    "href": "slides/09-17.html#the-capital-schedule-1",
+    "objectID": "slides/09-17.html#the-capital-schedule-2",
+    "href": "slides/09-17.html#the-capital-schedule-2",
     "title": "Two-Stage Growth Model",
     "section": "The capital schedule",
     "text": "The capital schedule\n\n\n\n\n\n\n\n\n\n\n\n\n$ millions\nFY26\nFY27\nFY28\nFY29\nFY30\nFY31\n\n\n\n\nSales\n1,175.7\n1,240.4\n1,302.4\n1,361.0\n1,408.6\n1,450.9\n\n\nNext year’s sales\n1,240.4\n1,302.4\n1,361.0\n1,408.6\n1,450.9\n1,494.4\n\n\nNet PP&E\n268.3\n273.5\n285.8\n295.8\n304.7\n313.8\n\n\nDepreciation\n—\n40.2\n41.0\n42.9\n44.4\n45.7\n\n\nCapital expenditure\n—\n45.4\n53.3\n52.9\n53.2\n54.8\n\n\nWorking capital\n220.1\n234.4\n245.0\n253.6\n261.2\n269.0\n\n\n\nThe FY2026 column is the net PP&E and working capital the company already has."
   },
   {
-    "objectID": "slides/09-17.html#free-cash-flow-1",
-    "href": "slides/09-17.html#free-cash-flow-1",
+    "objectID": "slides/09-17.html#free-cash-flow-2",
+    "href": "slides/09-17.html#free-cash-flow-2",
     "title": "Two-Stage Growth Model",
     "section": "Free cash flow",
     "text": "Free cash flow\n\n\n\n\n\n\n\n\n\n\n\n$ millions\nFY27\nFY28\nFY29\nFY30\nFY31\n\n\n\n\nEBIT\n93.0\n97.7\n102.1\n105.6\n108.8\n\n\nNet operating profit after tax\n69.8\n73.3\n76.6\n79.2\n81.6\n\n\nDepreciation\n40.2\n41.0\n42.9\n44.4\n45.7\n\n\nCapital expenditure\n(45.4)\n(53.3)\n(52.9)\n(53.2)\n(54.8)\n\n\nIncrease in working capital\n(14.3)\n(10.5)\n(8.6)\n(7.6)\n(7.8)\n\n\nFree cash flow\n50.2\n50.4\n58.0\n62.8\n64.6\n\n\n\nWorking capital is positive, so sales growth consumes cash rather than releasing it."
