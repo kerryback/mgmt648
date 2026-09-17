@@ -106,14 +106,14 @@ year-4 balance less year-5 depreciation. Figures are rounded to 0.01.
 
 Depreciation lowered the tax bill without taking any cash, so it goes back in.
 
-## Free cash flow {.plain-title}
+## Free cash flow {.plain-title .nowrap-labels}
 
 | $ millions | 0 | 1 | 2 | 3 | 4 | 5 |
 |---|---:|---:|---:|---:|---:|---:|
 | Operating cash flow | &mdash; | 6.66 | 7.19 | 7.76 | 8.38 | 9.06 |
 | Capital expenditure | (16.00) | (2.88) | (3.11) | (3.36) | (3.63) | &mdash; |
 | Change in working capital | (3.20) | (0.26) | (0.28) | (0.30) | (0.32) | 4.35 |
-| Sale of assets at book value, untaxed | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | 19.59 |
+| Sale at book value, untaxed | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | 19.59 |
 | Free cash flow | (19.20) | 3.52 | 3.80 | 4.11 | 4.43 | 33.00 |
 
 ## NPV and IRR {.plain-title}
