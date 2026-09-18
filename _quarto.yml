@@ -42,6 +42,9 @@ project:
     # depreciation-rate and a growth-scale slider. Self-contained, so copied
     # through verbatim like the spinner above.
     - /ppe-explorer.html
+    # The two densities behind a lognormal: z = mu + sigma*epsilon and x = e^z,
+    # with a button that draws a shock and marks it on both. Also self-contained.
+    - /lognormal.html
     - images/RiceBusiness-transparent-logo-sm.png
     - images/headshot-keeper-cropped2.png
     # Session file bundles linked from the schedule's Files links.

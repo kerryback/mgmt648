@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lognormal random variables</title>
+<style>
+  /* Self-contained: the palette below is the same one the case handouts use,
+     inlined so this page carries no stylesheet of its own. */
+  :root {
+    --navy:  #00205B;
+    --gold:  #b8912f;
+    --ink:   #1a1a1a;
+    --gray:  #444444;
+    --mut:   #6b6b6b;
+    --line:  #e4e4e4;
+    --panel: #f6f7f9;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans:  "Helvetica Neue", Arial, sans-serif;
+    color-scheme: light;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--sans); color: var(--ink); background: #f4f5f7;
+    font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 34px 26px 60px; }
+
+  .masthead { margin-bottom: 22px; }
+  .eyebrow {
+    font-size: 12px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--navy); font-weight: 700; margin-bottom: 11px;
+  }
+  .display {
+    font-family: var(--serif); color: var(--navy); font-weight: 700;
+    line-height: 1.1; font-size: 40px; margin-bottom: 14px;
+  }
+  /* navy bar with a gold end cap */
+  .rule {
+    height: 3px; border-radius: 2px; width: 180px;
+    background: linear-gradient(90deg, var(--navy) 0 62%, var(--gold) 62% 100%);
+  }
+
+  .block {
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    padding: 28px 30px 30px;
+  }
+
+  p { font-size: 15px; line-height: 1.62; color: var(--gray); margin-bottom: 12px; }
+  p b { color: var(--navy); font-weight: 700; }
+  p.lead-in { font-family: var(--serif); font-size: 17px; line-height: 1.5;
+              color: var(--navy); margin-bottom: 16px; }
+
+  .eq {
+    font-family: var(--serif); font-size: 17px; color: var(--navy);
+    background: var(--panel); border-left: 3px solid var(--gold);
+    padding: 12px 18px; margin: 14px 0 16px; overflow-x: auto;
+  }
+  .eq .small { font-size: 13px; color: var(--mut); font-family: var(--sans); }
+
+  /* ---- controls ---- */
+
+  .panel-controls {
+    display: flex; flex-wrap: wrap; align-items: flex-end; gap: 22px 30px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px 20px; margin-bottom: 18px;
+  }
+
+  .slider { flex: 1 1 210px; min-width: 190px; }
+  .slider .lab {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--gold); font-weight: 700;
+  }
+  .slider .lab .v {
+    font-family: var(--serif); font-size: 15px; letter-spacing: 0; color: var(--navy);
+    font-variant-numeric: tabular-nums; text-transform: none;
+  }
+
+  input[type=range] { -webkit-appearance: none; appearance: none; width: 100%;
+                      margin: 9px 0 0; background: transparent; }
+  input[type=range]::-webkit-slider-runnable-track { height: 3px; background: #ccd0d8; }
+  input[type=range]::-moz-range-track { height: 3px; background: #ccd0d8; }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none; width: 17px; height: 17px;
+    margin-top: -7px; border-radius: 50%; background: var(--navy);
+    border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.3); cursor: pointer; }
+  input[type=range]::-moz-range-thumb {
+    width: 17px; height: 17px; border-radius: 50%; background: var(--navy);
+    border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.3); cursor: pointer; }
+  input[type=range]:focus-visible { outline: 2px solid var(--navy); outline-offset: 4px; }
+
+  button {
+    font-family: var(--sans); font-size: 13px; font-weight: 700;
+    letter-spacing: .4px; padding: 9px 18px; border-radius: 5px; cursor: pointer;
+    background: var(--navy); color: #fff; border: 1px solid var(--navy);
+  }
+  button:hover { background: #00184a; }
+  button.ghost { background: #fff; color: var(--navy); }
+  button.ghost:hover { background: var(--panel); }
+
+  .btn-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+
+  /* ---- draw readout ---- */
+
+  .readout {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+    background: var(--line); border: 1px solid var(--line); border-radius: 8px;
+    overflow: hidden; margin-bottom: 18px;
+  }
+  .readout .cell { background: #fff; padding: 13px 16px; }
+  .readout .k {
+    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--gold); font-weight: 700; margin-bottom: 5px;
+  }
+  /* Greek and math symbols keep their own case inside an uppercased label:
+     text-transform would turn mu into M and sigma into a capital sigma. */
+  .sym { text-transform: none; }
+  .readout .k .sym, .slider .lab .sym { font-size: 13px; letter-spacing: .2px; }
+  .readout .v {
+    font-family: var(--serif); font-size: 24px; color: var(--navy);
+    font-variant-numeric: tabular-nums;
+  }
+  .readout .v.empty { color: #c3c6cc; }
+  .readout .note { font-size: 11.5px; color: var(--mut); margin-top: 3px; }
+
+  /* ---- charts ---- */
+
+  .charts2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .chart { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px 8px; }
+  .chart .title {
+    font-family: var(--serif); font-size: 16px; color: var(--navy); margin-bottom: 1px; }
+  .chart .cap { font-size: 12px; color: var(--mut); margin-bottom: 4px; }
+  svg { display: block; width: 100%; height: auto; }
+  .ax { font-size: 10.5px; fill: var(--mut); font-variant-numeric: tabular-nums; }
+  .axname { font-size: 11px; fill: var(--mut); }
+
+  @media (max-width: 800px) {
+    .charts2 { grid-template-columns: 1fr; }
+    .readout { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <div class="eyebrow">MGMT 648 &nbsp;&middot;&nbsp; Capital Budgeting</div>
+    <h1 class="display">Lognormal random variables</h1>
+    <div class="rule"></div>
+  </div>
+
+  <div class="block">
+
+    <p class="lead-in">A price cannot go negative, and a normal random variable
+    can. The lognormal is what you get when you put the normal where it does no
+    harm &mdash; in the exponent.</p>
+
+    <p>Start with a standard normal shock, <b>&epsilon;</b>: mean zero, standard
+    deviation one, symmetric, unbounded in both directions. Scale and shift it to
+    get any normal you like:</p>
+
+    <div class="eq">z = &mu; + &sigma;&epsilon; &nbsp;&nbsp;&nbsp; <span class="small">normal, mean &mu;, standard deviation &sigma;</span></div>
+
+    <p>Then exponentiate. The variable <b>x = e<sup>z</sup></b> is lognormal. It
+    is positive for every value of z, however negative z gets, because the
+    exponential of anything is positive.</p>
+
+    <div class="eq">x = e<sup>z</sup> &nbsp;&nbsp;&hArr;&nbsp;&nbsp; z = log x
+      &nbsp;&nbsp;&nbsp; <span class="small">the same statement, written twice</span></div>
+
+    <p>Those two equations carry the same information. Exponential and logarithm
+    undo each other, so a draw of z and a draw of x are not two events &mdash;
+    they are one event read on two scales. "x is lognormal" and "log x is
+    normal" say the same thing, and the second is where the name comes from.
+    Draw a shock below and watch the two markers: they are the same draw,
+    located once on the z axis and once on the x axis.</p>
+
+    <div class="panel-controls">
+      <div class="slider">
+        <div class="lab"><span class="sym">&mu;</span><span class="v" id="muOut">0.00</span></div>
+        <input type="range" id="mu" min="-1.5" max="2" step="0.01" value="0">
+      </div>
+      <div class="slider">
+        <div class="lab"><span class="sym">&sigma;</span><span class="v" id="sgOut">1.00</span></div>
+        <input type="range" id="sg" min="0.05" max="1.5" step="0.01" value="1">
+      </div>
+      <div class="btn-row">
+        <button id="draw">Draw a shock</button>
+        <button class="ghost" id="clear">Clear</button>
+      </div>
+    </div>
+
+    <div class="readout">
+      <div class="cell">
+        <div class="k">Shock <span class="sym">&epsilon;</span></div>
+        <div class="v empty" id="epsV">&mdash;</div>
+        <div class="note">standard normal</div>
+      </div>
+      <div class="cell">
+        <div class="k"><span class="sym">z = &mu; + &sigma;&epsilon;</span></div>
+        <div class="v empty" id="zV">&mdash;</div>
+        <div class="note" id="zNote">normal</div>
+      </div>
+      <div class="cell">
+        <div class="k"><span class="sym">x = e<sup>z</sup></span></div>
+        <div class="v empty" id="xV">&mdash;</div>
+        <div class="note" id="xNote">lognormal &mdash; and log x returns z</div>
+      </div>
+    </div>
+
+    <div class="charts2">
+      <div class="chart">
+        <div class="title">Density of z</div>
+        <div class="cap">Normal. Symmetric about &mu;, and negative values are ordinary.</div>
+        <svg id="svgZ" viewBox="0 0 520 250" role="img" aria-label="Normal density of z"></svg>
+      </div>
+      <div class="chart">
+        <div class="title">Density of x = e<sup>z</sup></div>
+        <div class="cap">Lognormal. Positive, with a long upper tail.</div>
+        <svg id="svgX" viewBox="0 0 520 250" role="img" aria-label="Lognormal density of x"></svg>
+      </div>
+    </div>
+
+    <p style="margin-top:14px">Each draw leaves a tick on the axis, so the marks
+    accumulate into the shape of the density they came from.</p>
+
+  </div>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ============================ helpers ============================
+
+  var NAVY = "#00205B", GOLD = "#b8912f", RED = "#9b2c2c",
+      GREY = "#8a8f98", LINE = "#e4e4e4", MUT = "#6b6b6b";
+
+  // Mulberry32. A weak LCG plus Box-Muller leaves visible structure in the
+  // pairs, which shows up as a biased mean NPV; this does not.
+  function rng(seed) {
+    var a = seed >>> 0;
+    return function () {
+      a = (a + 0x6D2B79F5) | 0;
+      var t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  function normalPair(u) {
+    var a = Math.max(u(), 1e-12), b = u(), r = Math.sqrt(-2 * Math.log(a));
+    return [r * Math.cos(2 * Math.PI * b), r * Math.sin(2 * Math.PI * b)];
+  }
+
+  var STEPS = [0.05,0.1,0.2,0.25,0.5,1,2,2.5,5,10,20,25,50,100,200,250,500,1000];
+  function step(range, want) {
+    for (var i = 0; i < STEPS.length; i++) if (range / STEPS[i] <= want) return STEPS[i];
+    return STEPS[STEPS.length - 1];
+  }
+
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+
+  // Ticks are indexed off the step rather than accumulated, and snapped to the
+  // step's own precision: adding 0.2 repeatedly lands on 0.6000000000000001.
+  function decimals(v) { var t = String(v), i = t.indexOf("."); return i < 0 ? 0 : t.length - i - 1; }
+  function tickAt(start, stp, i) { return Number((start + i * stp).toFixed(decimals(stp) + 1)); }
+
+  // Minimal chart frame: maps data to pixels and draws the axes.
+  function frame(svg, W, H, M, xlo, xhi, ylo, yhi, opt) {
+    opt = opt || {};
+    var PW = W - M.l - M.r, PH = H - M.t - M.b, out = [], y, x;
+    var X = function (v) { return M.l + (v - xlo) / (xhi - xlo) * PW; };
+    var Y = function (v) { return M.t + PH - (v - ylo) / (yhi - ylo) * PH; };
+
+    var ys = step(yhi - ylo, 6), y0 = Math.ceil(ylo / ys) * ys, yi;
+    for (yi = 0; (y = tickAt(y0, ys, yi)) <= yhi + 1e-9; yi++) {
+      var py = Y(y), zero = Math.abs(y) < 1e-9;
+      out.push('<line x1="' + M.l + '" y1="' + py.toFixed(1) + '" x2="' + (M.l + PW) +
+        '" y2="' + py.toFixed(1) + '" stroke="' + (zero ? MUT : LINE) +
+        '" stroke-width="1"' + (zero ? '' : '') + '/>');
+      out.push('<text class="ax" x="' + (M.l - 8) + '" y="' + (py + 3.5).toFixed(1) +
+        '" text-anchor="end">' + (opt.yfmt ? opt.yfmt(y) : y) + '</text>');
+    }
+
+    var xs = step(xhi - xlo, 8), x0 = Math.ceil(xlo / xs) * xs, xi;
+    for (xi = 0; (x = tickAt(x0, xs, xi)) <= xhi + 1e-9; xi++) {
+      var px = X(x);
+      out.push('<line x1="' + px.toFixed(1) + '" y1="' + (M.t + PH) + '" x2="' + px.toFixed(1) +
+        '" y2="' + (M.t + PH + 5) + '" stroke="' + MUT + '" stroke-width="1"/>');
+      out.push('<text class="ax" x="' + px.toFixed(1) + '" y="' + (M.t + PH + 17) +
+        '" text-anchor="middle">' + (opt.xfmt ? opt.xfmt(x) : x) + '</text>');
+    }
+
+    out.push('<line x1="' + M.l + '" y1="' + (M.t + PH) + '" x2="' + (M.l + PW) +
+      '" y2="' + (M.t + PH) + '" stroke="' + MUT + '" stroke-width="1"/>');
+    if (opt.xname) out.push('<text class="axname" x="' + (M.l + PW) + '" y="' + (H - 2) +
+      '" text-anchor="end">' + esc(opt.xname) + '</text>');
+    if (opt.yname) out.push('<text class="axname" x="' + M.l + '" y="' + (M.t - 6) +
+      '" text-anchor="start">' + esc(opt.yname) + '</text>');
+
+    return { out: out, X: X, Y: Y, PW: PW, PH: PH,
+      path: function (pts, colour, width, dash) {
+        var d = pts.map(function (p, i) {
+          return (i ? "L" : "M") + X(p[0]).toFixed(1) + " " + Y(p[1]).toFixed(1);
+        }).join(" ");
+        out.push('<path d="' + d + '" fill="none" stroke="' + colour + '" stroke-width="' +
+          (width || 2) + '"' + (dash ? ' stroke-dasharray="' + dash + '"' : '') +
+          ' stroke-linejoin="round"/>');
+      },
+      area: function (pts, fill) {
+        var d = pts.map(function (p, i) {
+          return (i ? "L" : "M") + X(p[0]).toFixed(1) + " " + Y(p[1]).toFixed(1);
+        }).join(" ");
+        d += " L" + X(pts[pts.length - 1][0]).toFixed(1) + " " + Y(0).toFixed(1) +
+             " L" + X(pts[0][0]).toFixed(1) + " " + Y(0).toFixed(1) + " Z";
+        out.push('<path d="' + d + '" fill="' + fill + '" stroke="none"/>');
+      },
+      done: function () { svg.innerHTML = out.join(""); }
+    };
+  }
+
+  // ====================== the two densities ======================
+
+  var el = {
+    mu: document.getElementById("mu"), sg: document.getElementById("sg"),
+    muOut: document.getElementById("muOut"), sgOut: document.getElementById("sgOut"),
+    eps: document.getElementById("epsV"), z: document.getElementById("zV"),
+    x: document.getElementById("xV"), zNote: document.getElementById("zNote"),
+    xNote: document.getElementById("xNote")
+  };
+
+  var randP = rng(Date.now() & 0x7fffffff), spare = null;
+  function stdNormal() {
+    if (spare !== null) { var s = spare; spare = null; return s; }
+    var p = normalPair(randP); spare = p[1]; return p[0];
+  }
+
+  var draws = [], current = null;   // draws hold {e, z, x}
+
+  function dnorm(v, mu, sg) {
+    return Math.exp(-0.5 * Math.pow((v - mu) / sg, 2)) / (sg * Math.sqrt(2 * Math.PI));
+  }
+
+  function drawPrimer() {
+    var mu = Number(el.mu.value), sg = Number(el.sg.value);
+    el.muOut.textContent = mu.toFixed(2);
+    el.sgOut.textContent = sg.toFixed(2);
+
+    // ---- normal panel
+    var zlo = mu - 4 * sg, zhi = mu + 4 * sg;
+    var f1 = frame(document.getElementById("svgZ"), 520, 250,
+      { t: 18, r: 14, l: 46, b: 26 }, zlo, zhi, 0, dnorm(mu, mu, sg) * 1.14,
+      { xname: "z", yfmt: function (v) { return v.toFixed(2); } });
+
+    var pts = [];
+    for (var i = 0; i <= 200; i++) {
+      var v = zlo + (zhi - zlo) * i / 200;
+      pts.push([v, dnorm(v, mu, sg)]);
+    }
+    f1.area(pts, "rgba(0,32,91,.07)");
+    f1.path(pts, NAVY, 2);
+
+    // median line at mu
+    f1.out.push('<line x1="' + f1.X(mu).toFixed(1) + '" y1="' + f1.Y(0).toFixed(1) +
+      '" x2="' + f1.X(mu).toFixed(1) + '" y2="' + f1.Y(dnorm(mu, mu, sg)).toFixed(1) +
+      '" stroke="' + MUT + '" stroke-width="1" stroke-dasharray="3 3"/>');
+
+    rug(f1, draws.map(function (d) { return d.z; }), zlo, zhi);
+    if (current) marker(f1, current.z, dnorm(current.z, mu, sg), zlo, zhi, current.z.toFixed(2));
+    f1.done();
+
+    // ---- lognormal panel. Upper limit at the 99th percentile; the tail runs on.
+    var xhi = Math.exp(mu + 2.326 * sg), peak = dlnorm(Math.exp(mu - sg * sg), mu, sg);
+    var f2 = frame(document.getElementById("svgX"), 520, 250,
+      { t: 18, r: 14, l: 46, b: 26 }, 0, xhi, 0, peak * 1.14,
+      { xname: "x", yfmt: function (v) { return v.toFixed(2); } });
+
+    var pts2 = [];
+    for (var j = 1; j <= 240; j++) {
+      var w = xhi * j / 240;
+      pts2.push([w, dlnorm(w, mu, sg)]);
+    }
+    pts2.unshift([0, 0]);
+    f2.area(pts2, "rgba(184,145,47,.10)");
+    f2.path(pts2, GOLD, 2);
+
+    var med = Math.exp(mu);
+    if (med < xhi) f2.out.push('<line x1="' + f2.X(med).toFixed(1) + '" y1="' + f2.Y(0).toFixed(1) +
+      '" x2="' + f2.X(med).toFixed(1) + '" y2="' + f2.Y(dlnorm(med, mu, sg)).toFixed(1) +
+      '" stroke="' + MUT + '" stroke-width="1" stroke-dasharray="3 3"/>');
+
+    rug(f2, draws.map(function (d) { return d.x; }), 0, xhi);
+    if (current) marker(f2, current.x, dlnorm(current.x, mu, sg), 0, xhi,
+      current.x.toFixed(current.x < 10 ? 2 : 1));
+    f2.done();
+  }
+
+  function dlnorm(v, mu, sg) {
+    if (v <= 0) return 0;
+    return Math.exp(-0.5 * Math.pow((Math.log(v) - mu) / sg, 2)) / (v * sg * Math.sqrt(2 * Math.PI));
+  }
+
+  function rug(f, vals, lo, hi) {
+    var y = f.Y(0);
+    vals.forEach(function (v) {
+      var c = Math.min(Math.max(v, lo), hi);
+      f.out.push('<line x1="' + f.X(c).toFixed(1) + '" y1="' + (y - 7).toFixed(1) +
+        '" x2="' + f.X(c).toFixed(1) + '" y2="' + y.toFixed(1) +
+        '" stroke="' + GOLD + '" stroke-width="1.4" opacity=".42"/>');
+    });
+  }
+
+  function marker(f, v, dens, lo, hi, label) {
+    var off = v > hi, c = Math.min(Math.max(v, lo), hi);
+    var px = f.X(c), py = off ? f.Y(0) - 18 : f.Y(dens);
+    f.out.push('<line x1="' + px.toFixed(1) + '" y1="' + f.Y(0).toFixed(1) +
+      '" x2="' + px.toFixed(1) + '" y2="' + py.toFixed(1) +
+      '" stroke="' + NAVY + '" stroke-width="2"/>');
+    f.out.push('<circle cx="' + px.toFixed(1) + '" cy="' + py.toFixed(1) +
+      '" r="4.5" fill="' + NAVY + '"/>');
+    f.out.push('<text class="ax" x="' + (px + (px > f.X(hi) - 46 ? -7 : 7)).toFixed(1) +
+      '" y="' + (py - 9).toFixed(1) + '" text-anchor="' +
+      (px > f.X(hi) - 46 ? "end" : "start") + '" fill="' + NAVY +
+      '" style="font-weight:700">' + (off ? "&#8594; " : "") + label + '</text>');
+  }
+
+  document.getElementById("draw").addEventListener("click", function () {
+    var mu = Number(el.mu.value), sg = Number(el.sg.value);
+    var e = stdNormal(), z = mu + sg * e, x = Math.exp(z);
+    current = { e: e, z: z, x: x };
+    draws.push(current);
+    if (draws.length > 60) draws.shift();
+
+    el.eps.textContent = e.toFixed(3);
+    el.z.textContent = z.toFixed(3);
+    el.x.textContent = x.toFixed(x < 10 ? 3 : 2);
+    [el.eps, el.z, el.x].forEach(function (n) { n.classList.remove("empty"); });
+    el.zNote.innerHTML = mu.toFixed(2) + " + " + sg.toFixed(2) + " &times; " + e.toFixed(3);
+    el.xNote.innerHTML = "log x = " + Math.log(x).toFixed(3) + ", which is z again";
+    drawPrimer();
+  });
+
+  document.getElementById("clear").addEventListener("click", function () {
+    draws = []; current = null;
+    el.eps.textContent = el.z.textContent = el.x.textContent = "—";
+    [el.eps, el.z, el.x].forEach(function (n) { n.classList.add("empty"); });
+    el.zNote.textContent = "normal";
+    el.xNote.innerHTML = "lognormal &mdash; and log x returns z";
+    drawPrimer();
+  });
+
+  el.mu.addEventListener("input", drawPrimer);
+  el.sg.addEventListener("input", drawPrimer);
+  drawPrimer();
+})();
+</script>
+</body>
+</html>
