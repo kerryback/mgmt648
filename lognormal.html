@@ -366,11 +366,6 @@
     f1.area(pts, "rgba(0,32,91,.07)");
     f1.path(pts, NAVY, 2);
 
-    // median line at mu
-    f1.out.push('<line x1="' + f1.X(mu).toFixed(1) + '" y1="' + f1.Y(0).toFixed(1) +
-      '" x2="' + f1.X(mu).toFixed(1) + '" y2="' + f1.Y(dnorm(mu, mu, sg)).toFixed(1) +
-      '" stroke="' + MUT + '" stroke-width="1" stroke-dasharray="3 3"/>');
-
     rug(f1, draws.map(function (d) { return d.z; }), zlo, zhi);
     if (current) marker(f1, current.z, dnorm(current.z, mu, sg), zlo, zhi, current.z.toFixed(2));
     f1.done();
@@ -389,11 +384,6 @@
     pts2.unshift([0, 0]);
     f2.area(pts2, "rgba(184,145,47,.10)");
     f2.path(pts2, GOLD, 2);
-
-    var med = Math.exp(mu);
-    if (med < xhi) f2.out.push('<line x1="' + f2.X(med).toFixed(1) + '" y1="' + f2.Y(0).toFixed(1) +
-      '" x2="' + f2.X(med).toFixed(1) + '" y2="' + f2.Y(dlnorm(med, mu, sg)).toFixed(1) +
-      '" stroke="' + MUT + '" stroke-width="1" stroke-dasharray="3 3"/>');
 
     rug(f2, draws.map(function (d) { return d.x; }), 0, xhi);
     if (current) marker(f2, current.x, dlnorm(current.x, mu, sg), 0, xhi,
