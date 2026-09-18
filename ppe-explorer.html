@@ -282,8 +282,7 @@
   <p>The depreciation rate leaves panels (a) and (b) alone: the asset base is
   pinned to next year&rsquo;s sales whatever <i>d</i> is. It moves depreciation
   and capital expenditure together, one for one.</p>
-  <p id="steady">In the steady state the asset base grows <code>8.0%</code> a
-  year, so capital expenditure settles at <code>1.80</code> times depreciation.</p>
+  <p>In the long run capital expenditure grows at <code>8%</code> a year.</p>
 </div>
 
 </div>
@@ -308,7 +307,6 @@
     dOut: document.getElementById("dOut"),
     sOut: document.getElementById("sOut"),
     gPath: document.getElementById("gPath"),
-    steady: document.getElementById("steady"),
     reset: document.getElementById("reset")
   };
 
@@ -441,17 +439,6 @@
     draw(document.getElementById("svgB"), chg,   sFlow,  C.sage);
     draw(document.getElementById("svgC"), dep,   sFlow,  C.sand);
     draw(document.getElementById("svgD"), capex, sFlow,  C.blue);
-
-    // Steady-state ratio of capex to depreciation: (g + d) / d.
-    var note = els.steady;
-    if (d > 0) {
-      note.innerHTML = "In the steady state the asset base grows <code>" +
-        (G3 * 100).toFixed(1) + "%</code> a year, so capital expenditure settles at <code>" +
-        ((G3 + d) / d).toFixed(2) + "</code> times depreciation.";
-    } else {
-      note.innerHTML = "With <code>d = 0</code> nothing is charged against the " +
-        "asset base, so capital expenditure is the growth in net PP&amp;E alone.";
-    }
   }
 
   els.dRate.addEventListener("input", render);
