@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MGMT 648 &middot; Net PP&amp;E, Depreciation, Capital Expenditure</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap">
+<style>
+  :root {
+    --plum:      #595460;
+    --plum-dark: #443f4c;
+    --blue:      #97A7B8;
+    --blue-deep: #6f8497;
+    --pale:      #EBEDEB;
+    --panel:     #fbfbfa;
+    --ink:       #3b3842;
+    --muted:     #6f6b77;
+    --sage:      #A5B592;
+    --sage-deep: #7d9065;
+    --sand:      #D1C499;
+    --sand-deep: #b09f66;
+    --line:      #d8d9d6;
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--pale);
+    color: var(--ink);
+    font-family: Meiryo, "Zen Kaku Gothic New", "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 26px 22px 48px;
+  }
+
+  header { margin-bottom: 20px; }
+
+  h1 {
+    margin: 0 0 4px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--plum);
+  }
+
+  .sub {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  /* ---- controls ---------------------------------------------------- */
+
+  .controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 28px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--blue);
+    padding: 16px 20px 18px;
+    margin-bottom: 22px;
+  }
+
+  .ctl-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .ctl-label {
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--plum);
+  }
+
+  /* The symbol keeps its own case inside the tracked, uppercased label. */
+  .ctl-label i { text-transform: none; font-size: 14px; }
+
+  .ctl-value {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--ink);
+  }
+
+  input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    margin: 10px 0 2px;
+    background: transparent;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 4px;
+    background: var(--line);
+    border-radius: 2px;
+  }
+
+  input[type=range]::-moz-range-track {
+    height: 4px;
+    background: var(--line);
+    border-radius: 2px;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    margin-top: -7px;
+    border-radius: 50%;
+    background: var(--plum);
+    border: 2px solid var(--panel);
+    box-shadow: 0 1px 3px rgba(0,0,0,.28);
+    cursor: pointer;
+  }
+
+  input[type=range]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--plum);
+    border: 2px solid var(--panel);
+    box-shadow: 0 1px 3px rgba(0,0,0,.28);
+    cursor: pointer;
+  }
+
+  input[type=range]:focus-visible { outline: 2px solid var(--blue-deep); outline-offset: 4px; }
+
+  .ctl-note {
+    font-size: 13px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .ctl-note b { color: var(--ink); font-weight: 700; }
+
+  .reset {
+    grid-column: 1 / -1;
+    justify-self: start;
+    font: inherit;
+    font-size: 13px;
+    color: var(--blue-deep);
+    background: none;
+    border: 1px solid var(--line);
+    padding: 4px 12px;
+    cursor: pointer;
+  }
+
+  .reset:hover { border-color: var(--blue-deep); color: var(--plum); }
+
+  /* ---- panels ------------------------------------------------------ */
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 12px 14px 8px;
+  }
+
+  .panel h2 {
+    margin: 0 0 2px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--plum);
+  }
+
+  .panel .formula {
+    margin: 0 0 6px;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+
+  svg { display: block; width: 100%; height: auto; }
+
+  .axis line, .axis path { stroke: var(--line); }
+  .tick { font-size: 10.5px; fill: var(--muted); font-variant-numeric: tabular-nums; }
+  .vlabel { font-size: 10px; fill: var(--ink); font-variant-numeric: tabular-nums; }
+
+  .foot {
+    margin-top: 20px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--sage);
+    padding: 14px 18px;
+    font-size: 14px;
+  }
+
+  .foot p { margin: 0 0 8px; }
+  .foot p:last-child { margin-bottom: 0; }
+  .foot code {
+    font-family: inherit;
+    font-variant-numeric: tabular-nums;
+    color: var(--plum);
+    font-weight: 700;
+  }
+
+  @media (max-width: 760px) {
+    .grid, .controls { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Net PP&amp;E, depreciation, capital expenditure</h1>
+  <p class="sub">The two-stage example: sales of 32.00 in year 1, net PP&amp;E held at 50% of next year&rsquo;s sales.</p>
+</header>
+
+<div class="controls">
+  <div>
+    <div class="ctl-head">
+      <span class="ctl-label">Depreciation rate <i>d</i></span>
+      <span class="ctl-value" id="dOut">10%</span>
+    </div>
+    <input type="range" id="dRate" min="0" max="100" step="1" value="10">
+    <div class="ctl-note">Depreciation<sub>t</sub> = <b>d</b> &times; net PP&amp;E<sub>t&minus;1</sub></div>
+  </div>
+
+  <div>
+    <div class="ctl-head">
+      <span class="ctl-label">Growth scale</span>
+      <span class="ctl-value" id="sOut">1.00</span>
+    </div>
+    <input type="range" id="gScale" min="0" max="2" step="0.05" value="1">
+    <div class="ctl-note">Sales growth <b id="gPath">25.0% &rarr; 15.0% &rarr; 8.0%</b></div>
+  </div>
+
+  <button class="reset" id="reset">Back to the example (10%, 1.00)</button>
+</div>
+
+<div class="grid">
+  <div class="panel">
+    <h2>(a) Net PP&amp;E</h2>
+    <p class="formula">Net PP&amp;E<sub>t</sub> = 0.50 &times; sales<sub>t+1</sub></p>
+    <svg id="svgA" viewBox="0 0 520 250" role="img" aria-label="Net PP and E by year"></svg>
+  </div>
+
+  <div class="panel">
+    <h2>(b) Change in net PP&amp;E</h2>
+    <p class="formula">Net PP&amp;E<sub>t</sub> &minus; net PP&amp;E<sub>t&minus;1</sub></p>
+    <svg id="svgB" viewBox="0 0 520 250" role="img" aria-label="Change in net PP and E by year"></svg>
+  </div>
+
+  <div class="panel">
+    <h2>(c) Depreciation</h2>
+    <p class="formula">d &times; opening net PP&amp;E</p>
+    <svg id="svgC" viewBox="0 0 520 250" role="img" aria-label="Depreciation by year"></svg>
+  </div>
+
+  <div class="panel">
+    <h2>(d) Capital expenditure</h2>
+    <p class="formula">change in net PP&amp;E + depreciation</p>
+    <svg id="svgD" viewBox="0 0 520 250" role="img" aria-label="Capital expenditure by year"></svg>
+  </div>
+</div>
+
+<div class="foot">
+  <p>Panels (b), (c) and (d) share one vertical scale, so panel (d) is panel (b)
+  stacked on panel (c), bar by bar.</p>
+  <p>The depreciation rate leaves panels (a) and (b) alone: the asset base is
+  pinned to next year&rsquo;s sales whatever <i>d</i> is. It moves depreciation
+  and capital expenditure together, one for one.</p>
+  <p id="steady">In the steady state the asset base grows <code>8.0%</code> a
+  year, so capital expenditure settles at <code>1.80</code> times depreciation.</p>
+</div>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var SALES1  = 32.00;   // year-1 sales
+  var K       = 0.50;    // net PP&E as a share of next year's sales
+  var G3      = 0.08;    // steady-state growth
+  var YEARS   = 8;       // forecast horizon shown
+
+  var C = {
+    plum: "#595460", sage: "#7d9065", sand: "#b09f66", blue: "#6f8497",
+    line: "#d8d9d6", muted: "#6f6b77", ink: "#3b3842"
+  };
+
+  var els = {
+    dRate: document.getElementById("dRate"),
+    gScale: document.getElementById("gScale"),
+    dOut: document.getElementById("dOut"),
+    sOut: document.getElementById("sOut"),
+    gPath: document.getElementById("gPath"),
+    steady: document.getElementById("steady"),
+    reset: document.getElementById("reset")
+  };
+
+  // ---- the model ----------------------------------------------------
+
+  function model(d, scale) {
+    var g1 = G3 + scale * 0.07 + scale * 0.10;   // year 1 -> 2
+    var g2 = G3 + scale * 0.07;                  // year 2 -> 3
+    var g  = [g1, g2];                           // G3 from year 3 on
+
+    // Sales for years 1 .. YEARS+1 (the extra year sets net PP&E in year YEARS).
+    var sales = [null, SALES1];
+    for (var t = 2; t <= YEARS + 1; t++) {
+      sales[t] = sales[t - 1] * (1 + (g[t - 2] !== undefined ? g[t - 2] : G3));
+    }
+
+    // Net PP&E for t = 0 .. YEARS, carrying next year's sales.
+    var nppe = [];
+    for (var s = 0; s <= YEARS; s++) nppe[s] = K * sales[s + 1];
+
+    // Flows for t = 1 .. YEARS.
+    var chg = [], dep = [], capex = [];
+    for (var u = 1; u <= YEARS; u++) {
+      chg[u]   = nppe[u] - nppe[u - 1];
+      dep[u]   = d * nppe[u - 1];
+      capex[u] = chg[u] + dep[u];
+    }
+
+    return { g1: g1, g2: g2, sales: sales, nppe: nppe,
+             chg: chg, dep: dep, capex: capex };
+  }
+
+  // ---- drawing ------------------------------------------------------
+
+  var W = 520, H = 250, M = { t: 14, r: 12, b: 30, l: 48 };
+  var PW = W - M.l - M.r, PH = H - M.t - M.b;
+
+  // Four gridlines at a round step, so the tick labels are whole numbers
+  // wherever the scale allows it.
+  var TICKS = 4;
+
+  var STEPS = [0.25, 0.5, 1, 2, 2.5, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000];
+
+  function niceScale(v) {
+    var step = STEPS[STEPS.length - 1];
+    for (var i = 0; i < STEPS.length; i++) {
+      if (STEPS[i] * TICKS >= v) { step = STEPS[i]; break; }
+    }
+    return { max: step * TICKS, step: step };
+  }
+
+  function fmt(v) { return v.toFixed(2); }
+
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+
+  // values: array of {x: label, y: number}
+  function draw(svg, values, scale, colour) {
+    var out = [];
+    var yMax = scale.max;
+    var dp = scale.step % 1 === 0 ? 0 : (scale.step * 2) % 1 === 0 ? 1 : 2;
+    var n = values.length;
+    var slot = PW / n;
+    var bw = Math.min(slot * 0.62, 42);
+
+    // horizontal gridlines and y ticks
+    for (var i = 0; i <= TICKS; i++) {
+      var val = scale.step * i;
+      var y = M.t + PH - (val / yMax) * PH;
+      out.push('<line x1="' + M.l + '" y1="' + y.toFixed(1) + '" x2="' + (M.l + PW) +
+               '" y2="' + y.toFixed(1) + '" stroke="' + C.line + '" stroke-width="1"/>');
+      out.push('<text class="tick" x="' + (M.l - 7) + '" y="' + (y + 3.5).toFixed(1) +
+               '" text-anchor="end">' + val.toFixed(dp) + '</text>');
+    }
+
+    // bars
+    for (var j = 0; j < n; j++) {
+      var v = values[j];
+      var cx = M.l + slot * (j + 0.5);
+      var h = Math.max((v.y / yMax) * PH, 0);
+      var by = M.t + PH - h;
+      out.push('<rect x="' + (cx - bw / 2).toFixed(1) + '" y="' + by.toFixed(1) +
+               '" width="' + bw.toFixed(1) + '" height="' + h.toFixed(1) +
+               '" fill="' + colour + '"/>');
+      if (h > 1) {
+        out.push('<text class="vlabel" x="' + cx.toFixed(1) + '" y="' + (by - 4).toFixed(1) +
+                 '" text-anchor="middle">' + fmt(v.y) + '</text>');
+      }
+      out.push('<text class="tick" x="' + cx.toFixed(1) + '" y="' + (M.t + PH + 15) +
+               '" text-anchor="middle">' + esc(v.x) + '</text>');
+    }
+
+    // baseline
+    out.push('<line x1="' + M.l + '" y1="' + (M.t + PH) + '" x2="' + (M.l + PW) +
+             '" y2="' + (M.t + PH) + '" stroke="' + C.muted + '" stroke-width="1"/>');
+    out.push('<text class="tick" x="' + (M.l + PW) + '" y="' + (H - 3) +
+             '" text-anchor="end" fill="' + C.muted + '">year</text>');
+
+    svg.innerHTML = out.join("");
+  }
+
+  // ---- wiring -------------------------------------------------------
+
+  function render() {
+    var d = Number(els.dRate.value) / 100;
+    var scale = Number(els.gScale.value);
+    var m = model(d, scale);
+
+    els.dOut.textContent = (d * 100).toFixed(0) + "%";
+    els.sOut.textContent = scale.toFixed(2);
+    els.gPath.textContent = (m.g1 * 100).toFixed(1) + "% → " +
+                            (m.g2 * 100).toFixed(1) + "% → " +
+                            (G3 * 100).toFixed(1) + "%";
+
+    var stock = [], chg = [], dep = [], capex = [];
+    for (var t = 0; t <= YEARS; t++) stock.push({ x: t, y: m.nppe[t] });
+    for (var u = 1; u <= YEARS; u++) {
+      chg.push({ x: u, y: m.chg[u] });
+      dep.push({ x: u, y: m.dep[u] });
+      capex.push({ x: u, y: m.capex[u] });
+    }
+
+    // Panel (a) on its own scale; (b), (c), (d) share one.
+    var maxStock = Math.max.apply(null, stock.map(function (p) { return p.y; }));
+    var flows = chg.concat(dep, capex).map(function (p) { return p.y; });
+    var maxFlow = Math.max.apply(null, flows);
+
+    var sStock = niceScale(maxStock), sFlow = niceScale(maxFlow);
+
+    draw(document.getElementById("svgA"), stock, sStock, C.plum);
+    draw(document.getElementById("svgB"), chg,   sFlow,  C.sage);
+    draw(document.getElementById("svgC"), dep,   sFlow,  C.sand);
+    draw(document.getElementById("svgD"), capex, sFlow,  C.blue);
+
+    // Steady-state ratio of capex to depreciation: (g + d) / d.
+    var note = els.steady;
+    if (d > 0) {
+      note.innerHTML = "In the steady state the asset base grows <code>" +
+        (G3 * 100).toFixed(1) + "%</code> a year, so capital expenditure settles at <code>" +
+        ((G3 + d) / d).toFixed(2) + "</code> times depreciation.";
+    } else {
+      note.innerHTML = "With <code>d = 0</code> nothing is charged against the " +
+        "asset base, so capital expenditure is the growth in net PP&amp;E alone.";
+    }
+  }
+
+  els.dRate.addEventListener("input", render);
+  els.gScale.addEventListener("input", render);
+  els.reset.addEventListener("click", function () {
+    els.dRate.value = 10;
+    els.gScale.value = 1;
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

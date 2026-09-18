@@ -37,6 +37,11 @@ project:
     # docs/. Anchored with a leading slash so the glob cannot also match a
     # copy of the name somewhere deeper in the tree.
     - /wheel.html
+    # Four-panel explorer for the capital schedule in the September 17 deck:
+    # net PP&E, its change, depreciation and capital expenditure, against a
+    # depreciation-rate and a growth-scale slider. Self-contained, so copied
+    # through verbatim like the spinner above.
+    - /ppe-explorer.html
     - images/RiceBusiness-transparent-logo-sm.png
     - images/headshot-keeper-cropped2.png
     # Session file bundles linked from the schedule's Files links.

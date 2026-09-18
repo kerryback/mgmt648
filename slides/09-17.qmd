@@ -249,6 +249,11 @@ throughout.
 The date-0 balances are what the company already owns. Figures are rounded to
 0.01.
 
+::: {.note}
+Three of these lines are plotted, with sliders, at
+[mgmt648.kerryback.com/ppe-explorer.html](https://mgmt648.kerryback.com/ppe-explorer.html).
+:::
+
 ## The income statement {.plain-title .nowrap-labels}
 
 | $ millions | 1 | 2 | 3 | 4 | 5 |
