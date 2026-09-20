@@ -411,6 +411,12 @@ body > header#quarto-header { display: none; }
      class="phantom">Files</span>. They are invisible but hold the width open,
      so that row's Slides link stays in line with the others'.
 
+     A row with no Slides link takes the mirror image: <span
+     class="phantom">Slides</span><span class="sep phantom">&middot;</span>
+     ahead of the Files link. Without it the links block is narrower, the
+     description beside it gets the extra room, and that row wraps differently
+     from its neighbours'.
+
      Every link here opens in a new tab, so keep the target and rel on any
      you add.                                                              -->
 
@@ -475,7 +481,7 @@ body > header#quarto-header { display: none; }
         <div class="item-title">Capital Budgeting</div>
         <div class="item-desc">Incremental cash flows, inflation, staged investment, and simulation &mdash; worked through cases at the keyboard</div>
       </div>
-      <div class="item-links"><a class="pending" href="under-construction.html" target="_blank" rel="noopener">Files</a></div>
+      <div class="item-links"><span class="phantom">Slides</span><span class="sep phantom">&middot;</span><a class="pending" href="under-construction.html" target="_blank" rel="noopener">Files</a></div>
     </div>
 
     <div class="item">
