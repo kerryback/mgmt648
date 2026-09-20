@@ -7,6 +7,10 @@ MGMT648.csv
 roster.png
 meeting_times.png
 
+# Attendance and participation scored after each class, a row per student per
+# meeting. Student records -- never publish.
+participation.csv
+
 # Another instructor's document, kept locally for reference only.
 Davids 2025 Syllabus.pdf
 
