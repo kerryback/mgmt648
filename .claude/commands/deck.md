@@ -4,20 +4,16 @@ argument-hint: <session number or filename>
 allowed-tools: Bash(bash ~/.claude/skills/deck/assets/deck-to-pdf.sh:*)
 ---
 
-Export the deck `$1` by running, from the project root, with the `--size` that
-matches that deck's canvas:
+Export the deck `$1` by running, from the project root:
 
 ```
-# the date-named decks -- shoji2, a 1280x720 (16:9) canvas
-bash ~/.claude/skills/deck/assets/deck-to-pdf.sh 09-17 --root docs --out pdf --size 1920x1080
-
-# the leftover sessionNN decks -- shoji, a 1050x700 (3:2) canvas
-bash ~/.claude/skills/deck/assets/deck-to-pdf.sh $1 --root docs --out pdf --size 1680x1120
+# every deck -- shoji, a 1280x720 (16:9) canvas
+bash ~/.claude/skills/deck/assets/deck-to-pdf.sh $1 --root docs --out pdf --size 1920x1080
 ```
 
-The size is the only thing that varies by deck. Check the deck's front matter if
-you are unsure: `width`/`height` there are the canvas, and `--size` is 1.5x it
-for 16:9 or 1.6x it for 3:2 (see below).
+Every deck here is on the same canvas, so `--size` is the same for all of them.
+Check the deck's front matter if you are unsure: `width`/`height` there are the
+canvas, and `--size` is 1.5x it for 16:9 (see below).
 
 Those three flags are all this repo contributes. Everything else — loose name
 matching, re-rendering a stale deck, serving the site over HTTP, mirroring the
@@ -39,11 +35,10 @@ page either side. Match the deck's own aspect ratio instead:
 
 | Deck | Theme | Canvas | `--size` | Page |
 |---|---|---|---|---|
-| Date-named (`08-27`, `09-12`, `09-17`, …) | `shoji2.scss` | 1280x720, 16:9 | 1920x1080 | 1440x810pt |
-| `session03`–`session12` | `shoji.scss` | 1050x700, 3:2 | 1680x1120 | 1260x840pt |
+| Every deck | `shoji.scss` | 1280x720, 16:9 | 1920x1080 | 1440x810pt |
 
-The multiple (1.5x, 1.6x) only sets the raster resolution; the aspect ratio is
-what has to match. A deck built on a third canvas gets a third row here.
+The multiple (1.5x) only sets the raster resolution; the aspect ratio is what has
+to match. A deck built on another canvas gets a second row here.
 
 Name the deck in full: `/deck 09-17`, `/deck session10`. The skill's loose
 matching splits a stem on `_` (it is built for names like `3_teaching`), and
