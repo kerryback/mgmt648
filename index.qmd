@@ -490,7 +490,7 @@ body > header#quarto-header { display: none; }
         <div class="item-title">Two-Stage Growth Model</div>
         <div class="item-desc">Terminal values, pro formas, enterprise and equity value</div>
       </div>
-      <div class="item-links"><span class="has-menu"><a href="slides/09-17.html" target="_blank" rel="noopener">Slides</a><span class="submenu"><a href="slides/09-17.html" target="_blank" rel="noopener">HTML</a><a href="pdf/09-17.pdf" target="_blank" rel="noopener">PDF</a></span></span><span class="sep">&middot;</span><a href="files/0917.zip" target="_blank" rel="noopener">Files</a></div>
+      <div class="item-links"><span class="has-menu"><a href="slides/09-17.html" target="_blank" rel="noopener">Slides</a><span class="submenu"><a href="slides/09-17.html" target="_blank" rel="noopener">HTML</a><a href="pdf/09-17.pdf" target="_blank" rel="noopener">PDF</a></span></span><span class="sep">&middot;</span><span class="has-menu"><a href="slides/two-stage-growth-cases.html" target="_blank" rel="noopener">Cases</a><span class="submenu"><a href="slides/two-stage-growth-cases.html" target="_blank" rel="noopener">HTML</a><a href="pdf/two-stage-growth-cases.pdf" target="_blank" rel="noopener">PDF</a></span></span><span class="sep">&middot;</span><a href="files/0917.zip" target="_blank" rel="noopener">Files</a></div>
     </div>
 
     <div class="item">
@@ -499,7 +499,7 @@ body > header#quarto-header { display: none; }
         <div class="item-title">More on Firm Valuation</div>
         <div class="item-desc">Additional examples, a little accounting, creating an agent skill</div>
       </div>
-      <div class="item-links"><span class="has-menu"><a class="pending" href="under-construction.html" target="_blank" rel="noopener">Slides</a><span class="submenu"><a href="under-construction.html" target="_blank" rel="noopener">HTML</a><a class="pending" href="under-construction.html" target="_blank" rel="noopener">PDF</a></span></span><span class="sep">&middot;</span><a class="pending" href="under-construction.html" target="_blank" rel="noopener">Files</a></div>
+      <div class="item-links"><span class="has-menu"><a href="slides/10-01.html" target="_blank" rel="noopener">Slides</a><span class="submenu"><a href="slides/10-01.html" target="_blank" rel="noopener">HTML</a><a href="pdf/10-01.pdf" target="_blank" rel="noopener">PDF</a></span></span><span class="sep">&middot;</span><a class="pending" href="under-construction.html" target="_blank" rel="noopener">Files</a></div>
     </div>
 
     <div class="item">
@@ -514,8 +514,8 @@ body > header#quarto-header { display: none; }
     <div class="item">
       <div class="chip">THU OCT 15<span class="chip-time">8:30&ndash;10:00 PM</span></div>
       <div class="item-body">
-        <div class="item-title">Final Presentations</div>
-        <div class="item-desc">Valuations presented in pairs, with another pair challenging each</div>
+        <div class="item-title">Simulation</div>
+        <div class="item-desc">Monte Carlo simulation of project values and of investment returns, input distributions, and reading the output</div>
       </div>
       <div class="item-links"><span class="has-menu"><a class="pending" href="under-construction.html" target="_blank" rel="noopener">Slides</a><span class="submenu"><a href="under-construction.html" target="_blank" rel="noopener">HTML</a><a class="pending" href="under-construction.html" target="_blank" rel="noopener">PDF</a></span></span><span class="sep">&middot;</span><a class="pending" href="under-construction.html" target="_blank" rel="noopener">Files</a></div>
     </div>

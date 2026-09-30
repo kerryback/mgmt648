@@ -1,0 +1,725 @@
+---
+title: "Firm Valuation, Again"
+subtitle: "MGMT 648 &middot; October 1"
+author: "Kerry Back"
+date: "2026-10-01"
+format:
+  revealjs:
+    theme: shoji.scss
+    width: 1280
+    height: 720
+    max-scale: 5
+---
+
+# Valuing the whole firm
+
+## Two claims, one stream {.plain-title}
+
+::: {.lead}
+The operations produce one stream of cash. Debt and equity divide it.
+:::
+
+::: {.cards .cards-2}
+::: {.card}
+[Debt]{.card-title}
+
+Interest and principal, fixed by contract, paid before anything reaches the
+shareholders.
+:::
+
+::: {.card .card-blue}
+[Equity]{.card-title}
+
+Whatever is left, with no ceiling and no promise.
+:::
+:::
+
+::: {.note}
+Value the stream once and then divide it. Forecasting the equity's share
+directly means forecasting the borrowing and repayment schedule as well.
+:::
+
+## Leave interest out of the cash flows
+
+Interest leaves the shareholders and arrives at the lenders. Both are inside
+the group being valued, so the payment nets to zero and never appears.
+
+## Operating cash flow less investment {.plain-title}
+
+```{=html}
+<div class="fcfdiag">
+<svg viewBox="0 0 1088 176" width="100%" role="img" aria-label="Operating cash flow less investment equals free cash flow">
+  <g>
+    <rect x="0" y="0" width="320" height="44" fill="#595460"></rect>
+    <text x="20" y="29" class="dg-h">OPERATING CASH FLOW</text>
+    <rect x="0" y="44" width="320" height="104" fill="#EBEDEB"></rect>
+    <text x="20" y="80" class="dg-b">EBIT &#215; (1 &#8722; tax rate)</text>
+    <text x="20" y="114" class="dg-b">plus depreciation</text>
+  </g>
+  <text x="352" y="106" class="dg-op">&#8722;</text>
+  <g>
+    <rect x="384" y="0" width="320" height="44" fill="#97A7B8"></rect>
+    <text x="404" y="29" class="dg-h">INVESTMENT</text>
+    <rect x="384" y="44" width="320" height="104" fill="#EBEDEB"></rect>
+    <text x="404" y="80" class="dg-b">capital expenditure</text>
+    <text x="404" y="114" class="dg-b">plus the rise in working capital</text>
+  </g>
+  <text x="736" y="106" class="dg-op">=</text>
+  <g>
+    <rect x="768" y="0" width="320" height="44" fill="#595460"></rect>
+    <text x="788" y="29" class="dg-h">FREE CASH FLOW</text>
+    <rect x="768" y="44" width="320" height="104" fill="#fbfbfa" stroke="#595460" stroke-width="3"></rect>
+    <text x="788" y="80" class="dg-b">what is left over</text>
+    <text x="788" y="114" class="dg-b">for debt and equity together</text>
+  </g>
+</svg>
+</div>
+
+<style>
+.reveal .fcfdiag { margin: 0.5em 0 0.2em; }
+.reveal .dg-h { fill:#fbfbfa; font-size:17px; letter-spacing:0.14em; font-weight:700; }
+.reveal .dg-b { fill:#3b3842; font-size:21px; }
+.reveal .dg-op { fill:#595460; font-size:44px; font-weight:700; text-anchor:middle; }
+</style>
+```
+
+No line for interest, and the tax rate is applied to EBIT rather than to EBIT
+less interest. The deduction for interest is carried in the discount rate.
+
+## The rate has to match the claim {.band-bottom}
+
+The cash flow belongs to both groups, so the rate is the WACC: the blend of
+what each group requires, weighted by the market value of what each holds. We
+calculate it on October 10 and take it as given today.
+
+## What the present value buys {.plain-title}
+
+```{=html}
+<div class="pieconcept">
+<svg viewBox="0 0 1088 300" width="100%" role="img" aria-label="Enterprise value divided into a debt slice and an equity slice">
+  <path d="M 170 160 L 170 30 A 130 130 0 0 1 292 204.9 Z" fill="#97A7B8"></path>
+  <path d="M 170 160 L 292 204.9 A 130 130 0 1 1 170 30 Z" fill="#595460"></path>
+  <text x="380" y="70" class="pc-h">ENTERPRISE VALUE</text>
+  <text x="380" y="112" class="pc-b">The present value of the free cash flow,</text>
+  <text x="380" y="144" class="pc-b">discounted at the weighted average rate.</text>
+  <rect x="380" y="186" width="20" height="20" fill="#97A7B8"></rect>
+  <text x="414" y="203" class="pc-b">Debt, at what the lenders are owed</text>
+  <rect x="380" y="234" width="20" height="20" fill="#595460"></rect>
+  <text x="414" y="251" class="pc-b">Equity, the rest</text>
+</svg>
+</div>
+
+<style>
+.reveal .pieconcept { margin-top: 0.3em; }
+.reveal .pc-h { fill:#97A7B8; font-size:19px; letter-spacing:0.14em; font-weight:700; }
+.reveal .pc-b { fill:#3b3842; font-size:23px; }
+</style>
+```
+
+# Two stages
+
+## Growth above the economy ends {.plain-title}
+
+A company growing faster than the economy forever eventually exceeds it. So the
+forecast is built in two parts, and the second part is the one that has to be
+sustainable.
+
+::: {.steps}
+1. Years 1 to $n$, forecast each year on its own: sales, margin, the ratios
+2. Year $n+1$ onward, one growth rate that never changes
+:::
+
+## The ceiling on the second stage {.plain-title}
+
+::: {.stats}
+::: {.stat}
+[2.5%]{.stat-value}
+[real GDP growth a year]{.stat-label}
+:::
+
+::: {.stat}
+[2.2%]{.stat-value}
+[the GDP price deflator]{.stat-label}
+:::
+
+::: {.stat}
+[4.8%]{.stat-value}
+[nominal GDP growth]{.stat-label}
+:::
+:::
+
+Thirty years through 2025. Real growth and prices compound rather than add:
+$1.025 \times 1.022 = 1.048$. Over the full run since 1947 nominal growth was
+6.4% a year, of which 3.1 points were real and 3.2 were prices.
+
+::: {.note}
+Bureau of Economic Analysis, gross domestic product in current and in chained
+2017 dollars, annual. FRED series `GDPA` and `GDPCA`. A second-stage rate above
+this is a forecast that the company eventually becomes the whole economy.
+:::
+
+## The perpetuity formula {.band-bottom}
+
+$$\text{TV}_n = \frac{\text{FCF}_{n+1}}{r - g}$$
+
+The numerator is the year *after* the last forecast year. The formula assumes
+$g$ is constant forever, that the ratios are constant too, and that $g$ stays
+below $r$, the WACC.
+
+## The terminal value is dated $n$ {.plain-title}
+
+$\text{TV}_n$ is a value at the end of year $n$, standing in for every cash flow
+from year $n+1$ on. It gets discounted $n$ periods, alongside $\text{FCF}_n$.
+
+$$\text{EV} = \sum_{t=1}^{n} \frac{\text{FCF}_t}{(1+r)^t} \;+\; \frac{\text{TV}_n}{(1+r)^n}$$
+
+::: {.note .note-plum}
+Discounting the terminal value $n+1$ periods divides it by an extra $1+k$.
+Check the exponent against the exponent on $\text{FCF}_n$: they are the same.
+:::
+
+## From enterprise value to a price {.plain-title}
+
+::: {.steps}
+1. Subtract debt, at book value unless it trades far from it
+2. Add cash and anything else the operations do not use
+3. Divide by diluted shares
+:::
+
+::: {.note}
+Each balance sheet item belongs in exactly one place: inside the forecast, if
+it produces the cash flows being discounted, or in this calculation, if it does
+not. Counting it twice or leaving it out of both are the two failures.
+:::
+
+
+# An example
+
+## The assumptions {.plain-title}
+
+::: {.cards .cards-3}
+::: {.card}
+[The forecast]{.card-title}
+
+Sales of 100 last year, growing 20%, 20%, 20%, 12%, 8%, and then 4% forever.
+Operating margin 20%, tax 25%.
+:::
+
+::: {.card .card-blue}
+[The ratios]{.card-title}
+
+Net PP&E is 45% of next year's sales. Working capital is 15% of next year's
+sales.
+:::
+
+::: {.card}
+[The rest]{.card-title}
+
+WACC 10%. Debt 100, cash 20, ten million shares. Figures in $ millions.
+:::
+:::
+
+::: {.note}
+Every white cell on the slides that follow is editable, and all of them feed
+one model. Change a number anywhere and the value per share moves everywhere.
+:::
+
+## Sales and operating profit {.plain-title}
+
+```{=html}
+<div class="vmodel">
+  <div class="vin">
+    <span class="vlab">Last year's sales</span>
+    <input class="vc vc-m" data-k="s0" type="number" step="1" value="100">
+    <span class="vlab">Growth</span>
+    <input class="vc" data-k="g1" type="number" step="1" value="20"><span class="vpc">%</span>
+    <input class="vc" data-k="g2" type="number" step="1" value="20"><span class="vpc">%</span>
+    <input class="vc" data-k="g3" type="number" step="1" value="20"><span class="vpc">%</span>
+    <input class="vc" data-k="g4" type="number" step="1" value="12"><span class="vpc">%</span>
+    <input class="vc" data-k="g5" type="number" step="1" value="8"><span class="vpc">%</span>
+    <span class="vlab">then</span>
+    <input class="vc" data-k="gt" type="number" step="0.5" value="4"><span class="vpc">%</span>
+  </div>
+  <div class="vin">
+    <span class="vlab">Operating margin</span>
+    <input class="vc" data-k="m" type="number" step="1" value="20"><span class="vpc">%</span>
+    <span class="vlab">Tax rate</span>
+    <input class="vc" data-k="tax" type="number" step="1" value="25"><span class="vpc">%</span>
+  </div>
+
+  <table class="vtab vwide">
+    <thead><tr><th>$ MILLIONS</th><th>YR 1</th><th>YR 2</th><th>YR 3</th><th>YR 4</th><th>YR 5</th><th>YR 6</th></tr></thead>
+    <tbody>
+      <tr><td>Sales</td><td data-f="s1"></td><td data-f="s2"></td><td data-f="s3"></td><td data-f="s4"></td><td data-f="s5"></td><td data-f="s6"></td></tr>
+      <tr><td>EBIT</td><td data-f="e1"></td><td data-f="e2"></td><td data-f="e3"></td><td data-f="e4"></td><td data-f="e5"></td><td data-f="e6"></td></tr>
+      <tr><td>EBIT after tax (NOPAT)</td><td data-f="n1"></td><td data-f="n2"></td><td data-f="n3"></td><td data-f="n4"></td><td data-f="n5"></td><td data-f="n6"></td></tr>
+    </tbody>
+  </table>
+  <div class="vps"><span class="vps-lab">VALUE PER SHARE</span><span class="vps-num" data-f="ps"></span></div>
+</div>
+
+<style>
+.reveal .vmodel { margin-top: 0.35em; }
+.reveal .vin { display:flex; align-items:baseline; flex-wrap:wrap; gap:0.5em; margin-bottom:0.3em; }
+.reveal .vlab { color:#8a8792; font-size:0.74em; letter-spacing:0.05em; text-transform:uppercase; }
+.reveal .vlab:not(:first-child) { margin-left:0.75em; }
+.reveal .vpc { color:#8a8792; font-size:0.82em; margin-left:-0.35em; }
+.reveal .vc {
+  font-family: inherit; font-size: 0.88em; width: 3.1em; text-align: right;
+  color:#3b3842; background:#fbfbfa; border:0; border-bottom:3px solid #595460;
+  border-radius:0; padding:0.06em 0.3em 0.02em; font-variant-numeric: tabular-nums;
+  -moz-appearance: textfield;
+}
+.reveal .vc.vc-m { width: 4.1em; }
+.reveal .vc::-webkit-outer-spin-button,
+.reveal .vc::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.reveal .vc:focus { outline:0; background:#EBEDEB; border-bottom-color:#97A7B8; }
+.reveal table.vtab { width:100%; margin:0; border-collapse:collapse; font-size:0.90em; }
+.reveal table.vtab.vwide { font-size:0.80em; }
+.reveal table.vtab.vwider { font-size:0.74em; }
+.reveal table.vtab th {
+  background:#595460; color:#fbfbfa; font-size:0.74em; letter-spacing:0.12em;
+  font-weight:700; text-align:right; padding:0.42em 0.6em; border:0;
+}
+.reveal table.vtab th:first-child { text-align:left; }
+.reveal table.vtab td {
+  text-align:right; padding:0.34em 0.6em; border:0; color:#3b3842;
+  font-variant-numeric: tabular-nums; border-bottom:1px solid #dcdcd8;
+}
+.reveal table.vtab td:first-child { text-align:left; }
+.reveal table.vtab tbody tr:nth-child(even) td { background:#EBEDEB; }
+.reveal table.vtab tr.vrule td { border-top:3px solid #595460; font-weight:700; }
+.reveal table.vtab td.vmute { color:#8a8792; }
+.reveal .vps { display:flex; align-items:baseline; gap:0.8em; margin-top:0.5em;
+  border-top:3px solid #595460; padding-top:0.32em; }
+.reveal .vps-lab { color:#97A7B8; font-size:0.74em; letter-spacing:0.14em; font-weight:700; }
+.reveal .vps-num { color:#595460; font-size:1.3em; font-weight:700; font-variant-numeric: tabular-nums; }
+.reveal .vwarn { color:#b0533f; font-size:0.78em; letter-spacing:0.04em; }
+.reveal .vwarn:empty { display:none; }
+</style>
+
+<script>
+(function () {
+  var S = { s0:100, g1:20, g2:20, g3:20, g4:12, g5:8, gt:4, m:20, tax:25,
+            kp:45, wc:15, wacc:10, debt:100, cash:20, sh:10 };
+  var N = 5;
+
+  function money(x) {
+    if (!isFinite(x)) return "—";
+    return x.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+  function pct(x) { return isFinite(x) ? x.toFixed(1) + "%" : "—"; }
+
+  function calc() {
+    var gt = S.gt / 100, k = S.wacc / 100;
+    var G = [S.g1, S.g2, S.g3, S.g4, S.g5];
+    var sales = [S.s0], t, r;
+    for (t = 0; t <= N + 1; t++) {
+      r = t < N ? G[t] / 100 : gt;
+      sales.push(sales[t] * (1 + r));
+    }
+    var ebit = sales.map(function (s) { return s * S.m / 100; });
+    var nopat = ebit.map(function (e) { return e * (1 - S.tax / 100); });
+    var ppe = [], wcap = [], ic = [];
+    for (t = 0; t <= N + 1; t++) {
+      ppe[t] = S.kp / 100 * sales[t + 1];
+      wcap[t] = S.wc / 100 * sales[t + 1];
+      ic[t] = ppe[t] + wcap[t];
+    }
+    var dic = [null], fcf = [null];
+    for (t = 1; t <= N + 1; t++) { dic[t] = ic[t] - ic[t - 1]; fcf[t] = nopat[t] - dic[t]; }
+
+    var spread = k - gt, ok = spread > 1e-9;
+    var tv = ok ? fcf[N + 1] / spread : NaN;
+    var pv = [null], sum = 0;
+    for (t = 1; t <= N; t++) { pv[t] = fcf[t] / Math.pow(1 + k, t); sum += pv[t]; }
+    var pvtv = tv / Math.pow(1 + k, N);
+    var ev = sum + pvtv;
+    var eq = ev - S.debt + S.cash;
+
+    return { sales:sales, ebit:ebit, nopat:nopat, ppe:ppe, wcap:wcap, ic:ic,
+             dic:dic, fcf:fcf, k:k, gt:gt, spread:spread, ok:ok, tv:tv,
+             pv:pv, pvtv:pvtv, ev:ev, eq:eq, total:S.debt + eq };
+  }
+
+  function fields(R) {
+    var F = {}, t;
+    for (t = 1; t <= N + 1; t++) {
+      F["s" + t] = money(R.sales[t]);
+      F["e" + t] = money(R.ebit[t]);
+      F["n" + t] = money(R.nopat[t]);
+      F["d" + t] = money(R.dic[t]);
+      F["f" + t] = money(R.fcf[t]);
+    }
+    for (t = 0; t <= N + 1; t++) {
+      F["p" + t] = money(R.ppe[t]);
+      F["w" + t] = money(R.wcap[t]);
+      F["i" + t] = money(R.ic[t]);
+    }
+    for (t = 1; t <= N; t++) F["pv" + t] = money(R.pv[t]);
+    F.spread = pct(100 * R.spread);
+    F.tv = money(R.tv);
+    F.pvtv = money(R.pvtv);
+    F.ev = money(R.ev);
+    F.eq = money(R.eq);
+    F.debt = money(S.debt);
+    F.cash = money(S.cash);
+    F.total = money(R.total);
+    F.tvshare = R.ok ? pct(100 * R.pvtv / R.ev) : "—";
+    F.ps = (R.ok && S.sh > 0) ? "$" + money(R.eq / S.sh) : "—";
+    F.warn = R.ok ? "" : "The second-stage growth rate has to be below the WACC.";
+    return F;
+  }
+
+  function arc(cx, cy, r, a0, a1) {
+    var big = (a1 - a0) > 180 ? 1 : 0, rad = Math.PI / 180;
+    return "M " + cx + " " + cy +
+           " L " + (cx + r * Math.cos(a0 * rad)).toFixed(2) + " " + (cy + r * Math.sin(a0 * rad)).toFixed(2) +
+           " A " + r + " " + r + " 0 " + big + " 1 " +
+           (cx + r * Math.cos(a1 * rad)).toFixed(2) + " " + (cy + r * Math.sin(a1 * rad)).toFixed(2) + " Z";
+  }
+
+  function pie(R) {
+    var dp = document.getElementById("pie-debt"), ep = document.getElementById("pie-eq");
+    if (!dp) return;
+    var f = (R.ok && R.total > 0) ? S.debt / R.total : 1;
+    f = Math.max(0, Math.min(1, f));
+    var am = -90 + 360 * f;
+    if (f >= 0.999) { dp.setAttribute("d", arc(170, 160, 130, -90, 269.99)); ep.setAttribute("d", ""); }
+    else if (f <= 0.001) { dp.setAttribute("d", ""); ep.setAttribute("d", arc(170, 160, 130, -90, 269.99)); }
+    else { dp.setAttribute("d", arc(170, 160, 130, -90, am)); ep.setAttribute("d", arc(170, 160, 130, am, 270)); }
+  }
+
+  function render() {
+    var R = calc(), F = fields(R);
+    document.querySelectorAll("[data-f]").forEach(function (el) {
+      var v = F[el.getAttribute("data-f")];
+      if (v !== undefined) el.textContent = v;
+    });
+    pie(R);
+  }
+
+  function init() {
+    var ins = document.querySelectorAll("[data-k]");
+    if (!ins.length) return;
+    ins.forEach(function (el) {
+      var key = el.getAttribute("data-k");
+      el.value = S[key];
+      el.addEventListener("input", function () {
+        var v = parseFloat(el.value);
+        if (isNaN(v)) return;
+        S[key] = v;
+        document.querySelectorAll('[data-k="' + key + '"]').forEach(function (o) {
+          if (o !== el) o.value = v;
+        });
+        render();
+      });
+    });
+    render();
+    if (window.Reveal) Reveal.on("slidechanged", render);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();
+</script>
+```
+
+## What the growth costs {.plain-title}
+
+```{=html}
+<div class="vmodel">
+  <div class="vin">
+    <span class="vlab">Net PP&amp;E, share of next year's sales</span>
+    <input class="vc" data-k="kp" type="number" step="1" value="45"><span class="vpc">%</span>
+    <span class="vlab">Working capital</span>
+    <input class="vc" data-k="wc" type="number" step="1" value="15"><span class="vpc">%</span>
+  </div>
+
+  <table class="vtab vwider">
+    <thead><tr><th>$ MILLIONS</th><th>YR 0</th><th>YR 1</th><th>YR 2</th><th>YR 3</th><th>YR 4</th><th>YR 5</th><th>YR 6</th></tr></thead>
+    <tbody>
+      <tr><td>Net PP&amp;E</td><td data-f="p0"></td><td data-f="p1"></td><td data-f="p2"></td><td data-f="p3"></td><td data-f="p4"></td><td data-f="p5"></td><td data-f="p6"></td></tr>
+      <tr><td>Working capital</td><td data-f="w0"></td><td data-f="w1"></td><td data-f="w2"></td><td data-f="w3"></td><td data-f="w4"></td><td data-f="w5"></td><td data-f="w6"></td></tr>
+      <tr class="vrule"><td>Invested capital</td><td data-f="i0"></td><td data-f="i1"></td><td data-f="i2"></td><td data-f="i3"></td><td data-f="i4"></td><td data-f="i5"></td><td data-f="i6"></td></tr>
+      <tr><td>Increase</td><td class="vmute">&mdash;</td><td data-f="d1"></td><td data-f="d2"></td><td data-f="d3"></td><td data-f="d4"></td><td data-f="d5"></td><td data-f="d6"></td></tr>
+    </tbody>
+  </table>
+  <div class="vps"><span class="vps-lab">VALUE PER SHARE</span><span class="vps-num" data-f="ps"></span></div>
+</div>
+```
+
+## Ways to calculate free cash flow {.plain-title}
+
+$$\begin{aligned}
+\text{FCF} &= \text{NOPAT} + \text{Depreciation} - \text{CapEx} - \Delta \text{NWC}\\[2pt]
+&= \text{NOPAT} - \Delta \text{Net PP\&E} - \Delta \text{NWC}\\[2pt]
+&= \text{NOPAT} - \Delta \text{IC}
+\end{aligned}$$
+
+::: {.cards .cards-2}
+::: {.card}
+[The first line to the second]{.card-title}
+
+Net PP&E rolls forward as last year's balance plus capital expenditure less
+depreciation. So capital expenditure less depreciation *is* the change in the
+balance, and two forecast lines collapse into one.
+:::
+
+::: {.card .card-blue}
+[The second line to the third]{.card-title}
+
+Net PP&E and net working capital are the two pieces of invested capital, so
+their changes add to the change in invested capital.
+:::
+:::
+
+## Free cash flow {.plain-title}
+
+```{=html}
+<div class="vmodel">
+  <div class="vin">
+    <span class="vlab">Operating margin</span>
+    <input class="vc" data-k="m" type="number" step="1" value="20"><span class="vpc">%</span>
+    <span class="vlab">Net PP&amp;E</span>
+    <input class="vc" data-k="kp" type="number" step="1" value="45"><span class="vpc">%</span>
+    <span class="vlab">Working capital</span>
+    <input class="vc" data-k="wc" type="number" step="1" value="15"><span class="vpc">%</span>
+  </div>
+
+  <table class="vtab vwide">
+    <thead><tr><th>$ MILLIONS</th><th>YR 1</th><th>YR 2</th><th>YR 3</th><th>YR 4</th><th>YR 5</th><th>YR 6</th></tr></thead>
+    <tbody>
+      <tr><td>EBIT after tax (NOPAT)</td><td data-f="n1"></td><td data-f="n2"></td><td data-f="n3"></td><td data-f="n4"></td><td data-f="n5"></td><td data-f="n6"></td></tr>
+      <tr><td>Less the increase in invested capital</td><td data-f="d1"></td><td data-f="d2"></td><td data-f="d3"></td><td data-f="d4"></td><td data-f="d5"></td><td data-f="d6"></td></tr>
+      <tr class="vrule"><td>Free cash flow</td><td data-f="f1"></td><td data-f="f2"></td><td data-f="f3"></td><td data-f="f4"></td><td data-f="f5"></td><td data-f="f6"></td></tr>
+    </tbody>
+  </table>
+  <div class="vps"><span class="vps-lab">VALUE PER SHARE</span><span class="vps-num" data-f="ps"></span></div>
+</div>
+```
+
+Years 1 and 2 grow at 20% and hand back almost nothing. Year 6 grows at 4% and
+hands back most of its operating profit.
+
+## The terminal value {.plain-title}
+
+```{=html}
+<div class="vmodel">
+  <div class="vin">
+    <span class="vlab">WACC</span>
+    <input class="vc" data-k="wacc" type="number" step="0.5" value="10"><span class="vpc">%</span>
+    <span class="vlab">Second-stage growth</span>
+    <input class="vc" data-k="gt" type="number" step="0.5" value="4"><span class="vpc">%</span>
+    <span class="vwarn" data-f="warn"></span>
+  </div>
+
+  <table class="vtab">
+    <thead><tr><th>AT THE END OF YEAR 5</th><th>$ MILLIONS</th></tr></thead>
+    <tbody>
+      <tr><td>Year 6 free cash flow</td><td data-f="f6"></td></tr>
+      <tr><td>Divided by the WACC less the growth rate</td><td data-f="spread"></td></tr>
+      <tr class="vrule"><td>Terminal value</td><td data-f="tv"></td></tr>
+    </tbody>
+  </table>
+  <div class="vps"><span class="vps-lab">VALUE PER SHARE</span><span class="vps-num" data-f="ps"></span></div>
+</div>
+```
+
+Move the growth rate a half point and watch the denominator, not the numerator.
+
+## Discount it all back {.plain-title}
+
+```{=html}
+<div class="vmodel">
+  <div class="vin">
+    <span class="vlab">WACC</span>
+    <input class="vc" data-k="wacc" type="number" step="0.5" value="10"><span class="vpc">%</span>
+    <span class="vlab">Second-stage growth</span>
+    <input class="vc" data-k="gt" type="number" step="0.5" value="4"><span class="vpc">%</span>
+  </div>
+
+  <table class="vtab vwide">
+    <thead><tr><th>$ MILLIONS</th><th>YR 1</th><th>YR 2</th><th>YR 3</th><th>YR 4</th><th>YR 5</th><th>TV AT YR 5</th></tr></thead>
+    <tbody>
+      <tr><td>Amount</td><td data-f="f1"></td><td data-f="f2"></td><td data-f="f3"></td><td data-f="f4"></td><td data-f="f5"></td><td data-f="tv"></td></tr>
+      <tr class="vrule"><td>Discounted to today</td><td data-f="pv1"></td><td data-f="pv2"></td><td data-f="pv3"></td><td data-f="pv4"></td><td data-f="pv5"></td><td data-f="pvtv"></td></tr>
+    </tbody>
+  </table>
+  <div class="vps">
+    <span class="vps-lab">ENTERPRISE VALUE</span><span class="vps-num" data-f="ev"></span>
+    <span class="vps-lab">OF WHICH TERMINAL</span><span class="vps-num" data-f="tvshare"></span>
+  </div>
+</div>
+```
+
+The terminal value and the year 5 cash flow carry the same exponent.
+
+## Debt, cash, shares {.plain-title}
+
+```{=html}
+<div class="vmodel">
+  <div class="vin">
+    <span class="vlab">Debt</span>
+    <input class="vc vc-m" data-k="debt" type="number" step="5" value="100">
+    <span class="vlab">Cash</span>
+    <input class="vc vc-m" data-k="cash" type="number" step="5" value="20">
+    <span class="vlab">Shares, millions</span>
+    <input class="vc vc-m" data-k="sh" type="number" step="0.5" value="10">
+  </div>
+
+  <div class="vsplit">
+    <svg viewBox="0 0 340 320" class="vpie" role="img" aria-label="The firm's value divided between debt and equity">
+      <path id="pie-debt" fill="#97A7B8"></path>
+      <path id="pie-eq" fill="#595460"></path>
+    </svg>
+    <table class="vtab">
+      <tbody>
+        <tr><td>Enterprise value</td><td data-f="ev"></td></tr>
+        <tr><td>Plus cash</td><td data-f="cash"></td></tr>
+        <tr class="vrule"><td>Value of the two claims</td><td data-f="total"></td></tr>
+        <tr><td><span class="vkey vkey-blue"></span>Debt</td><td data-f="debt"></td></tr>
+        <tr><td><span class="vkey vkey-plum"></span>Equity</td><td data-f="eq"></td></tr>
+        <tr class="vrule"><td>Value per share</td><td data-f="ps"></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<style>
+.reveal .vsplit { display:flex; align-items:center; gap:2.2em; margin-top:0.2em; }
+.reveal .vpie { width:290px; flex:none; }
+.reveal .vsplit table.vtab { flex:1; }
+.reveal .vkey { display:inline-block; width:0.72em; height:0.72em; margin-right:0.6em; }
+.reveal .vkey-blue { background:#97A7B8; }
+.reveal .vkey-plum { background:#595460; }
+</style>
+```
+
+## The whole model {.plain-title}
+
+```{=html}
+<div class="vmodel">
+  <div class="vin">
+    <span class="vlab">Sales</span>
+    <input class="vc vc-m" data-k="s0" type="number" step="1" value="100">
+    <span class="vlab">Growth</span>
+    <input class="vc" data-k="g1" type="number" step="1" value="20"><span class="vpc">%</span>
+    <input class="vc" data-k="g2" type="number" step="1" value="20"><span class="vpc">%</span>
+    <input class="vc" data-k="g3" type="number" step="1" value="20"><span class="vpc">%</span>
+    <input class="vc" data-k="g4" type="number" step="1" value="12"><span class="vpc">%</span>
+    <input class="vc" data-k="g5" type="number" step="1" value="8"><span class="vpc">%</span>
+    <span class="vlab">then</span>
+    <input class="vc" data-k="gt" type="number" step="0.5" value="4"><span class="vpc">%</span>
+  </div>
+  <div class="vin">
+    <span class="vlab">Margin</span>
+    <input class="vc" data-k="m" type="number" step="1" value="20"><span class="vpc">%</span>
+    <span class="vlab">PP&amp;E</span>
+    <input class="vc" data-k="kp" type="number" step="1" value="45"><span class="vpc">%</span>
+    <span class="vlab">Work cap</span>
+    <input class="vc" data-k="wc" type="number" step="1" value="15"><span class="vpc">%</span>
+    <span class="vlab">WACC</span>
+    <input class="vc" data-k="wacc" type="number" step="0.5" value="10"><span class="vpc">%</span>
+  </div>
+
+  <table class="vtab vwide">
+    <thead><tr><th>$ MILLIONS</th><th>YR 1</th><th>YR 2</th><th>YR 3</th><th>YR 4</th><th>YR 5</th><th>YR 6</th></tr></thead>
+    <tbody>
+      <tr><td>Sales</td><td data-f="s1"></td><td data-f="s2"></td><td data-f="s3"></td><td data-f="s4"></td><td data-f="s5"></td><td data-f="s6"></td></tr>
+      <tr><td>EBIT after tax (NOPAT)</td><td data-f="n1"></td><td data-f="n2"></td><td data-f="n3"></td><td data-f="n4"></td><td data-f="n5"></td><td data-f="n6"></td></tr>
+      <tr><td>Increase in invested capital</td><td data-f="d1"></td><td data-f="d2"></td><td data-f="d3"></td><td data-f="d4"></td><td data-f="d5"></td><td data-f="d6"></td></tr>
+      <tr class="vrule"><td>Free cash flow</td><td data-f="f1"></td><td data-f="f2"></td><td data-f="f3"></td><td data-f="f4"></td><td data-f="f5"></td><td data-f="f6"></td></tr>
+    </tbody>
+  </table>
+  <div class="vps">
+    <span class="vps-lab">ENTERPRISE VALUE</span><span class="vps-num" data-f="ev"></span>
+    <span class="vps-lab">VALUE PER SHARE</span><span class="vps-num" data-f="ps"></span>
+  </div>
+</div>
+```
+
+## Move one input at a time {.plain-title}
+
+::: {.cards .cards-2}
+::: {.card}
+[Second-stage growth]{.card-title}
+
+Take it from 4% to 5%, and then to 3%. How much of the value per share moves,
+and which term in the formula moved it?
+:::
+
+::: {.card .card-blue}
+[Working capital]{.card-title}
+
+Take it from 15% of sales to 20%. In which years does the cash flow fall, and
+what has happened by year 6?
+:::
+
+::: {.card .card-blue}
+[First-stage growth]{.card-title}
+
+Take years 1 to 3 from 20% to 25%. Does the value per share rise or fall, and
+what does the answer depend on?
+:::
+
+::: {.card}
+[The margin]{.card-title}
+
+Take it from 20% to 18%. Compare the change with what the growth rate did.
+Which assumption is the value more sensitive to?
+:::
+:::
+
+## Exercise: have AI build it {.plain-title}
+
+::: {.steps}
+1. Upload this deck and ask for an Excel workbook containing the DCF model
+2. Ask for an editable single-page HTML app that holds the model and explains it
+:::
+
+::: {.note}
+Open the formulas in the workbook that comes back and check two things against
+this deck: which year's free cash flow sits in the numerator of the terminal
+value, and what exponent the terminal value is discounted at.
+:::
+
+# Another example
+
+## A second company {.plain-title}
+
+::: {.cards .cards-3}
+::: {.card}
+[The forecast]{.card-title}
+
+Sales of 250 last year, growing 15%, 15%, 12%, 9%, 6%, and then 3.5% forever.
+Operating margin 14%, tax 25%.
+:::
+
+::: {.card .card-blue}
+[The ratios]{.card-title}
+
+Net PP&E is 55% of next year's sales. Working capital is 10% of next year's
+sales.
+:::
+
+::: {.card}
+[The rest]{.card-title}
+
+WACC 9%. Debt 180, cash 35, twenty million shares. Figures in $ millions.
+:::
+:::
+
+## Exercise: build it yourself {.plain-title}
+
+Build the spreadsheet model yourself, without AI help.
+
+::: {.steps}
+1. Free cash flow for years 1 through 6
+2. Terminal value at the end of year 5, and the enterprise value
+3. Equity value per share
+:::
+
+::: {.note}
+The model should give $17.50 a share, with the terminal value carrying 87% of
+the enterprise value.
+:::

@@ -91,6 +91,167 @@
     "text": "Before Unit 3\nBring your company’s most recent two fiscal years of financial statements, and the four figures below for the most recent year.\n\n\nEBIT\nEffective tax rate\nDepreciation and amortization\nCapital expenditure"
   },
   {
+    "objectID": "slides/10-01.html#two-claims-one-stream",
+    "href": "slides/10-01.html#two-claims-one-stream",
+    "title": "Firm Valuation, Again",
+    "section": "Two claims, one stream",
+    "text": "Two claims, one stream\n\nThe operations produce one stream of cash. Debt and equity divide it.\n\n\n\nDebt\nInterest and principal, fixed by contract, paid before anything reaches the shareholders.\n\n\nEquity\nWhatever is left, with no ceiling and no promise.\n\n\n\nValue the stream once and then divide it. Forecasting the equity’s share directly means forecasting the borrowing and repayment schedule as well."
+  },
+  {
+    "objectID": "slides/10-01.html#leave-interest-out-of-the-cash-flows",
+    "href": "slides/10-01.html#leave-interest-out-of-the-cash-flows",
+    "title": "Firm Valuation, Again",
+    "section": "Leave interest out of the cash flows",
+    "text": "Leave interest out of the cash flows\nInterest leaves the shareholders and arrives at the lenders. Both are inside the group being valued, so the payment nets to zero and never appears."
+  },
+  {
+    "objectID": "slides/10-01.html#operating-cash-flow-less-investment",
+    "href": "slides/10-01.html#operating-cash-flow-less-investment",
+    "title": "Firm Valuation, Again",
+    "section": "Operating cash flow less investment",
+    "text": "Operating cash flow less investment\n\n\n  \n    \n    OPERATING CASH FLOW\n    \n    EBIT × (1 − tax rate)\n    plus depreciation\n  \n  −\n  \n    \n    INVESTMENT\n    \n    capital expenditure\n    plus the rise in working capital\n  \n  =\n  \n    \n    FREE CASH FLOW\n    \n    what is left over\n    for debt and equity together\n  \n\n\n\n\nNo line for interest, and the tax rate is applied to EBIT rather than to EBIT less interest. The deduction for interest is carried in the discount rate."
+  },
+  {
+    "objectID": "slides/10-01.html#the-rate-has-to-match-the-claim",
+    "href": "slides/10-01.html#the-rate-has-to-match-the-claim",
+    "title": "Firm Valuation, Again",
+    "section": "The rate has to match the claim",
+    "text": "The rate has to match the claim\nThe cash flow belongs to both groups, so the rate is the WACC: the blend of what each group requires, weighted by the market value of what each holds. We calculate it on October 10 and take it as given today."
+  },
+  {
+    "objectID": "slides/10-01.html#what-the-present-value-buys",
+    "href": "slides/10-01.html#what-the-present-value-buys",
+    "title": "Firm Valuation, Again",
+    "section": "What the present value buys",
+    "text": "What the present value buys\n\n\n  \n  \n  ENTERPRISE VALUE\n  The present value of the free cash flow,\n  discounted at the weighted average rate.\n  \n  Debt, at what the lenders are owed\n  \n  Equity, the rest"
+  },
+  {
+    "objectID": "slides/10-01.html#growth-above-the-economy-ends",
+    "href": "slides/10-01.html#growth-above-the-economy-ends",
+    "title": "Firm Valuation, Again",
+    "section": "Growth above the economy ends",
+    "text": "Growth above the economy ends\nA company growing faster than the economy forever eventually exceeds it. So the forecast is built in two parts, and the second part is the one that has to be sustainable.\n\n\nYears 1 to \\(n\\), forecast each year on its own: sales, margin, the ratios\nYear \\(n+1\\) onward, one growth rate that never changes"
+  },
+  {
+    "objectID": "slides/10-01.html#the-ceiling-on-the-second-stage",
+    "href": "slides/10-01.html#the-ceiling-on-the-second-stage",
+    "title": "Firm Valuation, Again",
+    "section": "The ceiling on the second stage",
+    "text": "The ceiling on the second stage\n\n\n2.5% real GDP growth a year\n\n\n2.2% the GDP price deflator\n\n\n4.8% nominal GDP growth\n\n\nThirty years through 2025. Real growth and prices compound rather than add: \\(1.025 \\times 1.022 = 1.048\\). Over the full run since 1947 nominal growth was 6.4% a year, of which 3.1 points were real and 3.2 were prices.\n\nBureau of Economic Analysis, gross domestic product in current and in chained 2017 dollars, annual. FRED series GDPA and GDPCA. A second-stage rate above this is a forecast that the company eventually becomes the whole economy."
+  },
+  {
+    "objectID": "slides/10-01.html#the-perpetuity-formula",
+    "href": "slides/10-01.html#the-perpetuity-formula",
+    "title": "Firm Valuation, Again",
+    "section": "The perpetuity formula",
+    "text": "The perpetuity formula\n\\[\\text{TV}_n = \\frac{\\text{FCF}_{n+1}}{r - g}\\]\nThe numerator is the year after the last forecast year. The formula assumes \\(g\\) is constant forever, that the ratios are constant too, and that \\(g\\) stays below \\(r\\), the WACC."
+  },
+  {
+    "objectID": "slides/10-01.html#the-terminal-value-is-dated-n",
+    "href": "slides/10-01.html#the-terminal-value-is-dated-n",
+    "title": "Firm Valuation, Again",
+    "section": "The terminal value is dated \\(n\\)",
+    "text": "The terminal value is dated \\(n\\)\n\\(\\text{TV}_n\\) is a value at the end of year \\(n\\), standing in for every cash flow from year \\(n+1\\) on. It gets discounted \\(n\\) periods, alongside \\(\\text{FCF}_n\\).\n\\[\\text{EV} = \\sum_{t=1}^{n} \\frac{\\text{FCF}_t}{(1+r)^t} \\;+\\; \\frac{\\text{TV}_n}{(1+r)^n}\\]\n\nDiscounting the terminal value \\(n+1\\) periods divides it by an extra \\(1+k\\). Check the exponent against the exponent on \\(\\text{FCF}_n\\): they are the same."
+  },
+  {
+    "objectID": "slides/10-01.html#from-enterprise-value-to-a-price",
+    "href": "slides/10-01.html#from-enterprise-value-to-a-price",
+    "title": "Firm Valuation, Again",
+    "section": "From enterprise value to a price",
+    "text": "From enterprise value to a price\n\n\nSubtract debt, at book value unless it trades far from it\nAdd cash and anything else the operations do not use\nDivide by diluted shares\n\n\n\nEach balance sheet item belongs in exactly one place: inside the forecast, if it produces the cash flows being discounted, or in this calculation, if it does not. Counting it twice or leaving it out of both are the two failures."
+  },
+  {
+    "objectID": "slides/10-01.html#the-assumptions",
+    "href": "slides/10-01.html#the-assumptions",
+    "title": "Firm Valuation, Again",
+    "section": "The assumptions",
+    "text": "The assumptions\n\n\nThe forecast\nSales of 100 last year, growing 20%, 20%, 20%, 12%, 8%, and then 4% forever. Operating margin 20%, tax 25%.\n\n\nThe ratios\nNet PP&E is 45% of next year’s sales. Working capital is 15% of next year’s sales.\n\n\nThe rest\nWACC 10%. Debt 100, cash 20, ten million shares. Figures in $ millions.\n\n\n\nEvery white cell on the slides that follow is editable, and all of them feed one model. Change a number anywhere and the value per share moves everywhere."
+  },
+  {
+    "objectID": "slides/10-01.html#sales-and-operating-profit",
+    "href": "slides/10-01.html#sales-and-operating-profit",
+    "title": "Firm Valuation, Again",
+    "section": "Sales and operating profit",
+    "text": "Sales and operating profit\n\n  \n    Last year's sales\n    \n    Growth\n    %\n    %\n    %\n    %\n    %\n    then\n    %\n  \n  \n    Operating margin\n    %\n    Tax rate\n    %\n  \n\n  \n\n\n\n$ MILLIONS\nYR 1\nYR 2\nYR 3\nYR 4\nYR 5\nYR 6\n\n\n\n\nSales\n\n\n\n\n\n\n\n\nEBIT\n\n\n\n\n\n\n\n\nEBIT after tax (NOPAT)\n\n\n\n\n\n\n\n\n\n\n  VALUE PER SHARE"
+  },
+  {
+    "objectID": "slides/10-01.html#what-the-growth-costs",
+    "href": "slides/10-01.html#what-the-growth-costs",
+    "title": "Firm Valuation, Again",
+    "section": "What the growth costs",
+    "text": "What the growth costs\n\n  \n    Net PP&E, share of next year's sales\n    %\n    Working capital\n    %\n  \n\n  \n\n\n\n$ MILLIONS\nYR 0\nYR 1\nYR 2\nYR 3\nYR 4\nYR 5\nYR 6\n\n\n\n\nNet PP&E\n\n\n\n\n\n\n\n\n\nWorking capital\n\n\n\n\n\n\n\n\n\nInvested capital\n\n\n\n\n\n\n\n\n\nIncrease\n—\n\n\n\n\n\n\n\n\n\n\n  VALUE PER SHARE"
+  },
+  {
+    "objectID": "slides/10-01.html#ways-to-calculate-free-cash-flow",
+    "href": "slides/10-01.html#ways-to-calculate-free-cash-flow",
+    "title": "Firm Valuation, Again",
+    "section": "Ways to calculate free cash flow",
+    "text": "Ways to calculate free cash flow\n\\[\\begin{aligned}\n\\text{FCF} &= \\text{NOPAT} + \\text{Depreciation} - \\text{CapEx} - \\Delta \\text{NWC}\\\\[2pt]\n&= \\text{NOPAT} - \\Delta \\text{Net PP\\&E} - \\Delta \\text{NWC}\\\\[2pt]\n&= \\text{NOPAT} - \\Delta \\text{IC}\n\\end{aligned}\\]\n\n\nThe first line to the second\nNet PP&E rolls forward as last year’s balance plus capital expenditure less depreciation. So capital expenditure less depreciation is the change in the balance, and two forecast lines collapse into one.\n\n\nThe second line to the third\nNet PP&E and net working capital are the two pieces of invested capital, so their changes add to the change in invested capital."
+  },
+  {
+    "objectID": "slides/10-01.html#free-cash-flow",
+    "href": "slides/10-01.html#free-cash-flow",
+    "title": "Firm Valuation, Again",
+    "section": "Free cash flow",
+    "text": "Free cash flow\n\n  \n    Operating margin\n    %\n    Net PP&E\n    %\n    Working capital\n    %\n  \n\n  \n\n\n\n$ MILLIONS\nYR 1\nYR 2\nYR 3\nYR 4\nYR 5\nYR 6\n\n\n\n\nEBIT after tax (NOPAT)\n\n\n\n\n\n\n\n\nLess the increase in invested capital\n\n\n\n\n\n\n\n\nFree cash flow\n\n\n\n\n\n\n\n\n\n\n  VALUE PER SHARE\n\nYears 1 and 2 grow at 20% and hand back almost nothing. Year 6 grows at 4% and hands back most of its operating profit."
+  },
+  {
+    "objectID": "slides/10-01.html#the-terminal-value",
+    "href": "slides/10-01.html#the-terminal-value",
+    "title": "Firm Valuation, Again",
+    "section": "The terminal value",
+    "text": "The terminal value\n\n  \n    WACC\n    %\n    Second-stage growth\n    %\n    \n  \n\n  \n\n\n\nAT THE END OF YEAR 5\n$ MILLIONS\n\n\n\n\nYear 6 free cash flow\n\n\n\nDivided by the WACC less the growth rate\n\n\n\nTerminal value\n\n\n\n\n\n  VALUE PER SHARE\n\nMove the growth rate a half point and watch the denominator, not the numerator."
+  },
+  {
+    "objectID": "slides/10-01.html#discount-it-all-back",
+    "href": "slides/10-01.html#discount-it-all-back",
+    "title": "Firm Valuation, Again",
+    "section": "Discount it all back",
+    "text": "Discount it all back\n\n  \n    WACC\n    %\n    Second-stage growth\n    %\n  \n\n  \n\n\n\n$ MILLIONS\nYR 1\nYR 2\nYR 3\nYR 4\nYR 5\nTV AT YR 5\n\n\n\n\nAmount\n\n\n\n\n\n\n\n\nDiscounted to today\n\n\n\n\n\n\n\n\n\n\n  \n    ENTERPRISE VALUE\n    OF WHICH TERMINAL\n  \n\nThe terminal value and the year 5 cash flow carry the same exponent."
+  },
+  {
+    "objectID": "slides/10-01.html#debt-cash-shares",
+    "href": "slides/10-01.html#debt-cash-shares",
+    "title": "Firm Valuation, Again",
+    "section": "Debt, cash, shares",
+    "text": "Debt, cash, shares\n\n  \n    Debt\n    \n    Cash\n    \n    Shares, millions\n    \n  \n\n  \n    \n      \n      \n    \n    \n\n\n\nEnterprise value\n\n\n\nPlus cash\n\n\n\nValue of the two claims\n\n\n\nDebt\n\n\n\nEquity\n\n\n\nValue per share"
+  },
+  {
+    "objectID": "slides/10-01.html#the-whole-model",
+    "href": "slides/10-01.html#the-whole-model",
+    "title": "Firm Valuation, Again",
+    "section": "The whole model",
+    "text": "The whole model\n\n  \n    Sales\n    \n    Growth\n    %\n    %\n    %\n    %\n    %\n    then\n    %\n  \n  \n    Margin\n    %\n    PP&E\n    %\n    Work cap\n    %\n    WACC\n    %\n  \n\n  \n\n\n\n$ MILLIONS\nYR 1\nYR 2\nYR 3\nYR 4\nYR 5\nYR 6\n\n\n\n\nSales\n\n\n\n\n\n\n\n\nEBIT after tax (NOPAT)\n\n\n\n\n\n\n\n\nIncrease in invested capital\n\n\n\n\n\n\n\n\nFree cash flow\n\n\n\n\n\n\n\n\n\n\n  \n    ENTERPRISE VALUE\n    VALUE PER SHARE"
+  },
+  {
+    "objectID": "slides/10-01.html#move-one-input-at-a-time",
+    "href": "slides/10-01.html#move-one-input-at-a-time",
+    "title": "Firm Valuation, Again",
+    "section": "Move one input at a time",
+    "text": "Move one input at a time\n\n\nSecond-stage growth\nTake it from 4% to 5%, and then to 3%. How much of the value per share moves, and which term in the formula moved it?\n\n\nWorking capital\nTake it from 15% of sales to 20%. In which years does the cash flow fall, and what has happened by year 6?\n\n\nFirst-stage growth\nTake years 1 to 3 from 20% to 25%. Does the value per share rise or fall, and what does the answer depend on?\n\n\nThe margin\nTake it from 20% to 18%. Compare the change with what the growth rate did. Which assumption is the value more sensitive to?"
+  },
+  {
+    "objectID": "slides/10-01.html#exercise-have-ai-build-it",
+    "href": "slides/10-01.html#exercise-have-ai-build-it",
+    "title": "Firm Valuation, Again",
+    "section": "Exercise: have AI build it",
+    "text": "Exercise: have AI build it\n\n\nUpload this deck and ask for an Excel workbook containing the DCF model\nAsk for an editable single-page HTML app that holds the model and explains it\n\n\n\nOpen the formulas in the workbook that comes back and check two things against this deck: which year’s free cash flow sits in the numerator of the terminal value, and what exponent the terminal value is discounted at."
+  },
+  {
+    "objectID": "slides/10-01.html#a-second-company",
+    "href": "slides/10-01.html#a-second-company",
+    "title": "Firm Valuation, Again",
+    "section": "A second company",
+    "text": "A second company\n\n\nThe forecast\nSales of 250 last year, growing 15%, 15%, 12%, 9%, 6%, and then 3.5% forever. Operating margin 14%, tax 25%.\n\n\nThe ratios\nNet PP&E is 55% of next year’s sales. Working capital is 10% of next year’s sales.\n\n\nThe rest\nWACC 9%. Debt 180, cash 35, twenty million shares. Figures in $ millions."
+  },
+  {
+    "objectID": "slides/10-01.html#exercise-build-it-yourself",
+    "href": "slides/10-01.html#exercise-build-it-yourself",
+    "title": "Firm Valuation, Again",
+    "section": "Exercise: build it yourself",
+    "text": "Exercise: build it yourself\nBuild the spreadsheet model yourself, without AI help.\n\n\nFree cash flow for years 1 through 6\nTerminal value at the end of year 5, and the enterprise value\nEquity value per share\n\n\n\nThe model should give $17.50 a share, with the terminal value carrying 87% of the enterprise value."
+  },
+  {
     "objectID": "slides/09-17.html#three-lines",
     "href": "slides/09-17.html#three-lines",
     "title": "Two-Stage Growth Model",
@@ -259,230 +420,6 @@
     "text": "Value this company\n\n\nThe forecast\nSales of 20.00 in year 1, growing 30%, then 18%, then 6% from year 4 on. EBITDA margin 15%, 18%, 20%, then 22% from year 4 on.\n\n\nThe ratios\nNet PP&E 65% of next year’s sales. Depreciation 12% of opening net PP&E. Working capital 12% of next year’s sales. Tax 21%, WACC 12%.\n\n\n\n\nFree cash flow for years 1 to 4\nTerminal value at the end of year 4, and the enterprise value\nEquity value per share, with cash of 4.00, debt of 15.00, and 2.5 million shares"
   },
   {
-    "objectID": "slides/09-17.html#the-company",
-    "href": "slides/09-17.html#the-company",
-    "title": "Two-Stage Growth Model",
-    "section": "The company",
-    "text": "The company\nShells, roasts and packages nuts. Fisher, Orchard Valley Harvest, Squirrel Brand, and private label for the grocery chains. Fiscal years end in late June.\n\n\nTicker\nJBSS, $805 million of market value: 11.78 million diluted shares at $68.31.\n\n\nWhat it owns\nShelling and roasting plants, $268 million of net PP&E against $1.18 billion of sales.\n\n\nThe balance sheet\nSimple. The company owns no other businesses, and goodwill is $11.8 million against $659 million of assets."
-  },
-  {
-    "objectID": "slides/09-17.html#four-years-of-history",
-    "href": "slides/09-17.html#four-years-of-history",
-    "title": "Two-Stage Growth Model",
-    "section": "Four years of history",
-    "text": "Four years of history\n\n\n\n$ millions\nFY2023\nFY2024\nFY2025\nFY2026\n\n\n\n\nSales\n999.7\n1,066.8\n1,107.2\n1,175.7\n\n\nSales growth\n—\n6.7%\n3.8%\n6.2%\n\n\nOperating income\n88.9\n81.7\n82.9\n87.0\n\n\nOperating margin\n8.9%\n7.7%\n7.5%\n7.4%\n\n\nNet PP&E\n127.2\n178.6\n193.0\n268.3\n\n\nDepreciation\n22.1\n26.6\n31.5\n33.3\n\n\nCapital expenditure\n20.7\n28.3\n50.7\n88.1\n\n\n\n\nYahoo returns four years for JBSS, not five, and each ratio needs three."
-  },
-  {
-    "objectID": "slides/09-17.html#the-three-ratios-measured",
-    "href": "slides/09-17.html#the-three-ratios-measured",
-    "title": "Two-Stage Growth Model",
-    "section": "The three ratios, measured",
-    "text": "The three ratios, measured\n\n\n\n\n\n\n\n\n\n\n\nFY2023\nFY2024\nFY2025\nFY2026\n\n\n\n\nNet PP&E / next year’s sales (\\(k\\))\n11.9%\n16.1%\n16.4%\n—\n\n\nDepreciation / opening net PP&E (\\(d\\))\n—\n20.9%\n17.6%\n17.3%\n\n\nWorking capital / next year’s sales (\\(w\\))\n15.7%\n17.1%\n21.1%\n—\n\n\n\n\\(k\\) and \\(w\\) are measured against next year’s sales, so they stop at FY2025, the last year with a following year in the data."
-  },
-  {
-    "objectID": "slides/09-17.html#capital-expenditure-and-net-ppe",
-    "href": "slides/09-17.html#capital-expenditure-and-net-ppe",
-    "title": "Two-Stage Growth Model",
-    "section": "Capital expenditure and net PP&E",
-    "text": "Capital expenditure and net PP&E\n\n\nThree years above depreciation\nCapital expenditure of 28.3, 50.7, 88.1 against depreciation of 26.6, 31.5, 33.3. FY2023 was the last year capital expenditure ran below depreciation.\n\n\nSo net PP&E doubles\nNet PP&E goes from 127.2 to 268.3 while sales rise 18%. The FY2024 step is a $59.0m acquisition, almost all of it plant. The FY2026 step is the build.\n\n\nSo \\(k\\) doubles\n\\(k\\) goes from 11.9% to 16.4%, and is 21.6% measured against the FY2027 sales forecast.\n\n\nThe forecast has to say whether net PP&E stays this high relative to sales."
-  },
-  {
-    "objectID": "slides/09-17.html#the-other-two-ratios",
-    "href": "slides/09-17.html#the-other-two-ratios",
-    "title": "Two-Stage Growth Model",
-    "section": "The other two ratios",
-    "text": "The other two ratios\n\n\n\\(d\\) falls for a mechanical reason\n\\(d\\) goes from 20.9% to 17.3%. New assets enter net PP&E faster than the existing assets are depreciated, so \\(d\\) falls even though the depreciable lives have not changed. Of the 268.3 balance, 86.9 is construction in progress, which does not depreciate until it is in service. Call \\(d\\) 15%.\n\n\n\\(w\\) moves with inventory\n\\(w\\) goes from 15.7% to 21.1%. Inventory alone is 245.8 against net working capital of 220.1, and a nut processor buys a crop once a year. Call \\(w\\) 18%."
-  },
-  {
-    "objectID": "slides/09-17.html#the-forecast",
-    "href": "slides/09-17.html#the-forecast",
-    "title": "Two-Stage Growth Model",
-    "section": "The forecast",
-    "text": "The forecast\n\n\n\nItem\nAssumption\n\n\n\n\nSales growth\n5.5%, 5.0%, 4.5%, 3.5%, then 3.0%\n\n\nOperating margin\n7.5%, held\n\n\nNet PP&E (\\(k\\))\n21.0% of next year’s sales\n\n\nDepreciation (\\(d\\))\n15.0% of opening net PP&E\n\n\nWorking capital (\\(w\\))\n18.0% of next year’s sales\n\n\nTax rate\n25%\n\n\nWACC\n9.0%\n\n\n\n\\(k\\) holds near today’s 21.6% rather than the FY2025 level of 16.4%. The other rows are read off the history."
-  },
-  {
-    "objectID": "slides/09-17.html#the-capital-schedule-2",
-    "href": "slides/09-17.html#the-capital-schedule-2",
-    "title": "Two-Stage Growth Model",
-    "section": "The capital schedule",
-    "text": "The capital schedule\n\n\n\n\n\n\n\n\n\n\n\n\n$ millions\nFY26\nFY27\nFY28\nFY29\nFY30\nFY31\n\n\n\n\nSales\n1,175.7\n1,240.4\n1,302.4\n1,361.0\n1,408.6\n1,450.9\n\n\nNext year’s sales\n1,240.4\n1,302.4\n1,361.0\n1,408.6\n1,450.9\n1,494.4\n\n\nNet PP&E\n268.3\n273.5\n285.8\n295.8\n304.7\n313.8\n\n\nDepreciation\n—\n40.2\n41.0\n42.9\n44.4\n45.7\n\n\nCapital expenditure\n—\n45.4\n53.3\n52.9\n53.2\n54.8\n\n\nWorking capital\n220.1\n234.4\n245.0\n253.6\n261.2\n269.0\n\n\n\nThe FY2026 column is the net PP&E and working capital the company already has."
-  },
-  {
-    "objectID": "slides/09-17.html#free-cash-flow-2",
-    "href": "slides/09-17.html#free-cash-flow-2",
-    "title": "Two-Stage Growth Model",
-    "section": "Free cash flow",
-    "text": "Free cash flow\n\n\n\n\n\n\n\n\n\n\n\n$ millions\nFY27\nFY28\nFY29\nFY30\nFY31\n\n\n\n\nEBIT\n93.0\n97.7\n102.1\n105.6\n108.8\n\n\nNet operating profit after tax\n69.8\n73.3\n76.6\n79.2\n81.6\n\n\nDepreciation\n40.2\n41.0\n42.9\n44.4\n45.7\n\n\nCapital expenditure\n(45.4)\n(53.3)\n(52.9)\n(53.2)\n(54.8)\n\n\nIncrease in working capital\n(14.3)\n(10.5)\n(8.6)\n(7.6)\n(7.8)\n\n\nFree cash flow\n50.2\n50.4\n58.0\n62.8\n64.6\n\n\n\nWorking capital is positive, so sales growth consumes cash rather than releasing it."
-  },
-  {
-    "objectID": "slides/09-17.html#terminal-value-1",
-    "href": "slides/09-17.html#terminal-value-1",
-    "title": "Two-Stage Growth Model",
-    "section": "Terminal value",
-    "text": "Terminal value\nFY2031 grows at 3.0% and all three ratios are fixed, so it is the steady-state year.\n\\[\\text{TV}_{2031} = \\frac{64.6 \\times 1.03}{0.09-0.03} = 1{,}109.6\\]\n\nSeventeen times FY2031 free cash flow, at a six-point spread between \\(r\\) and \\(g\\). The example earlier was twenty-five times, at a four-point spread."
-  },
-  {
-    "objectID": "slides/09-17.html#discount-it-all-back-1",
-    "href": "slides/09-17.html#discount-it-all-back-1",
-    "title": "Two-Stage Growth Model",
-    "section": "Discount it all back",
-    "text": "Discount it all back\n\n\n\n\n\n\n\n\n\n\n\n\n$ millions\nFY27\nFY28\nFY29\nFY30\nFY31\nTV\n\n\n\n\nFree cash flow\n50.2\n50.4\n58.0\n62.8\n64.6\n1,109.6\n\n\nDiscount factor at 9%\n0.917\n0.842\n0.772\n0.708\n0.650\n0.650\n\n\nPresent value\n46.1\n42.4\n44.8\n44.5\n42.0\n721.2\n\n\n\n\n\n$940.9m Enterprise value\n\n\n77% In the terminal value"
-  },
-  {
-    "objectID": "slides/09-17.html#from-enterprise-value-to-equity-1",
-    "href": "slides/09-17.html#from-enterprise-value-to-equity-1",
-    "title": "Two-Stage Growth Model",
-    "section": "From enterprise value to equity",
-    "text": "From enterprise value to equity\n\n\n\n$ millions\n\n\n\n\n\nEnterprise value\n940.9\n\n\nLess borrowings\n(83.5)\n\n\nPlus cash\n1.1\n\n\nPlus goodwill and intangibles\n15.2\n\n\nLess other long-term liabilities\n(6.6)\n\n\nEquity value\n867.1\n\n\nDiluted shares\n11.78 million\n\n\nValue per share\n$73.61\n\n\n\nJBSS trades at $68.31."
-  },
-  {
-    "objectID": "slides/09-17.html#what-the-market-is-assuming",
-    "href": "slides/09-17.html#what-the-market-is-assuming",
-    "title": "Two-Stage Growth Model",
-    "section": "What the market is assuming",
-    "text": "What the market is assuming\nHold the five-year forecast fixed and solve for the terminal growth rate that justifies $68.31.\n\n\nImplied growth\n2.5% forever, against a 3.0% assumption.\n\n\nImplied exit multiple\n6.6 times FY2031 EBITDA.\n\n\nToday’s multiple\n7.3 times FY2026 EBITDA.\n\n\nThe price requires the EBITDA multiple to fall from 7.3 times FY2026 to 6.6 times FY2031."
-  },
-  {
-    "objectID": "slides/09-17.html#leases-finance-or-operating",
-    "href": "slides/09-17.html#leases-finance-or-operating",
-    "title": "Two-Stage Growth Model",
-    "section": "Leases: finance or operating",
-    "text": "Leases: finance or operating\nDoes the lease hand over substantially all the risks and rewards of owning the asset? If so it is a purchase the lessor financed. Any one of five tests settles it.\n\n\nOwnership transfers at the end of the term\nThere is a purchase option the lessee is reasonably certain to take\nThe term covers a major part of the asset’s remaining economic life\nThe payments are worth substantially all of the asset’s fair value\nThe asset is so specialised it has no other use to the lessor\n\n\nMeet none of the five and it is an operating lease."
-  },
-  {
-    "objectID": "slides/09-17.html#leases-what-the-choice-is",
-    "href": "slides/09-17.html#leases-what-the-choice-is",
-    "title": "Two-Stage Growth Model",
-    "section": "Leases: what the choice is",
-    "text": "Leases: what the choice is\nBoth sit on the balance sheet as a right-of-use asset and a lease liability. A finance lease splits into depreciation and interest; an operating lease is rent in EBIT.\n\n\nLeave the rent in EBIT\nThe right-of-use asset stays out of invested capital and the lease liability out of the equity value calculation. The rent is already subtracted in EBIT.\n\n\nOr capitalise the lease\nTake the rent out of EBIT and depreciate the right-of-use asset in its place. The asset joins invested capital and the lease liability joins the equity value calculation.\n\n\n\nEither is defensible. Half of the second — the lease liability subtracted in the equity value calculation, the rent still in EBIT — charges twice."
-  },
-  {
-    "objectID": "slides/09-17.html#leases-read-the-debt-line-twice",
-    "href": "slides/09-17.html#leases-read-the-debt-line-twice",
-    "title": "Two-Stage Growth Model",
-    "section": "Leases: read the debt line twice",
-    "text": "Leases: read the debt line twice\nYahoo reports total debt of 104.1. That is not what the company borrowed.\n\n\n\n$ millions\n\n\n\n\n\nLong-term debt\n43.6\n\n\nCurrent debt\n39.9\n\n\nBorrowings\n83.5\n\n\nOperating lease liability, non-current\n20.6\n\n\nYahoo’s “total debt”\n104.1\n\n\n\n\nNo finance leases. The rent is still inside the 87.0 of operating income, so the 20.6 is not subtracted when computing equity value. Subtracting it anyway lowers the value by $1.75 a share."
-  },
-  {
-    "objectID": "slides/09-17.html#deferred-taxes-check-then-ignore",
-    "href": "slides/09-17.html#deferred-taxes-check-then-ignore",
-    "title": "Two-Stage Growth Model",
-    "section": "Deferred taxes: check, then ignore",
-    "text": "Deferred taxes: check, then ignore\n\n\n\n\nFY2024\nFY2025\nFY2026\n\n\n\n\nBook effective rate\n24.6%\n24.3%\n25.4%\n\n\nCash taxes paid / pretax income\n27.7%\n27.2%\n16.7%\n\n\n\nCash taxes ran 23.8% over the three years against a book rate of 24.8%. Taxing EBIT at the cash rate instead would add about $1.64 a share.\n\nA one-point gap is small enough to leave the forecast taxing EBIT at the book rate."
-  },
-  {
-    "objectID": "slides/09-17.html#goodwill-intangibles-and-other-liabilities",
-    "href": "slides/09-17.html#goodwill-intangibles-and-other-liabilities",
-    "title": "Two-Stage Growth Model",
-    "section": "Goodwill, intangibles, and other liabilities",
-    "text": "Goodwill, intangibles, and other liabilities\n\n\nGoodwill, $11.8m\n1.8% of assets. No acquisitions are forecast, so goodwill is held flat and added in the equity value calculation, where it adds a dollar a share.\n\n\nOther intangibles, $3.4m\nHeld flat and added in the equity value calculation too, where they add 29 cents a share.\n\n\nOther long-term liabilities, $6.6m\nThe whole “other” category on the balance sheet, and the only one of these three items subtracted in the equity value calculation rather than added.\n\n\nThe three items together move the value per share by 73 cents, against a $5.30 gap to the market price."
-  },
-  {
-    "objectID": "slides/09-17.html#one-rule",
-    "href": "slides/09-17.html#one-rule",
-    "title": "Two-Stage Growth Model",
-    "section": "One rule",
-    "text": "One rule\nEvery balance sheet item goes in exactly one of two places.\n\n\nInvested capital\nAn item goes here if it produces the operating cash flows being discounted. The change in the item is a cash flow in the forecast.\n\n\nThe equity value calculation\nEvery other item goes here, carried at book value between enterprise value and equity value.\n\n\n\nPutting an item in both double counts it; leaving it out of both drops it from the valuation."
-  },
-  {
-    "objectID": "slides/09-17.html#sensitivity-to-k",
-    "href": "slides/09-17.html#sensitivity-to-k",
-    "title": "Two-Stage Growth Model",
-    "section": "Sensitivity to \\(k\\)",
-    "text": "Sensitivity to \\(k\\)\n\n\n\n\nValue per share\n\n\n\n\n\\(k\\) back to 16.4%, the recent plant spending was a one-off\n$80.73\n\n\n\\(k\\) at 21.0%, the base case\n$73.61\n\n\n\\(k\\) at 21.6%, today’s level holds\n$72.68\n\n\n\n\n\\(d\\) does not appear in this table, and cannot. Capital expenditure less depreciation is the change in the net PP&E balance, and EBIT here is a margin on sales rather than EBITDA less depreciation. So \\(d\\) cancels out of the valuation."
-  },
-  {
-    "objectID": "slides/09-17.html#smith-midland",
-    "href": "slides/09-17.html#smith-midland",
-    "title": "Two-Stage Growth Model",
-    "section": "Smith-Midland",
-    "text": "Smith-Midland\nPrecast concrete: highway barriers, sound walls, building panels. SMID, $130 million of market value at $24.54 a share.\n\n\n\n$ millions\nFY2022\nFY2023\nFY2024\nFY2025\n\n\n\n\nSales\n50.1\n59.6\n78.5\n93.4\n\n\nSales growth\n—\n18.8%\n31.8%\n19.0%\n\n\nOperating margin\n1.7%\n1.9%\n12.6%\n18.2%\n\n\nNet PP&E\n25.1\n27.7\n31.7\n38.5\n\n\nDepreciation\n2.9\n2.4\n2.7\n2.9\n\n\nCapital expenditure\n2.7\n5.0\n6.2\n9.3"
-  },
-  {
-    "objectID": "slides/09-17.html#the-three-ratios-measured-1",
-    "href": "slides/09-17.html#the-three-ratios-measured-1",
-    "title": "Two-Stage Growth Model",
-    "section": "The three ratios, measured",
-    "text": "The three ratios, measured\n\n\n\n\nFY2022\nFY2023\nFY2024\nFY2025\n\n\n\n\n\\(k\\)\n42.2%\n35.3%\n33.9%\n—\n\n\n\\(d\\)\n—\n9.5%\n9.6%\n9.1%\n\n\n\\(w\\)\n19.6%\n11.2%\n14.9%\n—\n\n\n\n\n\\(k\\) in the mid-thirties is nearly twice JBSS’s \\(k\\): a concrete plant carries just under three dollars of sales per dollar of net PP&E. \\(d\\) holds between 9.1% and 9.6%. The operating margin is the line that moves, from 1.7% to 18.2%."
-  },
-  {
-    "objectID": "slides/09-17.html#the-forecast-1",
-    "href": "slides/09-17.html#the-forecast-1",
-    "title": "Two-Stage Growth Model",
-    "section": "The forecast",
-    "text": "The forecast\n\n\n\nItem\nAssumption\n\n\n\n\nSales growth\n12%, 9%, 6%, then 3%\n\n\nOperating margin\n13.0%, down from 18.2%\n\n\nNet PP&E (\\(k\\))\n36.0% of next year’s sales\n\n\nDepreciation (\\(d\\))\n9.5% of opening net PP&E\n\n\nWorking capital (\\(w\\))\n18.0% of next year’s sales\n\n\nTax rate, WACC\n25%, 11%\n\n\n\nEverything but the operating margin is read off the history."
-  },
-  {
-    "objectID": "slides/09-17.html#the-schedule-and-the-cash-flow",
-    "href": "slides/09-17.html#the-schedule-and-the-cash-flow",
-    "title": "Two-Stage Growth Model",
-    "section": "The schedule and the cash flow",
-    "text": "The schedule and the cash flow\n\n\n\n$ millions\nFY25\nFY26\nFY27\nFY28\nFY29\n\n\n\n\nSales\n93.4\n104.6\n114.0\n120.9\n124.5\n\n\nNet PP&E\n38.5\n41.0\n43.5\n44.8\n46.2\n\n\nDepreciation\n—\n3.7\n3.9\n4.1\n4.3\n\n\nCapital expenditure\n—\n6.2\n6.4\n5.4\n5.6\n\n\nWorking capital\n23.2\n20.5\n21.8\n22.4\n23.1\n\n\nFree cash flow\n—\n10.3\n7.4\n9.8\n10.1\n\n\n\n\nFY2026 working capital falls because the assumed \\(w\\) of 18% is below the 22.2% the company carried at FY2025. A ratio assumption applied to an actual balance always steps in year one."
-  },
-  {
-    "objectID": "slides/09-17.html#the-value",
-    "href": "slides/09-17.html#the-value",
-    "title": "Two-Stage Growth Model",
-    "section": "The value",
-    "text": "The value\n\\[\\text{TV}_{2029} = \\frac{10.1 \\times 1.03}{0.11-0.03} = 130.3\\]\n\n\n\n$ millions\n\n\n\n\n\nPresent value of FY26 to FY29\n29.2\n\n\nPresent value of terminal value\n85.8\n\n\nEnterprise value\n115.0\n\n\nPlus cash, less debt\n11.9, (4.5)\n\n\nEquity value\n122.4\n\n\nValue per share, on 5.31m shares\n$23.05"
-  },
-  {
-    "objectID": "slides/09-17.html#the-margin-implied-by-the-price",
-    "href": "slides/09-17.html#the-margin-implied-by-the-price",
-    "title": "Two-Stage Growth Model",
-    "section": "The margin implied by the price",
-    "text": "The margin implied by the price\n\n\n$23.05 At a 13.0% margin\n\n\n$24.54 The market price\n\n\n13.7% The margin that closes the gap\n\n\nThree quarters of the value is in the terminal value, which rests on the assumed operating margin. The company earned 1.7% in FY2022 and 18.2% in FY2025."
-  },
-  {
-    "objectID": "slides/09-17.html#flexsteel",
-    "href": "slides/09-17.html#flexsteel",
-    "title": "Two-Stage Growth Model",
-    "section": "Flexsteel",
-    "text": "Flexsteel\nValue Flexsteel the way we valued JBSS. Yahoo Finance, ticker FLXS, fiscal years ending June 30.\n\n\nWhat it does\nMakes and sells upholstered furniture. Four years of data, FY2023 through FY2026.\n\n\nWhy this one\nAll three ratios move over the four years, so each one has to be defended rather than read off the history."
-  },
-  {
-    "objectID": "slides/09-17.html#what-to-pull",
-    "href": "slides/09-17.html#what-to-pull",
-    "title": "Two-Stage Growth Model",
-    "section": "What to pull",
-    "text": "What to pull\n\n\n\n\n\n\n\nStatement\nLines\n\n\n\n\nIncome statement\nRevenue, operating income, pretax income, tax provision, diluted shares\n\n\nBalance sheet\nCash, current assets, current liabilities, current debt, net PP&E, total debt, operating lease liability\n\n\nCash flow\nDepreciation and amortisation, capital expenditure\n\n\n\nNet working capital is current assets less cash, minus current liabilities less current debt."
-  },
-  {
-    "objectID": "slides/09-17.html#part-1-the-three-ratios",
-    "href": "slides/09-17.html#part-1-the-three-ratios",
-    "title": "Two-Stage Growth Model",
-    "section": "Part 1: the three ratios",
-    "text": "Part 1: the three ratios\nCompute, for every year the data allows:\n\n\n\\(k\\), net PP&E as a share of next year’s sales\n\\(d\\), depreciation as a share of opening net PP&E\n\\(w\\), net working capital as a share of next year’s sales\n\n\nReport each ratio year by year. Two of the three fall by about a third over the four years and the third rises. Say what single fact about the company explains all three, and whether that change is finished."
-  },
-  {
-    "objectID": "slides/09-17.html#part-2-the-forecast",
-    "href": "slides/09-17.html#part-2-the-forecast",
-    "title": "Two-Stage Growth Model",
-    "section": "Part 2: the forecast",
-    "text": "Part 2: the forecast\n\n\n\nItem\nAssumption\n\n\n\n\nSales growth\n5.0%, 4.5%, 4.0%, then 3.0%\n\n\nOperating margin\n8.5%, held\n\n\nNet PP&E (\\(k\\))\n16.0% of next year’s sales\n\n\nDepreciation (\\(d\\))\n5.0% of opening net PP&E\n\n\nWorking capital (\\(w\\))\n16.0% of next year’s sales\n\n\nTax rate\n25%\n\n\nWACC\n10.5%\n\n\n\nUse these, not your own averages, so the answers are comparable."
-  },
-  {
-    "objectID": "slides/09-17.html#part-3-the-value",
-    "href": "slides/09-17.html#part-3-the-value",
-    "title": "Two-Stage Growth Model",
-    "section": "Part 3: the value",
-    "text": "Part 3: the value\n\n\nThe capital schedule and free cash flow for FY2027 to FY2030\nTerminal value at the end of FY2030, and the enterprise value\nEquity value per share, and the comparison to the market price\n\n\n\n\n\nFor the equity value calculation, at FY2026\n$ millions\n\n\n\n\nBorrowings\n0.0\n\n\nOperating lease liability\n51.9\n\n\nCash\n16.7\n\n\nShare price\n$82.11\n\n\n\nThe share count is not in the table. Part 4 asks for it."
-  },
-  {
-    "objectID": "slides/09-17.html#part-4-the-accounting",
-    "href": "slides/09-17.html#part-4-the-accounting",
-    "title": "Two-Stage Growth Model",
-    "section": "Part 4: the accounting",
-    "text": "Part 4: the accounting\nAnswer in a sentence each.\n\n\nThe depreciable life\nYour \\(d\\) will come out near 4%, an implied life above twenty years for a furniture maker’s plant. Explain the long implied life, and name the balance sheet line that is the evidence.\n\n\nThe debt line\nYahoo reports total debt of 51.9 and the company has no borrowings. Say what the 51.9 is, whether it belongs in your equity value calculation, and what you would have to change in the forecast to put it there.\n\n\n\nDiluted average shares for FY2026 are 5.46 million. Shares outstanding on the cover of the 10-K are 4.11 million. Say which one belongs in the equity value calculation, why, and what happened between the two dates."
-  },
-  {
-    "objectID": "slides/09-17.html#what-to-hand-in",
-    "href": "slides/09-17.html#what-to-hand-in",
-    "title": "Two-Stage Growth Model",
-    "section": "What to hand in",
-    "text": "What to hand in\n\n\nThe spreadsheet\nOne tab of history, one of the forecast. Assumptions in their own cells, not buried in formulas.\n\n\nThe ratios\nYear by year, with the missing years marked and explained.\n\n\nOne page\nYour value per share, the gap to the market price, and the three accounting answers from Part 4."
-  },
-  {
     "objectID": "slides/08-27.html#course-topics",
     "href": "slides/08-27.html#course-topics",
     "title": "Course Overview",
@@ -648,7 +585,7 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "Applied Finance\n    \n    \n      MGMT 648-3•\n      Fall 2026•\n      Hybrid MBA\n    \n    led by Kerry Back\n\n    Syllabus →\n\n    \n\n    \n      \n      \n        Kerry Back\n        J. Howard Creekmore Professor of Financeand Professor of Economics\n        kerry.e.back@rice.edu\n      \n    \n\n    \n\n    \n\n    \n      Six dates\n      August – October\n    \n\n    \n      THU AUG 278:30–10:00 PM\n      \n        Course Overview\n        Course topics, Excel and AI, the course AI lab, and best practices for both\n      \n      SlidesHTMLPDF·Files\n    \n\n    \n      SAT SEP 122:00–6:30 PM\n      \n        Capital Budgeting\n        Incremental cash flows, inflation, staged investment, and simulation — worked through cases at the keyboard\n      \n      Slides·Files\n    \n\n    \n      THU SEP 178:30–10:00 PM\n      \n        Two-Stage Growth Model\n        Terminal values, pro formas, enterprise and equity value\n      \n      SlidesHTMLPDF·Files\n    \n\n    \n      THU OCT 18:30–10:00 PM\n      \n        More on Firm Valuation\n        Additional examples, a little accounting, creating an agent skill\n      \n      SlidesHTMLPDF·Files\n    \n\n    \n      SAT OCT 102:00–6:30 PM\n      \n        Portfolio Management\n        The mean-variance frontier, minimum variance and tangency portfolios with and without short sales, then CAPM and the WACC\n      \n      SlidesHTMLPDF·Files\n    \n\n    \n      THU OCT 158:30–10:00 PM\n      \n        Final Presentations\n        Valuations presented in pairs, with another pair challenging each\n      \n      SlidesHTMLPDF·Files\n    \n\n    \n      Readings\n      Nothing to buy\n    \n\n    \n      \n        \n          Welch, Corporate Finance\n          Capital budgeting, cash flows, and valuation. Free by the chapter from the author's site.\n        \n        Free PDF\n      \n\n      \n        \n          Damodaran, Investment Valuation\n          Third edition, with the chapter on scenario analysis, decision trees, and simulation. Spreadsheets and industry data are on the same site.\n        \n        Free PDF\n      \n    \n\n    \n      mgmt648.kerryback.com\n      kerry.e.back@rice.edu"
+    "text": "Applied Finance\n    \n    \n      MGMT 648-3•\n      Fall 2026•\n      Hybrid MBA\n    \n    led by Kerry Back\n\n    Syllabus →\n\n    \n\n    \n      \n      \n        Kerry Back\n        J. Howard Creekmore Professor of Financeand Professor of Economics\n        kerry.e.back@rice.edu\n      \n    \n\n    \n\n    \n\n    \n      Six dates\n      August – October\n    \n\n    \n      THU AUG 278:30–10:00 PM\n      \n        Course Overview\n        Course topics, Excel and AI, the course AI lab, and best practices for both\n      \n      SlidesHTMLPDF·Files\n    \n\n    \n      SAT SEP 122:00–6:30 PM\n      \n        Capital Budgeting\n        Incremental cash flows, inflation, staged investment, and simulation — worked through cases at the keyboard\n      \n      Slides·Files\n    \n\n    \n      THU SEP 178:30–10:00 PM\n      \n        Two-Stage Growth Model\n        Terminal values, pro formas, enterprise and equity value\n      \n      SlidesHTMLPDF·CasesHTMLPDF·Files\n    \n\n    \n      THU OCT 18:30–10:00 PM\n      \n        More on Firm Valuation\n        Additional examples, a little accounting, creating an agent skill\n      \n      SlidesHTMLPDF·Files\n    \n\n    \n      SAT OCT 102:00–6:30 PM\n      \n        Portfolio Management\n        The mean-variance frontier, minimum variance and tangency portfolios with and without short sales, then CAPM and the WACC\n      \n      SlidesHTMLPDF·Files\n    \n\n    \n      THU OCT 158:30–10:00 PM\n      \n        Simulation\n        Monte Carlo simulation of project values and of investment returns, input distributions, and reading the output\n      \n      SlidesHTMLPDF·Files\n    \n\n    \n      Readings\n      Nothing to buy\n    \n\n    \n      \n        \n          Welch, Corporate Finance\n          Capital budgeting, cash flows, and valuation. Free by the chapter from the author's site.\n        \n        Free PDF\n      \n\n      \n        \n          Damodaran, Investment Valuation\n          Third edition, with the chapter on scenario analysis, decision trees, and simulation. Spreadsheets and industry data are on the same site.\n        \n        Free PDF\n      \n    \n\n    \n      mgmt648.kerryback.com\n      kerry.e.back@rice.edu"
   },
   {
     "objectID": "slides/09-12.html#the-project-when-and-how-much",
@@ -859,6 +796,230 @@
     "title": "Capital Budgeting",
     "section": "Takeaways",
     "text": "Takeaways\n\n\nA point estimate is a distribution\nA single column states that every input is known.\n\n\nThe base case is not the mean\nThe value at the average input is not the average value. Wherever the model multiplies uncertain things together, the two differ.\n\n\nOne at a time is not uncertainty\nMoving each input alone holds every other input at its base value. Things that go wrong tend to go wrong together.\n\n\nCorrelation is a claim\nIt is an assertion about what drives the business, and it comes from people who know the industry, not from the model.\n\n\nPick the statistic deliberately\nThe mean, the median and the fifth percentile answer different questions. Report the one that matches the consequence you face.\n\n\nSomething chose the defaults\nEvery model contains assumptions nobody made on purpose."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#the-company",
+    "href": "slides/two-stage-growth-cases.html#the-company",
+    "title": "Two-Stage Growth: Cases",
+    "section": "The company",
+    "text": "The company\nShells, roasts and packages nuts. Fisher, Orchard Valley Harvest, Squirrel Brand, and private label for the grocery chains. Fiscal years end in late June.\n\n\nTicker\nJBSS, $805 million of market value: 11.78 million diluted shares at $68.31.\n\n\nWhat it owns\nShelling and roasting plants, $268 million of net PP&E against $1.18 billion of sales.\n\n\nThe balance sheet\nSimple. The company owns no other businesses, and goodwill is $11.8 million against $659 million of assets."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#four-years-of-history",
+    "href": "slides/two-stage-growth-cases.html#four-years-of-history",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Four years of history",
+    "text": "Four years of history\n\n\n\n$ millions\nFY2023\nFY2024\nFY2025\nFY2026\n\n\n\n\nSales\n999.7\n1,066.8\n1,107.2\n1,175.7\n\n\nSales growth\n—\n6.7%\n3.8%\n6.2%\n\n\nOperating income\n88.9\n81.7\n82.9\n87.0\n\n\nOperating margin\n8.9%\n7.7%\n7.5%\n7.4%\n\n\nNet PP&E\n127.2\n178.6\n193.0\n268.3\n\n\nDepreciation\n22.1\n26.6\n31.5\n33.3\n\n\nCapital expenditure\n20.7\n28.3\n50.7\n88.1\n\n\n\n\nYahoo returns four years for JBSS, not five, and each ratio needs three."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#the-three-ratios-measured",
+    "href": "slides/two-stage-growth-cases.html#the-three-ratios-measured",
+    "title": "Two-Stage Growth: Cases",
+    "section": "The three ratios, measured",
+    "text": "The three ratios, measured\n\n\n\n\n\n\n\n\n\n\n\nFY2023\nFY2024\nFY2025\nFY2026\n\n\n\n\nNet PP&E / next year’s sales (\\(k\\))\n11.9%\n16.1%\n16.4%\n—\n\n\nDepreciation / opening net PP&E (\\(d\\))\n—\n20.9%\n17.6%\n17.3%\n\n\nWorking capital / next year’s sales (\\(w\\))\n15.7%\n17.1%\n21.1%\n—\n\n\n\n\\(k\\) and \\(w\\) are measured against next year’s sales, so they stop at FY2025, the last year with a following year in the data."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#capital-expenditure-and-net-ppe",
+    "href": "slides/two-stage-growth-cases.html#capital-expenditure-and-net-ppe",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Capital expenditure and net PP&E",
+    "text": "Capital expenditure and net PP&E\n\n\nThree years above depreciation\nCapital expenditure of 28.3, 50.7, 88.1 against depreciation of 26.6, 31.5, 33.3. FY2023 was the last year capital expenditure ran below depreciation.\n\n\nSo net PP&E doubles\nNet PP&E goes from 127.2 to 268.3 while sales rise 18%. The FY2024 step is a $59.0m acquisition, almost all of it plant. The FY2026 step is the build.\n\n\nSo \\(k\\) doubles\n\\(k\\) goes from 11.9% to 16.4%, and is 21.6% measured against the FY2027 sales forecast.\n\n\nThe forecast has to say whether net PP&E stays this high relative to sales."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#the-other-two-ratios",
+    "href": "slides/two-stage-growth-cases.html#the-other-two-ratios",
+    "title": "Two-Stage Growth: Cases",
+    "section": "The other two ratios",
+    "text": "The other two ratios\n\n\n\\(d\\) falls for a mechanical reason\n\\(d\\) goes from 20.9% to 17.3%. New assets enter net PP&E faster than the existing assets are depreciated, so \\(d\\) falls even though the depreciable lives have not changed. Of the 268.3 balance, 86.9 is construction in progress, which does not depreciate until it is in service. Call \\(d\\) 15%.\n\n\n\\(w\\) moves with inventory\n\\(w\\) goes from 15.7% to 21.1%. Inventory alone is 245.8 against net working capital of 220.1, and a nut processor buys a crop once a year. Call \\(w\\) 18%."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#the-forecast",
+    "href": "slides/two-stage-growth-cases.html#the-forecast",
+    "title": "Two-Stage Growth: Cases",
+    "section": "The forecast",
+    "text": "The forecast\n\n\n\nItem\nAssumption\n\n\n\n\nSales growth\n5.5%, 5.0%, 4.5%, 3.5%, then 3.0%\n\n\nOperating margin\n7.5%, held\n\n\nNet PP&E (\\(k\\))\n21.0% of next year’s sales\n\n\nDepreciation (\\(d\\))\n15.0% of opening net PP&E\n\n\nWorking capital (\\(w\\))\n18.0% of next year’s sales\n\n\nTax rate\n25%\n\n\nWACC\n9.0%\n\n\n\n\\(k\\) holds near today’s 21.6% rather than the FY2025 level of 16.4%. The other rows are read off the history."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#the-capital-schedule",
+    "href": "slides/two-stage-growth-cases.html#the-capital-schedule",
+    "title": "Two-Stage Growth: Cases",
+    "section": "The capital schedule",
+    "text": "The capital schedule\n\n\n\n\n\n\n\n\n\n\n\n\n$ millions\nFY26\nFY27\nFY28\nFY29\nFY30\nFY31\n\n\n\n\nSales\n1,175.7\n1,240.4\n1,302.4\n1,361.0\n1,408.6\n1,450.9\n\n\nNext year’s sales\n1,240.4\n1,302.4\n1,361.0\n1,408.6\n1,450.9\n1,494.4\n\n\nNet PP&E\n268.3\n273.5\n285.8\n295.8\n304.7\n313.8\n\n\nDepreciation\n—\n40.2\n41.0\n42.9\n44.4\n45.7\n\n\nCapital expenditure\n—\n45.4\n53.3\n52.9\n53.2\n54.8\n\n\nWorking capital\n220.1\n234.4\n245.0\n253.6\n261.2\n269.0\n\n\n\nThe FY2026 column is the net PP&E and working capital the company already has."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#free-cash-flow",
+    "href": "slides/two-stage-growth-cases.html#free-cash-flow",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Free cash flow",
+    "text": "Free cash flow\n\n\n\n\n\n\n\n\n\n\n\n$ millions\nFY27\nFY28\nFY29\nFY30\nFY31\n\n\n\n\nEBIT\n93.0\n97.7\n102.1\n105.6\n108.8\n\n\nNet operating profit after tax\n69.8\n73.3\n76.6\n79.2\n81.6\n\n\nDepreciation\n40.2\n41.0\n42.9\n44.4\n45.7\n\n\nCapital expenditure\n(45.4)\n(53.3)\n(52.9)\n(53.2)\n(54.8)\n\n\nIncrease in working capital\n(14.3)\n(10.5)\n(8.6)\n(7.6)\n(7.8)\n\n\nFree cash flow\n50.2\n50.4\n58.0\n62.8\n64.6\n\n\n\nWorking capital is positive, so sales growth consumes cash rather than releasing it."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#terminal-value",
+    "href": "slides/two-stage-growth-cases.html#terminal-value",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Terminal value",
+    "text": "Terminal value\nFY2031 grows at 3.0% and all three ratios are fixed, so it is the steady-state year.\n\\[\\text{TV}_{2031} = \\frac{64.6 \\times 1.03}{0.09-0.03} = 1{,}109.6\\]\n\nSeventeen times FY2031 free cash flow, at a six-point spread between \\(r\\) and \\(g\\). The example earlier was twenty-five times, at a four-point spread."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#discount-it-all-back",
+    "href": "slides/two-stage-growth-cases.html#discount-it-all-back",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Discount it all back",
+    "text": "Discount it all back\n\n\n\n\n\n\n\n\n\n\n\n\n$ millions\nFY27\nFY28\nFY29\nFY30\nFY31\nTV\n\n\n\n\nFree cash flow\n50.2\n50.4\n58.0\n62.8\n64.6\n1,109.6\n\n\nDiscount factor at 9%\n0.917\n0.842\n0.772\n0.708\n0.650\n0.650\n\n\nPresent value\n46.1\n42.4\n44.8\n44.5\n42.0\n721.2\n\n\n\n\n\n$940.9m Enterprise value\n\n\n77% In the terminal value"
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#from-enterprise-value-to-equity",
+    "href": "slides/two-stage-growth-cases.html#from-enterprise-value-to-equity",
+    "title": "Two-Stage Growth: Cases",
+    "section": "From enterprise value to equity",
+    "text": "From enterprise value to equity\n\n\n\n$ millions\n\n\n\n\n\nEnterprise value\n940.9\n\n\nLess borrowings\n(83.5)\n\n\nPlus cash\n1.1\n\n\nPlus goodwill and intangibles\n15.2\n\n\nLess other long-term liabilities\n(6.6)\n\n\nEquity value\n867.1\n\n\nDiluted shares\n11.78 million\n\n\nValue per share\n$73.61\n\n\n\nJBSS trades at $68.31."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#what-the-market-is-assuming",
+    "href": "slides/two-stage-growth-cases.html#what-the-market-is-assuming",
+    "title": "Two-Stage Growth: Cases",
+    "section": "What the market is assuming",
+    "text": "What the market is assuming\nHold the five-year forecast fixed and solve for the terminal growth rate that justifies $68.31.\n\n\nImplied growth\n2.5% forever, against a 3.0% assumption.\n\n\nImplied exit multiple\n6.6 times FY2031 EBITDA.\n\n\nToday’s multiple\n7.3 times FY2026 EBITDA.\n\n\nThe price requires the EBITDA multiple to fall from 7.3 times FY2026 to 6.6 times FY2031."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#leases-finance-or-operating",
+    "href": "slides/two-stage-growth-cases.html#leases-finance-or-operating",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Leases: finance or operating",
+    "text": "Leases: finance or operating\nDoes the lease hand over substantially all the risks and rewards of owning the asset? If so it is a purchase the lessor financed. Any one of five tests settles it.\n\n\nOwnership transfers at the end of the term\nThere is a purchase option the lessee is reasonably certain to take\nThe term covers a major part of the asset’s remaining economic life\nThe payments are worth substantially all of the asset’s fair value\nThe asset is so specialised it has no other use to the lessor\n\n\nMeet none of the five and it is an operating lease."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#leases-what-the-choice-is",
+    "href": "slides/two-stage-growth-cases.html#leases-what-the-choice-is",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Leases: what the choice is",
+    "text": "Leases: what the choice is\nBoth sit on the balance sheet as a right-of-use asset and a lease liability. A finance lease splits into depreciation and interest; an operating lease is rent in EBIT.\n\n\nLeave the rent in EBIT\nThe right-of-use asset stays out of invested capital and the lease liability out of the equity value calculation. The rent is already subtracted in EBIT.\n\n\nOr capitalise the lease\nTake the rent out of EBIT and depreciate the right-of-use asset in its place. The asset joins invested capital and the lease liability joins the equity value calculation.\n\n\n\nEither is defensible. Half of the second — the lease liability subtracted in the equity value calculation, the rent still in EBIT — charges twice."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#leases-read-the-debt-line-twice",
+    "href": "slides/two-stage-growth-cases.html#leases-read-the-debt-line-twice",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Leases: read the debt line twice",
+    "text": "Leases: read the debt line twice\nYahoo reports total debt of 104.1. That is not what the company borrowed.\n\n\n\n$ millions\n\n\n\n\n\nLong-term debt\n43.6\n\n\nCurrent debt\n39.9\n\n\nBorrowings\n83.5\n\n\nOperating lease liability, non-current\n20.6\n\n\nYahoo’s “total debt”\n104.1\n\n\n\n\nNo finance leases. The rent is still inside the 87.0 of operating income, so the 20.6 is not subtracted when computing equity value. Subtracting it anyway lowers the value by $1.75 a share."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#deferred-taxes-check-then-ignore",
+    "href": "slides/two-stage-growth-cases.html#deferred-taxes-check-then-ignore",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Deferred taxes: check, then ignore",
+    "text": "Deferred taxes: check, then ignore\n\n\n\n\nFY2024\nFY2025\nFY2026\n\n\n\n\nBook effective rate\n24.6%\n24.3%\n25.4%\n\n\nCash taxes paid / pretax income\n27.7%\n27.2%\n16.7%\n\n\n\nCash taxes ran 23.8% over the three years against a book rate of 24.8%. Taxing EBIT at the cash rate instead would add about $1.64 a share.\n\nA one-point gap is small enough to leave the forecast taxing EBIT at the book rate."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#goodwill-intangibles-and-other-liabilities",
+    "href": "slides/two-stage-growth-cases.html#goodwill-intangibles-and-other-liabilities",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Goodwill, intangibles, and other liabilities",
+    "text": "Goodwill, intangibles, and other liabilities\n\n\nGoodwill, $11.8m\n1.8% of assets. No acquisitions are forecast, so goodwill is held flat and added in the equity value calculation, where it adds a dollar a share.\n\n\nOther intangibles, $3.4m\nHeld flat and added in the equity value calculation too, where they add 29 cents a share.\n\n\nOther long-term liabilities, $6.6m\nThe whole “other” category on the balance sheet, and the only one of these three items subtracted in the equity value calculation rather than added.\n\n\nThe three items together move the value per share by 73 cents, against a $5.30 gap to the market price."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#one-rule",
+    "href": "slides/two-stage-growth-cases.html#one-rule",
+    "title": "Two-Stage Growth: Cases",
+    "section": "One rule",
+    "text": "One rule\nEvery balance sheet item goes in exactly one of two places.\n\n\nInvested capital\nAn item goes here if it produces the operating cash flows being discounted. The change in the item is a cash flow in the forecast.\n\n\nThe equity value calculation\nEvery other item goes here, carried at book value between enterprise value and equity value.\n\n\n\nPutting an item in both double counts it; leaving it out of both drops it from the valuation."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#sensitivity-to-k",
+    "href": "slides/two-stage-growth-cases.html#sensitivity-to-k",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Sensitivity to \\(k\\)",
+    "text": "Sensitivity to \\(k\\)\n\n\n\n\nValue per share\n\n\n\n\n\\(k\\) back to 16.4%, the recent plant spending was a one-off\n$80.73\n\n\n\\(k\\) at 21.0%, the base case\n$73.61\n\n\n\\(k\\) at 21.6%, today’s level holds\n$72.68\n\n\n\n\n\\(d\\) does not appear in this table, and cannot. Capital expenditure less depreciation is the change in the net PP&E balance, and EBIT here is a margin on sales rather than EBITDA less depreciation. So \\(d\\) cancels out of the valuation."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#smith-midland",
+    "href": "slides/two-stage-growth-cases.html#smith-midland",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Smith-Midland",
+    "text": "Smith-Midland\nPrecast concrete: highway barriers, sound walls, building panels. SMID, $130 million of market value at $24.54 a share.\n\n\n\n$ millions\nFY2022\nFY2023\nFY2024\nFY2025\n\n\n\n\nSales\n50.1\n59.6\n78.5\n93.4\n\n\nSales growth\n—\n18.8%\n31.8%\n19.0%\n\n\nOperating margin\n1.7%\n1.9%\n12.6%\n18.2%\n\n\nNet PP&E\n25.1\n27.7\n31.7\n38.5\n\n\nDepreciation\n2.9\n2.4\n2.7\n2.9\n\n\nCapital expenditure\n2.7\n5.0\n6.2\n9.3"
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#the-three-ratios-measured-1",
+    "href": "slides/two-stage-growth-cases.html#the-three-ratios-measured-1",
+    "title": "Two-Stage Growth: Cases",
+    "section": "The three ratios, measured",
+    "text": "The three ratios, measured\n\n\n\n\nFY2022\nFY2023\nFY2024\nFY2025\n\n\n\n\n\\(k\\)\n42.2%\n35.3%\n33.9%\n—\n\n\n\\(d\\)\n—\n9.5%\n9.6%\n9.1%\n\n\n\\(w\\)\n19.6%\n11.2%\n14.9%\n—\n\n\n\n\n\\(k\\) in the mid-thirties is nearly twice JBSS’s \\(k\\): a concrete plant carries just under three dollars of sales per dollar of net PP&E. \\(d\\) holds between 9.1% and 9.6%. The operating margin is the line that moves, from 1.7% to 18.2%."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#the-forecast-1",
+    "href": "slides/two-stage-growth-cases.html#the-forecast-1",
+    "title": "Two-Stage Growth: Cases",
+    "section": "The forecast",
+    "text": "The forecast\n\n\n\nItem\nAssumption\n\n\n\n\nSales growth\n12%, 9%, 6%, then 3%\n\n\nOperating margin\n13.0%, down from 18.2%\n\n\nNet PP&E (\\(k\\))\n36.0% of next year’s sales\n\n\nDepreciation (\\(d\\))\n9.5% of opening net PP&E\n\n\nWorking capital (\\(w\\))\n18.0% of next year’s sales\n\n\nTax rate, WACC\n25%, 11%\n\n\n\nEverything but the operating margin is read off the history."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#the-schedule-and-the-cash-flow",
+    "href": "slides/two-stage-growth-cases.html#the-schedule-and-the-cash-flow",
+    "title": "Two-Stage Growth: Cases",
+    "section": "The schedule and the cash flow",
+    "text": "The schedule and the cash flow\n\n\n\n$ millions\nFY25\nFY26\nFY27\nFY28\nFY29\n\n\n\n\nSales\n93.4\n104.6\n114.0\n120.9\n124.5\n\n\nNet PP&E\n38.5\n41.0\n43.5\n44.8\n46.2\n\n\nDepreciation\n—\n3.7\n3.9\n4.1\n4.3\n\n\nCapital expenditure\n—\n6.2\n6.4\n5.4\n5.6\n\n\nWorking capital\n23.2\n20.5\n21.8\n22.4\n23.1\n\n\nFree cash flow\n—\n10.3\n7.4\n9.8\n10.1\n\n\n\n\nFY2026 working capital falls because the assumed \\(w\\) of 18% is below the 22.2% the company carried at FY2025. A ratio assumption applied to an actual balance always steps in year one."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#the-value",
+    "href": "slides/two-stage-growth-cases.html#the-value",
+    "title": "Two-Stage Growth: Cases",
+    "section": "The value",
+    "text": "The value\n\\[\\text{TV}_{2029} = \\frac{10.1 \\times 1.03}{0.11-0.03} = 130.3\\]\n\n\n\n$ millions\n\n\n\n\n\nPresent value of FY26 to FY29\n29.2\n\n\nPresent value of terminal value\n85.8\n\n\nEnterprise value\n115.0\n\n\nPlus cash, less debt\n11.9, (4.5)\n\n\nEquity value\n122.4\n\n\nValue per share, on 5.31m shares\n$23.05"
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#the-margin-implied-by-the-price",
+    "href": "slides/two-stage-growth-cases.html#the-margin-implied-by-the-price",
+    "title": "Two-Stage Growth: Cases",
+    "section": "The margin implied by the price",
+    "text": "The margin implied by the price\n\n\n$23.05 At a 13.0% margin\n\n\n$24.54 The market price\n\n\n13.7% The margin that closes the gap\n\n\nThree quarters of the value is in the terminal value, which rests on the assumed operating margin. The company earned 1.7% in FY2022 and 18.2% in FY2025."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#flexsteel",
+    "href": "slides/two-stage-growth-cases.html#flexsteel",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Flexsteel",
+    "text": "Flexsteel\nValue Flexsteel the way we valued JBSS. Yahoo Finance, ticker FLXS, fiscal years ending June 30.\n\n\nWhat it does\nMakes and sells upholstered furniture. Four years of data, FY2023 through FY2026.\n\n\nWhy this one\nAll three ratios move over the four years, so each one has to be defended rather than read off the history."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#what-to-pull",
+    "href": "slides/two-stage-growth-cases.html#what-to-pull",
+    "title": "Two-Stage Growth: Cases",
+    "section": "What to pull",
+    "text": "What to pull\n\n\n\n\n\n\n\nStatement\nLines\n\n\n\n\nIncome statement\nRevenue, operating income, pretax income, tax provision, diluted shares\n\n\nBalance sheet\nCash, current assets, current liabilities, current debt, net PP&E, total debt, operating lease liability\n\n\nCash flow\nDepreciation and amortisation, capital expenditure\n\n\n\nNet working capital is current assets less cash, minus current liabilities less current debt."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#part-1-the-three-ratios",
+    "href": "slides/two-stage-growth-cases.html#part-1-the-three-ratios",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Part 1: the three ratios",
+    "text": "Part 1: the three ratios\nCompute, for every year the data allows:\n\n\n\\(k\\), net PP&E as a share of next year’s sales\n\\(d\\), depreciation as a share of opening net PP&E\n\\(w\\), net working capital as a share of next year’s sales\n\n\nReport each ratio year by year. Two of the three fall by about a third over the four years and the third rises. Say what single fact about the company explains all three, and whether that change is finished."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#part-2-the-forecast",
+    "href": "slides/two-stage-growth-cases.html#part-2-the-forecast",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Part 2: the forecast",
+    "text": "Part 2: the forecast\n\n\n\nItem\nAssumption\n\n\n\n\nSales growth\n5.0%, 4.5%, 4.0%, then 3.0%\n\n\nOperating margin\n8.5%, held\n\n\nNet PP&E (\\(k\\))\n16.0% of next year’s sales\n\n\nDepreciation (\\(d\\))\n5.0% of opening net PP&E\n\n\nWorking capital (\\(w\\))\n16.0% of next year’s sales\n\n\nTax rate\n25%\n\n\nWACC\n10.5%\n\n\n\nUse these, not your own averages, so the answers are comparable."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#part-3-the-value",
+    "href": "slides/two-stage-growth-cases.html#part-3-the-value",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Part 3: the value",
+    "text": "Part 3: the value\n\n\nThe capital schedule and free cash flow for FY2027 to FY2030\nTerminal value at the end of FY2030, and the enterprise value\nEquity value per share, and the comparison to the market price\n\n\n\n\n\nFor the equity value calculation, at FY2026\n$ millions\n\n\n\n\nBorrowings\n0.0\n\n\nOperating lease liability\n51.9\n\n\nCash\n16.7\n\n\nShare price\n$82.11\n\n\n\nThe share count is not in the table. Part 4 asks for it."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#part-4-the-accounting",
+    "href": "slides/two-stage-growth-cases.html#part-4-the-accounting",
+    "title": "Two-Stage Growth: Cases",
+    "section": "Part 4: the accounting",
+    "text": "Part 4: the accounting\nAnswer in a sentence each.\n\n\nThe depreciable life\nYour \\(d\\) will come out near 4%, an implied life above twenty years for a furniture maker’s plant. Explain the long implied life, and name the balance sheet line that is the evidence.\n\n\nThe debt line\nYahoo reports total debt of 51.9 and the company has no borrowings. Say what the 51.9 is, whether it belongs in your equity value calculation, and what you would have to change in the forecast to put it there.\n\n\n\nDiluted average shares for FY2026 are 5.46 million. Shares outstanding on the cover of the 10-K are 4.11 million. Say which one belongs in the equity value calculation, why, and what happened between the two dates."
+  },
+  {
+    "objectID": "slides/two-stage-growth-cases.html#what-to-hand-in",
+    "href": "slides/two-stage-growth-cases.html#what-to-hand-in",
+    "title": "Two-Stage Growth: Cases",
+    "section": "What to hand in",
+    "text": "What to hand in\n\n\nThe spreadsheet\nOne tab of history, one of the forecast. Assumptions in their own cells, not buried in formulas.\n\n\nThe ratios\nYear by year, with the missing years marked and explained.\n\n\nOne page\nYour value per share, the gap to the market price, and the three accounting answers from Part 4."
   },
   {
     "objectID": "slides/session10.html#a-bond-is-a-promise-with-a-date-on-it",

@@ -18,7 +18,8 @@ project:
     - slides/08-27.qmd
     - slides/09-12.qmd
     - slides/09-17.qmd
-    # - slides/october01.qmd
+    - slides/two-stage-growth-cases.qmd
+    - slides/10-01.qmd
     # - slides/october10.qmd
     # - slides/october15.qmd
     - slides/session10.qmd
@@ -62,6 +63,8 @@ project:
     - pdf/08-27.pdf
     - pdf/09-12.pdf
     - pdf/09-17.pdf
+    - pdf/two-stage-growth-cases.pdf
+    - pdf/10-01.pdf
     - pdf/session03.pdf
     - pdf/session04.pdf
     - pdf/session05.pdf
